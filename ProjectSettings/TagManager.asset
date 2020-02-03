@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Nyang
+  - Meat
+  - Powder
+  - Sauce
+  - Food
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Nyang
+  - Border
+  - TouchSound
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: BelowNyang
+    uniqueID: 3156989143
+    locked: 0
+  - name: Nyang
+    uniqueID: 1734432845
+    locked: 0
+  - name: OnNyang
+    uniqueID: 259815367
+    locked: 0
+  - name: UI
+    uniqueID: 2428162317
+    locked: 0
+  - name: Tutorial
+    uniqueID: 4171483109
+    locked: 0
+  - name: Scenario
+    uniqueID: 3569755077
+    locked: 0
+  - name: Letterbox
+    uniqueID: 1495613525
+    locked: 0

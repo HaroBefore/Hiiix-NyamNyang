@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3871193258646715152
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8494270309393928938}
+  - component: {fileID: 9023516244900844091}
+  m_Layer: 0
+  m_Name: Day30_NewIngredient
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8494270309393928938
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3871193258646715152}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9023516244900844091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3871193258646715152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23f9d1ea2168bf840922794f5d75be11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 1
+  scenarioName: Day30_NewIngredient
+  sceneCount: 3
+  sceneImage:
+  - {fileID: 4218867616652513860, guid: 7670ee16d153d0542874e8d66b6723ce, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  sceneScripts_name:
+  - "\uC0C1\uC810\uB0E5\uC774"
+  - "\uC0C1\uC810\uB0E5\uC774"
+  - "\uC0C1\uC810\uB0E5\uC774"
+  sceneScripts:
+  - "\uD558\uB298\uC5D0 \uB2EC \uB72C \uAC83 \uC880 \uBD10\uB77C \uD574-\n\uC791\uC5C5\uD558\uAE30
+    \uC88B~\uC740 \uB0A0\uC774\uAD6C\uB9CC\uB0E5~!"
+  - "\uC88B\uAE30\uB294 \uBB50\uAC00 \uC88B\uB0E5? \uB2EC\uC774 \uC774\uB807\uAC8C
+    \uD6E4\uD574\uC11C\uB294!\n\uC548 \uB4E4\uD0A4\uAC8C \uB354 \uB354 \uB354 \uC870\uC2EC\uD574\uB77C
+    \uD574-"
+  - "\uC54C\uC558\uB2E4\uD574- \uBD84\uC704\uAE30 \uC88B\uACE0, \uBB3C\uAC74\uB3C4
+    \uC88B\uACE0~! \uC774\uC81C \uC6B0\uB9B0 \uBD80\uC790\uB2E4\uD574-"
+  sceneTextBoardColors_1:
+  - {r: 0.7254902, g: 0.72156864, b: 0.8588236, a: 1}
+  - {r: 0.7254902, g: 0.72156864, b: 0.8588236, a: 1}
+  - {r: 0.7254902, g: 0.72156864, b: 0.8588236, a: 1}
+  sceneTextBoardColors_2:
+  - {r: 0.5647059, g: 0.5647059, b: 0.77647066, a: 1}
+  - {r: 0.5647059, g: 0.5647059, b: 0.77647066, a: 1}
+  - {r: 0.5647059, g: 0.5647059, b: 0.77647066, a: 1}

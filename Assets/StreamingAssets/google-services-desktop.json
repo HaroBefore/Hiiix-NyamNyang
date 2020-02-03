@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "116565550254",
+    "firebase_url": "https://nyamnyang-75039496.firebaseio.com",
+    "project_id": "nyamnyang-75039496",
+    "storage_bucket": "nyamnyang-75039496.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:116565550254:android:91eeea39d73a9b4a",
+        "android_client_info": {
+          "package_name": "com.peanut.nyang"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "116565550254-uksgqr8g2ahafurhj7ppifk5qgih9fpr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDca_hCMpm92Io8VnZi4JPNQlzzk3y1-NM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "116565550254-uksgqr8g2ahafurhj7ppifk5qgih9fpr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "116565550254-vq5dj7f9ndtt532vd4bcg9ncsalkns7t.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.peanut.nyang"
+              }
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-5724616456813938~4297429353"
+    }
+  ],
+  "configuration_version": "1"
+}

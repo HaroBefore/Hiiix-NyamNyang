@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3871193258646715152
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8494270309393928938}
+  - component: {fileID: 9023516244900844091}
+  m_Layer: 0
+  m_Name: Day20
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8494270309393928938
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3871193258646715152}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9023516244900844091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3871193258646715152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23f9d1ea2168bf840922794f5d75be11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 1
+  scenarioName: Day20
+  sceneCount: 4
+  sceneImage:
+  - {fileID: 6596035461592687981, guid: 3b70c979be5c0544fbc1152678388d7b, type: 3}
+  - {fileID: 477287067011021994, guid: 70dec5184f3077049bd8965e422c08be, type: 3}
+  - {fileID: 0}
+  - {fileID: 6596035461592687981, guid: 3b70c979be5c0544fbc1152678388d7b, type: 3}
+  sceneScripts_name:
+  - "\uC8FC\uC778\uB0E5\uC774"
+  - "\uBC84\uADF8\uB0E5\uC774"
+  - "\uBC84\uADF8\uB0E5\uC774"
+  - "\uC8FC\uC778\uB0E5\uC774"
+  sceneScripts:
+  - "\uC624\uB298\uB3C4 \uC9C0\uBD95 \uB0B4\uB824\uC549\uB294 \uC904 \uC54C\uC558\uB2E4\uB0E5!\n\uB300\uCCB4
+    \uC65C \uADF8\uB7EC\uB0E5!?"
+  - "\uCE58\uC9C1 - \uCE58\uC9C1... \uB098\uB294 \uC2DC\uC2A4\uD15C \uC624\uB958\uB85C
+    \uC5EC\uAE30...\n\uC5EC\uAE30\uC5D0 \uC624\uAC8C \uB418\uC5C8\uB2E4\uB0E5... \uCE58\uC9C1..."
+  - "\uB098\uB3C4 \uC6D0\uB79C \uB108\uD76C\uCC98\uB7FC \uC791\uC740 \uB0E5\uC774\uB85C
+    \uBC14\uB014 \uC608\uC815...\n\uCE58\uC9C0\uC9C1... \uC774\uC5C8\uC9C0\uB9CC......."
+  - "\uC5B4\uB77C\uB0E5?\n\uAC11\uC790\uAE30 \uC5B4\uB514\uB85C \uC0AC\uB77C\uC84C\uB2E4\uB0E5...?"
+  sceneTextBoardColors_1:
+  - {r: 0.7254902, g: 0.72156864, b: 0.8588236, a: 1}
+  - {r: 0.7254902, g: 0.72156864, b: 0.8588236, a: 1}
+  - {r: 0.7254902, g: 0.72156864, b: 0.8588236, a: 1}
+  - {r: 0.7254902, g: 0.72156864, b: 0.8588236, a: 1}
+  sceneTextBoardColors_2:
+  - {r: 0.5647059, g: 0.5647059, b: 0.77647066, a: 1}
+  - {r: 0.5647059, g: 0.5647059, b: 0.77647066, a: 1}
+  - {r: 0.5647059, g: 0.5647059, b: 0.77647066, a: 1}
+  - {r: 0.5647059, g: 0.5647059, b: 0.77647066, a: 1}
