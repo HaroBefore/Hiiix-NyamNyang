@@ -31,19 +31,7 @@ public class Ingredient : MonoBehaviour {
     // 재료 가격.
     [Header("재료 가격")]
     public int price;
-    // 재료 재고.
-    private int count;
-    public int Count {
-        get {
-            count = PlayerPrefs.GetInt("Ingredient_" + index + "_Count");
-            return count;
-        }
-        set {
-            if (value - count > 0) NyangCondition.instance.SellCondition(index);
-            count = value;
-            PlayerPrefs.SetInt("Ingredient_" + index + "_Count", count);
-        }
-    }
+
     // 재료 사용 가능 여부.
     private bool isAvailable;
     public bool IsAvailable {
@@ -54,13 +42,11 @@ public class Ingredient : MonoBehaviour {
         }
     }
 
-
     void Awake() {
         SetData();
     }
     
     public void SetData() {
-        Count = PlayerPrefs.GetInt("Ingredient_" + index + "_Count");
         IsAvailable = (PlayerPrefs.GetInt("Ingredient_" + index + "_isAvailable") == 1);
     }
 

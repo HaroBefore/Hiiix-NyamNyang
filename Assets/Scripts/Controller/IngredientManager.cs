@@ -26,23 +26,14 @@ public class IngredientManager : MonoBehaviour {
     void Start() {
         // 초기값 세팅.
         if (PlayerPrefs.GetInt("NyamNyangIngre") != 1049) {
-            meatDic[401].Count = 10;
             meatDic[401].IsAvailable = true;
-            meatDic[402].Count = 10;
             meatDic[402].IsAvailable = true;
-            meatDic[403].Count = 10;
             meatDic[403].IsAvailable = true;
-            powderDic[501].Count = 10;
             powderDic[501].IsAvailable = true;
-            powderDic[502].Count = 10;
             powderDic[502].IsAvailable = true;
-            powderDic[503].Count = 10;
             powderDic[503].IsAvailable = true;
-            sauceDic[601].Count = 10;
             sauceDic[601].IsAvailable = true;
-            sauceDic[602].Count = 10;
             sauceDic[602].IsAvailable = true;
-            sauceDic[603].Count = 10;
             sauceDic[603].IsAvailable = true;
             PlayerPrefs.SetInt("NyamNyangIngre", 1049);
         }

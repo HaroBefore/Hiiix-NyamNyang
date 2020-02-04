@@ -510,7 +510,6 @@
           <e p="TutorialManager.cs" t="Include" />
           <e p="UI" t="Include">
             <e p="BackgroundManager.cs" t="Include" />
-            <e p="Button_IngUpDown.cs" t="Include" />
             <e p="Popup.cs" t="Include" />
             <e p="PopupManager.cs" t="Include" />
             <e p="UIManager.cs" t="Include" />

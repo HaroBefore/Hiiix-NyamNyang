@@ -49,6 +49,7 @@ public class TimeManager : MonoBehaviour
         }
     }
 
+    [Header("플레이 타임")]
     [SerializeField] private float playTime = 90f;
     public float PlayTime => playTime;
 

@@ -80,7 +80,6 @@ public class UIManager : MonoBehaviour {
     // IngredientStore
     [Header("IngredientStore")]
     [Space(20)]
-    public GameObject ingredientShopPanel;
     public GameObject ingredientShopButton;
     public GameObject ingredientShop_meat_Menu01;
     public GameObject ingredientShop_meat_Menu02;
@@ -104,7 +103,6 @@ public class UIManager : MonoBehaviour {
     // IngredientPurchasePopup
     [Header("IngredientPurchasePopup")]
     [Space(20)]
-    public GameObject IngredientPurchasePopup;
     public GameObject IngredientPurchase_Info_Icon;
     public GameObject IngredientPurchase_WarnningSign;
     public GameObject IngredientPurchase_Price;
@@ -116,7 +114,6 @@ public class UIManager : MonoBehaviour {
     // DecoShop
     [Header("DecoShop")]
     [Space(20)]
-    public GameObject DecoShop_Panel;
     public GameObject DecoShop_Button;
     public GameObject DecoShop_Category;
     public GameObject DecoShop_Menu01;
@@ -134,7 +131,6 @@ public class UIManager : MonoBehaviour {
     // DecoPurchasePopup
     [Header("DecoPurchasePopup")]
     [Space(20)]
-    public GameObject DecoPurchasePopup;
     public GameObject DecoPurchasePopup_Info_Icon;
     public GameObject DecoPurchasePopup_WarnningSign;
     public GameObject DecoPurchasePopup_Price;
@@ -255,7 +251,7 @@ public class UIManager : MonoBehaviour {
 
     #region BuffAds
     public void OpenBuffPopup() {
-        if (ingredientShopPanel.activeSelf || DecoShop_Panel.activeSelf || BuffPopup.activeSelf) return;
+        if (BuffPopup.activeSelf) return;
 
         AudioManager.instance?.Play(AudioManager.instance.button01);
         buffButton.SetActive(false);
@@ -269,14 +265,12 @@ public class UIManager : MonoBehaviour {
         }
     }
     private void OpenBuffAvailablePopup() {
-        if (DecoShop_Panel.activeSelf) return;
         if (meatSelectPanel.activeSelf) meatSelectPanel.SetActive(false);
         if (sauceSelectPanel.activeSelf) sauceSelectPanel.SetActive(false);
 
         BuffPopup.SetActive(true);
     }
     private void OpenBuffCoolPopup() {
-        if (DecoShop_Panel.activeSelf) return;
         if (meatSelectPanel.activeSelf) meatSelectPanel.SetActive(false);
         if (sauceSelectPanel.activeSelf) sauceSelectPanel.SetActive(false);
 
@@ -356,7 +350,7 @@ public class UIManager : MonoBehaviour {
 
     // OpenMeatSelectPanel: 고기 선택 창 띄우기.
     public void OpenMeatSelectPanel() {
-        if (DecoShop_Panel.activeSelf || BuffPopup.activeSelf) return;
+        if (BuffPopup.activeSelf) return;
         audioManager?.Play(audioManager.box_open, 1f);
         // 창 띄우기.
         meatSelectPanel.SetActive(true);
@@ -387,26 +381,17 @@ public class UIManager : MonoBehaviour {
         Image image = meatSelect_Menu01.transform.GetChild(0).GetComponent<Image>();
         image.sprite = meatSelect_menu01.sprite_Icon;
         image.SetNativeSize();
-        if (meatSelect_menu01.Count <= 0) image.color = new Color(120f / 255f, 120f / 255f, 120f / 255f);
-        else image.color = new Color(1, 1, 1, 1);
+        image.color = new Color(1, 1, 1, 1);
         image = meatSelect_Menu02.transform.GetChild(0).GetComponent<Image>();
         image.sprite = meatSelect_menu02.sprite_Icon;
         image.SetNativeSize();
-        if (meatSelect_menu02.Count <= 0) image.color = new Color(120f / 255f, 120f / 255f, 120f / 255f);
-        else image.color = new Color(1, 1, 1, 1);
+        image.color = new Color(1, 1, 1, 1);
         image = meatSelect_Menu03.transform.GetChild(0).GetComponent<Image>();
         image.sprite = meatSelect_menu03.sprite_Icon;
         image.SetNativeSize();
-        if (meatSelect_menu03.Count <= 0) image.color = new Color(120f / 255f, 120f / 255f, 120f / 255f);
-        else image.color = new Color(1, 1, 1, 1);
-        SetMeatCount();
+        image.color = new Color(1, 1, 1, 1);
     }
-    private void SetMeatCount() {
-        // Count.
-        meatSelect_Menu01_Count.text = meatSelect_menu01.Count.ToString();
-        meatSelect_Menu02_Count.text = meatSelect_menu02.Count.ToString();
-        meatSelect_Menu03_Count.text = meatSelect_menu03.Count.ToString();
-    }
+    
     // Next/PrevMeatSelectPanel: 다음/이전 페이지를 보여줌.
     public void NextMeatSelectPanel() {
         if (meatSelect_listCurrentPage < meatSelect_listMaxPage)
@@ -428,20 +413,15 @@ public class UIManager : MonoBehaviour {
         if (CookManager.instance.cookFood) return;
         // 주문하고 있는 냥이가 없으면 선택 불가.
         if (!NyangManager.instance.orderNyang) return;
-        // 재료 상점이 열려있는 경우 선택할 수 없다.
-        if (ingredientShopPanel.activeSelf) return;
         // 고기 설정.
         Ingredient meat = null;
         if (index == 1) meat = meatSelect_menu01;
         else if (index == 2) meat = meatSelect_menu02;
         else meat = meatSelect_menu03;
         selectedIngredient = meat;
-        // 재고 설정.
-        if (meat.Count <= 0) {
-            OpenIngredientShopSelectPanel();
-            return;
-        }
-        meat.Count--;
+        // TODO 수량 없이 변경
+        // meat.Count--;
+        
         // 고기 선택 창을 닫는다.
         CloseMeatSelectPanel();
         // 선택한 고기를 CookManager에 넘겨줌.
@@ -451,7 +431,6 @@ public class UIManager : MonoBehaviour {
 
     // OpenSauceSelectPanel: 소스 선택 창 띄우기.
     public void OpenSauceSelectPanel() {
-        if (DecoShop_Panel.activeSelf || BuffPopup.activeSelf) return;
         audioManager?.Play(audioManager.box_open, 1f);
         // 창 띄우기.
         sauceSelectPanel.SetActive(true);
@@ -487,44 +466,29 @@ public class UIManager : MonoBehaviour {
         Image image = sauceSelect_Menu01.transform.GetChild(0).GetComponent<Image>();
         image.sprite = sauceSelect_menu01.sprite_Icon;
         image.SetNativeSize();
-        if (sauceSelect_menu01.Count <= 0) image.color = new Color(120f / 255f, 120f / 255f, 120f / 255f);
-        else image.color = new Color(1, 1, 1, 1);
+        image.color = new Color(1, 1, 1, 1);
         image = sauceSelect_Menu02.transform.GetChild(0).GetComponent<Image>();
         image.sprite = sauceSelect_menu02.sprite_Icon;
         image.SetNativeSize();
-        if (sauceSelect_menu02.Count <= 0) image.color = new Color(120f / 255f, 120f / 255f, 120f / 255f);
-        else image.color = new Color(1, 1, 1, 1);
+        image.color = new Color(1, 1, 1, 1);
         image = sauceSelect_Menu03.transform.GetChild(0).GetComponent<Image>();
         image.sprite = sauceSelect_menu03.sprite_Icon;
         image.SetNativeSize();
-        if (sauceSelect_menu03.Count <= 0) image.color = new Color(120f / 255f, 120f / 255f, 120f / 255f);
-        else image.color = new Color(1, 1, 1, 1);
+        image.color = new Color(1, 1, 1, 1);
         image = sauceSelect_Menu04.transform.GetChild(0).GetComponent<Image>();
         image.sprite = sauceSelect_menu04.sprite_Icon;
         image.SetNativeSize();
-        if (sauceSelect_menu04.Count <= 0) image.color = new Color(120f / 255f, 120f / 255f, 120f / 255f);
-        else image.color = new Color(1, 1, 1, 1);
+        image.color = new Color(1, 1, 1, 1);
         image = sauceSelect_Menu05.transform.GetChild(0).GetComponent<Image>();
         image.sprite = sauceSelect_menu05.sprite_Icon;
         image.SetNativeSize();
-        if (sauceSelect_menu05.Count <= 0) image.color = new Color(120f / 255f, 120f / 255f, 120f / 255f);
-        else image.color = new Color(1, 1, 1, 1);
+        image.color = new Color(1, 1, 1, 1);
         image = sauceSelect_Menu06.transform.GetChild(0).GetComponent<Image>();
         image.sprite = sauceSelect_menu06.sprite_Icon;
         image.SetNativeSize();
-        if (sauceSelect_menu06.Count <= 0) image.color = new Color(120f / 255f, 120f / 255f, 120f / 255f);
-        else image.color = new Color(1, 1, 1, 1);
-        SetSauceCount();
+        image.color = new Color(1, 1, 1, 1);
     }
-    private void SetSauceCount() {
-        // Count.
-        sauceSelect_Menu01_Count.text = sauceSelect_menu01.Count.ToString();
-        sauceSelect_Menu02_Count.text = sauceSelect_menu02.Count.ToString();
-        sauceSelect_Menu03_Count.text = sauceSelect_menu03.Count.ToString();
-        sauceSelect_Menu04_Count.text = sauceSelect_menu04.Count.ToString();
-        sauceSelect_Menu05_Count.text = sauceSelect_menu05.Count.ToString();
-        sauceSelect_Menu06_Count.text = sauceSelect_menu06.Count.ToString();
-    }
+    
     // Next/PrevSauceSelectPanel: 다음/이전 페이지를 보여줌.
     public void NextSauceSelectPanel() {
         if (sauceSelect_listCurrentPage < sauceSelect_listMaxPage)
@@ -542,8 +506,6 @@ public class UIManager : MonoBehaviour {
     }
     // SelectPowder/Sauce: 가루/소스 선택. (순서: 가루 > 소스)
     public void SelectPowder(int index) {
-        // 재료 상점이 열려있는 경우 선택할 수 없다.
-        if (ingredientShopPanel.activeSelf) return;
         // 주문하는 냥이가 없다면 선택할 수 없다.
         if (!NyangManager.instance.orderNyang) return;
         // 요리가 올려져있지 않다면 선택할 수 없다.
@@ -558,12 +520,6 @@ public class UIManager : MonoBehaviour {
         else if (index == 2) powder = sauceSelect_menu02;
         else powder = sauceSelect_menu03;
         selectedIngredient = powder;
-        // 재고 설정.
-        if (powder.Count <= 0) {
-            OpenIngredientShopSelectPanel();
-            return;
-        }
-        powder.Count--;
         // 선택한 가루를 cookFood에 넘겨줌.
         CookManager.instance.cookFood.SetPowder(powder);
         // 애니메이션 재생.
@@ -571,8 +527,6 @@ public class UIManager : MonoBehaviour {
         StartIngredientSelectAnimation();
     }
     public void SelectSauce(int index) {
-        // 재료 상점이 열려있는 경우 선택할 수 없다.
-        if (ingredientShopPanel.activeSelf) return;
         // 주문하는 냥이가 없다면 선택할 수 없다.
         if (!NyangManager.instance.orderNyang) return;
         // 요리가 올려져있지 않다면 선택할 수 없다.
@@ -587,12 +541,6 @@ public class UIManager : MonoBehaviour {
         else if (index == 2) sauce = sauceSelect_menu05;
         else sauce = sauceSelect_menu06;
         selectedIngredient = sauce;
-        // 재고 설정.
-        if (sauce.Count <= 0) {
-            OpenIngredientShopSelectPanel();
-            return;
-        }
-        sauce.Count--;
         // 선택한 소스를 cookFood에 넘겨줌.
         CookManager.instance.cookFood.SetSauce(sauce);
         // 애니메이션 재생.
@@ -626,570 +574,6 @@ public class UIManager : MonoBehaviour {
         }
         ingredientSelect_Animation_Object.SetActive(false);
     }
-    #endregion
-
-    #region IngredientShop
-
-    // OpenIngredientShopSelectPanel: 재료 상점 창 띄우기.
-    public void OpenIngredientShopSelectPanel() {
-        //if (meatSelectPanel.activeSelf || sauceSelectPanel.activeSelf) return;
-        if (BuffPopup.activeSelf) return;
-        audioManager?.Play(audioManager.box_open, 1f);
-        audioManager?.PauseCookMeat();
-        if (DecoShop_Panel.activeSelf) CloseDecoShopSelectPanel();
-        // 창 띄우기.
-        Main_Objects.SetActive(false);
-        Main_Scene.SetActive(false);
-        ingredientShopPanel.SetActive(true);
-        Calender.SetActive(false);
-        TipManager.instance.HideTip();
-        // 보여줄 리스트 설정.
-        ingredientShop_meatList = GetAvailableIngredientList(IngredientType.Meat);
-        ingredientShop_sauceList = GetAvailableIngredientList(IngredientType.Sauce);
-        ingredientShop_powderList = GetAvailableIngredientList(IngredientType.Powder);
-        // 페이지 설정.
-        ingredientShop_meatListCurrentPage = 0;
-        ingredientShop_sauceListCurrentPage = 0;
-        ingredientShop_meatListMaxPage = GetListMaxPage(ingredientShop_meatList);
-        ingredientShop_sauceListMaxPage = GetListMaxPage(ingredientShop_sauceList, ingredientShop_powderList, true);
-        // 페이지 보여주기.
-        ShowIngredientShopMeatList(ingredientShop_meatListCurrentPage);
-        ShowIngredientShopSauceList(ingredientShop_sauceListCurrentPage);
-        // 게임 시간 멈추기.
-        timeManager.Pause();
-        // 버튼 색깔 회색으로.
-        ingredientShopButton.transform.GetChild(0).GetComponent<Image>().color = new Color(197f / 255f, 198f / 255f, 200f / 255f, 1f);
-    }
-    // CloseIngredientShopPanel: 재료 상점 창 닫기.
-    public void CloseIngredientShopPanel() {
-        // 창 닫기.
-        audioManager?.Play(audioManager.box_close, 1f);
-        inputManager.AsdadSwitch();
-        audioManager?.ResumeCookMeat();
-        ingredientShopPanel.SetActive(false);
-        Main_Objects.SetActive(true);
-        Main_Scene.SetActive(true);
-        Calender.SetActive(true);
-        TipManager.instance.UnhideTip();
-        timeManager.Resume();
-        ingredientShopButton.transform.GetChild(0).GetComponent<Image>().color = new Color(255f / 255f, 221f / 255f, 0f / 255f, 1f);
-        OpenBoxOnCloseUI();
-    }
-    // SetIngredientShopMeat/SauceListPage: page에 해당하는 메뉴 세개 선택.
-    public void SetIngredientShopMeatListPage(int page) {
-        ingredientShop_meat_menu01 = ingredientShop_meatList[3 * page];
-        ingredientShop_meat_menu02 = ingredientShop_meatList[3 * page + 1];
-        ingredientShop_meat_menu03 = ingredientShop_meatList[3 * page + 2];
-    }
-    public void SetIngredientShopSauceListPage(int page) {
-        if (page % 2 == 0) {
-            int listPage = (int)(page * 1.5f);
-            ingredientShop_sauce_menu01 = ingredientShop_powderList[listPage];
-            ingredientShop_sauce_menu02 = ingredientShop_powderList[listPage + 1];
-            ingredientShop_sauce_menu03 = ingredientShop_powderList[listPage + 2];
-        }
-        else {
-            int listPage = (int)((page - 1) * 1.5f);
-            ingredientShop_sauce_menu01 = ingredientShop_sauceList[listPage];
-            ingredientShop_sauce_menu02 = ingredientShop_sauceList[listPage + 1];
-            ingredientShop_sauce_menu03 = ingredientShop_sauceList[listPage + 2];
-        }
-    }
-    // ShowIngredientShopMeat/SauceList: 해당 페이지를 보여줌.
-    public void ShowIngredientShopMeatList(int page) {
-        SetIngredientShopMeatListPage(page);
-        ingredientShop_meat_Menu01.transform.GetChild(0).GetChild(0).GetComponent<Image>().sprite = ingredientShop_meat_menu01.sprite_Market;
-        ingredientShop_meat_Menu01.transform.GetChild(1).GetChild(1).GetComponent<Text>().text = ingredientShop_meat_menu01.price.ToString();
-        ingredientShop_meat_Menu02.transform.GetChild(0).GetChild(0).GetComponent<Image>().sprite = ingredientShop_meat_menu02.sprite_Market;
-        ingredientShop_meat_Menu02.transform.GetChild(1).GetChild(1).GetComponent<Text>().text = ingredientShop_meat_menu02.price.ToString();
-        ingredientShop_meat_Menu03.transform.GetChild(0).GetChild(0).GetComponent<Image>().sprite = ingredientShop_meat_menu03.sprite_Market;
-        ingredientShop_meat_Menu03.transform.GetChild(1).GetChild(1).GetComponent<Text>().text = ingredientShop_meat_menu03.price.ToString();
-    }
-    public void ShowIngredientShopSauceList(int page) {
-        SetIngredientShopSauceListPage(page);
-        ingredientShop_sauce_Menu01.transform.GetChild(0).GetChild(1).GetComponent<Image>().sprite = ingredientShop_sauce_menu01.sprite_Icon;
-        ingredientShop_sauce_Menu01.transform.GetChild(0).GetChild(1).GetComponent<Image>().SetNativeSize();
-        ingredientShop_sauce_Menu01.transform.GetChild(1).GetChild(1).GetComponent<Text>().text = ingredientShop_sauce_menu01.price.ToString();
-        ingredientShop_sauce_Menu02.transform.GetChild(0).GetChild(1).GetComponent<Image>().sprite = ingredientShop_sauce_menu02.sprite_Icon;
-        ingredientShop_sauce_Menu02.transform.GetChild(0).GetChild(1).GetComponent<Image>().SetNativeSize();
-        ingredientShop_sauce_Menu02.transform.GetChild(1).GetChild(1).GetComponent<Text>().text = ingredientShop_sauce_menu02.price.ToString();
-        ingredientShop_sauce_Menu03.transform.GetChild(0).GetChild(1).GetComponent<Image>().sprite = ingredientShop_sauce_menu03.sprite_Icon;
-        ingredientShop_sauce_Menu03.transform.GetChild(0).GetChild(1).GetComponent<Image>().SetNativeSize();
-        ingredientShop_sauce_Menu03.transform.GetChild(1).GetChild(1).GetComponent<Text>().text = ingredientShop_sauce_menu03.price.ToString();
-    }
-    // Next/PrevIngredientShopMeat/SaucePanel: 다음/이전 페이지를 보여줌.
-    public void NextIngredientShopMeatPanel() {
-        if (ingredientShop_meatListCurrentPage < ingredientShop_meatListMaxPage)
-            ingredientShop_meatListCurrentPage++;
-        else ingredientShop_meatListCurrentPage = 0;
-        audioManager?.Play(audioManager.button01);
-        ShowIngredientShopMeatList(ingredientShop_meatListCurrentPage);
-    }
-    public void PrevIngredientShopMeatPanel() {
-        if (ingredientShop_meatListCurrentPage > 0)
-            ingredientShop_meatListCurrentPage--;
-        else ingredientShop_meatListCurrentPage = ingredientShop_meatListMaxPage;
-        audioManager?.Play(audioManager.button01);
-        ShowIngredientShopMeatList(ingredientShop_meatListCurrentPage);
-    }
-    public void NextIngredientShopSaucePanel() {
-        if (ingredientShop_sauceListCurrentPage < ingredientShop_sauceListMaxPage)
-            ingredientShop_sauceListCurrentPage++;
-        else ingredientShop_sauceListCurrentPage = 0;
-        audioManager?.Play(audioManager.button01);
-        ShowIngredientShopSauceList(ingredientShop_sauceListCurrentPage);
-    }
-    public void PrevIngredientShopSaucePanel() {
-        if (ingredientShop_sauceListCurrentPage > 0)
-            ingredientShop_sauceListCurrentPage--;
-        else ingredientShop_sauceListCurrentPage = ingredientShop_sauceListMaxPage;
-        audioManager?.Play(audioManager.button01);
-        ShowIngredientShopSauceList(ingredientShop_sauceListCurrentPage);
-    }
-    // SelectIngredient: 재료 선택.
-    public void SelectIngredient(int index) {
-        switch (index) {
-            case 1:
-                ShowIngredientPurchasePanel(ingredientShop_meat_menu01);
-                break;
-            case 2:
-                ShowIngredientPurchasePanel(ingredientShop_meat_menu02);
-                break;
-            case 3:
-                ShowIngredientPurchasePanel(ingredientShop_meat_menu03);
-                break;
-            case 4:
-                ShowIngredientPurchasePanel(ingredientShop_sauce_menu01);
-                break;
-            case 5:
-                ShowIngredientPurchasePanel(ingredientShop_sauce_menu02);
-                break;
-            case 6:
-                ShowIngredientPurchasePanel(ingredientShop_sauce_menu03);
-                break;
-        }
-    }
-
-    #endregion
-
-    #region IngredientPurchase
-
-    // ShowIngredientPurchasePanel: 구매창을 띄운다.
-    private void ShowIngredientPurchasePanel(Ingredient ingredient) {
-        if (ingredient.Count >= 99) return;
-        // 팝업창 띄우기.
-        audioManager?.Play(audioManager.box_open, 1f);
-        IngredientPurchasePopup.SetActive(true);
-
-        IngredientPurchase_Item = ingredient;
-        IngredientPurchase_amount = 1;
-
-        IngredientPurchase_Info_Icon.transform.GetChild(1).GetComponent<Image>().sprite = IngredientPurchase_Item.sprite_Market_Popup;
-
-        WarnningPurchasePrice();
-
-        IngredientPurchase_Amount.transform.GetChild(1).GetComponent<Text>().text = IngredientPurchase_amount.ToString();
-
-        IngredientPurchase_Price.transform.GetChild(1).GetComponent<Text>().text = IngredientPurchase_Item.price.ToString();
-    }
-    // CloseIngredientPurchasePanel: 구매창을 닫는다.
-    public void CloseIngredientPurchasePanel() {
-        audioManager?.Play(audioManager.box_close, 1f);
-        inputManager.AsdadSwitch();
-        IngredientPurchase_Item = null;
-        IngredientPurchasePopup.SetActive(false);
-    }
-    // IngredientPurchase_AmountUpDown: 구매 수량 조절.
-    public void IngredientPurchase_AmountUpDown(bool isUp, int amount = 1) {
-        // 수량 조절.
-        if (isUp) {
-            if (IngredientPurchase_Item.Count + IngredientPurchase_amount < 99)
-                IngredientPurchase_amount += amount;
-        }
-        else {
-            if (IngredientPurchase_amount == 1) return;
-            IngredientPurchase_amount -= amount;
-        }
-        // 수량 및 가격 업데이트.
-        SetIngredientPurchaseAmountPrice();
-        // 가격 비교 및 구매 버튼 활성화/비활성화.
-        WarnningPurchasePrice();
-    }
-    // WarnningPurchasePrice: 가격 비교 및 구매 버튼 활성화/비활성화.
-    private void WarnningPurchasePrice() {
-        if (IngredientPurchase_Item.price * IngredientPurchase_amount <= GoldManager.instance.CurrentGold) {
-            IngredientPurchase_PurchaseButton.SetActive(true);
-            IngredientPurchase_noPurchaseButton.SetActive(false);
-            IngredientPurchase_WarnningSign.SetActive(false);
-        }
-        else {
-            IngredientPurchase_PurchaseButton.SetActive(false);
-            IngredientPurchase_noPurchaseButton.SetActive(true);
-            IngredientPurchase_WarnningSign.SetActive(true);
-        }
-    }
-    // SetIngredientPurchaseAmountPrice: 구매량 및 가격 설정, 텍스트 갱신.
-    private void SetIngredientPurchaseAmountPrice(int amount = 0) {
-        if (amount != 0) IngredientPurchase_amount = amount;
-        IngredientPurchase_Amount.transform.GetChild(1).GetComponent<Text>().text = IngredientPurchase_amount.ToString();
-        IngredientPurchase_Price.transform.GetChild(1).GetComponent<Text>().text = (IngredientPurchase_Item.price * IngredientPurchase_amount).ToString();
-    }
-    // PurchaseIngredient: 재료 구입.
-    public void PurchaseIngredient() {
-        audioManager?.Play(audioManager.purchase, 2.5f);
-        // 돈 차감.
-        GoldManager.instance.CurrentGold -= IngredientPurchase_Item.price * IngredientPurchase_amount;
-        // 재고 수량 증가.
-        IngredientPurchase_Item.Count += IngredientPurchase_amount;
-        // 팝업창 닫기.
-        CloseIngredientPurchasePanel();
-        // 재료 재고 새로고침.
-        SetMeatCount();
-        SetSauceCount();
-        // 재료 상자가 열려있으면 해당 재료 상자 페이지 새로고침.
-        if (meatSelectPanel.activeSelf) ShowMeatSelectList(meatSelect_listCurrentPage);
-        else if (sauceSelectPanel.activeSelf) ShowSauceSelectList(sauceSelect_listCurrentPage);
-
-        if (IngredientPurchase_amount >= 99) FindObjectOfType<AchievementManager>().Achievement_SoMuchPurchase();
-    }
-
-    #endregion
-
-    #region DecoShop
-    // OpenDecoShopSelectPanel: 데코 상점 창 띄우기.
-    public void OpenDecoShopSelectPanel() {
-        if (meatSelectPanel.activeSelf || sauceSelectPanel.activeSelf) return;
-        if (BuffPopup.activeSelf) return;
-        if (ingredientShopPanel.activeSelf) CloseIngredientShopPanel();
-        audioManager?.Play(audioManager.box_open, 1f);
-        audioManager?.PauseCookMeat();
-        // 창 띄우기.
-        Main_Objects.SetActive(false);
-        meatSelectPanel.SetActive(false);
-        sauceSelectPanel.SetActive(false);
-        AngryGuage.SetActive(false);
-        DecoShop_Panel.SetActive(true);
-        BackgroundManager.instance.SetDeco();
-        TipManager.instance.HideTip();
-
-        originDeco = new Deco[5];
-        for(int i = 0; i < 5; i++)
-            originDeco[i] = DecoManager.instance.appliedDeco[i];
-        prevDeco = new Deco[5];
-        needUndo = new bool[5];
-
-        ShowDecoCategory(DecoType.Roof, 0);
-
-        // 게임 시간 멈추기.
-        timeManager.Pause();
-        // 버튼 색깔 회색으로.
-        DecoShop_Button.transform.GetChild(0).GetComponent<Image>().color = new Color(197f / 255f, 198f / 255f, 200f / 255f, 1);
-    }
-    // CloseDecoShopSelectPanel: 데코 상점 창 닫기.
-    public void CloseDecoShopSelectPanel() {
-        // 창 닫기.
-        Main_Objects.SetActive(true);
-        /*
-        if (NyangManager.instance.orderNyang && !BossManager.instance.isBossStage) AngryGuage.SetActive(true);
-        else if (timeManager.CurrentTime >= timeManager.runtime_PM_Open) BackgroundManager.instance.SetPM();
-        else BackgroundManager.instance.SetAM();
-        */
-        if (GoldManager.instance.IsBuff) BackgroundManager.instance.SetBuff();
-        DecoShop_Panel.SetActive(false);
-        TipManager.instance.UnhideTip();
-        audioManager?.Play(audioManager.box_close, 1f);
-        audioManager?.ResumeCookMeat();
-        inputManager.AsdadSwitch();
-        // 데코 미리보기 초기화.
-        for (int i = 0; i < 5; i++) {
-            if (needUndo[i]) {
-                if (prevDeco[i]) {
-                    DecoManager.instance.ApplyDeco(prevDeco[i]);
-                }
-                else {
-                    DecoManager.instance.DeapplyDeco((DecoType)i);
-                }
-            }
-        }
-        // 게임 시간 멈추기.
-        timeManager.Pause();
-        DecoShop_Button.transform.GetChild(0).GetComponent<Image>().color = new Color(255f / 255f, 221f / 255f, 0f / 255f, 1f);
-        OpenBoxOnCloseUI();
-    }
-    // ShowDecoCategory: 해당 데코 카테고리 페이지 띄우기.
-    public void ShowDecoCategory(string category) {
-        audioManager?.Play(audioManager.button01);
-        switch (category) {
-            case "Roof": ShowDecoCategory(DecoType.Roof); break;
-            case "Stove": ShowDecoCategory(DecoType.Stove); break;
-            case "Bulb": ShowDecoCategory(DecoType.Bulb); break;
-            case "Sign": ShowDecoCategory(DecoType.Sign); break;
-            case "Accessory": ShowDecoCategory(DecoType.Accessory); break;
-        }
-    }
-    public void ShowDecoCategory(DecoType category, int page = 0) {
-        DecoShop_currentCategory = category;
-        DecoShop_ListCurrentPage = page;
-
-        GameObject currentCategory = null;
-        List<Deco> currentList = null;
-
-        for (int i = 1; i < 6; i++) DecoShop_Category.transform.GetChild(i).gameObject.GetComponent<Image>().color = Color.white;
-
-        switch (category) {
-            case DecoType.Roof:
-                currentCategory = DecoShop_Category.transform.GetChild(1).gameObject;
-                break;
-            case DecoType.Stove:
-                currentCategory = DecoShop_Category.transform.GetChild(2).gameObject;
-                break;
-            case DecoType.Bulb:
-                currentCategory = DecoShop_Category.transform.GetChild(3).gameObject;
-                break;
-            case DecoType.Sign:
-                currentCategory = DecoShop_Category.transform.GetChild(4).gameObject;
-                break;
-            case DecoType.Accessory:
-                currentCategory = DecoShop_Category.transform.GetChild(5).gameObject;
-                break;
-        }
-        currentCategory.GetComponent<Image>().color = new Color(1, 243f / 255f, 114f / 255f, 1);
-        currentList = GetAvailableDecoList(category);
-        DecoShop_ListCurrentPage = page;
-        DecoShop_ListMaxPage = GetListMaxPage(currentList);
-
-        DecoShop_menu01 = currentList[3 * page];
-        if (3 * page + 1 < currentList.Count) DecoShop_menu02 = currentList[3 * page + 1]; else DecoShop_menu02 = null;
-        if (3 * page + 2 < currentList.Count) DecoShop_menu03 = currentList[3 * page + 2]; else DecoShop_menu03 = null;
-        
-        DecoShop_Menu01.transform.GetChild(0).GetComponent<Image>().sprite = DecoShop_menu01.sprite_Icon;
-        DecoShop_Menu01.transform.GetChild(0).GetComponent<Image>().SetNativeSize();
-        DecoShop_Menu01.transform.GetChild(1).GetChild(1).gameObject.SetActive(DecoShop_menu01.IsApply);
-        if (!DecoShop_menu01.IsGet) {
-            DecoShop_Menu01.transform.GetChild(2).GetChild(0).gameObject.SetActive(true);
-            DecoShop_Menu01.transform.GetChild(2).GetChild(1).gameObject.SetActive(true);
-            DecoShop_Menu01.transform.GetChild(2).GetChild(1).GetComponent<Text>().text = DecoShop_menu01.price.ToString();
-            DecoShop_Menu01.transform.GetChild(2).GetChild(2).gameObject.SetActive(false);
-            DecoShop_Menu01.transform.GetChild(2).GetChild(3).gameObject.SetActive(false);
-        }
-        else {
-            DecoShop_Menu01.transform.GetChild(2).GetChild(0).gameObject.SetActive(false);
-            DecoShop_Menu01.transform.GetChild(2).GetChild(1).gameObject.SetActive(false);
-            DecoShop_Menu01.transform.GetChild(2).GetChild(2).gameObject.SetActive(true);
-            DecoShop_Menu01.transform.GetChild(2).GetChild(3).gameObject.SetActive(true);
-        }
-        if (DecoShop_menu02) {
-            DecoShop_Menu02.SetActive(true);
-            DecoShop_Menu02.transform.GetChild(0).GetComponent<Image>().sprite = DecoShop_menu02.sprite_Icon;
-            DecoShop_Menu02.transform.GetChild(0).GetComponent<Image>().SetNativeSize();
-            DecoShop_Menu02.transform.GetChild(1).GetChild(1).gameObject.SetActive(DecoShop_menu02.IsApply);
-            if (!DecoShop_menu02.IsGet) {
-                DecoShop_Menu02.transform.GetChild(2).GetChild(0).gameObject.SetActive(true);
-                DecoShop_Menu02.transform.GetChild(2).GetChild(1).gameObject.SetActive(true);
-                DecoShop_Menu02.transform.GetChild(2).GetChild(1).GetComponent<Text>().text = DecoShop_menu02.price.ToString();
-                DecoShop_Menu02.transform.GetChild(2).GetChild(2).gameObject.SetActive(false);
-                DecoShop_Menu02.transform.GetChild(2).GetChild(3).gameObject.SetActive(false);
-            }
-            else {
-                DecoShop_Menu02.transform.GetChild(2).GetChild(0).gameObject.SetActive(false);
-                DecoShop_Menu02.transform.GetChild(2).GetChild(1).gameObject.SetActive(false);
-                DecoShop_Menu02.transform.GetChild(2).GetChild(2).gameObject.SetActive(true);
-                DecoShop_Menu02.transform.GetChild(2).GetChild(3).gameObject.SetActive(true);
-            }
-        }
-        else
-            DecoShop_Menu02.SetActive(false);
-        if (DecoShop_menu03) {
-            DecoShop_Menu03.SetActive(true);
-            DecoShop_Menu03.transform.GetChild(0).GetComponent<Image>().sprite = DecoShop_menu03.sprite_Icon;
-            DecoShop_Menu03.transform.GetChild(0).GetComponent<Image>().SetNativeSize();
-            DecoShop_Menu03.transform.GetChild(1).GetChild(1).gameObject.SetActive(DecoShop_menu03.IsApply);
-            if (!DecoShop_menu03.IsGet) {
-                DecoShop_Menu03.transform.GetChild(2).GetChild(0).gameObject.SetActive(true);
-                DecoShop_Menu03.transform.GetChild(2).GetChild(1).gameObject.SetActive(true);
-                DecoShop_Menu03.transform.GetChild(2).GetChild(1).GetComponent<Text>().text = DecoShop_menu03.price.ToString();
-                DecoShop_Menu03.transform.GetChild(2).GetChild(2).gameObject.SetActive(false);
-                DecoShop_Menu03.transform.GetChild(2).GetChild(3).gameObject.SetActive(false);
-            }
-            else {
-                DecoShop_Menu03.transform.GetChild(2).GetChild(0).gameObject.SetActive(false);
-                DecoShop_Menu03.transform.GetChild(2).GetChild(1).gameObject.SetActive(false);
-                DecoShop_Menu03.transform.GetChild(2).GetChild(2).gameObject.SetActive(true);
-                DecoShop_Menu03.transform.GetChild(2).GetChild(3).gameObject.SetActive(true);
-            }
-        }
-        else
-            DecoShop_Menu03.SetActive(false);
-    }
-    // Next/PrevDecoShopPage: 다음/이전 페이지를 보여줌.
-    public void NextDecoShopPage() {
-        if (DecoShop_ListCurrentPage < DecoShop_ListMaxPage)
-            DecoShop_ListCurrentPage++;
-        else DecoShop_ListCurrentPage = 0;
-        audioManager?.Play(audioManager.button01);
-        ShowDecoCategory(DecoShop_currentCategory, DecoShop_ListCurrentPage);
-    }
-    public void PrevDecoShopPage() {
-        if (DecoShop_ListCurrentPage > 0)
-            DecoShop_ListCurrentPage--;
-        else DecoShop_ListCurrentPage = DecoShop_ListMaxPage;
-        audioManager?.Play(audioManager.button01);
-        ShowDecoCategory(DecoShop_currentCategory, DecoShop_ListCurrentPage);
-    }
-    // GetAvailableDecoList: 사용 가능한 데코 리스트를 받는다.
-    private List<Deco> GetAvailableDecoList(DecoType type) {
-        List<Deco> list = new List<Deco>();
-
-        Dictionary<int, Deco> dictionary = new Dictionary<int, Deco>();
-
-        switch (type) {
-            case DecoType.Roof:
-                dictionary = DecoManager.instance.roofDic;
-                break;
-            case DecoType.Stove:
-                dictionary = DecoManager.instance.stoveDic;
-                break;
-            case DecoType.Bulb:
-                dictionary = DecoManager.instance.bulbDic;
-                break;
-            case DecoType.Sign:
-                dictionary = DecoManager.instance.signDic;
-                break;
-            case DecoType.Accessory:
-                dictionary = DecoManager.instance.accessoryDic;
-                break;
-        }
-        foreach (int i in dictionary.Keys)
-            if (dictionary[i].IsAvailable)
-                list.Add(dictionary[i]);
-        return SortDecoList(list);
-    }
-    // SortDecoList: 리스트 재정렬.
-    private List<Deco> SortDecoList(List<Deco> list) {
-        List<Deco> newList = new List<Deco>();
-
-        int index = -1;
-        int min = 99999999;
-
-        while (list.Count > 0) {
-            for (int i = 0; i < list.Count; i++) {
-                if (min > list[i].price) {
-                    index = i;
-                    min = list[i].price;
-                }
-            }
-            newList.Add(list[index]);
-            list.RemoveAt(index);
-            index = -1;
-            min = 99999999;
-        }
-
-        return newList;
-    }
-    // GetListMaxPage: 데코 리스트의 마지막 페이지를 받는다.
-    public int GetListMaxPage(List<Deco> list) {
-        return Mathf.CeilToInt(list.Count / 3.0f) - 1;
-    }
-    // SelectDeco: 데코 선택.
-    public void SelectDeco(int index) {
-        switch (index) {
-            case 1:
-                if (!DecoShop_menu01.IsGet)
-                    ShowDecoPurchasePanel(DecoShop_menu01);
-                break;
-            case 2:
-                if (!DecoShop_menu02.IsGet)
-                    ShowDecoPurchasePanel(DecoShop_menu02);
-                break;
-            case 3:
-                if (!DecoShop_menu03.IsGet)
-                    ShowDecoPurchasePanel(DecoShop_menu03);
-                break;
-        }
-    }
-    // SelectDecoPreview: 데코 미리보기 선택.
-    public void SelectDecoPreview(int index) {
-        switch (index) {
-            case 1: PreviewDeco(DecoShop_menu01); break;
-            case 2: PreviewDeco(DecoShop_menu02); break;
-            case 3: PreviewDeco(DecoShop_menu03); break;
-        }
-    }
-    // PreviewDeco: 데코 미리보기.
-    public void PreviewDeco(Deco deco) {
-        int typeIndex = (int)deco.type;
-        if (deco.IsGet) {
-            // 적용.
-            audioManager?.Play(audioManager.apply_item, 1f);
-            DecoManager.instance.ApplyDeco(deco);
-            if (prevDeco[typeIndex]) prevDeco[(int)deco.type] = null;
-            needUndo[typeIndex] = false;
-            originDeco[typeIndex] = deco;
-        }
-        else {
-            //prevDeco[(int)deco.type] = DecoManager.instance.appliedDeco[(int)deco.type];
-            audioManager?.Play(audioManager.apply_item, 1f);
-            DecoManager.instance.ApplyDeco(deco);
-            prevDeco[typeIndex] = originDeco[typeIndex];
-            needUndo[typeIndex] = true;
-        }
-        ShowDecoCategory(DecoShop_currentCategory, DecoShop_ListCurrentPage);
-    }
-    #endregion
-
-    #region DecoPurchase
-    
-    // ShowDecoPurchasePanel: 구매창을 띄운다.
-    private void ShowDecoPurchasePanel(Deco deco) {
-        audioManager?.Play(audioManager.box_open, 1f);
-        // 팝업창 띄우기.
-        DecoPurchasePopup.SetActive(true);
-
-        DecoPurchase_Item = deco;
-
-        DecoPurchasePopup_Info_Icon.transform.GetChild(1).GetComponent<Image>().sprite = DecoPurchase_Item.sprite_Icon;
-        DecoPurchasePopup_Info_Icon.transform.GetChild(1).GetComponent<Image>().SetNativeSize();
-
-        DecoWarnningPurchasePrice();
-
-        DecoPurchasePopup_Price.transform.GetChild(1).GetComponent<Text>().text = DecoPurchase_Item.price.ToString();
-        
-
-    }
-    // CloseDecoPurchasePanel: 구매창을 닫는다.
-    public void CloseDecoPurchaseDeco() {
-        audioManager?.Play(audioManager.box_close, 1f);
-        inputManager.AsdadSwitch();
-        DecoPurchase_Item = null;
-        DecoPurchasePopup.SetActive(false);
-    }
-    // DecoWarnningPurchasePrice: 가격 비교 및 구매 버튼 활성화/비활성화.
-    public void DecoWarnningPurchasePrice() {
-        if(DecoPurchase_Item.price <= GoldManager.instance.CurrentGold) {
-            DecoPurchasePopup_PurchaseButton.SetActive(true);
-            DecoPurchasePopup_noPurchaseButton.SetActive(false);
-            DecoPurchasePopup_WarnningSign.SetActive(false);
-        }
-        else {
-            DecoPurchasePopup_PurchaseButton.SetActive(false);
-            DecoPurchasePopup_noPurchaseButton.SetActive(true);
-            DecoPurchasePopup_WarnningSign.SetActive(true);
-        }
-    }
-    // PurchaseDeco: 재료 구입.
-    public void PurchaseDeco() {
-        audioManager?.Play(audioManager.purchase, 2.5f);
-        // 돈 차감.
-        GoldManager.instance.CurrentGold -= DecoPurchase_Item.price;
-        // 데코 아이템 획득.
-        DecoPurchase_Item.IsGet = true;
-        PreviewDeco(DecoPurchase_Item);
-        // 팝업창 닫기.
-        CloseDecoPurchaseDeco();
-        // 리스트 새로고침.
-        ShowDecoCategory(DecoShop_currentCategory, DecoShop_ListCurrentPage);
-    }
-
     #endregion
 
     #region MiniGame_Tanning
@@ -1238,7 +622,7 @@ public class UIManager : MonoBehaviour {
     #region NyangList
 
     public void OpenNyangListPanel() {
-        if (ingredientShopPanel.activeSelf || DecoShop_Panel.activeSelf || BuffPopup.activeSelf) return;
+        if (BuffPopup.activeSelf) return;
         audioManager?.Play(audioManager.box_open, 1f);
         audioManager?.PauseCookMeat();
 
@@ -1405,7 +789,7 @@ public class UIManager : MonoBehaviour {
     #region Option
 
     public void OpenOption() {
-        if (ingredientShopPanel.activeSelf || DecoShop_Panel.activeSelf || BuffPopup.activeSelf) return;
+        if (BuffPopup.activeSelf) return;
 
         audioManager?.Play(audioManager.box_open, 1f);
         audioManager?.PauseCookMeat();
@@ -1468,10 +852,6 @@ public class UIManager : MonoBehaviour {
     private void CloseAllUI() {
         if (meatSelectPanel.activeSelf) CloseMeatSelectPanel();
         if (sauceSelectPanel.activeSelf) CloseSauceSelectPanel();
-        if (ingredientShopPanel.activeSelf) CloseIngredientShopPanel();
-        if (IngredientPurchasePopup.activeSelf) CloseIngredientPurchasePanel();
-        if (DecoShop_Panel.activeSelf) CloseDecoShopSelectPanel();
-        if (DecoPurchasePopup.activeSelf) CloseDecoPurchaseDeco();
         if (NyangListPanel.activeSelf) CloseNyangListPanel();
         if (NyangStoryPopup.activeSelf) CloseNyangStoryPopup();
         if (OptionPanel.activeSelf) CloseOption();

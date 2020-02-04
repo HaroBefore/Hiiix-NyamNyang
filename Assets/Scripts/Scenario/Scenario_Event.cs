@@ -10,10 +10,6 @@ public class Scenario_Event : Scenario {
             IM.meatDic[404].IsAvailable = true;
             IM.meatDic[405].IsAvailable = true;
             IM.meatDic[406].IsAvailable = true;
-
-            IM.meatDic[404].Count++;
-            IM.meatDic[405].Count++;
-            IM.meatDic[406].Count++;
         }
         else if (scenarioName == "Day30_NewIngredient") {
             IngredientManager IM = IngredientManager.instance;
@@ -23,13 +19,6 @@ public class Scenario_Event : Scenario {
             IM.sauceDic[604].IsAvailable = true;
             IM.sauceDic[605].IsAvailable = true;
             IM.sauceDic[606].IsAvailable = true;
-
-            IM.powderDic[504].Count++;
-            IM.powderDic[505].Count++;
-            IM.powderDic[506].Count++;
-            IM.sauceDic[604].Count++;
-            IM.sauceDic[605].Count++;
-            IM.sauceDic[606].Count++;
         }
     }
 }
