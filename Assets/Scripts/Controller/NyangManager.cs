@@ -6,7 +6,6 @@ public enum NyangRank {
     Normal,
     Rare,
     Hidden,
-    Boss,
 }
 
 public enum NyangPosition {
@@ -107,12 +106,12 @@ public class NyangManager : MonoBehaviour {
     // SpawnNyang: 냥이 생성.
     private void SpawnNyang() {
         // 손님이 오는 시간대인지 확인.
-        if (!TimeManager.instance.isNyangable) return;
+        if (!TimeManager.Instance.isNyangable) return;
 
         // 냥이 생성 주기 처리. (대기냥이가 없으면 주기와 관계없이 0.5초 후 스폰한다.)
         if (nyangCurrentCycle < nyangSpawnCycle) {
-            if (nyangList.Count != 0) nyangCurrentCycle += TimeManager.instance.deltaTime;
-            else nyangCurrentCycle += (TimeManager.instance.deltaTime * 2 * nyangSpawnCycle);
+            if (nyangList.Count != 0) nyangCurrentCycle += TimeManager.Instance.deltaTime;
+            else nyangCurrentCycle += (TimeManager.Instance.deltaTime * 2 * nyangSpawnCycle);
             return;
         }
         // 위치 랜덤 설정.
@@ -221,7 +220,7 @@ public class NyangManager : MonoBehaviour {
         previousNyangInPositionDic[pos] = nyangInPositionDic[pos];
         nyangInPositionDic[pos] = null;
         orderNyang = null;
-        if (!TimeManager.instance.IsTutorial) AngryGuageOff();
+        if (!TimeManager.Instance.IsTutorial) AngryGuageOff();
         else TutorialManager.instance.AngryGuageOff();
     }
 
@@ -276,7 +275,7 @@ public class NyangManager : MonoBehaviour {
                 // 냥이를 앉힌다.
                 SitNyang();
                 // 분노 게이지 On.
-                if (!TimeManager.instance.IsTutorial) AngryGuageOn();
+                if (!TimeManager.Instance.IsTutorial) AngryGuageOn();
                 else TutorialManager.instance.AngryGuageOn();
             }
             // 냥이를 손님석에 앉히지 못했을 때:
@@ -300,7 +299,7 @@ public class NyangManager : MonoBehaviour {
         AngryGuage.SetActive(false);
     }
     public void SetAngryGuage(float f) {
-        AngryGuage.transform.GetChild(1).GetComponent<RectTransform>().sizeDelta = new Vector2(28, 34 + 56 * (f / TimeManager.instance.waitingTime));
+        AngryGuage.transform.GetChild(1).GetComponent<RectTransform>().sizeDelta = new Vector2(28, 34 + 56 * (f / TimeManager.Instance.waitingTime));
     }
 
     #endregion

@@ -84,7 +84,7 @@ public class TanningManager : MonoBehaviour {
         // 멈출 때까지 온도가 올라간다.
         AudioManager.instance?.PlayTanningGaugeUp();
         while (!isStopped) {
-            tanningTime += TimeManager.instance.deltaTime;
+            tanningTime += TimeManager.Instance.deltaTime;
             SetTemperatureGuage(tanningTime);
             if (tanningTime >= TanningTime) {
                 StopTanning();
@@ -116,7 +116,7 @@ public class TanningManager : MonoBehaviour {
         yield return new WaitUntil(() => switch01);
         SetReadyBox(true);
         while (!isStopped) {
-            tanningTime += TimeManager.instance.deltaTime;
+            tanningTime += TimeManager.Instance.deltaTime;
             SetTemperatureGuage(tanningTime);
             if (tanningTime >= TanningTime / 2) {
                 break;
@@ -184,7 +184,7 @@ public class TanningManager : MonoBehaviour {
         // UIManager를 통해 메인 게임으로 돌아간다.
         UIManager.instance.ChangeSceneTanningToMain();
         // 썬탠을 끝낸다.
-        TimeManager.instance.isTanning = false;
+        TimeManager.Instance.isTanning = false;
     }
 
     private void ReturnBuff(int result) {

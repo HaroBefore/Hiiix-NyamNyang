@@ -116,19 +116,15 @@ public class Nyang : MonoBehaviour {
             // 냥이가 돈을 냄.
             NyangPay(food);
             // 1.5초 뒤 냥이 퇴장. (보스냥이라면 퇴장하지 않고 카운트만 올라감.)
-            if (rank == NyangRank.Boss) { BossManager.instance.GiveNyang(); Debug.Log("Nyang.GiveNyang() -> Boss"); return; }
-            if (!(TimeManager.instance.IsTutorial)) Invoke("OutNyang", 1.5f);
+            if (!(GameManager.Instance.IsTutorial)) Invoke("OutNyang", 1.5f);
         }
     }
     public void NyangPay(CookFood food) {
         int price = food.price;
         GoldManager.instance.CurrentGold += price;
-        if (BossManager.instance.isBossStage) GoldManager.instance.IncomeBoss += price;
-        else {
-            GoldManager.instance.Income += price;
-            GoldManager.instance.IncomeMinus += (food.meat.price + food.sauce.price + food.powder.price);
-        }
-        if (!TimeManager.instance.IsTutorial)
+        GoldManager.instance.Income += price;
+        GoldManager.instance.IncomeMinus += (food.meat.price + food.sauce.price + food.powder.price);
+        if (!GameManager.Instance.IsTutorial)
             UIManager.instance.ShowNyangMoneyForSeconds(price, 1.5f);
     }
 
@@ -145,10 +141,10 @@ public class Nyang : MonoBehaviour {
 
     // OverWaitNyang: 냥이가 너무 오래 기다리면 화를 내고 가버린다.
     public void OverWaitNyang() {
-        if (TimeManager.instance.IsTutorial) return;
+        if (TimeManager.Instance.IsTutorial) return;
         if (State == NyangState.Order) {
-            if (waitingTime < TimeManager.instance.waitingTime) {
-                waitingTime += TimeManager.instance.deltaTime;
+            if (waitingTime < TimeManager.Instance.waitingTime) {
+                waitingTime += TimeManager.Instance.deltaTime;
                 NyangManager.instance.SetAngryGuage(waitingTime);
                 return;
             }

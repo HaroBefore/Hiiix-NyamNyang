@@ -191,7 +191,7 @@ public class AudioManager : MonoBehaviour {
         StartCoroutine(Play(source, grill, grill.length));
     }
     public void PlayCookMeat() {
-        cook_meat_Clip_Channel = Play(cook_meat, TimeManager.instance.cookTime);
+        cook_meat_Clip_Channel = Play(cook_meat, TimeManager.Instance.cookTime);
         cook_meat_Clip_Channel.volume *= 0.5f;
     }
     public void PauseCookMeat() {

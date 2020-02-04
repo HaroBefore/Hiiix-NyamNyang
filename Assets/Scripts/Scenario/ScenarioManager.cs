@@ -141,8 +141,8 @@ public class ScenarioManager : MonoBehaviour {
         return scenarioQueue.IsEmpty();
     }
     public void PlayScenario() {
-        TimeManager.instance.SetTime_Stop();
-        TimeManager.instance.SetGameTime_Stop();
+        TimeManager.Instance.SetTime_Stop();
+        TimeManager.Instance.SetGameTime_Stop();
         AudioManager.instance?.PlayBGM(AudioManager.instance?.background_minigame);
         SetScenario();
         lastScenarioType = currentScenario.type;
@@ -160,10 +160,9 @@ public class ScenarioManager : MonoBehaviour {
             PlayScenario();
             return;
         }
-        if (lastScenarioType == ScenarioType.Nyang) TimeManager.instance.GameStartOrContinue();
+        if (lastScenarioType == ScenarioType.Nyang) TimeManager.Instance.GameStartOrContinue();
         else {
-            TimeManager.instance.isRoulette = false;
-            TimeManager.instance.SetTime_AMOpen();
+            TimeManager.Instance.SetTime_AMOpen();
         }
 
         FadeMask.gameObject.SetActive(false);

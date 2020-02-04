@@ -42,10 +42,9 @@ public class ResultManager : MonoBehaviour {
         UIManager.instance.Main_Scene.SetActive(false);
         UIManager.instance.Main_Objects.SetActive(false);
         UIManager.instance.Main_UI.SetActive(false);
-        UIManager.instance.MiniGame_Roulette_UI.SetActive(false);
         UIManager.instance.Calender.SetActive(false);
         ResultPanel.SetActive(true);
-        dayCount.text = TimeManager.instance.Day.ToString();
+        dayCount.text = TimeManager.Instance.Day.ToString();
         SetIncomeTotal();   // AM, PM, Roulette은 각 장사가 끝나면 미리 호출하여 처리되어있게 함.
     }
     public void CloseResult() {
@@ -71,7 +70,7 @@ public class ResultManager : MonoBehaviour {
         UIManager.instance.Main_UI.SetActive(false);
         UIManager.instance.Calender.SetActive(false);
         bossResultPanel.SetActive(true);
-        dayCount_Boss.text = TimeManager.instance.Day.ToString();
+        dayCount_Boss.text = TimeManager.Instance.Day.ToString();
         SetBossIncomeTotal();
     }
     public void CloseBossResult() {
@@ -102,8 +101,7 @@ public class ResultManager : MonoBehaviour {
             if(isBoss) CloseBossResultPanel();
             else CloseResultPanel();
         }
-        TimeManager.instance.isRoulette = false;
-        TimeManager.instance.SetTime_AMOpen();
+        TimeManager.Instance.SetTime_AMOpen();
     }
     #region setIncome...
     public void SetIncome(int income) {

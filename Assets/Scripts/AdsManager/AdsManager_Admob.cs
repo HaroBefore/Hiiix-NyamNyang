@@ -105,8 +105,7 @@ public class AdsManager_Admob : MonoBehaviour {
     }
 
     private void HandleOnAdOpening(object sender, EventArgs e) {
-        timeManager.SetTime_Stop();
-        timeManager.SetGameTime_Stop();
+        timeManager.Pause();
     }
 
     private void HandleOnAdClosed(object sender, EventArgs e) {
@@ -117,8 +116,7 @@ public class AdsManager_Admob : MonoBehaviour {
     }
 
     private void HandleOnAdRewardClosed(object sender, EventArgs e) {
-        timeManager.SetTime_Go();
-        timeManager.SetGameTime_Go();
+        timeManager.Resume();
         if (!isBuffSwitch) uiManager.BuffOff();
     }
 
@@ -177,14 +175,11 @@ public class AdsManager_Admob : MonoBehaviour {
         if (ScenarioManager.instance.lastScenarioType == ScenarioType.Boss) timeManager.BossOpen();
         else timeManager.Open(true);
         if (!IsRemoveAds) TipManager.instance.ShowTip(TipType.Option);
-        timeManager.SetTime_Go();
-        timeManager.SetGameTime_Go();
+        timeManager.Resume();
         Debug.Log("ActionAfterAds END");
     }
 
     private void ActionAfterAdsReward() {
         GoldManager.instance.IsBuff = true;
-        timeManager.SetTime_Go();
-        timeManager.SetGameTime_Go();
     }
 }

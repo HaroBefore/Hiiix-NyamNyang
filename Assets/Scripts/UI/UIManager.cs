@@ -147,9 +147,6 @@ public class UIManager : MonoBehaviour {
     // MiniGame_Tanning.
     public GameObject MiniGame_Tanning_Popup;
     public GameObject MiniGame_Tanning_UI;
-    // MiniGame_Roulette
-    public GameObject MiniGame_Roulette_Popup;
-    public GameObject MiniGame_Roulette_UI;
     // NyangList
     [Header("NyangList")]
     public GameObject NyangListPanel;
@@ -1253,56 +1250,7 @@ public class UIManager : MonoBehaviour {
         timeManager.SetTime_PMOpen();
     }
     #endregion
-
-    #region MiniGame_Roulette
-    public void OpenMiniGameRoulettePopup() {
-        CloseAllUI();
-        TipManager.instance.HideTip();
-        MiniGame_Roulette_Popup.SetActive(true);
-    }
-    public void CloseMiniGameRoulettePopup() {
-        inputManager.AsdadSwitch();
-        audioManager?.Play(audioManager.button01);
-        MiniGame_Roulette_Popup.SetActive(false);
-    }
-
-    // ChangeSceneMainToRoulette: 메인 게임 -> 룰렛 게임 화면 전환 및 썬탠 게임 시작.
-    public void ChangeSceneMainToRoulette() {
-        inputManager.AsdadSwitch();
-        audioManager?.Play(audioManager.button01);
-        // 룰렛 할 수 있는 돈 없으면 못감.
-        if (GoldManager.instance.CurrentGold < RouletteManager.instance.bettingBy) return;
-
-        audioManager?.PlayBGM(audioManager.background_minigame);
-        // 메인 게임 화면 비활성화.
-        Main_Objects.SetActive(false);
-        Main_UI.SetActive(false);
-        Main_Scene.SetActive(false);
-        Calender.SetActive(false);
-        // 썬탠 게임 활성화.
-        MiniGame_Roulette_UI.SetActive(true);
-        CloseMiniGameRoulettePopup();
-        // 썬탠 게임 시작.
-        //RouletteManager.instance.GameStart();
-    }
-    // ChangeSceneRouletteToMain: 룰렛 게임 -> 메인 게임 화면 전환 및 메인 게임 재개.
-    public void ChangeSceneRouletteToResult() {
-        inputManager.AsdadSwitch();
-        audioManager?.Play(audioManager.button01);
-        TipManager.instance.UnhideTip();
-        ResultManager.instance.OpenResult();
-    }
-    public void SkipRoulette() {
-        inputManager.AsdadSwitch();
-        audioManager?.Play(audioManager.button01);
-        audioManager?.PlayBGM(audioManager.background_minigame);
-        ResultManager.instance.SetIncomeRoulette(0);
-        // 메인 게임 화면 비활성화.
-        CloseMiniGameRoulettePopup();
-        ResultManager.instance.OpenResult();
-    }
-    #endregion
-
+    
     #region NyangList
 
     public void OpenNyangListPanel() {

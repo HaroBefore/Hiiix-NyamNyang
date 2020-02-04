@@ -63,7 +63,7 @@ public class CookManager : MonoBehaviour {
             sauce = IngredientManager.instance.sauceDic[Random.Range(0, IngredientManager.instance.sauceDic.Count) + 601];
             if (sauce.IsAvailable) break;
         }
-        if (TimeManager.instance.IsTutorial) {
+        if (GameManager.Instance.IsTutorial) {
             meat = IngredientManager.instance.meatDic[401];
             powder = IngredientManager.instance.powderDic[502];
             sauce = IngredientManager.instance.sauceDic[602];
@@ -80,17 +80,12 @@ public class CookManager : MonoBehaviour {
         OpenRecipe();
     }
     public void OpenRecipe() {
-        if (BossManager.instance.isBossStage) { BossManager.instance.ShowRecipe(); return; }
-        if (!TimeManager.instance.IsTutorial)
-            UIManager.instance.RecipeOpen(orderedRecipe[0].index, orderedRecipe[1].index, orderedRecipe[2].index);
-        else
-            TutorialManager.instance.RecipeOpen(orderedRecipe[0].index, orderedRecipe[1].index, orderedRecipe[2].index);
+        UIManager.instance.RecipeOpen(orderedRecipe[0].index, orderedRecipe[1].index, orderedRecipe[2].index);
         OpenMeatBox();
     }
     public void OpenMeatBox() {
         // 고기 선택 창을 띄운다.
-        if (!TimeManager.instance.IsTutorial) UIManager.instance.OpenMeatSelectPanel();
-        else TutorialManager.instance.OpenMeatSelectPanel();
+        UIManager.instance.OpenMeatSelectPanel();
     }
 
 
@@ -99,7 +94,7 @@ public class CookManager : MonoBehaviour {
         // 스토브에 고기를 올린다.
         GameObject newFood = Instantiate(cookFoodPrefab, BorderManager.instance.stovePosition, Quaternion.identity, UIManager.instance.Main_Objects.transform);
         UIManager.instance.ResizeAndRepositionObject(newFood, false);
-        if (TimeManager.instance.IsTutorial) newFood.transform.parent = null;
+        if (GameManager.Instance.IsTutorial) newFood.transform.parent = null;
         cookFood = newFood.GetComponent<CookFood>();
         cookFood.SetMeat(meat);
         // 고기 조리 시작.
@@ -158,9 +153,9 @@ public class CookManager : MonoBehaviour {
     private void ShowCookTip() {
         if (!cookFood) return;
         if (cookFood.step > CookStep.Turn06) return;
-        if (TimeManager.instance.IsTutorial) return;
+        if (TimeManager.Instance.IsTutorial) return;
         if (CooktipTime < cooktipTime) {
-            CooktipTime += TimeManager.instance.deltaTime;
+            CooktipTime += TimeManager.Instance.deltaTime;
             return;
         }
         TipManager.instance.ShowTip(TipType.Cook);

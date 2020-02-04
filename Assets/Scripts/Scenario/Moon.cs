@@ -13,7 +13,7 @@ public class Moon : MonoBehaviour {
     }
 
     private void SetLetterMoon() {
-        int day = TimeManager.instance.Day % 15;
+        int day = TimeManager.Instance.Day % 15;
 
         if (day == 0) // 0 = 15: 보름달
             spriteRenderer.sprite = moonSprites[3];

@@ -68,7 +68,7 @@ public class TutorialManager : MonoBehaviour {
 
     public void PlayTutorial() {
         BackgroundManager.instance.SetAM();
-        TimeManager.instance.SetGameTime_Stop();
+        TimeManager.Instance.SetGameTime_Stop();
         tutorialMainScene.SetActive(true);
         MainScene.SetActive(false);
         MainUI.SetActive(false);
@@ -77,7 +77,7 @@ public class TutorialManager : MonoBehaviour {
         StartCoroutine(Tutorial());
     }
     public void PlayTanningTutorial() {
-        TimeManager.instance.SetGameTime_Stop();
+        TimeManager.Instance.SetGameTime_Stop();
         StartCoroutine(TanningTutorial());
     }
 
@@ -269,8 +269,8 @@ public class TutorialManager : MonoBehaviour {
         MainScene.SetActive(true);
         MainUI.SetActive(true);
         MainObjects.SetActive(true);
-        TimeManager.instance.IsTutorial = false;
-        TimeManager.instance.GameStartOrContinue();
+        TimeManager.Instance.IsTutorial = false;
+        TimeManager.Instance.GameStartOrContinue();
         if (tutorial) tutorial.gameObject.SetActive(false);
     }
 
@@ -711,7 +711,7 @@ public class TutorialManager : MonoBehaviour {
         AngryGuage.SetActive(false);
     }
     public void SetAngryGuage(float f) {
-        AngryGuage.transform.GetChild(1).GetComponent<RectTransform>().sizeDelta = new Vector2(28, 34 + 56 * (f / TimeManager.instance.waitingTime));
+        AngryGuage.transform.GetChild(1).GetComponent<RectTransform>().sizeDelta = new Vector2(28, 34 + 56 * (f / TimeManager.Instance.waitingTime));
     }
 
     #endregion

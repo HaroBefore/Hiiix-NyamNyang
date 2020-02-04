@@ -4,24 +4,24 @@ using UnityEngine;
 using UnityEngine.UI;
 using System;
 
-public enum TimeType {
-    Ready,
-    AMOpentime,
-    AM,
-    Breaktime,
-    PMOpenTime,
-    PM,
-    Closetime,
-}
+public class TimeManager : MonoBehaviour
+{
 
-public class TimeManager : MonoBehaviour {
+    private static TimeManager _instance;
 
-    public static TimeManager instance;
+    public static TimeManager Instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                _instance = FindObjectOfType<TimeManager>();
+            }
 
-    [Header("게임 시간 1시간 현실시간 몇초인지")]
-    // 게임 시간 1시간에 해당하는 실제 시간. (단위: 초)
-    public int aHour;
-    private float aHour_Time;
+            return _instance;
+        }
+    }
+
     // 현재 날짜.
     private int day;
     public int Day {
@@ -36,62 +36,10 @@ public class TimeManager : MonoBehaviour {
             else if (value >= 30) achievementManager.Achievement_DayCount(30);
         }
     }
-    // 현재 게임 시간. (단위: 분)
-    private int currentTime;
-    public int CurrentTime {
-        get { return currentTime; }
-        protected set {
-            currentTime = value;
-            if (!isOpen) {
-                if (value == runtime_AM_Open) {
-                    OpenReady();
-                }
-            }
-            else {
-                if (!(BossManager.instance.isBossStage)) {
-                    if (value == runtime_AM_Close) {
-                        Close();
-                    }
-                    if (value == runtime_PM_Open) {
-                        Open(false);
-                    }
-                    if (value == runtime_PM_Close) {
-                        Close();
-                    }
-                }
-            }
-            if (!(BossManager.instance.isBossStage)) {
-                if (value < runtime_AM_Open) { timeType = TimeType.Ready; }
-                else if (runtime_AM_Open == value) timeType = TimeType.AMOpentime;
-                else if (runtime_AM_Open < value && value < runtime_AM_Close) timeType = TimeType.AM;
-                else if (runtime_AM_Close <= value && value < runtime_PM_Open) timeType = TimeType.Breaktime;
-                else if (runtime_PM_Open == value) timeType = TimeType.PMOpenTime;
-                else if (runtime_PM_Open < value && value < runtime_PM_Close) timeType = TimeType.PM;
-                else timeType = TimeType.Closetime;
-            }
-            int h = (int)(currentTime / 60);
-            int m = currentTime - 60 * h;
-            if (h > 12) h -= 12;
-            UIManager.instance.Watch.transform.GetChild(1).GetComponent<Text>().text = string.Format("{0:00}:{1:00}", h, m);
-            UIManager.instance.Watch.transform.GetChild(2).GetComponent<Text>().text = (value < 720) ? "am" : "pm";
 
-            PlayerPrefs.SetInt("Time", value);
-        }
-    }
-    // 현재 게임 시간 구분.
-    public TimeType timeType { get; protected set; }
-    [Header("오전 장사 시간")]
-    // 오전 장사 시간. (단위: 분)
-    public int runtime_AM_Open;
-    public int runtime_AM_Close;
-    [Header("오후 장사 시간")]
-    // 오후 장사 시간. (단위: 분)
-    public int runtime_PM_Open;
-    public int runtime_PM_Close;
-    [Header("보스가 가는 시간")]
-    public int bossCloseTime;
     [Header("손님 대기 시간")]
     // 주문받은 손님이 대기하는 시간. (단위: 초)
+    // TODO 손님 대기 시간 세분화
     public int waitingTime;
     [Header("요리 제한 시간")]
     // 요리 제한 시간. (단위: 초)
@@ -119,36 +67,9 @@ public class TimeManager : MonoBehaviour {
 
     // 썬탠중인지 여부.
     public bool isTanning { get; set; }
-    // 룰렛중인지 여부.
-    public bool isRoulette { get; set; }
-
-
-    // 게임 내 시간 deltaTime.
-    public float deltaGameTime { get; protected set; }
-    // 시스템 시간 deltaTime.
-    public float deltaTime { get; protected set; }
-    private bool isPause;
-    private bool isGamePause;
-
+    
     // 장사 시작했는지 여부.
     private bool isOpen;
-
-    // 튜토리얼중인지 여부.
-    private bool isTutorial;
-    public bool IsTutorial {
-        get { return isTutorial; }
-        set {
-            isTutorial = value;
-            if (value) {
-                SetGameTime_Stop();
-                SetTime_Stop();
-            }
-            else {
-                SetGameTime_Go();
-                SetTime_Go();
-            }
-        }
-    }
 
     private bool daySwitch;
     private AchievementManager achievementManager;
@@ -157,7 +78,6 @@ public class TimeManager : MonoBehaviour {
     private Action<int> cbOnDayChanged;
 
     void Awake() {
-        if (!instance) instance = this;
         achievementManager = FindObjectOfType<AchievementManager>();
     }
     void Start() {
@@ -178,10 +98,7 @@ public class TimeManager : MonoBehaviour {
             Firebase.Messaging.FirebaseMessaging.SubscribeAsync("/topics/alarm");
         }
 
-        BuffTipTime = -1;
-
-
-        SetGameTime_Stop();
+        Pause();
 
         if (Day == 0) {
             BackgroundManager.instance.SetPM();
@@ -198,52 +115,30 @@ public class TimeManager : MonoBehaviour {
     }
 
     void Update() {
-        if (!isPause) deltaTime = Time.deltaTime;
-        if (!isGamePause) deltaGameTime = Time.deltaTime;
-        TimeisRunningOut();
-        TanningTime();
-        RouletteTime();
-        RandomTip();
-        BuffCooltimeRun();
+        TimeProcess();
+        //TanningTime();
+        //RandomTip();
+        //BuffCooltimeRun();
+    }
+    
+
+    public void TimeProcess()
+    {
+        
+    }
+    
+    public void Pause()
+    {
+        // TODO: PAUSE구현
     }
 
-    #region Time Pause/Resume
-    // 게임 시간 진행/정지.
-    public void SetGameTime_Go() {
-        if (currentTime == runtime_AM_Close || currentTime == runtime_PM_Close) return;
-        deltaGameTime = Time.deltaTime;
-        isGamePause = false;
-    }
-    public void SetGameTime_Stop() {
-        deltaGameTime = 0;
-        isGamePause = true;
-    }
-    // 시스템 시간 진행/정지.
-    public void SetTime_Go() {
-        deltaTime = Time.deltaTime;
-        isPause = false;
-    }
-    public void SetTime_Stop() {
-        deltaTime = 0;
-        isPause = true;
-    }
-    // TimeIsRuningOut: 게임 시간이 10분씩 흐르게 한다.
-    private void TimeisRunningOut() {
-        // 게임 시간 10분이 지날 때까지 대기.
-        if (aHour_Time < aHour / 6) {
-            aHour_Time += deltaGameTime;
-            return;
-        }
-        // 게임 시간 1시간이 흐름.
-        CurrentTime += 10;
-        // 주기 초기화.
-        aHour_Time = 0;
+    public void Resume()
+    {
+        // TODO: RESUME구현
     }
 
-    #endregion
 
     #region Setting Time
-
     // 게임 시간을 오전오픈/오후오픈 시간으로 만든다.
     public void SetTime_AMOpen() {
         isOpen = false;
@@ -277,10 +172,6 @@ public class TimeManager : MonoBehaviour {
             GameStart();
 
             PlayerPrefs.SetInt("NyamNyangTime", 1049);
-
-
-
-
         }
         else {
             int time = PlayerPrefs.GetInt("Time");
@@ -318,22 +209,6 @@ public class TimeManager : MonoBehaviour {
             isTanning = true;
         }
     }
-    // RouletteTime: 룰렛 미니게임 하러 가기.
-    private void RouletteTime() {
-        // 오후 장사가 끝난 후, 모든 손님이 갔을 때
-        if (timeType == TimeType.Closetime && NyangManager.instance.nyangList.Count == 0 && !NyangManager.instance.orderNyang && !isRoulette) {
-            // 버프 끄기.
-            GoldManager.instance.IsBuff = false;
-            // 수익 전달.
-            ResultManager.instance.SetIncome(GoldManager.instance.Income);
-            // 수익 전달.
-            ResultManager.instance.SetIncomeMinus(GoldManager.instance.IncomeMinus);
-            // 룰렛 팝업을 띄운다.
-            UIManager.instance.OpenMiniGameRoulettePopup();
-            // 룰렛 게임을 시작한다.
-            isRoulette = true;
-        }
-    }
 
     #region BuffCooltime
     private void BuffCooltimeRun() {
@@ -351,6 +226,7 @@ public class TimeManager : MonoBehaviour {
     public bool IsBuffAvailable() { return isBuffAvailable; }
     #endregion
 
+    /*
     public bool isBuffTipOn { set; get; }
     private int BuffTipTime;
     // RandomTipOn: 하루에 한 번 랜덤하게 버프팁을 띄운다.
@@ -367,6 +243,7 @@ public class TimeManager : MonoBehaviour {
         BuffTipTime = time;
         Debug.Log("BuffTip 뜨는 시간: " + BuffTipTime / 60 + ":" + (BuffTipTime - 60 * (BuffTipTime / 60)));
     }
+    
     private void RandomTip() {
         if (GoldManager.instance.IsBuff) return;
         if (isBuffTipOn) return;
@@ -375,6 +252,7 @@ public class TimeManager : MonoBehaviour {
         TipManager.instance.ShowTip(TipType.Buff);
         isBuffTipOn = true;
     }
+    */
 
     // 오픈 준비.
     private void OpenReady() {
@@ -382,12 +260,11 @@ public class TimeManager : MonoBehaviour {
         isOpen = true;
         if (daySwitch) Day++;
         // 버프 팁 타임 설정.
-        RandomTipOn();
+        //RandomTipOn();
         // 광고 주기 설정.
         if (AdsManager.instance.IncreaseCycle()) return;
         // 장사 시작.
-        if (ScenarioManager.instance.lastScenarioType == ScenarioType.Boss) BossOpen();
-        else Open(true);
+        Open(true);
         Debug.Log("OPENREADY END");
     }
     // 장사 시작.
@@ -400,7 +277,7 @@ public class TimeManager : MonoBehaviour {
         if (isAM) BackgroundManager.instance.SetAM();
         else BackgroundManager.instance.SetPM();
         // 시간 흐르기.
-        if (!isTutorial) {
+        if (!_isTutorial) {
             SetTime_Go();
             SetGameTime_Go();
         }
@@ -421,7 +298,7 @@ public class TimeManager : MonoBehaviour {
         // 배경 설정.
         BackgroundManager.instance.SetBoss();
         // 시간 흐르기.
-        if (!isTutorial) {
+        if (!_isTutorial) {
             SetTime_Go();
             SetGameTime_Go();
         }

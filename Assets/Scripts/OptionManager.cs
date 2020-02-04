@@ -134,8 +134,8 @@ public class OptionManager : MonoBehaviour {
         PlayTutorial(false);
     }
     private void PlayTutorial(bool isMain) {
-        TimeManager.instance.SetTime_Stop();
-        TimeManager.instance.SetGameTime_Stop();
+        TimeManager.Instance.SetTime_Stop();
+        TimeManager.Instance.SetGameTime_Stop();
         tutorialScene = -1;
         isTutorial = true;
         isMainTutorial = isMain;
@@ -166,8 +166,8 @@ public class OptionManager : MonoBehaviour {
     private void EndTutorial() {
         tutorial.SetActive(false);
         isTutorial = false;
-        TimeManager.instance.SetTime_Go();
-        TimeManager.instance.SetGameTime_Go();
+        TimeManager.Instance.SetTime_Go();
+        TimeManager.Instance.SetGameTime_Go();
     }
     #endregion
 

@@ -52,8 +52,7 @@ public class AdsManager : MonoBehaviour {
 
     private void ShowAds() {
         Debug.Log("SHOWADS START");
-        TimeManager.instance.SetGameTime_Stop();
-        TimeManager.instance.SetTime_Stop();
+        TimeManager.Instance.Pause();
         AdsManager_Admob.instance.ShowAd();
 
         Debug.Log("SHOWADS END");

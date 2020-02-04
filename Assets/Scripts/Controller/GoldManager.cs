@@ -52,14 +52,6 @@ public class GoldManager : MonoBehaviour {
             PlayerPrefs.SetInt("IncomePM", value);
         }
     }
-    private int incomeBoss;
-    public int IncomeBoss {
-        get { return incomeBoss; }
-        set {
-            incomeBoss = value;
-            PlayerPrefs.SetInt("IncomeBoss", value);
-        }
-    }
 
     private int currentGold;
     public int CurrentGold {
@@ -102,7 +94,6 @@ public class GoldManager : MonoBehaviour {
         CurrentGold = PlayerPrefs.GetInt("PlayerMoney");
         Income = PlayerPrefs.GetInt("IncomeAM");
         IncomeMinus = PlayerPrefs.GetInt("IncomeMinus");
-        IncomeBoss = PlayerPrefs.GetInt("IncomeBoss");
         TanningBonus = PlayerPrefs.GetFloat("TanningBonus");
     }
 
@@ -118,7 +109,7 @@ public class GoldManager : MonoBehaviour {
 
     public float getFactor() {
         // 선탠 게임 보너스.
-        float TanningBonus = (TimeManager.instance.timeType > TimeType.PMOpenTime) ? this.TanningBonus : 1;
+        //float TanningBonus = (TimeManager.Instance.timeType > TimeType.PMOpenTime) ? this.TanningBonus : 1;
         // 양심 보너스.
         float conscienceBonus = (CookManager.instance.cookFood.isRecipe) ? conscienceOfSeller : 0;
         // 버프보너스.
@@ -132,7 +123,7 @@ public class GoldManager : MonoBehaviour {
     private void BuffDurationDown() {
         if (!IsBuff) return;
         if(buffDuration < BuffDuration) {
-            buffDuration += TimeManager.instance.deltaTime;
+            buffDuration += Time.deltaTime;
             return;
         }
 
