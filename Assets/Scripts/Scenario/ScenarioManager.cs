@@ -141,8 +141,7 @@ public class ScenarioManager : MonoBehaviour {
         return scenarioQueue.IsEmpty();
     }
     public void PlayScenario() {
-        TimeManager.Instance.SetTime_Stop();
-        TimeManager.Instance.SetGameTime_Stop();
+        TimeManager.Instance.Resume();
         AudioManager.instance?.PlayBGM(AudioManager.instance?.background_minigame);
         SetScenario();
         lastScenarioType = currentScenario.type;
@@ -161,9 +160,6 @@ public class ScenarioManager : MonoBehaviour {
             return;
         }
         if (lastScenarioType == ScenarioType.Nyang) TimeManager.Instance.GameStartOrContinue();
-        else {
-            TimeManager.Instance.SetTime_AMOpen();
-        }
 
         FadeMask.gameObject.SetActive(false);
     }
@@ -195,8 +191,7 @@ public class ScenarioManager : MonoBehaviour {
         ResetScene();
         scene.SetActive(true);
         FadeMask.gameObject.SetActive(false);
-        if (ResultManager.instance.isBoss) ResultManager.instance.CloseBossResultPanel();
-        else ResultManager.instance.CloseResultPanel();
+        ResultManager.instance.CloseResultPanel();
         StartCoroutine(IPlayScenario());
     }
     private IEnumerator IPlayScenario() {

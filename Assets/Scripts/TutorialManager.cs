@@ -68,7 +68,7 @@ public class TutorialManager : MonoBehaviour {
 
     public void PlayTutorial() {
         BackgroundManager.instance.SetAM();
-        TimeManager.Instance.SetGameTime_Stop();
+        TimeManager.Instance.Pause();
         tutorialMainScene.SetActive(true);
         MainScene.SetActive(false);
         MainUI.SetActive(false);
@@ -77,7 +77,7 @@ public class TutorialManager : MonoBehaviour {
         StartCoroutine(Tutorial());
     }
     public void PlayTanningTutorial() {
-        TimeManager.Instance.SetGameTime_Stop();
+        TimeManager.Instance.Pause();
         StartCoroutine(TanningTutorial());
     }
 
@@ -269,7 +269,7 @@ public class TutorialManager : MonoBehaviour {
         MainScene.SetActive(true);
         MainUI.SetActive(true);
         MainObjects.SetActive(true);
-        TimeManager.Instance.IsTutorial = false;
+        GameManager.Instance.IsTutorial = false;
         TimeManager.Instance.GameStartOrContinue();
         if (tutorial) tutorial.gameObject.SetActive(false);
     }

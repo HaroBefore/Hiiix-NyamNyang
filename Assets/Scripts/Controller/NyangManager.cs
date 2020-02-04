@@ -105,13 +105,10 @@ public class NyangManager : MonoBehaviour {
 
     // SpawnNyang: 냥이 생성.
     private void SpawnNyang() {
-        // 손님이 오는 시간대인지 확인.
-        if (!TimeManager.Instance.isNyangable) return;
-
         // 냥이 생성 주기 처리. (대기냥이가 없으면 주기와 관계없이 0.5초 후 스폰한다.)
         if (nyangCurrentCycle < nyangSpawnCycle) {
-            if (nyangList.Count != 0) nyangCurrentCycle += TimeManager.Instance.deltaTime;
-            else nyangCurrentCycle += (TimeManager.Instance.deltaTime * 2 * nyangSpawnCycle);
+            if (nyangList.Count != 0) nyangCurrentCycle += TimeManager.DeltaTime;
+            else nyangCurrentCycle += (TimeManager.DeltaTime * 2 * nyangSpawnCycle);
             return;
         }
         // 위치 랜덤 설정.
@@ -220,7 +217,7 @@ public class NyangManager : MonoBehaviour {
         previousNyangInPositionDic[pos] = nyangInPositionDic[pos];
         nyangInPositionDic[pos] = null;
         orderNyang = null;
-        if (!TimeManager.Instance.IsTutorial) AngryGuageOff();
+        if (!GameManager.Instance.IsTutorial) AngryGuageOff();
         else TutorialManager.instance.AngryGuageOff();
     }
 
@@ -275,8 +272,7 @@ public class NyangManager : MonoBehaviour {
                 // 냥이를 앉힌다.
                 SitNyang();
                 // 분노 게이지 On.
-                if (!TimeManager.Instance.IsTutorial) AngryGuageOn();
-                else TutorialManager.instance.AngryGuageOn();
+                AngryGuageOn();
             }
             // 냥이를 손님석에 앉히지 못했을 때:
             else {

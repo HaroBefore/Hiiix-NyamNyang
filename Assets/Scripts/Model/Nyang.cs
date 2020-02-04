@@ -90,10 +90,7 @@ public class Nyang : MonoBehaviour {
         spriteRenderer = this.GetComponent<SpriteRenderer>();
         nyangCollider = this.GetComponent<Collider2D>();
     }
-    void Update() {
-        if (this.rank != NyangRank.Boss) OverWaitNyang();
-    }
-
+    
     public void SetData() {
         VisitCount = PlayerPrefs.GetInt("Nyang_" + index + "_VisitCount");
         IsCollected = (PlayerPrefs.GetInt("Nyang_" + index + "_isCollected")) == 1;
@@ -141,10 +138,10 @@ public class Nyang : MonoBehaviour {
 
     // OverWaitNyang: 냥이가 너무 오래 기다리면 화를 내고 가버린다.
     public void OverWaitNyang() {
-        if (TimeManager.Instance.IsTutorial) return;
+        if (GameManager.Instance.IsTutorial) return;
         if (State == NyangState.Order) {
             if (waitingTime < TimeManager.Instance.waitingTime) {
-                waitingTime += TimeManager.Instance.deltaTime;
+                waitingTime += TimeManager.DeltaTime;
                 NyangManager.instance.SetAngryGuage(waitingTime);
                 return;
             }

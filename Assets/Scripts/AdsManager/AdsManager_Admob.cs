@@ -171,12 +171,12 @@ public class AdsManager_Admob : MonoBehaviour {
 
     // 광고 후 처리. 광고 제거로 인해 광고를 재생하지 않으면 따로 얘를 실행시켜줌...
     private void ActionAfterAds() {
-        Debug.Log("ActionAfterAds START");
-        if (ScenarioManager.instance.lastScenarioType == ScenarioType.Boss) timeManager.BossOpen();
-        else timeManager.Open(true);
+        /*Debug.Log("ActionAfterAds START");
+        
+        timeManager.Open(true);
         if (!IsRemoveAds) TipManager.instance.ShowTip(TipType.Option);
         timeManager.Resume();
-        Debug.Log("ActionAfterAds END");
+        Debug.Log("ActionAfterAds END");*/
     }
 
     private void ActionAfterAdsReward() {

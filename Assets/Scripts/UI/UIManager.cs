@@ -220,12 +220,6 @@ public class UIManager : MonoBehaviour {
 
     // DEBUG
     private void DEBUG_UPDATE() {
-        if (Input.GetKeyDown(KeyCode.P)) {
-            timeManager.SetTime(890);
-        }
-        if (Input.GetKeyDown(KeyCode.O)) {
-            timeManager.SetTime(1190);
-        }
         if (Input.GetKeyDown(KeyCode.Space)) {
             CookManager.instance.cookFood.Cook();
         }
@@ -252,11 +246,6 @@ public class UIManager : MonoBehaviour {
         BuffNyang.SetActive(true);
     }
     public void BuffOff() {
-        if (timeManager.timeType == TimeType.PMOpenTime ||
-            timeManager.timeType == TimeType.PM ||
-            timeManager.timeType == TimeType.Closetime)
-            BackgroundManager.instance.SetPM();
-        else BackgroundManager.instance.SetAM();
         buffButton_Pushed.SetActive(false);
         buffButton.SetActive(true);
         BuffNyang.SetActive(false);
@@ -268,13 +257,11 @@ public class UIManager : MonoBehaviour {
     public void OpenBuffPopup() {
         if (ingredientShopPanel.activeSelf || DecoShop_Panel.activeSelf || BuffPopup.activeSelf) return;
 
-        if (BossManager.instance.isBossStage) return;
-
         AudioManager.instance?.Play(AudioManager.instance.button01);
         buffButton.SetActive(false);
         buffButton_Pushed.SetActive(true);
         TipManager.instance.CloseTip(TipType.Buff);
-        if (timeManager.IsBuffAvailable()) {
+        if (GameManager.Instance.IsBuffAvailable) {
             OpenBuffAvailablePopup();
         }
         else {
@@ -317,30 +304,34 @@ public class UIManager : MonoBehaviour {
     }
     #endregion
 
+    [SerializeField]
+    private Slider sliderTimer;
+
+    public void SetMaxTime(float maxTime)
+    {
+        sliderTimer.maxValue = maxTime;
+        sliderTimer.value = maxTime;
+    }
+    
+    public void OnLeftTimeChanged(float time)
+    {
+        sliderTimer.value = time;
+    }
+
     #region Recipe
 
     // Recipe
     public void RecipeOpen(int meatIndex, int powderIndex, int sauceIndex) {
-        if (BossManager.instance.isBossStage) {
-            BossManager.instance.bossRecipeBox.SetActive(true);
-        }
-        else {
-            // 레시피 창을 띄움.
-            recipePanel.SetActive(true);
-            // 레시피 이미지.
-            recipe_Meat.transform.GetComponent<SpriteRenderer>().sprite = IngredientManager.instance.meatDic[meatIndex].sprite_Icon;
-            recipe_Powder.transform.GetComponent<SpriteRenderer>().sprite = IngredientManager.instance.powderDic[powderIndex].sprite_Icon;
-            recipe_Sauce.transform.GetComponent<SpriteRenderer>().sprite = IngredientManager.instance.sauceDic[sauceIndex].sprite_Icon;
-        }
+        // 레시피 창을 띄움.
+        recipePanel.SetActive(true);
+        // 레시피 이미지.
+        recipe_Meat.transform.GetComponent<SpriteRenderer>().sprite = IngredientManager.instance.meatDic[meatIndex].sprite_Icon;
+        recipe_Powder.transform.GetComponent<SpriteRenderer>().sprite = IngredientManager.instance.powderDic[powderIndex].sprite_Icon;
+        recipe_Sauce.transform.GetComponent<SpriteRenderer>().sprite = IngredientManager.instance.sauceDic[sauceIndex].sprite_Icon;
     }
     public void RecipeClose() {
-        if (BossManager.instance.isBossStage) {
-            BossManager.instance.bossRecipeBox.SetActive(false);
-        }
-        else {
-            // 레시피 창을 닫음.
-            recipePanel.SetActive(false);
-        }
+        // 레시피 창을 닫음.
+        recipePanel.SetActive(false);
     }
 
     #endregion
@@ -649,7 +640,6 @@ public class UIManager : MonoBehaviour {
         // 창 띄우기.
         Main_Objects.SetActive(false);
         Main_Scene.SetActive(false);
-        if (BossManager.instance.isBossStage) BossManager.instance.bossScene.SetActive(false);
         ingredientShopPanel.SetActive(true);
         Calender.SetActive(false);
         TipManager.instance.HideTip();
@@ -666,8 +656,7 @@ public class UIManager : MonoBehaviour {
         ShowIngredientShopMeatList(ingredientShop_meatListCurrentPage);
         ShowIngredientShopSauceList(ingredientShop_sauceListCurrentPage);
         // 게임 시간 멈추기.
-        timeManager.SetTime_Stop();
-        timeManager.SetGameTime_Stop();
+        timeManager.Pause();
         // 버튼 색깔 회색으로.
         ingredientShopButton.transform.GetChild(0).GetComponent<Image>().color = new Color(197f / 255f, 198f / 255f, 200f / 255f, 1f);
     }
@@ -681,10 +670,8 @@ public class UIManager : MonoBehaviour {
         Main_Objects.SetActive(true);
         Main_Scene.SetActive(true);
         Calender.SetActive(true);
-        if (BossManager.instance.isBossStage) BossManager.instance.bossScene.SetActive(true);
         TipManager.instance.UnhideTip();
-        timeManager.SetTime_Go();
-        timeManager.SetGameTime_Go();
+        timeManager.Resume();
         ingredientShopButton.transform.GetChild(0).GetComponent<Image>().color = new Color(255f / 255f, 221f / 255f, 0f / 255f, 1f);
         OpenBoxOnCloseUI();
     }
@@ -881,7 +868,6 @@ public class UIManager : MonoBehaviour {
         meatSelectPanel.SetActive(false);
         sauceSelectPanel.SetActive(false);
         AngryGuage.SetActive(false);
-        if (BossManager.instance.isBossStage) BossManager.instance.bossScene.SetActive(false);
         DecoShop_Panel.SetActive(true);
         BackgroundManager.instance.SetDeco();
         TipManager.instance.HideTip();
@@ -895,8 +881,7 @@ public class UIManager : MonoBehaviour {
         ShowDecoCategory(DecoType.Roof, 0);
 
         // 게임 시간 멈추기.
-        timeManager.SetTime_Stop();
-        timeManager.SetGameTime_Stop();
+        timeManager.Pause();
         // 버튼 색깔 회색으로.
         DecoShop_Button.transform.GetChild(0).GetComponent<Image>().color = new Color(197f / 255f, 198f / 255f, 200f / 255f, 1);
     }
@@ -904,13 +889,13 @@ public class UIManager : MonoBehaviour {
     public void CloseDecoShopSelectPanel() {
         // 창 닫기.
         Main_Objects.SetActive(true);
+        /*
         if (NyangManager.instance.orderNyang && !BossManager.instance.isBossStage) AngryGuage.SetActive(true);
-        if (BossManager.instance.isBossStage) BackgroundManager.instance.SetBoss();
         else if (timeManager.CurrentTime >= timeManager.runtime_PM_Open) BackgroundManager.instance.SetPM();
         else BackgroundManager.instance.SetAM();
+        */
         if (GoldManager.instance.IsBuff) BackgroundManager.instance.SetBuff();
         DecoShop_Panel.SetActive(false);
-        if (BossManager.instance.isBossStage) BossManager.instance.bossScene.SetActive(true);
         TipManager.instance.UnhideTip();
         audioManager?.Play(audioManager.box_close, 1f);
         audioManager?.ResumeCookMeat();
@@ -927,8 +912,7 @@ public class UIManager : MonoBehaviour {
             }
         }
         // 게임 시간 멈추기.
-        timeManager.SetTime_Go();
-        timeManager.SetGameTime_Go();
+        timeManager.Pause();
         DecoShop_Button.transform.GetChild(0).GetComponent<Image>().color = new Color(255f / 255f, 221f / 255f, 0f / 255f, 1f);
         OpenBoxOnCloseUI();
     }
@@ -1247,7 +1231,7 @@ public class UIManager : MonoBehaviour {
         Main_Objects.SetActive(true);
         Calender.SetActive(true);
         // 메인 게임 시작: 오후 장사로.
-        timeManager.SetTime_PMOpen();
+        GameManager.Instance.StartMainGame(false);
     }
     #endregion
     
@@ -1263,10 +1247,6 @@ public class UIManager : MonoBehaviour {
         Main_UI.SetActive(false);
         Calender.SetActive(false);
         TipManager.instance.HideTip();
-        if (BossManager.instance.isBossStage) {
-            BackgroundManager.instance.SetSize_Default();
-            BossManager.instance.bossScene.SetActive(false);
-        }
         NyangListPanel.SetActive(true);
 
         LoadAndSortNyangList();
@@ -1275,8 +1255,7 @@ public class UIManager : MonoBehaviour {
         ShowNyangList(nyangList_currentPage);
 
         // 게임 시간 멈추기.
-        timeManager.SetTime_Stop();
-        timeManager.SetGameTime_Stop();
+        timeManager.Pause();
 
         // 팁 닫기.
         TipManager.instance.CloseTip(TipType.CatList);
@@ -1291,13 +1270,8 @@ public class UIManager : MonoBehaviour {
         Main_UI.SetActive(true);
         Calender.SetActive(true);
         TipManager.instance.UnhideTip();
-        if (BossManager.instance.isBossStage) {
-            BackgroundManager.instance.SetBoss();
-            BossManager.instance.bossScene.SetActive(true);
-        }
         NyangListPanel.SetActive(false);
-        timeManager.SetTime_Go();
-        timeManager.SetGameTime_Go();
+        timeManager.Resume();
         OpenBoxOnCloseUI();
     }
     // LoadAndSortNyangList: 냥이 리스트 재정렬.
@@ -1321,9 +1295,6 @@ public class UIManager : MonoBehaviour {
                     break;
                 case NyangRank.Hidden:
                     hiddenNyang.Add(nyang.index, nyang);
-                    break;
-                case NyangRank.Boss:
-                    bossNyang.Add(nyang.index, nyang);
                     break;
             }
         }
@@ -1445,11 +1416,9 @@ public class UIManager : MonoBehaviour {
         meatSelectPanel.SetActive(false);
         sauceSelectPanel.SetActive(false);
         Calender.SetActive(false);
-        if (BossManager.instance.isBossStage) BossManager.instance.bossScene.SetActive(false);
         OptionPanel.SetActive(true);
         TipManager.instance.HideTip();
-        timeManager.SetTime_Stop();
-        timeManager.SetGameTime_Stop();
+        timeManager.Pause();
         TipManager.instance.CloseTip(TipType.Option);
         OptionManager.instance.OptionReset();
     }
@@ -1457,15 +1426,13 @@ public class UIManager : MonoBehaviour {
         audioManager?.Play(audioManager.box_close, 1f);
         inputManager.AsdadSwitch();
         audioManager?.ResumeCookMeat();
-
-        timeManager.SetTime_Go();
-        timeManager.SetGameTime_Go();
+        
+        timeManager.Resume();
         TipManager.instance.UnhideTip();
         Main_Objects.SetActive(true);
         Main_Scene.SetActive(true);
         Main_UI.SetActive(true);
         Calender.SetActive(true);
-        if (BossManager.instance.isBossStage) BossManager.instance.bossScene.SetActive(true);
         OptionPanel.SetActive(false);
         OpenBoxOnCloseUI();
     }
@@ -1473,20 +1440,6 @@ public class UIManager : MonoBehaviour {
 
     #region OpenBetaPopup
     
-
-    public void OpenOpenBetaPopup() {
-        OpenBetaPopup.SetActive(true);
-    }
-    public void CloseOpenBetaPopup() {
-        OpenBetaPopup.SetActive(false);
-
-        // *********** OpenBeta Popup 삭제시 TimeManager, TutorialManager에 주석처리해놓은
-        // *********** 각 함수들 주석처리를 풀어 시작하자마자 게임이 진행되도록 한다.
-        if (timeManager.IsTutorial) TutorialManager.instance.StartCoroutine(TutorialManager.instance.Tutorial());
-        else {
-            timeManager.GameStartOrContinue();
-        }
-    }
     public void OpenBeta_Feedback() {
         string mailto = "peanutjelly.dev@gmail.com";
         string subject = EscapeURL("버그 리포트 / 기타 문의사항");

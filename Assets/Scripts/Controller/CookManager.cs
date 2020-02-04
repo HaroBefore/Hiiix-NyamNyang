@@ -153,9 +153,10 @@ public class CookManager : MonoBehaviour {
     private void ShowCookTip() {
         if (!cookFood) return;
         if (cookFood.step > CookStep.Turn06) return;
-        if (TimeManager.Instance.IsTutorial) return;
-        if (CooktipTime < cooktipTime) {
-            CooktipTime += TimeManager.Instance.deltaTime;
+        if (GameManager.Instance.IsTutorial) return;
+        if (CooktipTime < cooktipTime)
+        {
+            CooktipTime += TimeManager.DeltaTime;
             return;
         }
         TipManager.instance.ShowTip(TipType.Cook);

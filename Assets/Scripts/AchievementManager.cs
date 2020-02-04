@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -35,6 +36,11 @@ public class AchievementManager : MonoBehaviour {
 #elif UNITY_IOS
                 GameCenterPlatform.ShowDefaultAchievementCompletionBanner(true);
 #endif
+    }
+
+    private void OnDayChanged(object sender, TimeManager.EventDayChangeArgs args)
+    {
+        Achievement_DayCount(args.Day);
     }
 
     public void Login() {

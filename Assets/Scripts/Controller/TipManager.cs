@@ -59,7 +59,7 @@ public class TipManager : MonoBehaviour {
         if (!isTipOn) return;
         if (!isTipTalking) return;
         if (tipTalkTicTok < TipTalkTicTok) {
-            tipTalkTicTok += TimeManager.Instance.deltaTime;
+            tipTalkTicTok += TimeManager.DeltaTime;
             return;
         }
         CloseTip();

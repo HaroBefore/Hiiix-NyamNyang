@@ -94,7 +94,7 @@ public class CookFood : MonoBehaviour {
         spriteRenderer.sortingLayerName = "OnNyang";
         spriteRenderer.sortingOrder = 3;
         // 소스 선택 창 띄우기.
-        if (!TimeManager.Instance.IsTutorial) UIManager.instance.OpenSauceSelectPanel();
+        if (!GameManager.Instance.IsTutorial) UIManager.instance.OpenSauceSelectPanel();
         else TutorialManager.instance.OpenSauceSelectPanel();
     }
     public void Cook_Powder() {
@@ -133,9 +133,9 @@ public class CookFood : MonoBehaviour {
 
     // FoodOverCook: 요리 시간이 너무 오래 지나면 고기가 탄다.
     private void FoodOverCook() {
-        if (TimeManager.Instance.IsTutorial) return;
+        if (GameManager.Instance.IsTutorial) return;
         if (cookTime < TimeManager.Instance.cookTime) {
-            cookTime += TimeManager.Instance.deltaTime;
+            cookTime += TimeManager.DeltaTime;
             return;
         }
         if (!isOvercooked) {

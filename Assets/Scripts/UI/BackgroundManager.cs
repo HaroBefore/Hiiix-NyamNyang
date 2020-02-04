@@ -125,6 +125,23 @@ public class BackgroundManager : MonoBehaviour {
         sharks.SetActive(false);
     }
 
+    public void OnBuffActivate()
+    {
+        SetBuff();
+    }
+
+    public void OnBuffDeactivate()
+    {
+        if (GameManager.Instance.TimeType == TimeType.PM)
+        {
+            SetPM();
+        }
+        else
+        {
+            SetAM();
+        }
+    }
+
 
     #region Letterbox
 
