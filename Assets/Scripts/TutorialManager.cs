@@ -103,7 +103,7 @@ public class TutorialManager : MonoBehaviour {
             shadow.transform.parent = GameObject.Find("Canvas").transform;
 
             // 냥 생성.
-            nyang = Instantiate(NyangManager.instance.nyangPrefabDic[101], NyangManager.instance.nyangPositionDic[NyangPosition.E], Quaternion.identity).GetComponent<Nyang>();
+            nyang = Instantiate(NyangManager.Instance.nyangPrefabDic[101], NyangManager.Instance.nyangPositionDic[NyangPosition.E], Quaternion.identity).GetComponent<Nyang>();
             UIManager.instance.ResizeAndRepositionObject(nyang.gameObject, false);
 
             // Scripting, Twinkling.

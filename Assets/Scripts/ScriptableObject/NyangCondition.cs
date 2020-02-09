@@ -61,6 +61,6 @@ public class NyangCondition : UnityEngine.ScriptableObject
         return (DecoManager.instance.decoDic[code1].IsGet && DecoManager.instance.decoDic[code2].IsGet);
     }
     private void CollectNyang(int index) {
-        NyangManager.instance.nyangPrefabDic[index].GetComponent<Nyang>().IsCollected = true;
+        NyangManager.Instance.nyangPrefabDic[index].GetComponent<Nyang>().IsCollected = true;
     }
 }

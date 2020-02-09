@@ -1,9 +1,13 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GoldManager : MonoBehaviour {
+public class GoldManager : MonoBehaviour
+{
+    public event Action<int> EventIncomeAmChanged = n => { };
+    public event Action<int> EventIncomePmChanged = n => { };
 
     public static GoldManager instance;
 
@@ -25,40 +29,43 @@ public class GoldManager : MonoBehaviour {
             isBuff = value;
             if (isBuff) {
                 UIManager.instance.BuffOn();
-                NyangManager.instance.BuffNyang(true);
+                NyangManager.Instance.BuffNyang(true);
                 MasterNyang.instance.Buff(true);
             }
             else {
                 UIManager.instance.BuffOff();
-                NyangManager.instance.BuffNyang(false);
+                NyangManager.Instance.BuffNyang(false);
                 MasterNyang.instance.Buff(false);
             }
         }
     }
 
-    private int incomeAM;
-    public int Income {
-        get { return incomeAM; }
+    private int _incomeAmAm;
+    public int IncomeAm {
+        get { return _incomeAmAm; }
         set {
-            incomeAM = value;
-            PlayerPrefs.SetInt("IncomeAM", value);
+            _incomeAmAm = value;
+            Debug.Log("incomeAM " + value);
+            EventIncomeAmChanged(_incomeAmAm);
         }
     }
-    private int incomePM;
-    public int IncomeMinus {
-        get { return incomePM; }
+    private int _incomePm;
+    public int IncomePm {
+        get { return _incomePm; }
         set {
-            incomePM = value;
-            PlayerPrefs.SetInt("IncomePM", value);
+            _incomePm = value;
+            Debug.Log("incomePM " + value);
+            EventIncomePmChanged(_incomePm);
         }
     }
 
-    private int currentGold;
+    private int _currentGold;
     public int CurrentGold {
-        get { return currentGold; }
+        get { return _currentGold; }
         set {
-            currentGold = value;
-           FindObjectOfType<UIManager>().Money.transform.GetChild(1).GetComponent<Text>().text = value.ToString();
+            _currentGold = value;
+            Debug.Log("CurrentGold " + value);
+            FindObjectOfType<UIManager>().Money.transform.GetChild(1).GetComponent<Text>().text = value.ToString();
             PlayerPrefs.SetInt("PlayerMoney", value);
             if (value >= 10000) achievementManager.Achievement_MoneySwag(10000);
             if (value >= 100000) achievementManager.Achievement_MoneySwag(100000);
@@ -92,8 +99,8 @@ public class GoldManager : MonoBehaviour {
         achievementManager = FindObjectOfType<AchievementManager>();
 
         CurrentGold = PlayerPrefs.GetInt("PlayerMoney");
-        Income = PlayerPrefs.GetInt("IncomeAM");
-        IncomeMinus = PlayerPrefs.GetInt("IncomeMinus");
+        IncomeAm = PlayerPrefs.GetInt("IncomeAM");
+        IncomePm = PlayerPrefs.GetInt("IncomeMinus");
         TanningBonus = PlayerPrefs.GetFloat("TanningBonus");
     }
 

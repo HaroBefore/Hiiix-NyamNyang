@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -222,7 +223,7 @@ public class UIManager : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.I)) { timeManager.Day = 15; }
 
-        if (Input.GetKeyDown(KeyCode.Z)) { NyangManager.instance.orderNyang.waitingTime += 99999; }
+        if (Input.GetKeyDown(KeyCode.Z)) { NyangManager.Instance.orderNyang.waitingTime += 99999; }
         if (Input.GetKeyDown(KeyCode.G)) GoldManager.instance.CurrentGold += 9999999;
         if (Input.GetKeyDown(KeyCode.H)) GoldManager.instance.CurrentGold -= 10000;
         if (Input.GetKeyDown(KeyCode.Keypad1)) timeManager.Day = 14;
@@ -230,12 +231,13 @@ public class UIManager : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Keypad3)) timeManager.Day = 3;
     }
     public void DEBUG_BUTTON_CAT_GOAWAY() {
-        List<Nyang> nyangList = NyangManager.instance.nyangList;
+        List<Nyang> nyangList = NyangManager.Instance.nyangList;
         for (int i = 0; i < nyangList.Count; i++) {
             Destroy(nyangList[i].gameObject);
-            NyangManager.instance.nyangList.RemoveAt(i);
+            NyangManager.Instance.nyangList.RemoveAt(i);
         }
     }
+    
     #region Buff
     public void BuffOn() {
         BackgroundManager.instance.SetBuff();
@@ -254,6 +256,7 @@ public class UIManager : MonoBehaviour {
         if (BuffPopup.activeSelf) return;
 
         AudioManager.Instance?.Play(AudioManager.Instance.button01);
+        timeManager.Pause();
         buffButton.SetActive(false);
         buffButton_Pushed.SetActive(true);
         TipManager.instance.CloseTip(TipType.Buff);
@@ -285,6 +288,7 @@ public class UIManager : MonoBehaviour {
     }
     public void CloseBuffPopup() {
         AudioManager.Instance?.Play(AudioManager.Instance.button01);
+        timeManager.Resume();
         if (BuffPopup.activeSelf) {
             BuffPopup.SetActive(false);
             buffButton_Pushed.SetActive(false);
@@ -412,7 +416,7 @@ public class UIManager : MonoBehaviour {
         // 이미 조리하고 있는 고기가 있으면 선택할 수 없다.
         if (CookManager.instance.cookFood) return;
         // 주문하고 있는 냥이가 없으면 선택 불가.
-        if (!NyangManager.instance.orderNyang) return;
+        if (!NyangManager.Instance.orderNyang) return;
         // 고기 설정.
         Ingredient meat = null;
         if (index == 1) meat = meatSelect_menu01;
@@ -507,7 +511,7 @@ public class UIManager : MonoBehaviour {
     // SelectPowder/Sauce: 가루/소스 선택. (순서: 가루 > 소스)
     public void SelectPowder(int index) {
         // 주문하는 냥이가 없다면 선택할 수 없다.
-        if (!NyangManager.instance.orderNyang) return;
+        if (!NyangManager.Instance.orderNyang) return;
         // 요리가 올려져있지 않다면 선택할 수 없다.
         if (!CookManager.instance.cookFood) return;
         // 이미 가루를 선택했다면 선택할 수 없다.
@@ -528,7 +532,7 @@ public class UIManager : MonoBehaviour {
     }
     public void SelectSauce(int index) {
         // 주문하는 냥이가 없다면 선택할 수 없다.
-        if (!NyangManager.instance.orderNyang) return;
+        if (!NyangManager.Instance.orderNyang) return;
         // 요리가 올려져있지 않다면 선택할 수 없다.
         if (!CookManager.instance.cookFood) return;
         // 이미 소스를 선택했다면 선택할 수 없다.
@@ -577,11 +581,15 @@ public class UIManager : MonoBehaviour {
     #endregion
 
     #region MiniGame_Tanning
-
+    
     // Open/CloseMiniGameTanningPopup: 썬탠 게임 하러 가는 팝업 화면 열고 닫기.
     public void OpenMiniGameTanningPopup() {
-        CloseAllUI();
+        //CloseAllUI();
+       
         MiniGame_Tanning_Popup.SetActive(true);
+        
+        SetActiveAllMainUi(false);
+        
         TipManager.instance.HideTip();
     }
     public void CloseMiniGameTanningPopup() {
@@ -593,10 +601,7 @@ public class UIManager : MonoBehaviour {
     // ChangeSceneMainToTanning: 메인 게임 -> 썬탠 게임 화면 전환 및 썬탠 게임 시작.
     public void ChangeSceneMainToTanning() {
         // 메인 게임 화면 비활성화.
-        Main_Objects.SetActive(false);
-        Main_UI.SetActive(false);
-        Main_Scene.SetActive(false);
-        Calender.SetActive(false);
+        SetActiveAllMainUi(false);
         // 썬탠 게임 활성화.
         MiniGame_Tanning_UI.SetActive(true);
         // 썬탠 게임 시작.
@@ -608,12 +613,10 @@ public class UIManager : MonoBehaviour {
         audioManager?.Play(audioManager.button01);
         TipManager.instance.UnhideTip();
         // 썬탠 게임 비활성화.
-        MiniGame_Tanning_UI.SetActive(false);
+        //MiniGame_Tanning_UI.SetActive(false);
+        
         // 메인 게임 화면 활성화.
-        Main_Scene.SetActive(true);
-        Main_UI.SetActive(true);
-        Main_Objects.SetActive(true);
-        Calender.SetActive(true);
+        SetActiveAllMainUi(true);
         // 메인 게임 시작: 오후 장사로.
         GameManager.Instance.StartMainGame(TimeType.PM);
     }
@@ -661,7 +664,7 @@ public class UIManager : MonoBehaviour {
     // LoadAndSortNyangList: 냥이 리스트 재정렬.
     private void LoadAndSortNyangList() {
         // 냥이 리스트 불러오기.
-        Dictionary<int, GameObject> nyangDic = NyangManager.instance.nyangPrefabDic;
+        Dictionary<int, GameObject> nyangDic = NyangManager.Instance.nyangPrefabDic;
 
         // 랭크별로 냥이 분류하기.
         Dictionary<int, Nyang> normalNyang = new Dictionary<int, Nyang>();
@@ -848,8 +851,9 @@ public class UIManager : MonoBehaviour {
     }
     #endregion
 
+    [Button]
     // CloseAllUI: 모든 UI 닫기.
-    private void CloseAllUI() {
+    public void CloseAllUI() {
         if (meatSelectPanel.activeSelf) CloseMeatSelectPanel();
         if (sauceSelectPanel.activeSelf) CloseSauceSelectPanel();
         if (NyangListPanel.activeSelf) CloseNyangListPanel();
@@ -857,6 +861,13 @@ public class UIManager : MonoBehaviour {
         if (OptionPanel.activeSelf) CloseOption();
     }
 
+    public void SetActiveAllMainUi(bool isActive)
+    {
+        Main_Scene.SetActive(isActive);
+        Main_Objects.SetActive(isActive);
+        Main_UI.SetActive(isActive);
+        Calender.SetActive(isActive);
+    }
 
     // GetAvailableIngredientList: 사용 가능한 재료 리스트를 받는다.
     private List<Ingredient> GetAvailableIngredientList(IngredientType type) {
@@ -899,10 +910,10 @@ public class UIManager : MonoBehaviour {
     // UI를 닫을 때, 경우에 따라 상자 오픈.
     public void OpenBoxOnCloseUI() {
         // 냥이가 없으면 패스.
-        if (!NyangManager.instance.orderNyang) return;
+        if (!NyangManager.Instance.orderNyang) return;
         // 고기가 올려져있지 않으면 고기상자를 연다.
         if (!CookManager.instance.cookFood) OpenMeatSelectPanel();
         // 고기가 다 구워져있으면 소스상자를 연다.
         else if (CookManager.instance.cookFood.step == CookStep.Turn07) OpenSauceSelectPanel();
-    }
+    } 
 }

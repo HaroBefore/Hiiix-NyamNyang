@@ -119,15 +119,15 @@ public class Nyang : MonoBehaviour {
     public void NyangPay(CookFood food) {
         int price = food.price;
         GoldManager.instance.CurrentGold += price;
-        GoldManager.instance.Income += price;
-        GoldManager.instance.IncomeMinus += (food.meat.price + food.sauce.price + food.powder.price);
+        GoldManager.instance.IncomeAm += price;
+        GoldManager.instance.IncomePm += (food.meat.price + food.sauce.price + food.powder.price);
         if (!GameManager.Instance.IsTutorial)
             UIManager.instance.ShowNyangMoneyForSeconds(price, 1.5f);
     }
 
     // Outnyang: 냥이 퇴장.
     public void OutNyang() {
-        NyangManager.instance.OutNyang();
+        NyangManager.Instance.OutNyang();
         CookManager.instance.FinishCook();
         UIManager.instance.RecipeClose();
         if (UIManager.instance.meatSelectPanel.activeSelf) UIManager.instance.CloseMeatSelectPanel();
@@ -142,7 +142,7 @@ public class Nyang : MonoBehaviour {
         if (State == NyangState.Order) {
             if (waitingTime < TimeManager.Instance.waitingTime) {
                 waitingTime += TimeManager.DeltaTime;
-                NyangManager.instance.SetAngryGuage(waitingTime);
+                NyangManager.Instance.SetAngryGuage(waitingTime);
                 return;
             }
             if (!isOverwait) {

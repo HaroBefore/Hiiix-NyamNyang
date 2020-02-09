@@ -128,7 +128,7 @@ public class CookFood : MonoBehaviour {
         InputManager.instance.UnregisterCallback_TouchTargetChanged(SellFood);
 
         // 결과를 냥이에게 전달.
-        if (NyangManager.instance.orderNyang) NyangManager.instance.orderNyang.GiveNyang(isRecipe, this);
+        if (NyangManager.Instance.orderNyang) NyangManager.Instance.orderNyang.GiveNyang(isRecipe, this);
     }
 
     // FoodOverCook: 요리 시간이 너무 오래 지나면 고기가 탄다.

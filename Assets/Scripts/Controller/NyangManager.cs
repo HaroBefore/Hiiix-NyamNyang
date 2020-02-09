@@ -22,9 +22,22 @@ public enum NyangState {
     Buff,
 }
 
-public class NyangManager : MonoBehaviour {
+public class NyangManager : MonoBehaviour
+{
+    private static NyangManager _instance;
 
-    public static NyangManager instance;
+    public static NyangManager Instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                _instance = FindObjectOfType<NyangManager>();
+            }
+
+            return _instance;
+        }
+    }
 
     [Header("Angry Guage")]
     public GameObject AngryGuage;
@@ -32,8 +45,6 @@ public class NyangManager : MonoBehaviour {
     public float nyangSpawnCycle;
     private float nyangCurrentCycle;
 
-    private bool isTitle = false;
-    
     // 현재 대기중인 냥이 리스트.
     public List<Nyang> nyangList { get; protected set; }
 
@@ -51,12 +62,6 @@ public class NyangManager : MonoBehaviour {
     public Nyang orderNyang { get; set; }
 
     private Coroutine _spawnRoutine;
-    
-    void Awake() {
-        if (!instance) instance = this;
-
-        if (SceneManager.GetActiveScene().name == "Title") isTitle = true;
-    }
 
     void Start() {
         LoadNyangPrefab();
@@ -87,11 +92,6 @@ public class NyangManager : MonoBehaviour {
 
         foreach (int i in nyangPrefabDic.Keys) nyangPrefabDic[i].GetComponent<Nyang>().SetData();
 
-        if (isTitle) return;
-        
-        // Callback 함수 등록.
-        FindObjectOfType<InputManager>().RegisterCallback_TouchTargetChanged(SelectNyang);
-        FindObjectOfType<InputManager>().RegisterCallback_TouchTargetChanged(DeselectNyang);
     }
 
     public void BeginSpawn()
@@ -273,7 +273,7 @@ public class NyangManager : MonoBehaviour {
     }
 
     // SelectNyang: InputManager의 TouchTarget이 바뀔 때, Target이 냥이면 냥이 선택.
-    private void SelectNyang(GameObject target) {
+    public void SelectNyang(GameObject target) {
         // Target이 Nyang이면 냥이 선택. (대기중인 냥이만!)
         if (!target) return;
         if (!(target.tag == "Nyang")) return;
@@ -287,7 +287,7 @@ public class NyangManager : MonoBehaviour {
         InputManager.instance.DragOn();
     }
     // DeselectNyang: 냥이가 선택된 상태이고 Target이 Null로 바뀔 때, 냥이 선택 해제.
-    private void DeselectNyang(GameObject target) {
+    public void DeselectNyang(GameObject target) {
         if(selectedNyang && !target) {
             // 냥이를 손님석에 앉혔을 때: 커서가 손님석에 위치하고 있을 때. (손님석이 비었을 때)
             if (BorderManager.instance.IsInBorder(BorderManager.instance.customerSeatBorder) && !orderNyang) {

@@ -191,7 +191,6 @@ public class ScenarioManager : MonoBehaviour {
         ResetScene();
         scene.SetActive(true);
         FadeMask.gameObject.SetActive(false);
-        ResultManager.instance.CloseResultPanel();
         StartCoroutine(IPlayScenario());
     }
     private IEnumerator IPlayScenario() {

@@ -4,8 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using System;
 
-public class TanningManager : MonoBehaviour {
+public class TanningManager : MonoBehaviour
+{
 
+    public event Action EventEndTanning = () => { };
+    
     public static TanningManager instance;
 
     // 최대 시간. 이 시간의 38.7% ~ 64.5% 가 적합.
@@ -41,7 +44,7 @@ public class TanningManager : MonoBehaviour {
     }
 
     // SetTanning: 썬탠 게임 초기 설정.
-    private void SetTanning() {
+    private void InitTanning() {
         // 캐릭터 뒷모습을 보여준다.
         SetCharacter(false);
         character.transform.GetChild(3).gameObject.SetActive(false);
@@ -75,7 +78,7 @@ public class TanningManager : MonoBehaviour {
     // Tanning: 썬탠 게임 진행.
     private IEnumerator Tanning() {
         // 초기 세팅.
-        SetTanning();
+        InitTanning();
         // 1초 뒤에,
         yield return new WaitForSeconds(1.5f);
         // 노란 말풍선 변경.
@@ -104,15 +107,22 @@ public class TanningManager : MonoBehaviour {
         SetResultBox(result);
         yield return new WaitForSeconds(2.5f);
         // 썬탠을 종료하고, 결과를 전달한다.
-        GameOver(result);
-        if (result == 2) FindObjectOfType<AchievementManager>().TanningSuccessCount();
+         GameOver(result);
+        AchievementManager achievementManager = FindObjectOfType<AchievementManager>();
+        if (achievementManager != null)
+        {
+            if (result == 2)
+            {
+                achievementManager.TanningSuccessCount();
+            }
+        }
     }
 
     // TanningTutorial: 썬탠 튜토리얼.
     private IEnumerator TanningTutorial() {
         // 초기 세팅.
         isTutorial = true;
-        SetTanning();
+        InitTanning();
         yield return new WaitUntil(() => switch01);
         SetReadyBox(true);
         while (!isStopped) {
@@ -175,6 +185,7 @@ public class TanningManager : MonoBehaviour {
         popup.SetActive(true);
         // 버프 전달.
         ReturnBuff(result);
+        EventEndTanning();
     }
 
     // ResumeGame: 팝업창에서 버튼을 눌러 오후장사를 시작.

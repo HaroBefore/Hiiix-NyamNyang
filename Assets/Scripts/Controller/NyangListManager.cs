@@ -57,7 +57,7 @@ public class NyangListManager : MonoBehaviour
     private void LoadAndSortNyangList()
     {
         // 냥이 리스트 불러오기.
-        Dictionary<int, GameObject> nyangDic = NyangManager.instance.nyangPrefabDic;
+        Dictionary<int, GameObject> nyangDic = NyangManager.Instance.nyangPrefabDic;
 
         // 랭크별로 냥이 분류하기.
         Dictionary<int, Nyang> normalNyang = new Dictionary<int, Nyang>();

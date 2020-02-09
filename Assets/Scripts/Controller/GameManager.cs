@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using System.Runtime.CompilerServices;
+using Sirenix.OdinInspector;
 using UnityEditor;
 using UnityEngine;
 
@@ -31,6 +33,7 @@ public class GameManager : MonoBehaviour
     public event Action EventBuffActivate = () => { };
     public event Action EventBuffDeactivate = () => { };
 
+    private InputManager _inputManager;
     private TimeManager _timeManager;
     private AchievementManager _achievementManager;
     private BackgroundManager _backgroundManager;
@@ -38,6 +41,9 @@ public class GameManager : MonoBehaviour
     private NyangListManager _nyangListManager;
     private NyangManager _nyangManager;
     private ResultManager _resultManager;
+    private TanningManager _tanningManager;
+    private TipManager _tipManager;
+    private GoldManager _goldManager;
 
     // 튜토리얼중인지 여부.
     private bool _isTutorial;
@@ -63,11 +69,16 @@ public class GameManager : MonoBehaviour
     private bool daySwitch;
 
     private TimeType _timeType;
-    public TimeType TimeType => _timeType;
+    public TimeType TimeType
+    {
+        get => _timeType;
+        private set => _timeType = value;
+    }
     
     // Start is called before the first frame update
     void Start()
     {
+        _inputManager = InputManager.instance;
         _timeManager = TimeManager.Instance;
         _achievementManager = FindObjectOfType<AchievementManager>();
         _backgroundManager = FindObjectOfType<BackgroundManager>();
@@ -75,6 +86,9 @@ public class GameManager : MonoBehaviour
         _nyangListManager = FindObjectOfType<NyangListManager>();
         _nyangManager = FindObjectOfType<NyangManager>();
         _resultManager = FindObjectOfType<ResultManager>();
+        _tanningManager = FindObjectOfType<TanningManager>();
+        _tipManager = FindObjectOfType<TipManager>();
+        _goldManager = FindObjectOfType<GoldManager>();
         
         SetUpEvent();
         StartCoroutine(CoStart());
@@ -131,16 +145,13 @@ public class GameManager : MonoBehaviour
         //isTanning = true;
     }
 
-    public void StopTanning()
-    {
-        
-    }
-    
+    [Button]
     public void StartMainGame(TimeType timeType) {
         // TODO 메인게임시작
         Debug.Log("OPEN START");
 
         AudioManager.Instance?.PlayBGM();
+        _timeManager.SetTime();
 
         switch (timeType)
         {
@@ -154,20 +165,36 @@ public class GameManager : MonoBehaviour
                 BackgroundManager.instance.SetPM();
                 break;
         }
+        
         _nyangManager.BeginSpawn();
         // 손님 스위치 On.
         Debug.Log("OPEN END");
     }
 
+    [Button]
     public void EndMainGame(TimeType timeType)
     {
         _nyangManager.EndSpawn();
+        switch (timeType)
+        {
+            case TimeType.AM:
+                StartTanning();
+                TimeType = TimeType.PM;
+                break;
+            case TimeType.PM:
+                _resultManager.OpenResult();
+                break;
+        }
     }
 
     public void Init()
     {
         _uiManager.SetMaxTime(_timeManager.PlayTime);
         StartMainGame(TimeType.AM);
+        
+        // Callback 함수 등록.
+        _inputManager.RegisterCallback_TouchTargetChanged(_nyangManager.SelectNyang);
+        _inputManager.RegisterCallback_TouchTargetChanged(_nyangManager.DeselectNyang);
     }
     
     public void SetUpEvent()
@@ -176,6 +203,12 @@ public class GameManager : MonoBehaviour
         EventBuffDeactivate += _backgroundManager.OnBuffDeactivate;
         _timeManager.EventLeftTimeChanged += _uiManager.OnLeftTimeChanged;
         _timeManager.EventTimeOver += OnTimeOver;
+
+        _resultManager.EventOpenResult += OnOpenResult;
+        _tanningManager.EventEndTanning += OnEndTanning;
+
+        _goldManager.EventIncomeAmChanged += _resultManager.SetIncomeAm;
+        _goldManager.EventIncomePmChanged += _resultManager.SetIncomePm;
     }
 
     public void CleanUpEvent()
@@ -183,14 +216,33 @@ public class GameManager : MonoBehaviour
         EventBuffActivate -= _backgroundManager.OnBuffActivate;
         EventBuffDeactivate -= _backgroundManager.OnBuffDeactivate;
         _timeManager.EventLeftTimeChanged -= _uiManager.OnLeftTimeChanged;
+        _timeManager.EventTimeOver -= OnTimeOver;
+
+        _resultManager.EventOpenResult -= OnOpenResult;
+        _tanningManager.EventEndTanning -= OnEndTanning;
+        
+        _goldManager.EventIncomeAmChanged -= _resultManager.SetIncomeAm;
+        _goldManager.EventIncomePmChanged -= _resultManager.SetIncomePm;
     }
 
     public bool IsBuffAvailable { get; private set; }
 
-    public void OnTimeOver()
+    private void OnTimeOver()
     {
-        EndMainGame(_timeType);
-        _resultManager.OpenResult();
+        EndMainGame(TimeType);
+    }
+
+    private void OnOpenResult()
+    {
+        _uiManager.SetActiveAllMainUi(false);
+    }
+
+    private void OnEndTanning()
+    {
+        Debug.Log("OnEndTanning");
+        _uiManager.SetActiveAllMainUi(false);
+        _uiManager.MiniGame_Tanning_UI.SetActive(false);
+        _tipManager.UnhideTip();
     }
     
     public void BuffActivate()
