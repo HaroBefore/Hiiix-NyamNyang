@@ -7,7 +7,9 @@ using System.Data;
 
 public class TimeManager : MonoBehaviour
 {
-
+    public event Action EventPause = () => { };
+    public event Action EventResume = () => { };
+    
     private static TimeManager _instance;
 
     public static TimeManager Instance
@@ -31,7 +33,7 @@ public class TimeManager : MonoBehaviour
     }
 
     public event Action<float> EventLeftTimeChanged = (f) => { };
-    public event Action EventTimeOver = () => { };
+    public event Action EventTimeOver = () => { Debug.Log("EventTimeOver"); };
 
     public static float DeltaTime => Time.deltaTime;
     
@@ -44,7 +46,7 @@ public class TimeManager : MonoBehaviour
             cbOnDayChanged?.Invoke(value);
             PlayerPrefs.SetInt("DayCount", value);
             UIManager.instance.Calender.transform.GetChild(0).GetComponent<Text>().text = day.ToString();
-            NyangCondition.instance.DayCondition(value);
+            NyangCondition.Instance.DayCondition(value);
             EventDayChanged(this, new EventDayChangeArgs {Day = day});
         }
     }
@@ -68,6 +70,13 @@ public class TimeManager : MonoBehaviour
                 EventTimeOver();
             }
         }
+    }
+
+    private bool _isPause;
+    public bool IsPause
+    {
+        get => _isPause;
+        set => _isPause = value;
     }
 
     [Header("손님 대기 시간")]
@@ -116,17 +125,28 @@ public class TimeManager : MonoBehaviour
 
     public void TimeProcess()
     {
+        if(IsPause) return;
+
+        if (Math.Abs(LeftTime) < Mathf.Epsilon)
+        {
+            return;
+        }
         LeftTime -= Time.deltaTime;
     }
     
     public void Pause()
     {
         // TODO: PAUSE구현
+        IsPause = true;
+        EventPause();
+
     }
 
     public void Resume()
     {
         // TODO: RESUME구현
+        IsPause = false;
+        EventResume();
     }
 
     public void GameStartOrContinue() {

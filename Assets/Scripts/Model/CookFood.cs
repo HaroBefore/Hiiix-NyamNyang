@@ -40,8 +40,8 @@ public class CookFood : MonoBehaviour {
 
     // SetMeat: Meat 설정 및 sprite 설정.
     public void SetMeat(Ingredient _meat) {
-        AudioManager.instance?.Play(AudioManager.instance.select_meat, 1f);
-        AudioManager.instance?.PlayCookMeat();
+        AudioManager.Instance?.Play(AudioManager.Instance.select_meat, 1f);
+        AudioManager.Instance?.PlayCookMeat();
         meat = _meat;
         spriteRenderer.sprite = meat.sprites[0];
         isRecipe = CookManager.instance.orderedRecipe[0] == meat;
@@ -49,7 +49,7 @@ public class CookFood : MonoBehaviour {
     }
     // SetPowder: Powder 설정, 조리.
     public void SetPowder(Ingredient _powder) {
-        AudioManager.instance?.Play(AudioManager.instance.select_powder, 1f);
+        AudioManager.Instance?.Play(AudioManager.Instance.select_powder, 1f);
         if (step == CookStep.Overcooked) return;
         powder = _powder;
         Cook_Powder();
@@ -58,7 +58,7 @@ public class CookFood : MonoBehaviour {
     }
     // SetSauce: Sauce 설정, 조리.
     public void SetSauce(Ingredient _sauce) {
-        AudioManager.instance?.Play(AudioManager.instance.select_sauce, 1f);
+        AudioManager.Instance?.Play(AudioManager.Instance.select_sauce, 1f);
         if (step == CookStep.Overcooked) return;
         sauce = _sauce;
         Cook_Sauce();
@@ -71,7 +71,7 @@ public class CookFood : MonoBehaviour {
         if ((int)step > 5) return;
         step++;
         spriteRenderer.sprite = meat.sprites[(int)step];
-        if (AudioManager.instance) AudioManager.instance.PlayGrill();
+        if (AudioManager.Instance) AudioManager.Instance.PlayGrill();
         if (step == CookStep.Turn07) Cook_FinishGrill();
     }
     public void Cook_FinishGrill() {
@@ -118,7 +118,7 @@ public class CookFood : MonoBehaviour {
         if (!(target.tag == "Food")) return;
         // 조리가 끝난 Food인지 확인.
         if (!(target.GetComponent<CookFood>().step == CookStep.Complete)) return;
-        AudioManager.instance?.StopCookMeat();
+        AudioManager.Instance?.StopCookMeat();
         // 요리가 레시피와 맞는지 검사.
         isRecipe = (CookManager.instance.orderedRecipe[0] == meat) && (CookManager.instance.orderedRecipe[1] == powder) && (CookManager.instance.orderedRecipe[2] == sauce);
 
@@ -139,7 +139,7 @@ public class CookFood : MonoBehaviour {
             return;
         }
         if (!isOvercooked) {
-            AudioManager.instance?.Play(AudioManager.instance.over_meat, 6f);
+            AudioManager.Instance?.Play(AudioManager.Instance.over_meat, 6f);
             // 외형 변경.
             spriteRenderer.sprite = meat.sprites[9];
             // 단계 변경.

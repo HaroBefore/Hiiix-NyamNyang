@@ -13,9 +13,23 @@ public enum FX_SOUND_TYPE : int {
     MAX
 }
 
-public class AudioManager : MonoBehaviour {
+public class AudioManager : MonoBehaviour
+{
 
-    public static AudioManager instance;
+    private static AudioManager _instance;
+
+    public static AudioManager Instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                _instance = FindObjectOfType<AudioManager>();
+            }
+
+            return _instance;
+        }
+    }
 
     #region AudioClips
     [Header("AudioClips")]
@@ -73,6 +87,7 @@ public class AudioManager : MonoBehaviour {
     private AudioSource bgmChannel;
     private AudioSource sandChannel;
     private AudioSource waveChannel;
+    [SerializeField]
     private List<AudioSource> audioSources;
 
     private AudioSource cook_meat_Clip_Channel;
@@ -82,13 +97,9 @@ public class AudioManager : MonoBehaviour {
     private int currentBGMOrder;
 
     void Awake() {
-        if (instance == null)
+        if (_instance != null)
         {
-            instance = this;
-        }
-        else
-        {
-            Destroy(this.gameObject);
+            Destroy((this.gameObject));
             return;
         }
 

@@ -29,7 +29,7 @@ public class Deco : MonoBehaviour {
             isGet = value;
             PlayerPrefs.SetInt("Deco_" + index + "_isGet", value ? 1 : 0);
 
-            if (value && IsApply) NyangCondition.instance.ItemCondition(index);
+            if (value && IsApply) NyangCondition.Instance.ItemCondition(index);
         }
     }
 
@@ -41,7 +41,7 @@ public class Deco : MonoBehaviour {
             isApply = value;
             PlayerPrefs.SetInt("Deco_" + index + "_isApply", value ? 1 : 0);
 
-            if (value && IsGet) NyangCondition.instance.ItemCondition(index);
+            if (value && IsGet) NyangCondition.Instance.ItemCondition(index);
         }
     }
 

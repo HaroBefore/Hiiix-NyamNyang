@@ -145,7 +145,7 @@ public class AdsManager_Admob : MonoBehaviour {
     }
 
     public void ShowAd_Buff() {
-        AudioManager.instance?.Play(AudioManager.instance.button01);
+        AudioManager.Instance?.Play(AudioManager.Instance.button01);
         isBuffSwitch = false;
 #if UNITY_EDITOR
         ActionAfterAdsReward();

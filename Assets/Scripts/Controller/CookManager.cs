@@ -139,8 +139,8 @@ public class CookManager : MonoBehaviour {
     // ThrowOut: 요리 버리기.
     public void ThrowOut() {
         if (cookFood) {
-            AudioManager.instance?.StopCookMeat();
-            AudioManager.instance?.Play(AudioManager.instance.trash, 1f);
+            AudioManager.Instance?.StopCookMeat();
+            AudioManager.Instance?.Play(AudioManager.Instance.trash, 1f);
             isMeatCooking = false;
             InputManager.instance.UnregisterCallback_TouchTargetChanged(cookFood.SellFood);
             Destroy(cookFood.gameObject);

@@ -210,8 +210,8 @@ public class InputManager : MonoBehaviour {
         graphicRaycaster_not3.Raycast(pointerEventData, results_no3);
         if (results.Count != 0 && results_no1.Count == 0 && results_no2.Count == 0 && results_no3.Count == 0 && !SwipeTarget && !TouchTarget) {
             GameObject obj = results[0].gameObject;
-            if (obj.name == "Background_Sand") AudioManager.instance?.PlaySand();
-            else if (obj.name == "Sea") AudioManager.instance?.PlayWave();
+            if (obj.name == "Background_Sand") AudioManager.Instance?.PlaySand();
+            else if (obj.name == "Sea") AudioManager.Instance?.PlayWave();
         }
     }
 
@@ -235,9 +235,9 @@ public class InputManager : MonoBehaviour {
         RaycastHit2D hit = Physics2D.Raycast(currentTouchPos, transform.forward, 0, TouchSoundLayerMask);
         if (hit) {
             if (hit.transform.name == "backgroundWave")
-                AudioManager.instance?.PlayWave();
+                AudioManager.Instance?.PlayWave();
             else if (hit.transform.name == "backgroundSand")
-                AudioManager.instance?.PlaySand();
+                AudioManager.Instance?.PlaySand();
         }
     }
 }

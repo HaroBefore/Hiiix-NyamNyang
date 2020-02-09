@@ -38,7 +38,7 @@ public class ResultManager : MonoBehaviour {
     }
 
     public void OpenResult() {
-        AudioManager.instance?.Play(AudioManager.instance.close, 2.5f);
+        AudioManager.Instance?.Play(AudioManager.Instance.close, 2.5f);
         UIManager.instance.Main_Scene.SetActive(false);
         UIManager.instance.Main_Objects.SetActive(false);
         UIManager.instance.Main_UI.SetActive(false);

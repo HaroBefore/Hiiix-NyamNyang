@@ -48,7 +48,7 @@ public class Nyang : MonoBehaviour {
             visitCount = value;
             PlayerPrefs.SetInt("Nyang_" + index + "_VisitCount", VisitCount);
 
-            if (value > 0) NyangCondition.instance.NyangCodeCondition(index);
+            if (value > 0) NyangCondition.Instance.NyangCodeCondition(index);
         }
     }
 
@@ -108,8 +108,8 @@ public class Nyang : MonoBehaviour {
             // 결과에 따라 냥이의 상태를 바꿈. (Happy / Angry)
             State = result ? NyangState.Happy : NyangState.Angry;
             if (GoldManager.instance.IsBuff) State = NyangState.Happy;
-            if (State == NyangState.Happy) AudioManager.instance?.PlayNyang_Happy();
-            else if (State == NyangState.Angry) AudioManager.instance?.PlayNyang_Angry();
+            if (State == NyangState.Happy) AudioManager.Instance?.PlayNyang_Happy();
+            else if (State == NyangState.Angry) AudioManager.Instance?.PlayNyang_Angry();
             // 냥이가 돈을 냄.
             NyangPay(food);
             // 1.5초 뒤 냥이 퇴장. (보스냥이라면 퇴장하지 않고 카운트만 올라감.)

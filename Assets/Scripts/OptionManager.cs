@@ -96,13 +96,13 @@ public class OptionManager : MonoBehaviour {
     }
     #region Sound
     public void Sound_On() {
-        AudioManager.instance?.SetMute(false);
+        AudioManager.Instance?.SetMute(false);
         PlayerPrefs.SetInt("Option_Sound", 1);
         isSoundOn = true;
         SetButtons();
     }
     public void Sound_Off() {
-        AudioManager.instance?.SetMute(true);
+        AudioManager.Instance?.SetMute(true);
         PlayerPrefs.SetInt("Option_Sound", 0);
         isSoundOn = false;
         SetButtons();

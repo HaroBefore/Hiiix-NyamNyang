@@ -1,13 +1,23 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+
+using UnityEditor.iOS;
 using UnityEngine;
 
-public class NyangCondition : MonoBehaviour {
+[UnityEngine.CreateAssetMenu(fileName = nameof(NyangCondition), menuName = nameof(NyangCondition), order = 0)]
+public class NyangCondition : UnityEngine.ScriptableObject
+{
+    private static NyangCondition _instance;
 
-    public static NyangCondition instance;
+    public static NyangCondition Instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                _instance = Resources.Load<NyangCondition>($"ScriptableObject/{nameof(NyangCondition)}");
+            }
 
-    void Awake() {
-        if (!instance) instance = this;
+            return _instance;
+        }
     }
 
     public void DayCondition(int day) {

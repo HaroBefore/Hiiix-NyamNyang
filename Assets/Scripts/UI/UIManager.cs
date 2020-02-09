@@ -253,7 +253,7 @@ public class UIManager : MonoBehaviour {
     public void OpenBuffPopup() {
         if (BuffPopup.activeSelf) return;
 
-        AudioManager.instance?.Play(AudioManager.instance.button01);
+        AudioManager.Instance?.Play(AudioManager.Instance.button01);
         buffButton.SetActive(false);
         buffButton_Pushed.SetActive(true);
         TipManager.instance.CloseTip(TipType.Buff);
@@ -284,7 +284,7 @@ public class UIManager : MonoBehaviour {
         }
     }
     public void CloseBuffPopup() {
-        AudioManager.instance?.Play(AudioManager.instance.button01);
+        AudioManager.Instance?.Play(AudioManager.Instance.button01);
         if (BuffPopup.activeSelf) {
             BuffPopup.SetActive(false);
             buffButton_Pushed.SetActive(false);
@@ -615,7 +615,7 @@ public class UIManager : MonoBehaviour {
         Main_Objects.SetActive(true);
         Calender.SetActive(true);
         // 메인 게임 시작: 오후 장사로.
-        GameManager.Instance.StartMainGame(false);
+        GameManager.Instance.StartMainGame(TimeType.PM);
     }
     #endregion
     

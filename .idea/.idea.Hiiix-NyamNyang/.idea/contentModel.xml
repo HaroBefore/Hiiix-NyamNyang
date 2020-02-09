@@ -47,6 +47,9 @@
             </e>
           </e>
         </e>
+        <e p="Editor" t="Include">
+          <e p="JsonString.cs" t="Include" />
+        </e>
         <e p="Firebase" t="Include">
           <e p="Editor" t="Include">
             <e p="AppDependencies.xml" t="Include" />
@@ -416,6 +419,34 @@
               <e p="AndroidManifest.xml" t="Include" />
             </e>
           </e>
+          <e p="Sirenix" t="Include">
+            <e p="Assemblies" t="Include">
+              <e p="link.xml" t="Include" />
+              <e p="Sirenix.OdinInspector.Attributes.xml" t="Include" />
+              <e p="Sirenix.OdinInspector.Editor.xml" t="Include" />
+              <e p="Sirenix.Serialization.Config.xml" t="Include" />
+              <e p="Sirenix.Utilities.Editor.xml" t="Include" />
+              <e p="Sirenix.Utilities.xml" t="Include" />
+            </e>
+            <e p="Odin Inspector" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="AssemblyImportSettingsAutomation.cs" t="Include" />
+                  <e p="BuildAOTAutomation.cs" t="Include" />
+                  <e p="EnsureOdinInspectorDefine.cs" t="Include" />
+                  <e p="FixBrokenUnityObjectWrapperDrawer.cs" t="Include" />
+                  <e p="SyncListDrawer.cs" t="Include" />
+                  <e p="SyncVarAttributeDrawer.cs" t="Include" />
+                  <e p="Vector2IntMinMaxAttributeDrawer.cs" t="Include" />
+                  <e p="VectorIntDrawers.cs" t="Include" />
+                  <e p="VectorIntPropertyResolvers.cs" t="Include" />
+                </e>
+                <e p="SerializedNetworkBehaviour.cs" t="Include" />
+                <e p="VectorIntFormatters.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Readme.txt" t="Include" />
+          </e>
           <e p="UDP" t="Include">
             <e p="Editor" t="Include">
               <e p="Analytics" t="Include">
@@ -466,9 +497,6 @@
             <e p="AdsManager_Admob.cs" t="Include" />
           </e>
           <e p="BorderManager.cs" t="Include" />
-          <e p="Condition" t="Include">
-            <e p="NyangCondition.cs" t="Include" />
-          </e>
           <e p="Controller" t="Include">
             <e p="CookManager.cs" t="Include" />
             <e p="DecoManager.cs" t="Include" />
@@ -476,6 +504,7 @@
             <e p="GoldManager.cs" t="Include" />
             <e p="IngredientManager.cs" t="Include" />
             <e p="InputManager.cs" t="Include" />
+            <e p="NyangListManager.cs" t="Include" />
             <e p="NyangManager.cs" t="Include" />
             <e p="TimeManager.cs" t="Include" />
             <e p="TipManager.cs" t="Include" />
@@ -503,9 +532,14 @@
             <e p="ScenarioManager.cs" t="Include" />
             <e p="ScenarioQueue.cs" t="Include" />
           </e>
+          <e p="ScriptableObject" t="Include">
+            <e p="NyangCondition.cs" t="Include" />
+            <e p="StringDataObject.cs" t="Include" />
+          </e>
           <e p="Sound" t="Include">
             <e p="AudioManager.cs" t="Include" />
           </e>
+          <e p="TextLocalizer.cs" t="Include" />
           <e p="TitleManager.cs" t="Include" />
           <e p="TutorialManager.cs" t="Include" />
           <e p="UI" t="Include">
@@ -519,6 +553,8 @@
       <e p="Hiiix-NyamNyang.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
+      <e p="Sirenix.OdinInspector.CompatibilityLayer.csproj" t="IncludeRecursive" />
+      <e p="Sirenix.OdinInspector.CompatibilityLayer.Editor.csproj" t="IncludeRecursive" />
       <e p="Temp/bin" t="ExcludeRecursive" />
     </e>
   </component>

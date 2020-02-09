@@ -14,7 +14,7 @@ public class TitleManager : MonoBehaviour {
     }
 
     void Start() {
-        AudioManager.instance?.PlayBGM();
+        AudioManager.Instance?.PlayBGM();
     }
     public void StartGame() {
         StartCoroutine("FadeOut");

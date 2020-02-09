@@ -142,7 +142,7 @@ public class ScenarioManager : MonoBehaviour {
     }
     public void PlayScenario() {
         TimeManager.Instance.Resume();
-        AudioManager.instance?.PlayBGM(AudioManager.instance?.background_minigame);
+        AudioManager.Instance?.PlayBGM(AudioManager.Instance?.background_minigame);
         SetScenario();
         lastScenarioType = currentScenario.type;
         PlayerPrefs.SetInt("LastScenario", (int)lastScenarioType);

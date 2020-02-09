@@ -68,7 +68,7 @@ public class TipManager : MonoBehaviour {
 
     public void ShowTip(TipType type) {
         if (!isTipOn) {
-            AudioManager.instance?.Play(AudioManager.instance.tipnyang, 1f);
+            AudioManager.Instance?.Play(AudioManager.Instance.tipnyang, 1f);
             tip.SetActive(true);
             tip.transform.GetChild(0).GetComponent<Image>().sprite = tipSprites[(int)type];
             tip.transform.GetChild(0).GetComponent<Image>().SetNativeSize();

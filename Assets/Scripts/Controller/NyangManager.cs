@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public enum NyangRank {
     Normal,
@@ -31,6 +32,8 @@ public class NyangManager : MonoBehaviour {
     public float nyangSpawnCycle;
     private float nyangCurrentCycle;
 
+    private bool isTitle = false;
+    
     // 현재 대기중인 냥이 리스트.
     public List<Nyang> nyangList { get; protected set; }
 
@@ -47,10 +50,12 @@ public class NyangManager : MonoBehaviour {
     // 손님석에 착석한 냥이. = 주문하고 있는 냥이.
     public Nyang orderNyang { get; set; }
 
+    private Coroutine _spawnRoutine;
+    
     void Awake() {
         if (!instance) instance = this;
 
-        
+        if (SceneManager.GetActiveScene().name == "Title") isTitle = true;
     }
 
     void Start() {
@@ -79,18 +84,35 @@ public class NyangManager : MonoBehaviour {
             if (nyangPrefabDic[key].GetComponent<Nyang>().rank == NyangRank.Normal)
                 nyangPrefabDic[key].GetComponent<Nyang>().IsCollected = true;
         nyangPrefabDic[701].GetComponent<Nyang>().IsCollected = true;
+
+        foreach (int i in nyangPrefabDic.Keys) nyangPrefabDic[i].GetComponent<Nyang>().SetData();
+
+        if (isTitle) return;
+        
         // Callback 함수 등록.
         FindObjectOfType<InputManager>().RegisterCallback_TouchTargetChanged(SelectNyang);
         FindObjectOfType<InputManager>().RegisterCallback_TouchTargetChanged(DeselectNyang);
-
-
-
-
-        foreach (int i in nyangPrefabDic.Keys) nyangPrefabDic[i].GetComponent<Nyang>().SetData();
     }
 
-    void Update() {
-        SpawnNyang();
+    public void BeginSpawn()
+    {
+        Debug.Log("BeginSpawn");
+        _spawnRoutine = StartCoroutine(CoSpawn());
+    }
+
+    private IEnumerator CoSpawn()
+    {
+        while (true)
+        {
+            yield return null;
+            SpawnNyang();
+        }
+    }
+
+    public void EndSpawn()
+    {
+        Debug.Log("EndSpawn");
+        StopCoroutine(_spawnRoutine);
     }
 
     private void LoadNyangPrefab() {
@@ -256,7 +278,7 @@ public class NyangManager : MonoBehaviour {
         if (!target) return;
         if (!(target.tag == "Nyang")) return;
         if (!((target.GetComponent<Nyang>().State == NyangState.Wait)||(target.GetComponent<Nyang>().State == NyangState.Buff))) return;
-        AudioManager.instance?.PlayNyang();
+        AudioManager.Instance?.PlayNyang();
         selectedNyang = target.GetComponent<Nyang>();
         
         // 냥이 상태 변경 -> Selected.

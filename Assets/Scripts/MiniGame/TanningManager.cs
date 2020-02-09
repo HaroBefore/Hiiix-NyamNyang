@@ -64,7 +64,7 @@ public class TanningManager : MonoBehaviour {
     }
     // StopTanning: Push 버튼을 누르거나, 온도가 끝까지 올라가면 호출되어 스위치를 연다.
     public void StopTanning() {
-        AudioManager.instance?.Play(AudioManager.instance.push_button, 1.75f);
+        AudioManager.Instance?.Play(AudioManager.Instance.push_button, 1.75f);
         if (isTutorial) switch07 = true;
         else isStopped = true;
         pushButton.SetActive(false);
@@ -82,7 +82,7 @@ public class TanningManager : MonoBehaviour {
         SetReadyBox(true);
         yield return new WaitForSeconds(0.2f);
         // 멈출 때까지 온도가 올라간다.
-        AudioManager.instance?.PlayTanningGaugeUp();
+        AudioManager.Instance?.PlayTanningGaugeUp();
         while (!isStopped) {
             tanningTime += TimeManager.DeltaTime;
             SetTemperatureGuage(tanningTime);
@@ -92,7 +92,7 @@ public class TanningManager : MonoBehaviour {
             }
             yield return null;
         }
-        AudioManager.instance?.StopTanningGaugeUp();
+        AudioManager.Instance?.StopTanningGaugeUp();
         // 결과를 계산한다.
         float percent = (tanningTime / TanningTime) * 100;
         if (percent < 38.7f) result = 1;
@@ -157,7 +157,7 @@ public class TanningManager : MonoBehaviour {
 
     // GameStart: 게임 시작 명령.
     public void GameStart() {
-        AudioManager.instance?.PlayBGM(AudioManager.instance.background_minigame);
+        AudioManager.Instance?.PlayBGM(AudioManager.Instance.background_minigame);
         // 처음 실행시 - 튜토리얼
         if (!(PlayerPrefs.GetInt("NyamNyangTanning") == 1049)) {
             StartCoroutine(TanningTutorial());
@@ -241,13 +241,13 @@ public class TanningManager : MonoBehaviour {
                 text.text = "RARE\n!";
                 textRectTransform.localPosition = new Vector2(0, 0);
                 boxImage.color = new Color(255f / 255f, 195f / 255f, 190f / 255f, 1);
-                AudioManager.instance?.Play(AudioManager.instance.tanning_fail, 1.5f);
+                AudioManager.Instance?.Play(AudioManager.Instance.tanning_fail, 1.5f);
                 break;
             case 2:
                 text.text = "WELL\nDONE";
                 textRectTransform.localPosition = new Vector2(0, 11);
                 boxImage.color = new Color(202f / 255f, 160f / 255f, 207f / 255f, 1);
-                AudioManager.instance?.Play(AudioManager.instance.tanning_success, 2f);
+                AudioManager.Instance?.Play(AudioManager.Instance.tanning_success, 2f);
                 heart.SetActive(true);
                 SetHeartBox(true);
                 break;
@@ -255,7 +255,7 @@ public class TanningManager : MonoBehaviour {
                 text.text = "OVER\nCOOK\n!";
                 textRectTransform.localPosition = new Vector2(0, 0);
                 boxImage.color = new Color(255f / 255f, 195f / 255f, 190f / 255f ,1);
-                AudioManager.instance?.Play(AudioManager.instance.tanning_fail, 1.5f);
+                AudioManager.Instance?.Play(AudioManager.Instance.tanning_fail, 1.5f);
                 break;
         }
 

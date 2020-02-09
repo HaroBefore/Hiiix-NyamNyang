@@ -35,7 +35,10 @@ public class GameManager : MonoBehaviour
     private AchievementManager _achievementManager;
     private BackgroundManager _backgroundManager;
     private UIManager _uiManager;
-    
+    private NyangListManager _nyangListManager;
+    private NyangManager _nyangManager;
+    private ResultManager _resultManager;
+
     // 튜토리얼중인지 여부.
     private bool _isTutorial;
     public bool IsTutorial {
@@ -69,6 +72,9 @@ public class GameManager : MonoBehaviour
         _achievementManager = FindObjectOfType<AchievementManager>();
         _backgroundManager = FindObjectOfType<BackgroundManager>();
         _uiManager = FindObjectOfType<UIManager>();
+        _nyangListManager = FindObjectOfType<NyangListManager>();
+        _nyangManager = FindObjectOfType<NyangManager>();
+        _resultManager = FindObjectOfType<ResultManager>();
         
         SetUpEvent();
         StartCoroutine(CoStart());
@@ -130,25 +136,38 @@ public class GameManager : MonoBehaviour
         
     }
     
-    public void StartMainGame(bool isAM) {
+    public void StartMainGame(TimeType timeType) {
         // TODO 메인게임시작
         Debug.Log("OPEN START");
-        
-        
-        
-        AudioManager.instance?.PlayBGM();
-        // 마스터냥 초기화.
-        if (isAM) MasterNyang.instance.SetTanningBack(0);
-        // 배경 설정.
-        if (isAM) BackgroundManager.instance.SetAM();
-        else BackgroundManager.instance.SetPM();
+
+        AudioManager.Instance?.PlayBGM();
+
+        switch (timeType)
+        {
+            case TimeType.AM:
+                // 마스터냥 초기화.
+                MasterNyang.instance.SetTanningBack(0);
+                // 배경 설정.
+                BackgroundManager.instance.SetAM();
+                break;
+            case TimeType.PM:
+                BackgroundManager.instance.SetPM();
+                break;
+        }
+        _nyangManager.BeginSpawn();
         // 손님 스위치 On.
         Debug.Log("OPEN END");
+    }
+
+    public void EndMainGame(TimeType timeType)
+    {
+        _nyangManager.EndSpawn();
     }
 
     public void Init()
     {
         _uiManager.SetMaxTime(_timeManager.PlayTime);
+        StartMainGame(TimeType.AM);
     }
     
     public void SetUpEvent()
@@ -156,6 +175,7 @@ public class GameManager : MonoBehaviour
         EventBuffActivate += _backgroundManager.OnBuffActivate;
         EventBuffDeactivate += _backgroundManager.OnBuffDeactivate;
         _timeManager.EventLeftTimeChanged += _uiManager.OnLeftTimeChanged;
+        _timeManager.EventTimeOver += OnTimeOver;
     }
 
     public void CleanUpEvent()
@@ -166,6 +186,12 @@ public class GameManager : MonoBehaviour
     }
 
     public bool IsBuffAvailable { get; private set; }
+
+    public void OnTimeOver()
+    {
+        EndMainGame(_timeType);
+        _resultManager.OpenResult();
+    }
     
     public void BuffActivate()
     {
@@ -178,5 +204,4 @@ public class GameManager : MonoBehaviour
         EventBuffDeactivate();
         IsBuffAvailable = false;
     }
-
 }

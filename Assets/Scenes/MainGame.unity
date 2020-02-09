@@ -6649,7 +6649,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88d1f6d4d0ce57941a71ffc8e8c509e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playTime: 90
+  playTime: 5
   waitingTime: 30
   cookTime: 18
   BuffCooltime: 300
@@ -41384,7 +41384,6 @@ GameObject:
   - component: {fileID: 1412945934}
   - component: {fileID: 1412945935}
   - component: {fileID: 1412945937}
-  - component: {fileID: 1412945932}
   m_Layer: 0
   m_Name: Controller
   m_TagString: Untagged
@@ -41504,18 +41503,6 @@ MonoBehaviour:
   bulb: {fileID: 771476625}
   sign: {fileID: 466978290}
   accessory: {fileID: 12491278}
---- !u!114 &1412945932
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1412945923}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a24bff07c3ecce6488c0fec138abc306, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1412945934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53564,13 +53551,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edb106145f1d1e5479e7a082cb424bf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isUpButton: 0
-  BtnDelay: 0.15
-  btnDelay: 0
-  originBtnDelay: 0
-  isBtnDown: 0
-  btnCount: 0
-  amount: 0
 --- !u!1 &1865664819
 GameObject:
   m_ObjectHideFlags: 0
@@ -57098,13 +57078,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edb106145f1d1e5479e7a082cb424bf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isUpButton: 1
-  BtnDelay: 0.15
-  btnDelay: 0
-  originBtnDelay: 0
-  isBtnDown: 0
-  btnCount: 0
-  amount: 0
 --- !u!1 &1980954494
 GameObject:
   m_ObjectHideFlags: 0
