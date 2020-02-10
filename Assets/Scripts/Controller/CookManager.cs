@@ -80,7 +80,7 @@ public class CookManager : MonoBehaviour {
         OpenRecipe();
     }
     public void OpenRecipe() {
-        UIManager.instance.RecipeOpen(orderedRecipe[0].index, orderedRecipe[1].index, orderedRecipe[2].index);
+        UIManager.instance.OpenRecipe(orderedRecipe[0].index, orderedRecipe[1].index, orderedRecipe[2].index);
         OpenMeatBox();
     }
     public void OpenMeatBox() {

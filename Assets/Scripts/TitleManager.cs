@@ -20,6 +20,10 @@ public class TitleManager : MonoBehaviour {
         StartCoroutine("FadeOut");
     }
 
+    public void ShowLeaderBoard()
+    {
+        Social.ShowLeaderboardUI();
+    }
 
     private IEnumerator FadeOut() {
         FadeMask.gameObject.SetActive(true);

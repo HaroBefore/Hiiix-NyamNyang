@@ -18,6 +18,7 @@ public class AchievementManager : MonoBehaviour {
     bool tanning10;
     bool purchase99;
 
+    
     void Awake() {
         DontDestroyOnLoad(this);
 
@@ -27,7 +28,6 @@ public class AchievementManager : MonoBehaviour {
 
         Login();
     }
-
     public void Initialize() {
 #if UNITY_ANDROID
         PlayGamesPlatform.InitializeInstance(new PlayGamesClientConfiguration.Builder().Build());

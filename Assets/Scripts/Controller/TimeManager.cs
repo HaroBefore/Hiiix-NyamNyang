@@ -149,6 +149,7 @@ public class TimeManager : MonoBehaviour
         EventResume();
     }
 
+    /*
     public void GameStartOrContinue() {
         ScenarioManager.instance.FadeMaskDeactive();
         if (!(PlayerPrefs.GetInt("NyamNyangTutorial") == 1049)) {
@@ -161,8 +162,10 @@ public class TimeManager : MonoBehaviour
         {
             GameManager.Instance.IsTutorial = false;
         }
-        Day = 1;
+        
+        //Day = 1;
     }
+    */
 
     #region BuffCooltime
     public void ResetBuffCooltime() {

@@ -224,8 +224,8 @@ public class UIManager : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.I)) { timeManager.Day = 15; }
 
         if (Input.GetKeyDown(KeyCode.Z)) { NyangManager.Instance.orderNyang.waitingTime += 99999; }
-        if (Input.GetKeyDown(KeyCode.G)) GoldManager.instance.CurrentGold += 9999999;
-        if (Input.GetKeyDown(KeyCode.H)) GoldManager.instance.CurrentGold -= 10000;
+        if (Input.GetKeyDown(KeyCode.G)) GoldManager.instance.TotalGold += 9999999;
+        if (Input.GetKeyDown(KeyCode.H)) GoldManager.instance.TotalGold -= 10000;
         if (Input.GetKeyDown(KeyCode.Keypad1)) timeManager.Day = 14;
         if (Input.GetKeyDown(KeyCode.Keypad2)) timeManager.Day = 15;
         if (Input.GetKeyDown(KeyCode.Keypad3)) timeManager.Day = 3;
@@ -319,7 +319,7 @@ public class UIManager : MonoBehaviour {
     #region Recipe
 
     // Recipe
-    public void RecipeOpen(int meatIndex, int powderIndex, int sauceIndex) {
+    public void OpenRecipe(int meatIndex, int powderIndex, int sauceIndex) {
         // 레시피 창을 띄움.
         recipePanel.SetActive(true);
         // 레시피 이미지.
@@ -327,7 +327,7 @@ public class UIManager : MonoBehaviour {
         recipe_Powder.transform.GetComponent<SpriteRenderer>().sprite = IngredientManager.instance.powderDic[powderIndex].sprite_Icon;
         recipe_Sauce.transform.GetComponent<SpriteRenderer>().sprite = IngredientManager.instance.sauceDic[sauceIndex].sprite_Icon;
     }
-    public void RecipeClose() {
+    public void CloseRecipe() {
         // 레시피 창을 닫음.
         recipePanel.SetActive(false);
     }

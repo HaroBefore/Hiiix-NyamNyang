@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,8 +12,11 @@ public enum ScenarioType {
     Nyang,
 }
 
-public class ScenarioManager : MonoBehaviour {
+public class ScenarioManager : MonoBehaviour
+{
 
+    public event Action EventCloseScenario = () => { };
+    
     public static ScenarioManager instance;
 
     public GameObject toozaPopup;
@@ -95,12 +100,15 @@ public class ScenarioManager : MonoBehaviour {
         //if (day == 4) AddScenario(scenarioDic["NewIngredient"]);
         //if (day == 3) AddScenario(scenarioDic["BugNyang"]);
         //else if (day % 4 == 3) AddScenario(scenarioDic["BugNyang"]);
+        /*
         if (day == 3) AddScenario(scenarioDic["Day03_BugNyang"]);
         else if (day == 7) AddScenario(scenarioDic["Day07_BugNyang"]);
         else if (day == 11) AddScenario(scenarioDic["Day11_BugNyang"]);
         else if (day % 4 == 3) AddScenario(scenarioDic["BugNyang"]);
+        */
 
         if (day == 0) AddScenario(scenarioDic["Day00"]);
+        /*
         else if (day == 1) AddScenario(scenarioDic["Day01"]);
         else if (day == 2) AddScenario(scenarioDic["Day02_BuffNyang"]);
         else if (day == 4) AddScenario(scenarioDic["Day04"]);
@@ -115,6 +123,7 @@ public class ScenarioManager : MonoBehaviour {
         else if (day == 28) AddScenario(scenarioDic["Day28"]);
         else if (day == 29) AddScenario(scenarioDic["Day29_DalNyang"]);
         else if (day == 30) AddScenario(scenarioDic["Day30_NewIngredient"]);
+    */
     }
 
     private void CheckScenarioCondition() {
@@ -141,7 +150,6 @@ public class ScenarioManager : MonoBehaviour {
         return scenarioQueue.IsEmpty();
     }
     public void PlayScenario() {
-        TimeManager.Instance.Resume();
         AudioManager.Instance?.PlayBGM(AudioManager.Instance?.background_minigame);
         SetScenario();
         lastScenarioType = currentScenario.type;
@@ -159,9 +167,8 @@ public class ScenarioManager : MonoBehaviour {
             PlayScenario();
             return;
         }
-        if (lastScenarioType == ScenarioType.Nyang) TimeManager.Instance.GameStartOrContinue();
-
         FadeMask.gameObject.SetActive(false);
+        EventCloseScenario();
     }
     #endregion
 

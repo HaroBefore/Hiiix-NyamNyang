@@ -8,6 +8,7 @@ public class GoldManager : MonoBehaviour
 {
     public event Action<int> EventIncomeAmChanged = n => { };
     public event Action<int> EventIncomePmChanged = n => { };
+    public event Action<int> EventTotalGoldChanged = n => { };
 
     public static GoldManager instance;
 
@@ -40,13 +41,14 @@ public class GoldManager : MonoBehaviour
         }
     }
 
-    private int _incomeAmAm;
+    private int _incomeAm;
     public int IncomeAm {
-        get { return _incomeAmAm; }
+        get { return _incomeAm; }
         set {
-            _incomeAmAm = value;
+            _incomeAm = value;
             Debug.Log("incomeAM " + value);
-            EventIncomeAmChanged(_incomeAmAm);
+            EventIncomeAmChanged(_incomeAm);
+            TotalGold = _incomeAm + _incomePm;
         }
     }
     private int _incomePm;
@@ -56,17 +58,26 @@ public class GoldManager : MonoBehaviour
             _incomePm = value;
             Debug.Log("incomePM " + value);
             EventIncomePmChanged(_incomePm);
+            TotalGold = _incomeAm + _incomePm;
         }
     }
 
-    private int _currentGold;
-    public int CurrentGold {
-        get { return _currentGold; }
+    private int _totalGold;
+    public int TotalGold {
+        get { return _totalGold; }
         set {
-            _currentGold = value;
-            Debug.Log("CurrentGold " + value);
+            _totalGold = value;
+            Debug.Log("TotalGold " + value);
+            EventTotalGoldChanged(_totalGold);
+            
+            
             FindObjectOfType<UIManager>().Money.transform.GetChild(1).GetComponent<Text>().text = value.ToString();
-            PlayerPrefs.SetInt("PlayerMoney", value);
+            
+            if (achievementManager == null)
+            {
+                return;
+            }
+
             if (value >= 10000) achievementManager.Achievement_MoneySwag(10000);
             if (value >= 100000) achievementManager.Achievement_MoneySwag(100000);
             if (value >= 500000) achievementManager.Achievement_MoneySwag(500000);
@@ -98,7 +109,7 @@ public class GoldManager : MonoBehaviour
 
         achievementManager = FindObjectOfType<AchievementManager>();
 
-        CurrentGold = PlayerPrefs.GetInt("PlayerMoney");
+        TotalGold = PlayerPrefs.GetInt("PlayerMoney");
         IncomeAm = PlayerPrefs.GetInt("IncomeAM");
         IncomePm = PlayerPrefs.GetInt("IncomeMinus");
         TanningBonus = PlayerPrefs.GetFloat("TanningBonus");

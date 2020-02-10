@@ -118,9 +118,16 @@ public class Nyang : MonoBehaviour {
     }
     public void NyangPay(CookFood food) {
         int price = food.price;
-        GoldManager.instance.CurrentGold += price;
-        GoldManager.instance.IncomeAm += price;
-        GoldManager.instance.IncomePm += (food.meat.price + food.sauce.price + food.powder.price);
+
+        switch (GameManager.Instance.TimeType)
+        {
+            case TimeType.AM:
+                GoldManager.instance.IncomeAm += price;
+                break;
+            case TimeType.PM:
+                GoldManager.instance.IncomePm += price;
+                break;
+        }
         if (!GameManager.Instance.IsTutorial)
             UIManager.instance.ShowNyangMoneyForSeconds(price, 1.5f);
     }
@@ -129,7 +136,7 @@ public class Nyang : MonoBehaviour {
     public void OutNyang() {
         NyangManager.Instance.OutNyang();
         CookManager.instance.FinishCook();
-        UIManager.instance.RecipeClose();
+        UIManager.instance.CloseRecipe();
         if (UIManager.instance.meatSelectPanel.activeSelf) UIManager.instance.CloseMeatSelectPanel();
         if (UIManager.instance.sauceSelectPanel.activeSelf) UIManager.instance.CloseSauceSelectPanel();
         if(nyangFood) Destroy(nyangFood);

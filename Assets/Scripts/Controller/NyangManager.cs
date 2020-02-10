@@ -56,6 +56,7 @@ public class NyangManager : MonoBehaviour
     public Dictionary<NyangPosition, Nyang> nyangInPositionDic;
     private Dictionary<NyangPosition, Nyang> previousNyangInPositionDic;    // 전에 생성된 냥이.
     private Dictionary<NyangPosition, Nyang> prepreviousNyangInPositionDic; // 전전에 생성된 냥이.
+
     // 현재 선택된 냥이.
     private Nyang selectedNyang;
     // 손님석에 착석한 냥이. = 주문하고 있는 냥이.
@@ -207,6 +208,30 @@ public class NyangManager : MonoBehaviour
         // 냥이 생성 주기 초기화.
         if(newNyang) nyangCurrentCycle = 0;
     }
+
+    public void ClearAllNyang()
+    {
+        for (int i = 0; i < 6; i++)
+        {
+            prepreviousNyangInPositionDic[(NyangPosition) i] = null;
+            previousNyangInPositionDic[(NyangPosition) i] = null;
+            nyangInPositionDic[(NyangPosition) i] = null;
+        }
+
+        if (orderNyang != null)
+        {
+            Destroy(orderNyang.gameObject);
+            orderNyang = null;
+        }
+
+        for (int i = 0; i < nyangList.Count; i++)
+        {
+            Destroy(nyangList[i].gameObject);
+            nyangList[i] = null;
+        }
+        nyangList.Clear();
+    }
+
     private Nyang SpawnNyang(int index) {
         // 해당 냥이 정보 불러오기.
         Nyang nyang = nyangPrefabDic[index].GetComponent<Nyang>();
@@ -241,6 +266,7 @@ public class NyangManager : MonoBehaviour
         orderNyang = null;
         if (!GameManager.Instance.IsTutorial) AngryGuageOff();
         else TutorialManager.instance.AngryGuageOff();
+        Debug.Log("OutNyang");
     }
 
     // SitNyang: 냥이 앉히기. 

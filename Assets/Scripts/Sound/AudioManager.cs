@@ -148,11 +148,14 @@ public class AudioManager : MonoBehaviour
         return source;
     }
     private IEnumerator Play(AudioSource source, AudioClip clip, float time) {
+        if(source == null) yield break;
+        if(clip == null) yield break;
         source.clip = clip;
         source.Play();
         string Name = source.gameObject.name;
         source.gameObject.name += ("_" + clip.name);
         yield return new WaitForSeconds(time);
+        if(source == null) yield break;
         source.gameObject.name = Name;
         source.Stop();
         source.clip = null;

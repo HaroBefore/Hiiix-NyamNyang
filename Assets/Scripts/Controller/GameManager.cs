@@ -6,6 +6,7 @@ using System.Runtime.CompilerServices;
 using Sirenix.OdinInspector;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public enum TimeType
 {
@@ -44,6 +45,9 @@ public class GameManager : MonoBehaviour
     private TanningManager _tanningManager;
     private TipManager _tipManager;
     private GoldManager _goldManager;
+    private CookManager _cookManager;
+    private TutorialManager _tutorialManager;
+    private ScenarioManager _scenarioManager;
 
     // 튜토리얼중인지 여부.
     private bool _isTutorial;
@@ -89,6 +93,9 @@ public class GameManager : MonoBehaviour
         _tanningManager = FindObjectOfType<TanningManager>();
         _tipManager = FindObjectOfType<TipManager>();
         _goldManager = FindObjectOfType<GoldManager>();
+        _cookManager = FindObjectOfType<CookManager>();
+        _tutorialManager = FindObjectOfType<TutorialManager>();
+        _scenarioManager = FindObjectOfType<ScenarioManager>();
         
         SetUpEvent();
         StartCoroutine(CoStart());
@@ -152,7 +159,11 @@ public class GameManager : MonoBehaviour
 
         AudioManager.Instance?.PlayBGM();
         _timeManager.SetTime();
+        _goldManager.IncomeAm = 0;
+        _goldManager.IncomePm = 0;
 
+        _timeManager.Resume();
+        
         switch (timeType)
         {
             case TimeType.AM:
@@ -175,6 +186,12 @@ public class GameManager : MonoBehaviour
     public void EndMainGame(TimeType timeType)
     {
         _nyangManager.EndSpawn();
+        _nyangManager.ClearAllNyang();
+        _cookManager.ThrowOut();
+        _uiManager.CloseAllUI();
+        _uiManager.CloseRecipe();
+        _uiManager.AngryGuage.SetActive(false);
+        
         switch (timeType)
         {
             case TimeType.AM:
@@ -187,14 +204,54 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void ShowLeaderBoard()
+    {
+        Social.ShowLeaderboardUI();
+    }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene("MainGame");
+    }
+
+    public void GoToTitle()
+    {
+        SceneManager.LoadScene("Title");
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
+    public void SetScore(int score)
+    {
+        Social.ReportScore(score, GPGSIds.leaderboard_leaderboard, success =>
+        {
+            if (success)
+            {
+                Debug.Log("Success");
+            }
+            else
+            {
+                Debug.Log("Fail");
+            }
+        });
+    }
+
     public void Init()
     {
-        _uiManager.SetMaxTime(_timeManager.PlayTime);
-        StartMainGame(TimeType.AM);
+        _uiManager.SetMaxTime(_timeManager.PlayTime); 
+        //StartMainGame(TimeType.AM);
         
         // Callback 함수 등록.
         _inputManager.RegisterCallback_TouchTargetChanged(_nyangManager.SelectNyang);
         _inputManager.RegisterCallback_TouchTargetChanged(_nyangManager.DeselectNyang);
+
+        _timeManager.Pause();
+        _timeManager.Day = PlayerPrefs.GetInt("DayCount", 0);
+        _scenarioManager.PlayScenario();
+        //_tutorialManager.PlayTutorial();
     }
     
     public void SetUpEvent()
@@ -209,6 +266,11 @@ public class GameManager : MonoBehaviour
 
         _goldManager.EventIncomeAmChanged += _resultManager.SetIncomeAm;
         _goldManager.EventIncomePmChanged += _resultManager.SetIncomePm;
+        _goldManager.EventTotalGoldChanged += _resultManager.SetIncomeTotal;
+
+        _scenarioManager.EventCloseScenario += OnCloseScenario;
+
+        _tutorialManager.EventEndTutorial += OnEndTutorial;
     }
 
     public void CleanUpEvent()
@@ -223,6 +285,12 @@ public class GameManager : MonoBehaviour
         
         _goldManager.EventIncomeAmChanged -= _resultManager.SetIncomeAm;
         _goldManager.EventIncomePmChanged -= _resultManager.SetIncomePm;
+        _goldManager.EventTotalGoldChanged -= _resultManager.SetIncomeTotal;
+
+        _scenarioManager.EventCloseScenario -= OnCloseScenario;
+        
+        _tutorialManager.EventEndTutorial += OnEndTutorial;
+
     }
 
     public bool IsBuffAvailable { get; private set; }
@@ -243,6 +311,16 @@ public class GameManager : MonoBehaviour
         _uiManager.SetActiveAllMainUi(false);
         _uiManager.MiniGame_Tanning_UI.SetActive(false);
         _tipManager.UnhideTip();
+    }
+
+    private void OnCloseScenario()
+    {
+        _tutorialManager.PlayTutorial();
+    }
+
+    private void OnEndTutorial()
+    {
+        StartMainGame(TimeType.AM);
     }
     
     public void BuffActivate()

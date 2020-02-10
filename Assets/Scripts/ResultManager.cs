@@ -32,16 +32,11 @@ public class ResultManager : MonoBehaviour
         
         ResultPanel.SetActive(true);
         dayCount.text = TimeManager.Instance.Day.ToString();
-        SetIncomeTotal();   // AM, PM, Roulette은 각 장사가 끝나면 미리 호출하여 처리되어있게 함.
     }
     public void CloseResult(TimeType timeType) {
         GoldManager.instance.IncomeAm = 0;
         GoldManager.instance.IncomePm = 0;
         ResultPanel.SetActive(false);
-        // 메인 게임 시작: 오전 장사로.
-        
-        // TODO 타이틀로
-
         EventCloseResult();
     }
 
@@ -55,8 +50,8 @@ public class ResultManager : MonoBehaviour
         incomePm_Text.text = "+" + income.ToString();
     }
     
-    public void SetIncomeTotal() {
-        incomeTotal = incomeAm + incomeAm;
+    public void SetIncomeTotal(int totalGold) {
+        incomeTotal = totalGold;
         incomeTotal_Text.text = incomeTotal.ToString();
     }
     #endregion

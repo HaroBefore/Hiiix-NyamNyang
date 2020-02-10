@@ -1,10 +1,15 @@
-﻿using System.Text;
+﻿using System;
+using System.Text;
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 using UnityEngine.UI;
-public class TutorialManager : MonoBehaviour {
+public class TutorialManager : MonoBehaviour
+{
 
+    public event Action EventEndTutorial;
+    
     public static TutorialManager instance;
 
     public GameObject MainScene;
@@ -81,7 +86,9 @@ public class TutorialManager : MonoBehaviour {
         StartCoroutine(TanningTutorial());
     }
 
-    public IEnumerator Tutorial() {
+    public IEnumerator Tutorial()
+    {
+        GameManager.Instance.IsTutorial = true;
         Nyang nyang;
         {
             // 새 튜토리얼 설정.
@@ -142,7 +149,7 @@ public class TutorialManager : MonoBehaviour {
         {
             // 새 튜토리얼 설정.
             SetTutorial(4);
-
+            OpenMeatSelectPanel();
             // Scripting, Twinkling.
             StartCoroutine(Coroutine_Scripting);
             yield return new WaitUntil(() => !isScripting);
@@ -269,12 +276,15 @@ public class TutorialManager : MonoBehaviour {
         MainScene.SetActive(true);
         MainUI.SetActive(true);
         MainObjects.SetActive(true);
-        GameManager.Instance.IsTutorial = false;
-        TimeManager.Instance.GameStartOrContinue();
         if (tutorial) tutorial.gameObject.SetActive(false);
+
+        GameManager.Instance.IsTutorial = false;
+        EventEndTutorial();
     }
 
-    private IEnumerator TanningTutorial() {
+    private IEnumerator TanningTutorial()
+    {
+        GameManager.Instance.IsTutorial = true;
         defaultTanningTipNyang.SetActive(false);
         {
             isClickSkip = true;
@@ -367,9 +377,11 @@ public class TutorialManager : MonoBehaviour {
             yield return new WaitUntil(() => !isTwinkling);
             TanningManager.instance.switch06 = true;
             tutorial.gameObject.SetActive(false);
+            UIManager.instance.AngryGuage.SetActive(false);
         }
         TanningManager.instance.switch08 = true;
         defaultTanningTipNyang.SetActive(true);
+        GameManager.Instance.IsTutorial = false;
     }
 
     // SetTutorial: 튜토리얼 재설정, 스크립트 및 아이콘 갱신.
