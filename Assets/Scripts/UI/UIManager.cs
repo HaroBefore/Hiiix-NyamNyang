@@ -302,17 +302,17 @@ public class UIManager : MonoBehaviour {
     }
     #endregion
 
-    [SerializeField] private EnergyBar energyBarTimer;
+    [SerializeField] private Slider sliderTimer;
 
     public void SetMaxTime(float maxTime)
     {
-        energyBarTimer.valueMax = (int)maxTime;
-        energyBarTimer.valueCurrent = (int)maxTime;
+        sliderTimer.maxValue = maxTime;
+        sliderTimer.value = maxTime;
     }
     
     public void OnLeftTimeChanged(float time)
     {
-        energyBarTimer.valueCurrent = (int)time;
+        sliderTimer.value = time;
     }
 
     #region Recipe

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
-using EnergyBarToolkit;
+using UnityEngine.UI;
 using Random = System.Random;
 
 public class Nyang : MonoBehaviour {
@@ -106,11 +106,8 @@ public class Nyang : MonoBehaviour {
     private GameObject canvasObject;
 
     [SerializeField]
-    private EnergyBar energyBarWait;
-
-    [SerializeField]
-    private FilledRendererUGUI energyBarRenderer;
-
+    private Slider sliderWait;
+    
     private bool _isWaitOrder = true;
 
     public bool IsWaitOrder
@@ -130,8 +127,7 @@ public class Nyang : MonoBehaviour {
         spriteRenderer = this.GetComponent<SpriteRenderer>();
         nyangCollider = this.GetComponent<Collider2D>();
         canvasObject = transform.GetChild(0).gameObject;
-        energyBarWait = GetComponentInChildren<EnergyBar>();
-        energyBarRenderer = GetComponentInChildren<FilledRendererUGUI>();
+        sliderWait = GetComponentInChildren<Slider>();
 
         int selectWaitTime = UnityEngine.Random.Range(0, 3);
         Color color = Color.white;
@@ -150,9 +146,10 @@ public class Nyang : MonoBehaviour {
                 ColorUtility.TryParseHtmlString("#00a887", out color);
                 break;
         }
-        energyBarRenderer.spriteBarColor = color;
-        energyBarWait.SetValueMax((int)_leftWaitOrderTime);
-        energyBarWait.SetValueCurrent((int)_leftWaitOrderTime);
+        //TODO: Color
+        sliderWait.transform.GetChild(1).GetChild(0).GetComponent<Image>().color = color;
+        sliderWait.maxValue = _leftWaitOrderTime;
+        sliderWait.value = _leftWaitOrderTime;
         
         canvasObject.SetActive(true);
     }
@@ -172,7 +169,7 @@ public class Nyang : MonoBehaviour {
                 canvasObject.SetActive(false);
                 NyangManager.Instance.OutWaitOrderNyang(this);
             }
-            energyBarWait.SetValueCurrent((int)_leftWaitOrderTime);
+            sliderWait.value = _leftWaitOrderTime;
         }
         
         OverWaitNyang();
