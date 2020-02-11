@@ -170,8 +170,9 @@ public class OptionManager : MonoBehaviour {
     #endregion
 
     #region Language
-    public void Language_Next() {
-
+    public void Language_Next()
+    {
+        StringDataObject.NextLanguage();
     }
     #endregion
 

@@ -226,8 +226,11 @@ public class NyangManager : MonoBehaviour
 
         for (int i = 0; i < nyangList.Count; i++)
         {
-            Destroy(nyangList[i].gameObject);
-            nyangList[i] = null;
+            if (nyangList[i] != null)
+            {
+                Destroy(nyangList[i].gameObject);
+                nyangList[i] = null;
+            }
         }
         nyangList.Clear();
     }
@@ -267,6 +270,21 @@ public class NyangManager : MonoBehaviour
         if (!GameManager.Instance.IsTutorial) AngryGuageOff();
         else TutorialManager.instance.AngryGuageOff();
         Debug.Log("OutNyang");
+    }
+
+    public void OutWaitOrderNyang(Nyang target)
+    {
+        StartCoroutine(CoOutWaitOrderNyang(target));
+    }
+
+    private IEnumerator CoOutWaitOrderNyang(Nyang target)
+    {
+        NyangPosition pos = target.position;
+        target.IsWaitOrder = false;
+        target.State = NyangState.Angry;
+        yield return new WaitForSeconds(0.5f);
+        nyangInPositionDic[pos] = null;
+        Destroy(target.gameObject);
     }
 
     // SitNyang: 냥이 앉히기. 
@@ -309,6 +327,7 @@ public class NyangManager : MonoBehaviour
         
         // 냥이 상태 변경 -> Selected.
         selectedNyang.State = NyangState.Selected;
+        selectedNyang.IsWaitOrder = false;
         // 냥이 드래그 On.
         InputManager.instance.DragOn();
     }
@@ -325,6 +344,7 @@ public class NyangManager : MonoBehaviour
             // 냥이를 손님석에 앉히지 못했을 때:
             else {
                 // 냥이를 대기상태로 되돌리고, 위치를 되돌린다.
+                selectedNyang.IsWaitOrder = true;
                 selectedNyang.State = (GoldManager.instance.IsBuff) ? NyangState.Buff : NyangState.Wait;
                 selectedNyang.transform.position = nyangPositionDic[selectedNyang.position];
             }

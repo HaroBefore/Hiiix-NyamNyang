@@ -7,7 +7,7 @@ using System;
 public class TanningManager : MonoBehaviour
 {
 
-    public event Action EventEndTanning = () => { };
+    public event Action<int> EventEndTanning = r => { };
     
     public static TanningManager instance;
 
@@ -24,6 +24,8 @@ public class TanningManager : MonoBehaviour
     public GameObject pushButton;
     public GameObject pushButton_Pushed;
     public GameObject popup;
+    public Image imgTanning;
+    public Text textTanning;
 
     private int result; // 0:NONE, 1:Rare, 2:WELLDONE, 3:OVERCOOK
     private bool isStopped;
@@ -183,9 +185,30 @@ public class TanningManager : MonoBehaviour
     private void GameOver(int result) {
         // 팝업 띄우기.
         popup.SetActive(true);
+
+        Color color = Color.white;
+        if (result == 1)
+        {
+            ColorUtility.TryParseHtmlString("#f8b5b8", out color);
+            textTanning.text = "FAILURE!\nRARE";
+        }
+        else if (result == 2)
+        {
+            ColorUtility.TryParseHtmlString("#ec297b", out color);
+            textTanning.text = "SUCCESS!\nWELLDONE";
+        }
+        else if (result == 3)
+        {
+            ColorUtility.TryParseHtmlString("#a33366", out color);
+            textTanning.text = "FAILURE!\nOVERCOOK";
+        }
+
+        imgTanning.color = color;
+        Debug.Log(imgTanning.color);
+        
         // 버프 전달.
         ReturnBuff(result);
-        EventEndTanning();
+        EventEndTanning(result);
     }
 
     // ResumeGame: 팝업창에서 버튼을 눌러 오후장사를 시작.

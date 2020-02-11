@@ -415,6 +415,8 @@ public class TutorialManager : MonoBehaviour
     // Scripting: 대사를 한 글자씩 출력, 클릭시 스킵(즉시 전체출력)
     private IEnumerator Scripting() {
         isScripting = true;
+        script.text = StringDataObject.GetStringData(script.GetComponent<TextLocalizer>().StringIndex);
+        yield return null;
         originScript = script.text;
         builder = new StringBuilder(script.text);
         builder.Remove(0, builder.Length);

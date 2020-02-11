@@ -1,5 +1,3 @@
-
-using UnityEditor.iOS;
 using UnityEngine;
 
 [UnityEngine.CreateAssetMenu(fileName = nameof(NyangCondition), menuName = nameof(NyangCondition), order = 0)]

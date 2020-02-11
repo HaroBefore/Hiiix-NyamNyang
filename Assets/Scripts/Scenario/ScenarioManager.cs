@@ -152,6 +152,10 @@ public class ScenarioManager : MonoBehaviour
     public void PlayScenario() {
         AudioManager.Instance?.PlayBGM(AudioManager.Instance?.background_minigame);
         SetScenario();
+        if (currentScenario == null)
+        {
+            return;
+        }
         lastScenarioType = currentScenario.type;
         PlayerPrefs.SetInt("LastScenario", (int)lastScenarioType);
         if (currentScenario.sceneCount == 0) {
@@ -293,10 +297,13 @@ public class ScenarioManager : MonoBehaviour
         GameObject newText = Instantiate(textBackgroundPrefab);
         newText.transform.SetParent(texts.transform);
         newText.GetComponent<RectTransform>().localScale = Vector3.one;
-        newText.transform.GetChild(0).GetComponent<Text>().text = currentScenario.sceneScripts_name[sceneNumber];
+        //newText.transform.GetChild(0).GetComponent<Text>().text = currentScenario.sceneScripts_name[sceneNumber];
+        newText.transform.GetChild(0).GetComponent<Text>().text = 
+            StringDataObject.GetStringData(currentScenario.nameIndexArray[sceneNumber]);
         sceneScript = newText.transform.GetChild(1).GetComponent<Text>();
         sceneScript.text = "";// currentScenario.sceneScripts[sceneNumber];
-        scriptText = currentScenario.sceneScripts[sceneNumber];
+        //scriptText = currentScenario.sceneScripts[sceneNumber];
+        scriptText = StringDataObject.GetStringData(currentScenario.scriptIndexArray[sceneNumber]);
         sceneTwinklingIcon.transform.SetParent(newText.transform);
         sceneTwinklingIcon.GetComponent<RectTransform>().localPosition = new Vector2(401, -83);
 

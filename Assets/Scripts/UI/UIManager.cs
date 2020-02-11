@@ -302,18 +302,17 @@ public class UIManager : MonoBehaviour {
     }
     #endregion
 
-    [SerializeField]
-    private Slider sliderTimer;
+    [SerializeField] private EnergyBar energyBarTimer;
 
     public void SetMaxTime(float maxTime)
     {
-        sliderTimer.maxValue = maxTime;
-        sliderTimer.value = maxTime;
+        energyBarTimer.valueMax = (int)maxTime;
+        energyBarTimer.valueCurrent = (int)maxTime;
     }
     
     public void OnLeftTimeChanged(float time)
     {
-        sliderTimer.value = time;
+        energyBarTimer.valueCurrent = (int)time;
     }
 
     #region Recipe
@@ -740,12 +739,22 @@ public class UIManager : MonoBehaviour {
             nyangImage.SetNativeSize();
             // 획득하지 못한 Hidden인 경우에만 이름을 숨긴다.
             if (nyang.rank == NyangRank.Hidden && !(nyang.IsCollected))
+            {
                 listObj.transform.GetChild(2).GetComponent<Text>().text = "???";
+            }
             else
-                listObj.transform.GetChild(2).GetComponent<Text>().text = nyang.NyangName;
+            {
+                //listObj.transform.GetChild(2).GetComponent<Text>().text = nyang.NyangName;
+                listObj.transform.GetChild(2).GetComponent<Text>().text =
+                    StringDataObject.GetStringData(nyang.NyangNameIndex);
+            }
             // 냥이 방문 조건 달성한 경우 특징을 보여주고,
             if (nyang.IsCollected)
-                listObj.transform.GetChild(3).GetComponent<Text>().text = nyang.personality;
+            {
+                //listObj.transform.GetChild(3).GetComponent<Text>().text = nyang.personality;
+                listObj.transform.GetChild(3).GetComponent<Text>().text = 
+                    StringDataObject.GetStringData(nyang.PersonalityIndex);
+            }
             // 냥이 방문 조건을 달성하지 못했을 경우,
             else {
                 // Normal: 그냥 / 언젠가 옴.      Rare: 등장조건 보여줌.     Hidden: 걍 숨김.

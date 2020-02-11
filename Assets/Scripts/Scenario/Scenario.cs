@@ -11,7 +11,9 @@ public class Scenario : MonoBehaviour {
     public int sceneCount;
 
     public GameObject[] sceneImage;
+    public int[] nameIndexArray;
     public string[] sceneScripts_name;
+    public int[] scriptIndexArray;
     [TextArea]
     public string[] sceneScripts;
 

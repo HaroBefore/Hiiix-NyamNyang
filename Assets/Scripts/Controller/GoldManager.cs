@@ -46,7 +46,6 @@ public class GoldManager : MonoBehaviour
         get { return _incomeAm; }
         set {
             _incomeAm = value;
-            Debug.Log("incomeAM " + value);
             EventIncomeAmChanged(_incomeAm);
             TotalGold = _incomeAm + _incomePm;
         }
@@ -56,7 +55,6 @@ public class GoldManager : MonoBehaviour
         get { return _incomePm; }
         set {
             _incomePm = value;
-            Debug.Log("incomePM " + value);
             EventIncomePmChanged(_incomePm);
             TotalGold = _incomeAm + _incomePm;
         }
@@ -67,11 +65,10 @@ public class GoldManager : MonoBehaviour
         get { return _totalGold; }
         set {
             _totalGold = value;
-            Debug.Log("TotalGold " + value);
             EventTotalGoldChanged(_totalGold);
             
             
-            FindObjectOfType<UIManager>().Money.transform.GetChild(1).GetComponent<Text>().text = value.ToString();
+            FindObjectOfType<UIManager>().Money.transform.GetChild(2).GetComponent<Text>().text = value.ToString();
             
             if (achievementManager == null)
             {
@@ -92,13 +89,10 @@ public class GoldManager : MonoBehaviour
     [Header("버프중일 때 보너스")]
     public float buffBonus;
     // 썬탠 미니게임으로 인한 보너스.
-    private float tanningBonus;
+    private float _tanningBonus = 1f;
     public float TanningBonus {
-        get { return tanningBonus; }
-        set {
-            tanningBonus = value;
-            PlayerPrefs.SetFloat("TanningBonus", value);
-        }
+        get => _tanningBonus;
+        set => _tanningBonus = value;
     }
 
     private AchievementManager achievementManager;
@@ -108,11 +102,6 @@ public class GoldManager : MonoBehaviour
         if (!instance) instance = this;
 
         achievementManager = FindObjectOfType<AchievementManager>();
-
-        TotalGold = PlayerPrefs.GetInt("PlayerMoney");
-        IncomeAm = PlayerPrefs.GetInt("IncomeAM");
-        IncomePm = PlayerPrefs.GetInt("IncomeMinus");
-        TanningBonus = PlayerPrefs.GetFloat("TanningBonus");
     }
 
     void Start() {

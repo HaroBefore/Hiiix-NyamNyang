@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using EnergyBarToolkit;
+using Random = System.Random;
 
 public class Nyang : MonoBehaviour {
 
@@ -12,6 +14,11 @@ public class Nyang : MonoBehaviour {
     public string nyangName;
     // 냥이 한글 이름.
     public string NyangName;
+    [SerializeField]
+    private int nyangNameIndex;
+
+    public int NyangNameIndex => nyangNameIndex;
+    
     [Header("냥이 이미지: Wait, Selected, Order, Happy, Angry, Buff")]
     // 냥이 이미지. (wait, selected, order, happy, angry, bufforBugBye, BugFucking1, BugFucking2, BugFucking3)
     public Sprite[] sprite;
@@ -57,9 +64,21 @@ public class Nyang : MonoBehaviour {
     [Header("냥이 특징")] [TextArea]
     // 냥이 특징.
     public string personality;
-    [Header("냥이 스토리")] [TextArea]
+
+    [SerializeField]
+    private int personalityIndex;
+    public int PersonalityIndex => personalityIndex;
+
+    [Header("냥이 스토리")]
+    [TextArea]
     // 냥이 스토리.
     public string story;
+
+    [SerializeField]
+    private int storyIndex;
+
+    public int StoryIndex => storyIndex;
+
     // 냥이 인게임 오브젝트.
     public GameObject nyangObject { get; protected set; }
     // 냥이가 받은 요리.
@@ -83,14 +102,82 @@ public class Nyang : MonoBehaviour {
     private bool isOverwait;
     private SpriteRenderer spriteRenderer;
 
+    [SerializeField]
+    private GameObject canvasObject;
 
+    [SerializeField]
+    private EnergyBar energyBarWait;
 
+    [SerializeField]
+    private FilledRendererUGUI energyBarRenderer;
+
+    private bool _isWaitOrder = true;
+
+    public bool IsWaitOrder
+    {
+        get => _isWaitOrder;
+        set
+        {
+            _isWaitOrder = value;
+            canvasObject.SetActive(value);
+        }
+    }
+
+    private float _leftWaitOrderTime;
+    
     void Awake() {
         nyangObject = this.gameObject;
         spriteRenderer = this.GetComponent<SpriteRenderer>();
         nyangCollider = this.GetComponent<Collider2D>();
+        canvasObject = transform.GetChild(0).gameObject;
+        energyBarWait = GetComponentInChildren<EnergyBar>();
+        energyBarRenderer = GetComponentInChildren<FilledRendererUGUI>();
+
+        int selectWaitTime = UnityEngine.Random.Range(0, 3);
+        Color color = Color.white;
+        switch (selectWaitTime)
+        {
+            case 0:
+                _leftWaitOrderTime = 12f;
+                ColorUtility.TryParseHtmlString("#e1005b", out color);
+                break;
+            case 1:
+                _leftWaitOrderTime = 18f;
+                ColorUtility.TryParseHtmlString("#ff6b00", out color);
+                break;
+            case 2:
+                _leftWaitOrderTime = 24f;
+                ColorUtility.TryParseHtmlString("#00a887", out color);
+                break;
+        }
+        energyBarRenderer.spriteBarColor = color;
+        energyBarWait.SetValueMax((int)_leftWaitOrderTime);
+        energyBarWait.SetValueCurrent((int)_leftWaitOrderTime);
+        
+        canvasObject.SetActive(true);
     }
-    
+
+    private void Update()
+    {
+        if (_isWaitOrder)
+        {
+            if (_leftWaitOrderTime > 0f)
+            {
+                _leftWaitOrderTime -= TimeManager.DeltaTime;
+            }
+            else
+            {
+                _leftWaitOrderTime = 0f;
+                _isWaitOrder = false;
+                canvasObject.SetActive(false);
+                NyangManager.Instance.OutWaitOrderNyang(this);
+            }
+            energyBarWait.SetValueCurrent((int)_leftWaitOrderTime);
+        }
+        
+        OverWaitNyang();
+    }
+
     public void SetData() {
         VisitCount = PlayerPrefs.GetInt("Nyang_" + index + "_VisitCount");
         IsCollected = (PlayerPrefs.GetInt("Nyang_" + index + "_isCollected")) == 1;
@@ -107,9 +194,27 @@ public class Nyang : MonoBehaviour {
             food.transform.localPosition = new Vector2(1, 1);
             // 결과에 따라 냥이의 상태를 바꿈. (Happy / Angry)
             State = result ? NyangState.Happy : NyangState.Angry;
-            if (GoldManager.instance.IsBuff) State = NyangState.Happy;
-            if (State == NyangState.Happy) AudioManager.Instance?.PlayNyang_Happy();
-            else if (State == NyangState.Angry) AudioManager.Instance?.PlayNyang_Angry();
+            if (GoldManager.instance.IsBuff)
+            {
+                State = NyangState.Happy;
+            }
+            else
+            {
+                if (State == NyangState.Happy)
+                {
+                    //버프가 아니고 성공 주문 시 2초 추가
+                    TimeManager.Instance.LeftTime += 2f;
+                }
+            }
+            
+            if (State == NyangState.Happy)
+            {
+                AudioManager.Instance?.PlayNyang_Happy();
+            }
+            else if (State == NyangState.Angry)
+            {
+                AudioManager.Instance?.PlayNyang_Angry();
+            }
             // 냥이가 돈을 냄.
             NyangPay(food);
             // 1.5초 뒤 냥이 퇴장. (보스냥이라면 퇴장하지 않고 카운트만 올라감.)
@@ -157,6 +262,7 @@ public class Nyang : MonoBehaviour {
                 State = NyangState.Angry;
                 isOverwait = true;
                 // 1.5초 뒤 냥이 퇴장.
+                canvasObject.SetActive(false);
                 Invoke("OutNyang", 1.5f);
             }
         }

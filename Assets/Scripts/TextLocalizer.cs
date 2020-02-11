@@ -39,4 +39,11 @@ public class TextLocalizer : MonoBehaviour
             _text.text = str;
         }
     }
+
+#if UNITY_EDITOR
+    public void ReloadStrText()
+    {
+        strText = StringDataObject.GetStringData(stringIndex);
+    }
+#endif
 }

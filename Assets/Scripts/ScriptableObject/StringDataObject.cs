@@ -4,13 +4,16 @@ using UnityEngine;
 using Sirenix.OdinInspector;
 using System;
 
-public enum ELanguageType
+public enum LanguageType
 {
     None = -1,
     Korean,
     English,
     Japanese,
-    Chinese
+    ChineseGan,
+    ChineseBun,
+    French,
+    End
 }
 
 [CreateAssetMenu(fileName = nameof(StringDataObject), menuName = nameof(StringDataObject))]
@@ -30,7 +33,7 @@ public class StringDataObject : ScriptableObject {
     }
     
     [LabelText("언어")]
-    public ELanguageType languageType = ELanguageType.None;
+    public LanguageType languageType = LanguageType.None;
 
     [LabelText("출력해 볼 인덱스")]
     [PropertyOrder(0)]
@@ -49,6 +52,15 @@ public class StringDataObject : ScriptableObject {
     public List<StringDataMap> korean = new List<StringDataMap>();
     [PropertyOrder(2)]
     public List<StringDataMap> english = new List<StringDataMap>();
+    [PropertyOrder(2)]
+    public List<StringDataMap> japanese = new List<StringDataMap>();
+    [PropertyOrder(2)]
+    public List<StringDataMap> chineseGan = new List<StringDataMap>();
+    [PropertyOrder(2)]
+    public List<StringDataMap> chineseBun = new List<StringDataMap>();
+    [PropertyOrder(2)]
+    public List<StringDataMap> french = new List<StringDataMap>();
+
     
     [Serializable]
     public class StringDataMap
@@ -67,15 +79,27 @@ public class StringDataObject : ScriptableObject {
     public static string GetStringData(int key)
     {
         List<StringDataMap> language = null;
-        switch (_instance.languageType)
+        switch (Instance.languageType)
         {
-            case ELanguageType.None:
+            case LanguageType.None:
                 break;
-            case ELanguageType.Korean:
-                language = _instance.korean;
+            case LanguageType.Korean:
+                language = Instance.korean;
                 break;
-            case ELanguageType.English:
-                language = _instance.english;
+            case LanguageType.English:
+                language = Instance.english;
+                break;
+            case LanguageType.Japanese:
+                language = Instance.japanese;
+                break;
+            case LanguageType.ChineseGan:
+                language = Instance.chineseGan;
+                break;
+            case LanguageType.ChineseBun:
+                language = Instance.chineseBun;
+                break;
+            case LanguageType.French:
+                language = Instance.french;
                 break;
             default:
                 break;
@@ -89,5 +113,13 @@ public class StringDataObject : ScriptableObject {
             }
         }
         return "NULL";
+    }
+
+    public static void NextLanguage()
+    {
+        int language = (int)Instance.languageType;
+        language++;
+        language %= (int) LanguageType.End;
+        Instance.languageType = (LanguageType) language;
     }
 }
