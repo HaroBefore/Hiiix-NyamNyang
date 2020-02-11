@@ -61,6 +61,11 @@ public class Nyang : MonoBehaviour {
 
     [Header("냥이 조건")] [TextArea]
     public string condition;
+
+    [SerializeField]
+    private int conditionIndex;
+    public int ConditionIndex => conditionIndex;
+    
     [Header("냥이 특징")] [TextArea]
     // 냥이 특징.
     public string personality;
@@ -75,9 +80,14 @@ public class Nyang : MonoBehaviour {
     public string story;
 
     [SerializeField]
-    private int storyIndex;
+    private int story1Index;
 
-    public int StoryIndex => storyIndex;
+    public int StoryIndex => story1Index;
+
+    [SerializeField]
+    private int story2Index;
+
+    public int Story2Index => story2Index;
 
     // 냥이 인게임 오브젝트.
     public GameObject nyangObject { get; protected set; }

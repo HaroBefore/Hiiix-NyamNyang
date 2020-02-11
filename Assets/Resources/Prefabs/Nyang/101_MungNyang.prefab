@@ -147,11 +147,13 @@ MonoBehaviour:
   rank: 0
   position: 4
   condition: "\uADF8\uB0E5\r\n\uC5B8\uC820\uAC00 \uC634"
+  conditionIndex: 49
   personality: "\uBA4D\uD568\r\n\uADF8\uB0E5 \uBA4D\uD568"
   personalityIndex: 49
   story: "\uBA4D...\r\n... ...\r\n\r\n...\uC544! \r\n\uBA4D\uB0E5\uC774\uB294 \uBB34\uC2A8
     \uC0DD\uAC01\uC744\r\n\uD558\uB294\uAC78\uAE4C?"
-  storyIndex: 0
+  story1Index: 50
+  story2Index: 51
   canvasObject: {fileID: 0}
   sliderWait: {fileID: 0}
 --- !u!61 &441053851624275884

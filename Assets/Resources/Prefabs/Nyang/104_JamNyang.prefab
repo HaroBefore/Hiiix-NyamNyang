@@ -99,7 +99,7 @@ MonoBehaviour:
   index: 104
   nyangName: JamNyang
   NyangName: "\uC7A0\uB0E5\uC774"
-  nyangNameIndex: 0
+  nyangNameIndex: 60
   sprite:
   - {fileID: 21300000, guid: a2b802f90fc4b5e4a83b5787c77ce074, type: 3}
   - {fileID: 21300000, guid: 81df5a3f57a18034b89bde62c6307760, type: 3}
@@ -111,13 +111,15 @@ MonoBehaviour:
   rank: 0
   position: 3
   condition: "\uC790\uB2E4 \uC77C\uC5B4\uB098\uC11C\r\n\uCC3E\uC544\uC634"
+  conditionIndex: 61
   personality: "\uC7A0\uC744 \uC88B\uC544\uD568\r\n\uC7A0\uC790\uAE30 \uC804 \uBA39\uC74C"
-  personalityIndex: 0
+  personalityIndex: 61
   story: "\uC7A0\uB0E5\uC774\uB294 \uBD88\uBA74\uC99D\uC5D0 \uC2DC\uB2EC\uB9AC\uB2E4\r\n\uAC08\uBE44\uB97C
     \uBA39\uACE0 \uADF9\uBCF5\uD588\uB2E4\r\n\r\n\uBA39\uACE0 \uC790\uACE0 \uBA39\uACE0
     \uC790\uB294 \uAC83\uC774\r\n\uC7A0\uB0E5\uC774\uC758 \uC778\uC0DD!\r\n\"\uC5ED\uC2DC
     \uAFC0\uC7A0\uC5D4 \uAC08\uBE44\uC9C0\""
-  storyIndex: 0
+  story1Index: 62
+  story2Index: 63
   canvasObject: {fileID: 0}
   sliderWait: {fileID: 0}
 --- !u!61 &441053851624275884
