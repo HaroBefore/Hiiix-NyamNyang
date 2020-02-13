@@ -33,6 +33,11 @@ public class TextLocalizer : MonoBehaviour
 
     private void Start()
     {
+        ReloadText();
+    }
+
+    public void ReloadText()
+    {
         string str = StringDataObject.GetStringData(stringIndex);
         if (!string.IsNullOrEmpty(str) && str != "NULL")
         {

@@ -191,6 +191,7 @@ public class OptionManager : MonoBehaviour {
     public void Language_Next()
     {
         StringDataObject.NextLanguage();
+        FindObjectOfType<TextLocalizer>().ReloadText();
     }
     #endregion
 

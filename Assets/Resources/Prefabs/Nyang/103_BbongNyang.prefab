@@ -120,6 +120,8 @@ MonoBehaviour:
     \uB418\uC5C8\uB2E4."
   story1Index: 58
   story2Index: 59
+  sprStory1: {fileID: 21300000, guid: 1b3656dd3541e3548bf41a682010e8c7, type: 3}
+  sprStory2: {fileID: 21300000, guid: 45d741202b75ee64fbd5d11073d8f9c5, type: 3}
   canvasObject: {fileID: 0}
   sliderWait: {fileID: 0}
 --- !u!61 &441053851624275884

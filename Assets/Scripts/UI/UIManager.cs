@@ -260,6 +260,7 @@ public class UIManager : MonoBehaviour {
         NyangManager.Instance.EndSpawn();
         timeManager.Pause();
         
+        
         buffButton.SetActive(false);
         buffButton_Pushed.SetActive(true);
         TipManager.instance.CloseTip(TipType.Buff);
@@ -768,9 +769,20 @@ public class UIManager : MonoBehaviour {
             // 냥이 방문 조건을 달성하지 못했을 경우,
             else {
                 // Normal: 그냥 / 언젠가 옴.      Rare: 등장조건 보여줌.     Hidden: 걍 숨김.
-                if (nyang.rank == NyangRank.Normal) listObj.transform.GetChild(3).GetComponent<Text>().text = "그냥\n언젠가 옴.";
-                else if (nyang.rank == NyangRank.Rare) listObj.transform.GetChild(3).GetComponent<Text>().text = nyang.condition;
-                else if (nyang.rank == NyangRank.Hidden) listObj.transform.GetChild(3).GetComponent<Text>().text = "???\n??";
+                if (nyang.rank == NyangRank.Normal)
+                {
+                    listObj.transform.GetChild(3).GetComponent<Text>().text = "그냥\n언젠가 옴.";
+                }
+                else if (nyang.rank == NyangRank.Rare)
+                {
+                    //listObj.transform.GetChild(3).GetComponent<Text>().text = nyang.condition;
+                    listObj.transform.GetChild(3).GetComponent<Text>().text =
+                        StringDataObject.GetStringData(nyang.ConditionIndex);
+                }
+                else if (nyang.rank == NyangRank.Hidden)
+                {
+                    listObj.transform.GetChild(3).GetComponent<Text>().text = "???\n??";
+                }
             }
         }
     }
@@ -874,8 +886,6 @@ public class UIManager : MonoBehaviour {
     public void CloseAllUI() {
         if (meatSelectPanel.activeSelf) CloseMeatSelectPanel();
         if (sauceSelectPanel.activeSelf) CloseSauceSelectPanel();
-        if (NyangListPanel.activeSelf) CloseNyangListPanel();
-        if (NyangStoryPopup.activeSelf) CloseNyangStoryPopup();
         if (OptionPanel.activeSelf) CloseOption();
     }
 

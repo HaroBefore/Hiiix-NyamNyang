@@ -107,7 +107,7 @@ public class TimeManager : MonoBehaviour
 
     public float BuffCoolTime => buffCoolTime;
 
-    private float _leftBuffCoolTime;
+    private float _leftBuffCoolTime = 40f;
 
     private float LeftBuffCollTime
     {
@@ -118,6 +118,7 @@ public class TimeManager : MonoBehaviour
             {
                 _leftBuffCoolTime = 0f;
                 IsBuffAvailable = true;
+                TipManager.instance.ShowTip(TipType.Buff);
             }
             else
             {

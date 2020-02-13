@@ -26,6 +26,26 @@ public class NyangListManager : MonoBehaviour
     private Nyang nyangList05;
     private Nyang nyangList06;
 
+    [SerializeField]
+    private CanvasGroup canvasGroup;
+
+    [SerializeField]
+    private Slider sliderNyangAffaction;
+
+    [SerializeField]
+    private GameObject storyPopupClose;
+    [SerializeField]
+    private GameObject storyPopupOpen;
+
+    [SerializeField]
+    private Text textStory1;
+    [SerializeField]
+    private Text textStory2;
+    [SerializeField]
+    private Image imgStory1;
+    [SerializeField]
+    private Image imgStory2;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,8 +54,30 @@ public class NyangListManager : MonoBehaviour
     
     public void OpenNyangListPanel()
     {
+        UIManager uiManager = UIManager.instance;
+        if (uiManager != null)
+        {
+            if (uiManager.BuffPopup.activeSelf) return;
+        }
+        
         audioManager.Play(audioManager.box_open, 1f);
         audioManager.PauseCookMeat();
+
+        if (uiManager != null)
+        {
+            uiManager.Main_Objects.SetActive(false);
+            uiManager.Main_Scene.SetActive(false);
+            uiManager.Main_UI.SetActive(false);
+            uiManager.Calender.SetActive(false);
+            TipManager.instance.HideTip();
+            
+            // 게임 시간 멈추기.
+            TimeManager.Instance.Pause();
+            NyangManager.Instance.EndSpawn();
+
+            // 팁 닫기.
+            TipManager.instance.CloseTip(TipType.CatList);
+        }
 
         LoadAndSortNyangList();
         nyangList_currentPage = 0;
@@ -47,8 +89,23 @@ public class NyangListManager : MonoBehaviour
 
     public void CloseNyangListPanel()
     {
+        UIManager uiManager = UIManager.instance;
+        
         audioManager.Play(audioManager.box_close, 1f);
         audioManager.ResumeCookMeat();
+
+        if (uiManager != null)
+        {
+            InputManager.instance.AsdadSwitch();
+            uiManager.Main_Objects.SetActive(true);
+            uiManager.Main_Scene.SetActive(true);
+            uiManager.Main_UI.SetActive(true);
+            uiManager.Calender.SetActive(true);
+            TipManager.instance.UnhideTip();
+            
+            TimeManager.Instance.Resume();
+            NyangManager.Instance.BeginSpawn();
+        }
 
         NyangListPanel.SetActive(false);
     }
@@ -157,22 +214,40 @@ public class NyangListManager : MonoBehaviour
 
             // 획득하지 못한 Hidden인 경우에만 이름을 숨긴다.
             if (nyang.rank == NyangRank.Hidden && !(nyang.IsCollected))
+            {
                 listObj.transform.GetChild(2).GetComponent<Text>().text = "???";
+            }
             else
-                listObj.transform.GetChild(2).GetComponent<Text>().text = nyang.NyangName;
+            {
+                //listObj.transform.GetChild(2).GetComponent<Text>().text = nyang.NyangName;
+                listObj.transform.GetChild(2).GetComponent<Text>().text =
+                    StringDataObject.GetStringData(nyang.NyangNameIndex);
+            }
             // 냥이 방문 조건 달성한 경우 특징을 보여주고,
             if (nyang.IsCollected)
-                listObj.transform.GetChild(3).GetComponent<Text>().text = nyang.personality;
+            {
+                //listObj.transform.GetChild(3).GetComponent<Text>().text = nyang.personality;
+                listObj.transform.GetChild(3).GetComponent<Text>().text = 
+                    StringDataObject.GetStringData(nyang.PersonalityIndex);
+            }
             // 냥이 방문 조건을 달성하지 못했을 경우,
             else
             {
                 // Normal: 그냥 / 언젠가 옴.      Rare: 등장조건 보여줌.     Hidden: 걍 숨김.
                 if (nyang.rank == NyangRank.Normal)
+                {
                     listObj.transform.GetChild(3).GetComponent<Text>().text = "그냥\n언젠가 옴.";
+                }
                 else if (nyang.rank == NyangRank.Rare)
-                    listObj.transform.GetChild(3).GetComponent<Text>().text = nyang.condition;
+                {
+                    //listObj.transform.GetChild(3).GetComponent<Text>().text = nyang.condition;
+                    listObj.transform.GetChild(3).GetComponent<Text>().text =
+                        StringDataObject.GetStringData(nyang.ConditionIndex);
+                }
                 else if (nyang.rank == NyangRank.Hidden)
+                {
                     listObj.transform.GetChild(3).GetComponent<Text>().text = "???\n??";
+                }
             }
         }
     }
@@ -193,5 +268,57 @@ public class NyangListManager : MonoBehaviour
         else nyangList_currentPage = nyangList_maxPage;
         audioManager.Play(audioManager.button01);
         ShowNyangList(nyangList_currentPage);
+    }
+
+    public void OnBtnStoryPopupClicked(int index)
+    {
+        Nyang nyang = null;
+        switch (index)
+        {
+            case 0:
+                nyang = nyangList01;
+                break;
+            case 1:
+                nyang = nyangList02;
+                break;
+            case 2:
+                nyang = nyangList03;
+                break;
+            case 3:
+                nyang = nyangList04;
+                break;
+            case 4:
+                nyang = nyangList05;
+                break;
+            case 5:
+                nyang = nyangList06;
+                break;
+        }
+
+        int visitCnt = nyang.VisitCount;
+        if (visitCnt >= 50)
+        {
+            textStory1.text = StringDataObject.GetStringData(nyang.Story1Index);
+            textStory2.text = StringDataObject.GetStringData(nyang.Story2Index);
+            imgStory1.sprite = nyang.SprStory1;
+            imgStory1.SetNativeSize();
+            imgStory2.sprite = nyang.SprStory2;
+            imgStory2.SetNativeSize();
+            storyPopupOpen.SetActive(true);
+        }
+        else
+        {
+            sliderNyangAffaction.maxValue = 50;
+            sliderNyangAffaction.value = visitCnt;
+            storyPopupClose.SetActive(true);
+        }
+        canvasGroup.interactable = false;
+    }
+
+    public void OnBtnCloseClicked()
+    {
+        canvasGroup.interactable = true;
+        storyPopupOpen.SetActive(false);
+        storyPopupClose.SetActive(false);
     }
 }

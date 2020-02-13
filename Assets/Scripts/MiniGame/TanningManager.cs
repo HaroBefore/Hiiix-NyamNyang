@@ -204,7 +204,6 @@ public class TanningManager : MonoBehaviour
         }
 
         imgTanning.color = color;
-        Debug.Log(imgTanning.color);
         
         // 버프 전달.
         ReturnBuff(result);

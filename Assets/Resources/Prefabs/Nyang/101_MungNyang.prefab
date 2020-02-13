@@ -154,6 +154,8 @@ MonoBehaviour:
     \uC0DD\uAC01\uC744\r\n\uD558\uB294\uAC78\uAE4C?"
   story1Index: 50
   story2Index: 51
+  sprStory1: {fileID: 21300000, guid: 64a10827f7088a94db76fb0b87a51d63, type: 3}
+  sprStory2: {fileID: 21300000, guid: 1e571a87bea550a45a5ecc67c80d1813, type: 3}
   canvasObject: {fileID: 0}
   sliderWait: {fileID: 0}
 --- !u!61 &441053851624275884

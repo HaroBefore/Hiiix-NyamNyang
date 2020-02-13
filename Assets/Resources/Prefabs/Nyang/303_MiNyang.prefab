@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 1734432845
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 97356f32811e02148b9c53cffe860e84, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6dea4d5320f6f5f42871425e520164d9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -108,8 +108,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: ccedea6def511074bb8bb20dc142265c, type: 3}
   - {fileID: 21300000, guid: 7f5e7a79e17d7c640bb2190748656c30, type: 3}
   visitSprite: {fileID: 21300000, guid: 97356f32811e02148b9c53cffe860e84, type: 3}
-  rank: 1
-  position: 3
+  rank: 2
+  position: 2
   condition: 
   conditionIndex: 122
   personality: 
@@ -117,6 +117,8 @@ MonoBehaviour:
   story: 
   story1Index: 124
   story2Index: 125
+  sprStory1: {fileID: 0}
+  sprStory2: {fileID: 0}
   canvasObject: {fileID: 0}
   sliderWait: {fileID: 0}
 --- !u!61 &441053851624275884
@@ -136,7 +138,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 2.1, y: 2.32}
+    oldSize: {x: 2.34, y: 2.92}
     newSize: {x: 3, y: 3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

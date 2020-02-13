@@ -109,7 +109,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 1fcb0e07235922e47948c54b275baee6, type: 3}
   visitSprite: {fileID: 21300000, guid: 548d53d021c870e4eaf5cef929ca31b3, type: 3}
   rank: 1
-  position: 0
+  position: 3
   condition: "\uC624\uD508 30\uC77C\uC9F8\r\n\uC220\uB9C8\uC2DC\uB7EC \uC634"
   conditionIndex: 92
   personality: "\uB9E8\uB0A0\uB9E8\uB0A0\r\n\uC220\uBA39\uB294\uAC8C \uC88B\uC544"
@@ -120,6 +120,8 @@ MonoBehaviour:
     \uBB3C\uC57D\uC774\uB2E4. "
   story1Index: 94
   story2Index: 95
+  sprStory1: {fileID: 21300000, guid: 037438860036bbe45b921faae9f7df90, type: 3}
+  sprStory2: {fileID: 21300000, guid: 8d6be184642b90f4fb6a9cafe96c36be, type: 3}
   canvasObject: {fileID: 0}
   sliderWait: {fileID: 0}
 --- !u!61 &441053851624275884
