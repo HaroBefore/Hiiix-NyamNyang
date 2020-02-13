@@ -127,7 +127,7 @@ public class GameManager : MonoBehaviour
     {
         CleanUpEvent();
     }
-
+    
     public bool isBuffTipOn { set; get; }
 
     private int BuffTipTime;
@@ -179,7 +179,9 @@ public class GameManager : MonoBehaviour
         Debug.Log("OPEN START");
 
         AudioManager.Instance?.PlayBGM();
+
         _timeManager.SetTime();
+        _timeManager.ResetBuffCoolTime();
         if (timeType == TimeType.AM)
         {
             _goldManager.IncomeAm = 0;
@@ -346,7 +348,10 @@ public class GameManager : MonoBehaviour
         _tutorialManager.EventEndTutorial += OnEndTutorial;
     }
 
-    public bool IsBuffAvailable { get; private set; }
+    public bool IsBuff { get; private set; } = false;
+
+    [SerializeField]
+    private float waitBuffTime = 40f;
 
     private void OnTimeOver()
     {
@@ -397,13 +402,30 @@ public class GameManager : MonoBehaviour
 
     public void BuffActivate()
     {
-        IsBuffAvailable = true;
+        IsBuff = true;
+        _timeManager.ResetBuffCoolTime();
+        _uiManager.CloseBuffPopup();
+        _uiManager.buffButton_Pushed.SetActive(true);
+        _uiManager.buffButton.SetActive(false);
+
+        if (_nyangManager.orderNyang != null)
+        {
+            _cookManager.ThrowOut();
+            _cookManager.SetFinishFood();
+        }
+        
+        _timeManager.SetBuffDurationTime();
+        _timeManager.IsBuffAvailable = false;
+        _goldManager.IsBuff = true;
+        Debug.Log("BuffActivate");
         EventBuffActivate();
     }
 
     public void BuffDeactivate()
     {
+        IsBuff = false;
+        _goldManager.IsBuff = false;
+        Debug.Log("BuffDeactivate");
         EventBuffDeactivate();
-        IsBuffAvailable = false;
     }
 }

@@ -12,17 +12,6 @@ public class GoldManager : MonoBehaviour
 
     public static GoldManager instance;
 
-    [Header("버프 지속 시간")]
-    public float BuffDuration;
-    private float _buffDuration;
-    private float buffDuration {
-        get { return _buffDuration; }
-        set {
-            _buffDuration = value;
-            PlayerPrefs.SetFloat("BuffDuration", value);
-        }
-    }
-
     private bool isBuff;
     public bool IsBuff {
         get { return isBuff; }
@@ -103,17 +92,7 @@ public class GoldManager : MonoBehaviour
 
         achievementManager = FindObjectOfType<AchievementManager>();
     }
-
-    void Start() {
-        BuffDuration = 60;
-        buffDuration = PlayerPrefs.GetFloat("BuffDuration");
-        if (buffDuration > 0) IsBuff = true;
-    }
-
-    void Update() {
-        BuffDurationDown();
-    }
-
+  
     public float getFactor() {
         // 선탠 게임 보너스.
         //float TanningBonus = (TimeManager.Instance.timeType > TimeType.PMOpenTime) ? this.TanningBonus : 1;
@@ -124,20 +103,4 @@ public class GoldManager : MonoBehaviour
         watasinopointowa = conscienceBonus * BuffBonus * TanningBonus;
         return watasinopointowa;
     }
-
-
-
-    private void BuffDurationDown() {
-        if (!IsBuff) return;
-        if(buffDuration < BuffDuration) {
-            buffDuration += Time.deltaTime;
-            return;
-        }
-
-        IsBuff = false;
-
-        buffDuration = 0;
-    }
-    
-
 }

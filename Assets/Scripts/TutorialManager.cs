@@ -722,6 +722,7 @@ public class TutorialManager : MonoBehaviour
         AngryGuage.transform.GetChild(1).GetComponent<RectTransform>().sizeDelta = new Vector2(28, 34);
     }
     public void AngryGuageOff() {
+        Debug.Log("AngryGuageOff");
         AngryGuage.SetActive(false);
     }
     public void SetAngryGuage(float f) {

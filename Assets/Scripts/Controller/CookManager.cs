@@ -81,8 +81,26 @@ public class CookManager : MonoBehaviour {
     }
     public void OpenRecipe() {
         UIManager.instance.OpenRecipe(orderedRecipe[0].index, orderedRecipe[1].index, orderedRecipe[2].index);
-        OpenMeatBox();
+        if (GameManager.Instance.IsBuff)
+        {
+            SetFinishFood();
+        }
+        else
+        {
+            OpenMeatBox();
+        }
     }
+
+    public void SetFinishFood()
+    {
+        SelectMeat(orderedRecipe[0]);
+        cookFood.Cook_FinishGrill();
+        cookFood.SetSauce(orderedRecipe[1]);
+        cookFood.SetPowder(orderedRecipe[2]);
+        cookFood.Cook_FinishAll();
+        cookFood.step = CookStep.Complete;
+    }
+    
     public void OpenMeatBox() {
         // 고기 선택 창을 띄운다.
         UIManager.instance.OpenMeatSelectPanel();

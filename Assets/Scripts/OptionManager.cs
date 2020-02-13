@@ -46,6 +46,8 @@ public class OptionManager : MonoBehaviour {
     private bool isSoundOn;
     private bool isPushOn;
 
+    public GameObject optionPanel;
+    
     void Awake() {
         if (!instance) instance = this;
 
@@ -76,6 +78,22 @@ public class OptionManager : MonoBehaviour {
                     NextTutorial();
             }
         }
+    }
+
+    public void ShowOption()
+    {
+        AudioManager audioManager = AudioManager.Instance;
+        audioManager?.Play(audioManager.box_open, 1f);
+        
+        optionPanel.SetActive(true);
+        OptionReset();
+    }
+
+    public void HideOption()
+    {
+        AudioManager audioManager = AudioManager.Instance;
+        audioManager?.Play(audioManager.box_close, 1f);
+        optionPanel.SetActive(false);
     }
 
     public void OptionReset() {

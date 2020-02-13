@@ -2,1248 +2,2173 @@
 	{
 		"Index" : "1",
 		"Korean" : "구경하는 냥이들",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Kitties watching the event ",
+		"Japanese" : "何かを見ているニャンコたち",
+		"ChineseGan" : "在湊熱鬧的小貓們， ",
+		"ChineseBun" : "在凑热闹的小猫们， ",
+		"French" : "les chats spectateurs "
 	},
 	{
 		"Index" : "2",
 		"Korean" : "주인냥이",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Main kitty ",
+		"Japanese" : "店長ニャン",
+		"ChineseGan" : "主人貓啊 ",
+		"ChineseBun" : "主人猫啊 ",
+		"French" : "le  chaton héros"
 	},
 	{
 		"Index" : "3",
 		"Korean" : "팁냥이",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Smart kitty",
+		"Japanese" : "コツニャン",
+		"ChineseGan" : "隊貓們 ",
+		"ChineseBun" : "队猫们 ",
+		"French" : "le  chat conseiller"
 	},
 	{
 		"Index" : "4",
 		"Korean" : "저 냥이 지금 몇 번째 계속 올인이냥?
 타고 난 꾼이다냥! 설마 이번에도 올인이냥?",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "How many times he has gone All in?
+ He's cut out for it ! You don't say he's gonna go All-in again? ",
+		"Japanese" : "あのニャンコ何回も持ってる金全部かけてるにゃ生まれつきのギャンブラーだにゃ！まさか今回も全部賭けるのかにゃ？",
+		"ChineseGan" : "那隻貓現在是連續幾次全押（all-in)了？  
+我根本是高手啊 
+喵！該不會這次也是全押？ ",
+		"ChineseBun" : "那只猫现在是连续几次全押（all-in)了？ 
+我根本是高手啊 
+喵！ 该不会这次也是全押？ ",
+		"French" : "Il prend des risques  à miser comme  ça!
+Mais il joue bien! Attends... Il va  à nouveau parier tout ce qu'il a?"
 	},
 	{
 		"Index" : "5",
 		"Korean" : "올인! 사나이라면 무조건 올인이다냥! 
 한 방에 10배까지 가즈아냥~!",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "All-in! The real man is never afraid of losing! 
+ten times or nothing!! ",
+		"Japanese" : "全部！男なら全て賭けるのだにゃ！
+一発で10倍まで儲けるにゃー！",
+		"ChineseGan" : "全押！無條件要全押 喵！ 
+一次到了十倍，走吧！ ",
+		"ChineseBun" : "全押！ 无条件要全押 喵！ 
+一次到了十倍，走吧！ ",
+		"French" : "Un homme, un vrai, ça  mise tout.
+Je mise tout! À dix contre un!"
 	},
 	{
 		"Index" : "6",
 		"Korean" : "주인냥! 내 돈까지 10배로 잘 부탁한다냥-! 
 우린 이제 졸부다냥!!",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Main kitty! I just bet all my money too, 
+make it ten times!!  We are gonna be rich!",
+		"Japanese" : "店長ニャン！僕のお金まで10倍にしてにゃー！
+僕たちはもうお金持ちだにゃ!!",
+		"ChineseGan" : "主人貓！加上我的錢，用上十倍 
+拜託你們了！ 我們現在是土豪了！！ ",
+		"ChineseBun" : "主人猫！ 加上我的钱，用上十倍 
+拜托你们了！ 我们现在是土豪了！！ ",
+		"French" : "Chaton héros! Moi aussi, je remets tout ce que j'ai en jeu!
+Remportons gros tous les deux!
+"
 	},
 	{
 		"Index" : "7",
 		"Korean" : "오늘은 운수가 좋더라니.. 우린 완전 망했다냥.. 
 한 방에 다 날려 먹어버렸다냥..!",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "No wonder It went well today.. 
+We blew it in the end..  ",
+		"Japanese" : "今日は運がいいと思ったにゃ…完全に破産したにゃ
+儲けるところか、一発でやられたにゃ…！",
+		"ChineseGan" : "今天走運了...我們完全完蛋了... 
+ 一次就徹底花光...！ ",
+		"ChineseBun" : "今天走运了... 我们完全完蛋了... 
+ 一次就彻底花光...！ ",
+		"French" : "On était si bien partis!
+Et on a tout perdu d'un coup..."
 	},
 	{
 		"Index" : "8",
 		"Korean" : "그러게 내 말대로 적당히 치고 빠졌어지냥! 
 이제 어쩔거냥!? 빚만 잔뜩 쌓였다냥!",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "I told you to stop!! all we had to do was hit and run!! 
+what should we do now? we all ended up in debt !!  ",
+		"Japanese" : "だから僕の言う通り、ほどほどにするべきだったにゃ！
+これからどうするつもりだにゃ!?借金まみれだにゃ!",
+		"ChineseGan" : "就是照我的話來說，適當地攻擊然後必須撤退！ 
+現在要怎麼辦啊！？ 欠了一屁股債！ ",
+		"ChineseBun" : "就是照我的话来说，适当地攻击然后必须撤退！ 
+ 现在要怎么办啊！？ 欠了一屁股债！ ",
+		"French" : "Je t'avais dit qu'il fallait jouer raisonnablement et savoir s'arrêter.
+Qu'est-ce qu'on va faire maintenant?! On s'est endettés!"
 	},
 	{
 		"Index" : "9",
 		"Korean" : "자기 돈까지 10배로 불려달라던 놈이 뭔 소리냥!?
 네가 부추기지만 않았어도 적당히 했을 거다냥!",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "What are you talking about? 
+I wouldn't have gone all-in once again 
+If you hadn't tempted me into it! ",
+		"Japanese" : "自分のお金まで10倍にしてって言ってたやつが何言ってるにゃ!?
+煽られてなければほどほどにしてたにゃ!",
+		"ChineseGan" : "自己用十倍的錢叫來的傢伙在說什麼鬼話？！ 
+ 是你挑釁的沒錯，就算你沒這樣也會適可而止的！ ",
+		"ChineseBun" : "自己用十倍的钱叫来的家伙在说什么鬼话？！ 
+ 是你挑衅的没错，就算你没这样也会适可而止的！ ",
+		"French" : " C'est toi qui as voulu miser à dix contre un!
+Si tu ne m'avais pas influencé, j'aurais été raisonnable!
+"
 	},
 	{
 		"Index" : "10",
 		"Korean" : "그나저나 이제 어쩔 거냥?
 남은 거라곤 이 작은노점상 하나뿐인데냥...",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "By the way, what should we do now? 
+all we got is this small food stall man..",
+		"Japanese" : "で、これからどうするつもりにゃ？
+この小さい屋台しか残ってないにゃ…",
+		"ChineseGan" : "話說回來現在該怎麼辦？ 
+只剩下這一個小攤販了... ",
+		"ChineseBun" : "话说回来现在该怎么办？ 
+只剩下这一个小摊贩了... ",
+		"French" : "Qu'est-ce qu'on va faire maintenant?
+Tout ce qui nous reste c'est ce petit stand...
+"
 	},
 	{
 		"Index" : "11",
 		"Korean" : "어쩌긴 어쩌냥.. 여기서 다시 시작이다냥..!
 누가 조금만 투자해 주면 금방 졸부가 될텐데...",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Well.. we are just gonna restart here.. 
+We could really use an investment man.. 
+one investment could make us rich...",
+		"Japanese" : "どうもこうも…ここからやり直しだにゃ
+誰か少しだけ出資してくれればすぐお金持ちになれるのに",
+		"ChineseGan" : "能怎麼辦...在此重新開始了...！ 
+只要誰投資一點點的話，馬上能變土豪欸 ",
+		"ChineseBun" : "能怎么办... 在此重新开始了...！ 
+只要谁投资一点点的话，马上能变土豪欸 ",
+		"French" : "On n'a pas d'autre choix... Il va falloir repartir de zéro  avec  ça.
+Si seulement on avait un investisseur pour nous aider  à démarrer..."
 	},
 	{
 		"Index" : "12",
 		"Korean" : "그러게냥.. 조금만 투자해주면 얼마나 좋을까냥?
 정말 조금만 투자해주면 될텐데냥..",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "I know right.... We could really use an investment... 
+I mean just a little investment will do..",
+		"Japanese" : "そうだにゃ…少しだけ出資してくれたらいいのににゃ
+ほんとう少しだけ出資してくれたらいいのににゃ…",
+		"ChineseGan" : "就是說啊...只要誰投資一下的話該有多好？ 
+ 真的只要投資一點點給我們... ",
+		"ChineseBun" : "就是说啊... 只要谁投资一下的话该有多好？ 
+ 真的只要投资一点点给我们.. ",
+		"French" : " C'est vrai... un petit investissement nous aiderait tellement.
+"
 	},
 	{
 		"Index" : "13",
 		"Korean" : "우리는 불쌍한 거지냥이다냥... 
 우리 가게에 조금만 투자하지 않겠냥?",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "We are flat broke now... 
+Could you please invest your money into our food stall?",
+		"Japanese" : "僕たちは可哀想な貧乏ニャンコだにゃ。
+僕たちのお店に少しだけ出資してくれないにゃ？",
+		"ChineseGan" : "我們是可憐的乞丐貓啊...  
+真的不願意投資給我們店嗎？ ",
+		"ChineseBun" : "我们是可怜的乞丐猫啊... 
+真的不愿意投资给我们店吗？ ",
+		"French" : " Nous ne sommes que de pauvres chats...
+Voudriez-vous venir en aide  à notre petit commerce?
+"
 	},
 	{
 		"Index" : "14",
 		"Korean" : "우리 가게에 투자 해 준다면 앞으로 봐야 할 
 수 많은 광고들을 지워줄 수 있지냥!",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "If you invest in our business, 
+we'll remove upcoming ads for you!",
+		"Japanese" : "僕たちのお店に出資してくれるなら、
+これから出てくる広告を消してあげるにゃ！",
+		"ChineseGan" : "如果在我們店投資的話以後就可以刪除很多廣告了！ ",
+		"ChineseBun" : "如果在我们店投资的话以后就可以删除很多广告了！ ",
+		"French" : "Si vous acceptez, nous ferons en sorte 
+que vous ne voyiez plus aucune publicité à l'avenir.
+"
 	},
 	{
 		"Index" : "15",
 		"Korean" : "냥이들의 바다노점상에 투자할까요?",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : " Are you gonna invest money into them or not? ",
+		"Japanese" : "ニャンコたちが経営する海の屋台に出資しますか",
+		"ChineseGan" : "小貓們 
+要一起投資小攤販嗎？ ",
+		"ChineseBun" : "小猫们 
+要一起投资小摊贩吗？ ",
+		"French" : "Voulez-vous contribuer au commerce des chatons?
+"
 	},
 	{
 		"Index" : "16",
 		"Korean" : "투자할래!",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "I am!!",
+		"Japanese" : "出資する！",
+		"ChineseGan" : "要投資！ ",
+		"ChineseBun" : "要投资！ ",
+		"French" : " Oui, je veux contribuer!
+"
 	},
 	{
 		"Index" : "17",
 		"Korean" : "투자안해!",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "No I am not!!",
+		"Japanese" : "出資しない！",
+		"ChineseGan" : "不要投資～ ",
+		"ChineseBun" : "不要投资～ ",
+		"French" : " Non, je  ne  veux pas contribuer!
+"
 	},
 	{
 		"Index" : "18",
 		"Korean" : "고마워냥! 역시 넌 좋은 사람이다냥! 우린 친구다냥! 
 이 은혜는 잊지 않을게냥. 행복해라냥.",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Naturally!! Thank you bro ! we are friends now! 
+I'll never forget your hospitality man! 
+I'll keep my fingers crossed for you!",
+		"Japanese" : "ありがとうにゃ!やっぱ君はいい人だにゃ！僕たちはもう友達だにゃ！
+この恩は一生忘れないにゃ。幸せになれにゃ",
+		"ChineseGan" : "謝謝啊！果然你是好人啊！是我們的朋友！ 
+ 這份恩惠不會忘的！祝你幸福！ ",
+		"ChineseBun" : "谢谢啊！ 果然你是好人啊！ 是我们的朋友！ 
+ 这份恩惠不会忘的！ 祝你幸福！",
+		"French" : " Merci! Je savais que tu étais quelqu'un de bien!
+Je n'oublierai pas ta  générosité!
+"
 	},
 	{
 		"Index" : "19",
 		"Korean" : "덕분에 가게를 좀 더 편하게 운영할 수 있게 됐어냥.
 보답으로 매일 뜨는 광고를 없애줄게냥!",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Thanks to you, now we can run this business more easily! 
+you are not going to see all ads popping everyday in return!!",
+		"Japanese" : "おかげで助かったにゃ
+お礼に毎日出てくる広告を消してあげるにゃ！",
+		"ChineseGan" : "多虧了你們，店裡能更順利的經營了。 
+ 將以往後再也不跳出廣告作為報答！",
+		"ChineseBun" : "多亏了你们，店里能更顺利的经营了。 
+ 将以往后再也不跳出广告作为报答！ ",
+		"French" : "Grâce à toi, on pourra travailler plus sereinement.
+Pour te remercier, tu ne verras plus aucune publicité.
+"
 	},
 	{
 		"Index" : "20",
 		"Korean" : "그래.. 그렇단 말이지냥.. 투자를 안 한단 말이지냥..
 괜찮아냥. 생각이 바뀌면 언제든 말해냥.",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Alright... is that so.... it's okay but just let me know anything
+if you change your mind.  ",
+		"Japanese" : "にゃ…そうなんだにゃ…出資してくれないんだにゃ…
+大丈夫にゃ。心が変わったらいつでも言ってにゃ",
+		"ChineseGan" : "那好吧...沒錯...不投資的話... 
+ 沒關係，改變主意的話隨時都可以說。",
+		"ChineseBun" : "那好吧... 没错... 不投资的话... 
+没关系，改变主意的话随时都可以说。 ",
+		"French" : " D'accord... ce n'est pas grave.
+Dis-moi si jamais tu changes d'avis.
+"
 	},
 	{
 		"Index" : "21",
 		"Korean" : "아쉽다냥. 투자를 하면 모두가 행복해질 텐데냥.
 어쩔 수 없지냥. 그럼 시작해보자냥.",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "That's too bad man.. one investment could make us happy though.. 
+It's what it is.. alright let's just start from scratch.",
+		"Japanese" : "残念だにゃ、出資してくれたらみんなが幸せになれるのににゃ
+仕方ないにゃ、じゃあ、始めるにゃ",
+		"ChineseGan" : "好可惜，投資的話一切都會變得更好的 ",
+		"ChineseBun" : "好可惜，投资的话一切都会变得更好的 ",
+		"French" : "Dommage. Une contribution nous aurait bien  aidés.
+Mais tant pis. Mettons-nous au travail.
+"
 	},
 	{
 		"Index" : "22",
 		"Korean" : "얼른 와! 늦었잖냥! 
 손님들이 기다리겠다냥.",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "C'mon! hurry up! 
+The customers are waiting for our food.",
+		"Japanese" : "急いでにゃ！遅いにゃ！お客さんが待っているにゃ",
+		"ChineseGan" : "快點來！遲到了 
+ 客人在等我們了 ",
+		"ChineseBun" : "快点来！ 迟到了 
+ 客人在等我们了 ",
+		"French" : "Viens vite! Dépêche-toi!
+Les clients attendent déjà.
+"
 	},
 	{
 		"Index" : "23",
 		"Korean" : "저기 보이는 게이지는
 냥이들의 인내심이다냥.",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "You see the meter there? 
+It represents kitty's patience.",
+		"Japanese" : "あそこに見えるゲージは
+にゃんこたちの我慢度だにゃ",
+		"ChineseGan" : "那邊看得到的儀表是你們的耐心 ",
+		"ChineseBun" : "那边看得到的仪表是你们的耐心 ",
+		"French" : "Cette barre représente 
+la patience des chatons.
+"
 	},
 	{
 		"Index" : "24",
-		"Korean" : "인내심이 바닥나기 전에 
-냥이를 드래그 해봐냥!",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"Korean" : "냥이가 떠나기 전에
+가게로 드래그해봐냥!",
+		"English" : "Before they run out of patience
+Drag the kitty!",
+		"Japanese" : "ゲージがたまる前に
+ニャンコをドラッグしてみようにゃ",
+		"ChineseGan" : "在耐心都耗盡之前，
+貓咪們拉看看吧 ",
+		"ChineseBun" : "在耐心都耗尽之前，
+猫咪们拉看看吧 ",
+		"French" : "Clique sur le chat et  fais-le  glisser, 
+avant qu'il ne perde patience.
+"
 	},
 	{
 		"Index" : "25",
-		"Korean" : "냥이들이 떠나기 전에
-빨리 갈비를 줘야한다냥!",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"Korean" : "잘했다냥! 이제
+손님냥이가 기다릴 동안
+갈비를 구워보자냥!",
+		"English" : "We have to serve ribs 
+before they leave!",
+		"Japanese" : "ニャンコたちがどこか行っちゃう前に
+早くお肉をあげなきゃだにゃ",
+		"ChineseGan" : "趁貓咪們都離開之前，
+趕快丟排骨吧！ ",
+		"ChineseBun" : "趁猫咪们都离开之前，
+赶快丢排骨吧！ ",
+		"French" : " Donne vite des  côtes  de boeuf aux chats, 
+avant qu'ils ne partent.
+"
 	},
 	{
 		"Index" : "26",
 		"Korean" : "지붕에 레시피를 보고
 그대로 만들어 보자냥!",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "See the recipe on the roof 
+ And make food as it says!",
+		"Japanese" : "屋根に書いてあるレシピを見て
+そのまま作ってみようにゃ",
+		"ChineseGan" : "看了屋頂上的食譜，
+只是跟著做吧！ ",
+		"ChineseBun" : "看了屋顶上的食谱，
+只是跟着做吧！ ",
+		"French" : " La recette est indiquée au plafond.
+Tu n'as plus qu'à la suivre!
+"
 	},
 	{
 		"Index" : "27",
 		"Korean" : "먼저 갈비를 손으로
 드래그 해봐냥.",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "First of all 
+drag the ribs.",
+		"Japanese" : "まず、指でお肉を
+ドラッグしてみようにゃ",
+		"ChineseGan" : "先用手拉看看肉排吧 ",
+		"ChineseBun" : "先用手拉看看肉排吧 ",
+		"French" : " D'abord, clique sur les côtes  de boeuf 
+et  fais-les  glisser. 
+"
 	},
 	{
 		"Index" : "28",
 		"Korean" : "아래로 스와이프하면
 갈비를 구울 수 있다냥!",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "When you swipe down
+ you can grill the ribs!",
+		"Japanese" : "下にスワイプすれぱ
+お肉を焼くことができるにゃ！",
+		"ChineseGan" : "往下滑動（swipe）的話，
+可以烤肉了 ",
+		"ChineseBun" : "往下滑动（swipe）的话，
+可以烤肉了 ",
+		"French" : " Swipe vers le bas 
+pour faire cuire la viande.
+"
 	},
 	{
 		"Index" : "29",
 		"Korean" : "색이 바뀌고
 연기가 올라오면
 다 구워진거다냥!",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "When the color changes 
+and steam goes up, 
+it shows that the ribs are done! ",
+		"Japanese" : "色が変わって
+煙が出たら
+焼き上がりだにゃ",
+		"ChineseGan" : "（肉）變色的話，
+又有煙冒出來的話就是烤好了 ",
+		"ChineseBun" : "（肉）变色的话，
+又有烟冒出来的话就是烤好了 ",
+		"French" : "Quand la couleur change 
+et que de la fumée monte, 
+la viande est  à  point."
 	},
 	{
 		"Index" : "30",
 		"Korean" : "이제 가루를 
 드래그 해보자냥.",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Fron now on
+it's time to drag the powder ",
+		"Japanese" : "では、粉末を
+ドラッグしてみようにゃ",
+		"ChineseGan" : "現在拉麵粉看看 ",
+		"ChineseBun" : "现在拉面粉看看 ",
+		"French" : "Maintenant, fais glisser les épices."
 	},
 	{
 		"Index" : "31",
 		"Korean" : "다음은 소스를
 드래그 해보자냥.",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "After that,
+you drag the sauce. ",
+		"Japanese" : "次は、ソースを
+ドラッグしてみようにゃ",
+		"ChineseGan" : "接下來拉醬汁看看 ",
+		"ChineseBun" : "接下来拉酱汁看看 ",
+		"French" : "Ensuite, fais glisser la sauce."
 	},
 	{
 		"Index" : "32",
 		"Korean" : "가루와 소스 색이 나오면 
 갈비가 다 완성된거다냥!
 완성된 갈비를 터치해냥.",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "When the powder and sauce come out, 
+the ribs are ready! 
+now click on the ribs.",
+		"Japanese" : "粉末とソースの色が出たら
+出来上がりだにゃ！
+出来上がったのをタッチしてにゃ",
+		"ChineseGan" : "麵粉與醬汁的顏色出現的話，排骨肉就大功告成了 
+ 可以摸到完成的排骨肉 ",
+		"ChineseBun" : "面粉与酱汁的颜色出现的话，排骨肉就大功告成了  
+可以摸到完成的排骨肉 ",
+		"French" : "Quand tout est mélangé, 
+les  côtes de boeufs sont prêtes!
+Tu n'as plus qu'à cliquer dessus."
 	},
 	{
 		"Index" : "33",
 		"Korean" : "아주 잘했다냥! 
 돈은 내가 받고 있으니,
 걱정하지 말라냥!",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Good job man! 
+I'm taking care of money now, 
+so don't worry about it!!",
+		"Japanese" : "よくできたにゃ！
+お金は僕がちゃんともらっているから、
+心配いらないにゃ！",
+		"ChineseGan" : "做得好啊！ 
+ 我先收下錢了，不用擔心！ ",
+		"ChineseBun" : "做得好啊！ 
+ 我先收下钱了，不用担心！ ",
+		"French" : "Bon travail! 
+Ne t'en fais pas pour l'argent.
+Je m'occupe de l'encaisser.
+"
 	},
 	{
 		"Index" : "34",
-		"Korean" : "갈비는 타기전에
-얼른 줘야한다냥.",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"Korean" : "아차, 갈비는 너무 오래 
+구으면 타니까 조심해라냥!",
+		"English" : "You should serve ribs 
+before they get burnt.",
+		"Japanese" : "お肉は焦げる前に焼き上げなきゃ
+いけないにゃ",
+		"ChineseGan" : "在排骨烤焦之前，趕快給吧 ",
+		"ChineseBun" : "在排骨烤焦之前，赶快给吧 ",
+		"French" : "Sers vite les côtes  de boeuf 
+avant qu'elles ne soient trop cuites.
+"
 	},
 	{
 		"Index" : "35",
 		"Korean" : "탄 갈비를 주거나
 레시피와 다르게 주면
 냥이들이 화낼거다냥.",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "If the kitties are given the burnt one 
+or the one different from the recipe 
+they would really get angry.",
+		"Japanese" : "焦げたお肉を出したり、
+レシピとは違うお肉を出したら
+ニャンコたちが怒るにゃ",
+		"ChineseGan" : "給烤焦的排骨肉或是給了與食譜不同的東西，
+貓咪們可是會生氣的 ",
+		"ChineseBun" : "给烤焦的排骨肉或是给了与食谱不同的东西，
+猫咪们可是会生气的 ",
+		"French" : "Si tu leur donnes de la viande trop cuite, 
+ou que tu ne suis pas la recette, 
+les chatons seront fâchés.
+"
 	},
 	{
 		"Index" : "36",
 		"Korean" : "그러니 쓰레기통을
 잘 활용해냥.",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "So make the most of trash can icon.",
+		"Japanese" : "だから、ごみ箱を上手く
+使うといいにゃ",
+		"ChineseGan" : "所以說好好利用垃圾桶吧 ",
+		"ChineseBun" : "所以说好好利用垃圾桶吧 ",
+		"French" : "Tu peux utiliser la poubelle, 
+si besoin.
+"
 	},
 	{
 		"Index" : "37",
 		"Korean" : "쓰레기통을 터치하면
 갈비를 버릴 수 있다냥.",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "When you click on that icon
+you can throw it away.",
+		"Japanese" : "ごみ箱をタッチすると
+お肉を捨てることができるにゃ",
+		"ChineseGan" : "触碰垃圾桶的话，排骨肉即可丢弃 ",
+		"ChineseBun" : "触碰垃圾桶的话，排骨肉即可丢弃 ",
+		"French" : " Clique sur la poubelle 
+pour y jeter la viande."
 	},
 	{
 		"Index" : "38",
 		"Korean" : "그럼 우리 같이 
 졸부가 되어보자냥!",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "So let's make it big together! ",
+		"Japanese" : "じゃあ、一緒に
+お金持ちになってみようにゃ！",
+		"ChineseGan" : "那麼讓我們一起變成土豪吧！ ",
+		"ChineseBun" : "那么让我们一起变成土豪吧！ ",
+		"French" : " Tu es prêt!
+Maintenant, il est temps de se mettre au travail.
+"
 	},
 	{
 		"Index" : "39",
 		"Korean" : "갈비 굽느라 수고했다냥! 
 휴식으로 선탠을 도와줄게냥!",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Thanks for your job man!
+I'm gonna help you bask in the break time! ",
+		"Japanese" : "お疲れ様にゃ！リフレッシュとして、
+日焼けするのを手伝ってあげるにゃ！",
+		"ChineseGan" : "因爲烤了肉，辛苦了！ 
+ 用休息幫助曬黑！ ",
+		"ChineseBun" : "因为烤了肉，辛苦了！ 
+ 用休息帮助晒黑！ ",
+		"French" : "Tu as bien travaillé! 
+Allons nous dorer au soleil pour nous détendre."
 	},
 	{
 		"Index" : "40",
 		"Korean" : "태닝도 갈비랑 같다냥. 
 적당히 잘 굽는게 포인트!",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Much like ribs, so are basking! 
+The point is everything in moderation!  ",
+		"Japanese" : "日焼けをする時も、お肉と同じく
+丁度いいところで止めるのが大事！",
+		"ChineseGan" : "曬黑也與排骨肉差不多 
+ 關鍵是要適當地烤！ ",
+		"ChineseBun" : "晒黑也与排骨肉差不多 
+ 关键是要适当地烤！ ",
+		"French" : "C'est un peu comme cuire des côtes  de boeuf.
+Ce qui compte c'est la mesure!"
 	},
 	{
 		"Index" : "41",
 		"Korean" : "온도계를 잘 보고 온도가 
 화살표까지 오르면",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "See the thermometer carefully
+when it goes up to the point",
+		"Japanese" : "温度計を見て、
+矢印のところまで温度が上がったら",
+		"ChineseGan" : "好好地看溫度計，溫度網箭頭符號上升的話 ",
+		"ChineseBun" : "好好地看温度计，温度网箭头符号上升的话 ",
+		"French" : "Surveille le thermomètre.
+Il ne doit pas dépasser la limite."
 	},
 	{
 		"Index" : "42",
 		"Korean" : "오른쪽 아래의 버튼을
 빠르게 눌러줘라냥!",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Just click on the bottom button 
+on the right quickly!!",
+		"Japanese" : "右下のボタンを
+素早く押してにゃ！",
+		"ChineseGan" : "右下的按鈕趕快按下去 ",
+		"ChineseBun" : "右下的按钮赶快按下去 ",
+		"French" : " Clique vite  sur le bouton 
+en bas à  droite!
+"
 	},
 	{
 		"Index" : "43",
 		"Korean" : "아주 잘했다냥!
 맛잇어 보이게 구웠다냥.",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Good job!! 
+It looks so good!",
+		"Japanese" : "よくできたにゃ！
+美味しそうに焼き上がったにゃ",
+		"ChineseGan" : "做得很好！ 
+ 很酷得烤好了 ",
+		"ChineseBun" : "做得很好！ 
+ 很酷得烤好了 ",
+		"French" : " C'est parfait! 
+Je te félicite!
+"
 	},
 	{
 		"Index" : "44",
 		"Korean" : "선탠에 성공했으니, 
 오후 장사는 더 잘될거다냥!",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "we've succeeded in basking! 
+I have a feeling we are gonna 
+make more money in the evening!",
+		"Japanese" : "日焼けに成功したから
+きっと午後の売り上げが上がるにゃ",
+		"ChineseGan" : "既然成功地曬黑了， 
+午後的生意更好了 ",
+		"ChineseBun" : "既然成功地晒黑了， 
+午后的生意更好了 ",
+		"French" : "Ta maîtrise du bronzage nous aidera  
+à travailler encore plus efficacement.
+"
 	},
 	{
 		"Index" : "45",
 		"Korean" : "태닝도 갈비처럼 덜 굽거나
 너무 구우면 안된다냥.",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Just like grilling ribs, you don't wanna 
+either bask too much or too less.",
+		"Japanese" : "日焼けもお肉と同じく火が通ってなかったり
+焼きすぎたりしちゃダメだにゃ",
+		"ChineseGan" : "曬黑也像烤肉一樣，
+再烤下去或是烤過頭不行的 ",
+		"ChineseBun" : "晒黑也像烤肉一样，
+再烤下去或是烤过头不行的 ",
+		"French" : " Comme pour les  côtes  de boeuf, 
+c'est une question de dosage.
+"
 	},
 	{
 		"Index" : "46",
 		"Korean" : "선탠을 망친 주인냥이가 
 하루 종일 화를 낼거다냥..",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "It feels like The kitty who just blew basking 
+would be angry all day.. ",
+		"Japanese" : "日焼けに失敗した店長ニャンが
+一日中、怒ってるにゃ…",
+		"ChineseGan" : "曬壞的主人貓 
+一天當中都會生氣的 ",
+		"ChineseBun" : "晒坏的主人猫 
+一天当中都会生气的 ",
+		"French" : " Un chat qui raterait son bronzage, 
+serait de mauvaise humeur toute la journée...
+"
 	},
 	{
 		"Index" : "47",
 		"Korean" : "하지만 오늘처럼만 해라냥.
 그럼, 이제 가게로 가자냥!",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Just grill them the way you did today.. 
+so, let's head to the food stall!",
+		"Japanese" : "でも、今日みたいにすればいいにゃ
+じゃあ、お店に戻るにゃ！",
+		"ChineseGan" : "但是如果像今天 海拉貓 那麼現在往店裡去吧！ ",
+		"ChineseBun" : "但是如果像今天 海拉猫 那么现在往店里去吧！ ",
+		"French" : " Mais tout ira bien, si tu continues comme  ça.
+Allez, retournons  à notre stand.
+"
 	},
 	{
 		"Index" : "48",
 		"Korean" : "멍냥이",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Spaced-out kitty",
+		"Japanese" : "ボーニャン",
+		"ChineseGan" : "傻貓 ",
+		"ChineseBun" : "傻猫 ",
+		"French" : "le chat dans la Lune "
 	},
 	{
 		"Index" : "49",
 		"Korean" : "멍함
 그냥 멍함",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "He just spaces out all the time 
+no reasons behind it ",
+		"Japanese" : "ぼーっとしている　
+ただぼーっとしているだけ",
+		"ChineseGan" : "傻就是傻 ",
+		"ChineseBun" : "傻就是傻 ",
+		"French" : "Il est dans la lune, 
+la tête dans les  étoiles."
 	},
 	{
 		"Index" : "50",
 		"Korean" : "멍...
 ... ...
 ",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Spacing out..",
+		"Japanese" : "ぼー…",
+		"ChineseGan" : "發呆...... 
+ 
+",
+		"ChineseBun" : "发呆...... 
+ 
+啊！ 
+傻猫在想什么呢？ ",
+		"French" : "Ailleurs..."
 	},
 	{
 		"Index" : "51",
 		"Korean" : "...아! 
 멍냥이는 무슨 생각을
 하는 걸까?",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "well..
+I wonder 
+what he's thinking..",
+		"Japanese" : "…あっ！
+ボーニャンは
+何を考えているのかな？",
+		"ChineseGan" : " 啊！ 
+傻貓在想什麼呢？",
+		"ChineseBun" : "a",
+		"French" : "On se demande...
+À quoi il peut bien penser...
+"
 	},
 	{
 		"Index" : "52",
 		"Korean" : "신냥이",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Upbeat kitty ",
+		"Japanese" : "パリピニャン",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "le chat enjoué"
 	},
 	{
 		"Index" : "53",
 		"Korean" : "음악과 춤을
 넘 좋아함",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Upbeat kitty loves to sing 
+and dance too much",
+		"Japanese" : "音楽とダンスが
+好きすぎるニャンコ",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Il adore la musique et la danse."
 	},
 	{
 		"Index" : "54",
 		"Korean" : "신냥이는 음악과
 춤이 너무 좋아서",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Since he loves both 
+singing and dancing",
+		"Japanese" : "パリピニャンは
+音楽とダンスが大好きで",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Le chat enjoué 
+aime tant la musique et la danse 
+"
 	},
 	{
 		"Index" : "55",
 		"Korean" : "집을 떠나
 밤이 새도록 놀았다.
 아직도 노는 중",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "He went out chilling overnight 
+and still chilling   ",
+		"Japanese" : "家を出て、
+夜が明けるまで遊んでいる。
+今までも遊んでいる。",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "qu'il est sorti s'amuser.
+Il s'est amusé toute la nuit.
+Il  paraît  même  qu'il s'amuse encore.
+"
 	},
 	{
 		"Index" : "56",
 		"Korean" : "뽕냥이",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Fart kitty ",
+		"Japanese" : "ブッニャン",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : " le chat qui pète
+"
 	},
 	{
 		"Index" : "57",
 		"Korean" : "빵구끼는 걸
 즐김",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "He enjoys farting ",
+		"Japanese" : "オナラするのが
+好き",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Il a une prédisposition pour les pets
+"
 	},
 	{
 		"Index" : "58",
 		"Korean" : "뽕냥이는 빵구로 날아올라
 우주를 누비고 다녔으나",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "He used to go up high by farting
+and explore the universe ",
+		"Japanese" : "プッニャンはオナラで飛び出し、
+宇宙を泳ぎ回っていたが",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Ce chat pète tellement bien 
+qu'il peut s'envoler et explorer l'espace."
 	},
 	{
 		"Index" : "59",
 		"Korean" : "어느날 유성 충돌로
 지구의 부산에
 불시착하게 되었다.",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "one day, comet collision 
+with the kitty crash landed him 
+to Busan city on earth",
+		"Japanese" : "ある日、流星衝突で
+地球にある釜山に
+不時着することになった",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Un jour, une étoile  filante le percuta 
+et le fit  atterrir  sur Terre, 
+dans la ville de Busan.
+"
 	},
 	{
 		"Index" : "60",
 		"Korean" : "잠냥이",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Sleepy kitty ",
+		"Japanese" : "ネムニャン",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : " le chat dormeur 
+"
 	},
 	{
 		"Index" : "61",
 		"Korean" : "잠을 좋아함
 잠자기 전 먹음",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "He loves to sleep 
+ He always eats food before going to sleep",
+		"Japanese" : "寝るのが好き
+寝る前には必ず何かを食べる",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Il aime dormir 
+et mange toujours avant de dormir."
 	},
 	{
 		"Index" : "62",
 		"Korean" : "잠냥이는 먹을 때 
 빼고 다 잔다.",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "He sleeps all day
+except having food.",
+		"Japanese" : "ネムニャンは食べる時以外は
+ずっと寝ている",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : " Il dort tout le temps 
+et ne se réveille que pour manger.
+"
 	},
 	{
 		"Index" : "63",
 		"Korean" : "먹으면 바로 자야한다.
 먹고 자고 먹고 자고
 먹고 자는 것이 최고.",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "After eating, he has to sleep right away.
+Eating and sleep all day is the best
+ ",
+		"Japanese" : "食べたらすぐ寝なければならない
+食べて寝て、食べて寝て…
+食べて寝るのが一番",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : " Après avoir mangé, il s'endort.
+Manger, dormir, manger, dormir.
+Rien de mieux que manger et dormir.
+"
 	},
 	{
 		"Index" : "64",
 		"Korean" : "흰냥이",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "White kitty",
+		"Japanese" : "白ニャン",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : " le chat blanc "
 	},
 	{
 		"Index" : "65",
 		"Korean" : "백치미
 좋은게 좋음",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "White kitty is a bimbo kitty. 
+she is like 'What's good is good'",
+		"Japanese" : "天然
+ちょっとおバカさん",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : " C'est un chat un peu simplet.
+Il ne se pose pas beaucoup de questions.
+"
 	},
 	{
 		"Index" : "66",
 		"Korean" : "흰냥이는 백지처럼
 새하얀 고양이다.",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Bimbo kitty is 
+white as snow",
+		"Japanese" : "白ニャンは雪のように
+真っ白いニャンコだ",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Ce chat est tout blanc, 
+blanc comme la neige.
+"
 	},
 	{
 		"Index" : "67",
 		"Korean" : "새하얀 털 처럼
 새하얀 머릿속을 가졌다.
 아무것도 모른다.",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Much like her white fur
+there's white empty room in her head ",
+		"Japanese" : "真っ白い毛のように
+頭の中も真っ白のようだ",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "À l'image de  son poil, 
+sa tête est  immaculée, 
+vide de toute pensée."
 	},
 	{
 		"Index" : "68",
 		"Korean" : "팁냥이",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Smart kitty",
+		"Japanese" : "コツニャン",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "le chat conseiller "
 	},
 	{
 		"Index" : "69",
 		"Korean" : "팁을 알려줌
 봉에 매달림",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "He's smart enough to give you tips 
+He's always hangs on a bar",
+		"Japanese" : "ゲームのコツを教えてくれる
+柱にくっついている",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Il donne des conseils 
+et se balance du haut d'une barre.
+
+"
 	},
 	{
 		"Index" : "70",
 		"Korean" : "팁냥이가 어째서 봉에 
 매달린지 아무도 모른다.",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Nobody knows why 
+he hangs on a bar though",
+		"Japanese" : "なぜコツニャンが
+柱にくっついているかは誰も知らない",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Pourquoi se balance-t-il ainsi?
+Personne ne saurait l'expliquer."
 	},
 	{
 		"Index" : "71",
 		"Korean" : "하지만 이렇게 
 봉에 메달려 있으면
 기분이 좋다고 한다.",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "For some reason 
+when he hangs on a bar like this 
+it makes him happy",
+		"Japanese" : "でもこうして
+柱にくっついていると
+気分がいいらしい",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Il dit que quand il se balance, 
+ça  le rend heureux.
+"
 	},
 	{
 		"Index" : "72",
 		"Korean" : "꿀냥이",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Honey kitty",
+		"Japanese" : "蜜ニャン",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : " le chat au miel
+"
 	},
 	{
 		"Index" : "73",
 		"Korean" : "달콤한
 꿀맛 냥이",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "honey kitty is sweet",
+		"Japanese" : "甘い蜂蜜の
+味がするニャンコ",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Un chat tout doux, 
+comme du miel.
+"
 	},
 	{
 		"Index" : "74",
 		"Korean" : "꿀냥이는 갈비를 찾다가
 꿀단지에 빠져버려",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "He fell into a honey pot 
+in search of the delicious ribs",
+		"Japanese" : "蜜ニャンはお肉を探している途中、
+ハチミツのつぼに落ちてしまい、",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Un jour, en cherchant des côtes  de boeuf, 
+il est tombé dans un pot de miel.
+"
 	},
 	{
 		"Index" : "75",
 		"Korean" : "꿀에 퐁당!
 꿀맛 냥이가 되었다
 내 털이 꿀맛이다냥!",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Splash! 
+He ended up becoming honey kitty
+My fur tastes so good!",
+		"Japanese" : "ハチミツ味のニャンコに
+なってしまった。
+毛から蜂蜜の味がするにゃ！",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Plouf!
+Et c'est devenu un chat au miel.
+Au pelage sucré!
+"
 	},
 	{
 		"Index" : "76",
 		"Korean" : "그냥이",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Featureless Kitty",
+		"Japanese" : "なんとなくニャン",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "le chat comme ci, comme ça 
+"
 	},
 	{
 		"Index" : "77",
 		"Korean" : "장사 7일째
 그냥 찾아옴",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "On The 7th day
+He has come for no reasons",
+		"Japanese" : "営業７日目
+なんとなく来店する",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Le  7ème  jour, 
+il est arrivé sans raison précise.
+"
 	},
 	{
 		"Index" : "78",
 		"Korean" : "그냥..뭐
 그런 느낌",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "You know and all that.. 
+it's something just like this..  ",
+		"Japanese" : "なんとなく…
+まあ…そんな感じ",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Juste... comme  ça.
+Comme ci, comme  ça.
+"
 	},
 	{
 		"Index" : "79",
 		"Korean" : "그냥 요런 느낌으로
 걸친 목도리와",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "the typical feeling when you 
+see someone wearing some wool scarf ",
+		"Japanese" : "なんとなく
+巻いたマフラーと",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : " Comme une certaine écharpe qui, 
+sans qu'on sache pourquoi, 
+"
 	},
 	{
 		"Index" : "80",
 		"Korean" : "그냥 조런 느낌으로
 쓴 모자가 왠지
 싫지 않은 그런 느낌?",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : " And a hat goes well with it for some reason 
+ That's how it feels ",
+		"Japanese" : "なんとなく被った帽子が
+なんかイヤじゃない
+そんな感じ？",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : " va bien avec un certain chapeau.
+Juste comme  ça.
+"
 	},
 	{
 		"Index" : "81",
 		"Korean" : "싱냥이",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Joyful kitty",
+		"Japanese" : "ウキニャン",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "le chat curieux 
+"
 	},
 	{
 		"Index" : "82",
 		"Korean" : "술냥이보고
 싱나서 따라옴",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "The joyful kitty has come along 
+with the drunken kitty joyfully ",
+		"Japanese" : "酒ニャンを見て
+ウキウキしてついてきた",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Il a suivi le chat saoul, 
+par curiosité.
+"
 	},
 	{
 		"Index" : "83",
 		"Korean" : "피어싱
 뚫고놈",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "He enjoys 
+piercing his body",
+		"Japanese" : "ピアスと
+遊び好き",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : " Il a des piercings, 
+faits pour la  même  raison.
+"
 	},
 	{
 		"Index" : "84",
 		"Korean" : "싱냥이는 귀여운
 외모와는 달리",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Although he looks so cute",
+		"Japanese" : "ウキニャンは可愛い
+見た目とは違って",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "En effet, en contradiction 
+avec son adorable minois, 
+"
 	},
 	{
 		"Index" : "85",
 		"Korean" : "무시무시한 금목걸이와
 피어싱을 하고 있는
 부산의 냥아치!",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "He got the fearful gold necklace 
+and the piercings on his body, 
+looking like a real Busan gangster!!",
+		"Japanese" : "怖そうな金のネックレスと
+ピアスをしている
+ニャンキー？",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "ce minou arbore fièrement 
+chaine en or et piercings divers, 
+comme un vrai chat gangster.
+"
 	},
 	{
 		"Index" : "86",
 		"Korean" : "죽냥이",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Half dead kitty",
+		"Japanese" : "死にかけニャン",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "le chat  mourant"
 	},
 	{
 		"Index" : "87",
 		"Korean" : "장사 10일째
 죽을 것 같아 옴",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "On the 10th day 
+He has come to survive",
+		"Japanese" : "営業10日目
+このままじゃ死にそうできたみたい",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Le  10ème  jour, 
+il est  arrivé, à moitié mort.
+"
 	},
 	{
 		"Index" : "88",
 		"Korean" : "맨날 아파
 나죽어",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "I feek sick everyday.. 
+I'm almost dying!",
+		"Japanese" : "毎日、体の調子が悪い
+うぅ…",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Je suis souffrant.
+Je suis mourant."
 	},
 	{
 		"Index" : "89",
 		"Korean" : "죽냥이는 매일 아파
 죽만 먹었다.",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Since he's sick everyday, 
+he has been forced to eat porridge.",
+		"Japanese" : "ニャンは毎日体の調子が悪くて
+お粥ばっか食べていた",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Malade tous les jours;
+Il ne mange que du porridge."
 	},
 	{
 		"Index" : "90",
 		"Korean" : "하지만
 갈비를 먹으면 
 살 수 있을거 같아.",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "But you know 
+I could really use ribs to survive!",
+		"Japanese" : "でも
+お肉を食べたら
+元気になれそう！",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : " Mais qui sait?
+S'il mange des côtes de boeuf;
+Peut-être  se  rétablira-t-il?
+"
 	},
 	{
 		"Index" : "91",
 		"Korean" : "술냥이",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Drunken kitty",
+		"Japanese" : "酒ニャン",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : " le chat saoul"
 	},
 	{
 		"Index" : "92",
 		"Korean" : "장사 14일째
 한 잔 하러 옴",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "On the 14th day
+ He has come to drink",
+		"Japanese" : "営業14日目
+一杯飲みに来た",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Le  14ème  jour,
+Il est venu prendre un verre.
+"
 	},
 	{
 		"Index" : "93",
 		"Korean" : "맨날맨날
 술먹는게 좋아",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Day in Day out
+He loves drinking all day",
+		"Japanese" : "毎日
+飲むのが大好き",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Jour  après  jour,
+Il prend verre  après  verre.
+"
 	},
 	{
 		"Index" : "94",
 		"Korean" : "술 깨면 비정상!
 취해야 정상인 술냥이는",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "He loses his insanity when he's sober 
+and the other way when he's not",
+		"Japanese" : "シラフはおかしい！
+酔っぱらってるのが普通の酒ニャンは",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Etrange dans ses moments de sobriété,
+Il n'est lui-même que lorsqu'il boit.
+"
 	},
 	{
 		"Index" : "95",
 		"Korean" : "술만 마셨다 하면 
 부산 바다에 들어가
 경찰이 출동한다.",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "When he's drunk
+He always falls into the sea. 
+The police officers suffer from him.",
+		"Japanese" : "酔っ払ったら
+釜山の海に入ろうとして
+警察沙汰に…",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Chaque fois qu'il a bu,
+il se jette dans la mer,
+et l'on a bien du mal  à l'en ressortir.
+"
 	},
 	{
 		"Index" : "96",
 		"Korean" : "파냥이",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Blue kitty",
+		"Japanese" : "青ニャン",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : " le chat bleu"
 	},
 	{
 		"Index" : "97",
 		"Korean" : "장사 4일째
 바다 건너 옴",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "On the 4th day 
+He has come across the sea",
+		"Japanese" : "営業4日目
+海を渡ってきた",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : " Le  4ème  jour,"
 	},
 	{
 		"Index" : "98",
 		"Korean" : "바다좋아
 파란색 칠함",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Since he loves the sea
+he paints everything blue ",
+		"Japanese" : "海が好きすぎて
+体に青を塗った",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "est  venu, traversant la mer.
+98. Il a une fascination pour l'océan  
+et peint tout en bleu.
+"
 	},
 	{
 		"Index" : "99",
 		"Korean" : "어느날 파냥이는 바다에서 
 파란눈의 인어냥이에게 ",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "One day, when he was on the sea",
+		"Japanese" : "ある日、青ニャンは海で
+青い目をした人魚ニャンに",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Un jour qu'il  était  en mer, 
+le chat bleu croisa le chat sirène .
+"
 	},
 	{
 		"Index" : "100",
 		"Korean" : "첫눈에 반하게 된다
 인어냥이를 찾기위해 
 바다가 되기로 결심한다.",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "He fell in love with mermaid kitty.
+To find her, he decided to 
+become the sea",
+		"Japanese" : "一目ぼれする
+人形ニャンを探すため
+海になることを決心する",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Il tomba amoureux de son regard
+Et, dans l'espoir de le revoir, 
+décida  de devenir la mer.
+"
 	},
 	{
 		"Index" : "101",
 		"Korean" : "똥냥이",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Dump kitty",
+		"Japanese" : "ウンチニャン",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "le chat constipé "
 	},
 	{
 		"Index" : "102",
 		"Korean" : "장사 21일째
 급히 마려워서 옴",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "On 21th day,
+He has come because of call of nature",
+		"Japanese" : "営業21日目
+トイレを借りにきた",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Le  21ème  jour,
+une envie pressante le mena jusqu'ici."
 	},
 	{
 		"Index" : "103",
 		"Korean" : "똥싸는건
 넘넘 좋아",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "It feels so good 
+to take a dump",
+		"Japanese" : "ウンチするの
+大大大好き",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Toujours incommodé, 
+Toujours ennuyé.
+"
 	},
 	{
 		"Index" : "104",
 		"Korean" : "항상 변비에 시달리던
 똥냥이는 뽕냥이에게",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Since he suffered a lot
+from the constipation",
+		"Japanese" : "いつも便秘で苦しんでいた
+ウンチニャンはブッニャンに",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Souffrant de constipation  régulière,
+Il est venu jusqu'à Busan
+"
 	},
 	{
 		"Index" : "105",
 		"Korean" : "쾌변 빵구의 비법을
 전수받으러 부산으로
 찾아왔다.",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "He has come to Busan city 
+for the special farting technique 
+of Fart kitty",
+		"Japanese" : "快便できるオナラの秘密を
+教えてもらうため釜山に",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "pour que le chat qui  pète  
+lui enseigne une technique 
+qui le soulagerait de son mal.
+"
 	},
 	{
 		"Index" : "106",
 		"Korean" : "달냥이",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Moon kitty",
+		"Japanese" : "月ニャン",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "le chat lunaire 
+"
 	},
 	{
 		"Index" : "107",
 		"Korean" : "장사 15일째
 달보러 나타남",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "On the 15th day 
+the kitty has showed up to see the moon",
+		"Japanese" : "営業15日目、
+月を見に現れる",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : " Le  15ème  jour, 
+il est venu voir la lune.
+"
 	},
 	{
 		"Index" : "108",
 		"Korean" : "달님 소원을
 들어주세요",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Goddess 
+please make my wish come true",
+		"Japanese" : "お月さま、願いを
+叶えてください",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Pourvu que la lune veuille bien 
+exaucer mon voeu.
+"
 	},
 	{
 		"Index" : "109",
 		"Korean" : "보름달이 아름답게 뜨는 밤 
 소원을 빌기위해 나타났다.",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Under this beautiful full moon
+the moon kitty has come to make a wish",
+		"Japanese" : "綺麗な満月の日
+お月さまに願いにきた",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : " Un jour où la pleine lune veillait sur nous tous,
+Il est venu pour faire  un voeu.
+"
 	},
 	{
 		"Index" : "110",
 		"Korean" : "올해도 맛있는 갈비를
 많이 먹게 해주세요.
 냥~",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "I just want delicious ribs 
+as much as I can this year too. 
+Amen ",
+		"Japanese" : "今年も美味しいお肉が
+たくさん食べれますように
+",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Permettez-moi cette  année  
+de manger jusqu'à satiété  
+de succulentes côtes de boeuf."
 	},
 	{
 		"Index" : "111",
 		"Korean" : "해냥이",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Pirate Kitty",
+		"Japanese" : "海賊ニャン",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "le chat pirate "
 	},
 	{
 		"Index" : "112",
 		"Korean" : "장사 50일째
 원피스 찾고 옴",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "On 50th day,
+he has come with his unique treasure
+ One-piece",
+		"Japanese" : "営業50日目
+ひとつなぎの秘宝を探して来た",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Le  50ème  jour,
+Il est arrivé avec un  trésor inestimable."
 	},
 	{
 		"Index" : "113",
 		"Korean" : "바다짱
 해적냥",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "The notorious king of the sea
+Pirate kitty",
+		"Japanese" : "海の支配者
+海賊ニャン",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Le roi des mers,
+le chat pirate."
 	},
 	{
 		"Index" : "114",
 		"Korean" : "나의 보물?
 원한다면 주도록 하지 ",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "You want my treasure? 
+You can have it you'll just have to find it! ",
+		"Japanese" : ",俺の財宝か？
+ほしけりゃくれてやるぜ",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : " Mon  trésor?
+Si tu le veux, il est  à  toi.
+"
 	},
 	{
 		"Index" : "115",
 		"Korean" : "잘 찾아봐. 
 이 세상의 전부를
  거기에 두고 왔으니깐!",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : " I left everything I gathered together 
+in one place!!",
+		"Japanese" : "探せ！
+この世のすべてを
+そこに置いてきた！",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : " À condition que tu saches le trouver.
+J'ai  enterré toutes les richesses du monde,
+dans un lieu secret.
+"
 	},
 	{
 		"Index" : "116",
 		"Korean" : "만냥이",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Rich kitty ",
+		"Japanese" : "諭吉ニャン",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "le chat millionnaire 
+"
 	},
 	{
 		"Index" : "117",
 		"Korean" : "1만냥 돈냄시
 맡고 찾아옴",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "The millionaire, rich kitty has come to 
+smell the moneymaking business here",
+		"Japanese" : "諭吉の匂いに
+つられてきた",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Il est  venu, 
+reniflant de l'argent.
+"
 	},
 	{
 		"Index" : "118",
 		"Korean" : "태어날때
 부자냥이",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "The rich kitty
+just like preppies",
+		"Japanese" : "生まれた時から
+お金持ちのニャンコ",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Ce chat riche depuis toujours,
+depuis sa plus tendre enfance, 
+"
 	},
 	{
 		"Index" : "119",
 		"Korean" : "금수저로 태어났지만
 자수성가 한 척!",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Although he was born rich, he always acts 
+like he's gone from rags to riches!",
+		"Japanese" : "ボンボンに生まれたが、
+自分で稼いだふり！",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : " né avec une  cuillère  d'argent dans la bouche 
+mais qui  prétend  être parti de rien.
+"
 	},
 	{
 		"Index" : "120",
 		"Korean" : "나보다 잘나던가 
 내 집안보다 돈이 많던가
 나처럼 되고 싶음, 돈벌어!",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Got a problem with it huh? 
+then be richer than my family! 
+Just work your butt off to be rich like me!",
+		"Japanese" : "僕よりイケてるか
+僕の家より金持ちか
+僕みたいになりたい？稼げよ！",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : " Tu crois pouvoir faire mieux que moi?
+Tu penses avoir ce qu'il faut pour devenir riche?
+Tu veux  être  comme moi? Alors travaille dur comme moi!
+"
 	},
 	{
 		"Index" : "121",
 		"Korean" : "미냥이",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Insane kitty",
+		"Japanese" : "ヤバニャン",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "le chat fou "
 	},
 	{
 		"Index" : "122",
 		"Korean" : "이걸 30분이나 하다니
 놀래서 찾아옴",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "He was so surprised to see 
+you play more than half an hour ",
+		"Japanese" : "このゲームを30分もやるなんて
+驚いて見に来た",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Il est  agréablement  surpris de voir 
+que tu joues depuis plus d'une  demi-heure."
 	},
 	{
 		"Index" : "123",
 		"Korean" : "미친듯
 안미친듯",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "It seems like he's both 
+insane and sane at the same time",
+		"Japanese" : "ヤバいようで
+ヤバくないようで",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : " Un peu fou, 
+mais pas trop.
+"
 	},
 	{
 		"Index" : "124",
 		"Korean" : "미냥이는 언제부터
 미쳤는지 알 수 없다.",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "We still don't know 
+since when he has lost his mind",
+		"Japanese" : "ヤバニャンがいつから
+ヤバくなったのかはわからない",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Impossible de savoir 
+quand il a perdu la tete.
+"
 	},
 	{
 		"Index" : "125",
 		"Korean" : "미쳤는지 안미쳤는 지도
 사실 아무도 모른다.
 사실 고양이가 아닐지도",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Actually nobody knows 
+if he's really insane or not in the first place",
+		"Japanese" : "本当にヤバいのかヤバくないのかすら
+誰も知らない",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Les avis divergent...
+Est-il vraiment fou ou non?
+Est-il  même  vraiment un chat?"
 	},
 	{
 		"Index" : "126",
 		"Korean" : "점냥이",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Shaman kitty",
+		"Japanese" : "占いニャン",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "le chat shaman "
 	},
 	{
 		"Index" : "127",
 		"Korean" : "미냥이보고
 신기해서 따라옴",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Since the insane kitty looked so interesting, 
+shaman kitty has come along with him ",
+		"Japanese" : "ヤバニャンに
+ついてきた",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Il a suivi le chat fou 
+qui avait éveillé son interêt.
+"
 	},
 	{
 		"Index" : "128",
 		"Korean" : "어느 날 신이
 점을 내림",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "One day, 
+the god descended on earth",
+		"Japanese" : "ある日、神様に
+能力を与えられた",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Un jour, un Dieu 
+descendit sur Terre.
+"
 	},
 	{
 		"Index" : "129",
 		"Korean" : "어느 날 갑자기
 찾아 온 냥신(?)은",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Out of nowhere
+the god met him by chance",
+		"Japanese" : "ある日、突然
+訪れたニャン神(?)は",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : " Et sans  prévenir, le Dieu Chat 
+rendit visite au chat shaman.
+"
 	},
 	{
 		"Index" : "130",
 		"Korean" : "점냥이에게 수정구를 주었다.
 그 후 점을 찍고 바다의
 신들린 냥이가 되었다.",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "granting him a crystal ball 
+after that he ended up being 
+a shaman of the sea",
+		"Japanese" : "占いニャンに水晶玉を与えた。
+そして、顔にほくろを描き海の
+占い師になった",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : " Il lui donna une boule de  cristal 
+et fit d'un chat jusqu'alors ordinaire 
+un chat shaman de la mer.
+"
 	},
 	{
 		"Index" : "131",
 		"Korean" : "힙냥이",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Swaggy Kitty ",
+		"Japanese" : "ラッパーニャン",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "le  chat swag "
 	},
 	{
 		"Index" : "132",
 		"Korean" : "장사 30일째
 공연하러 찾아 옴",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "On 30th day
+he has come to perform",
+		"Japanese" : "営業30日目
+ラップしに来た",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Le  30ème  jour, 
+il est venu donner un concert.
+"
 	},
 	{
 		"Index" : "133",
 		"Korean" : "스웩~
 스뤠기!",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Swag~ 
+Swaggy Kitty is in the house!",
+		"Japanese" : "Oh~オレマジ
+ヤバい",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : " Swag!
+Trop swag!
+"
 	},
 	{
 		"Index" : "134",
 		"Korean" : "힙냥이는 모범냥이었지만
 어느 날 힙합 사랑이 빠져",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "He used to very upright 
+but ever since he fell in love with rapping",
+		"Japanese" : "ラッパーニャンは真面目なニャンコだったが、
+ある日、ヒップホップと恋に落ち…",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : " Longtemps un chat exemplaire, 
+un amour inattendu pour le hip-hop  
+"
 	},
 	{
 		"Index" : "135",
 		"Korean" : "안경에 매직을, 턱엔 김을,
 머리엔 마시멜로를 붙여
 부산바다의 랩 음치!",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "he put magic on his glass, laver 
+on his chin and marshmallow on his head, 
+becoming a terrible rapper from Busan! ",
+		"Japanese" : "メガネにマジック、あごにのりを
+髪にマシュマロを
+釜山のラップ音痴！",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "lui fit du jour au lendemain 
+revêtir une panoplie qu'il pense digne d'une vedette 
+et il devint ainsi un mauvais rappeur made in  Busan.
+"
 	},
 	{
 		"Index" : "136",
 		"Korean" : "개냥이",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Doggy kitty ",
+		"Japanese" : "ワンニャン",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "le chat chien"
 	},
 	{
 		"Index" : "137",
 		"Korean" : "장사 40일째
 개가 되어 찾아 옴",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "On 40th day
+the would-be doggy kitty has come",
+		"Japanese" : "営業４０日目、
+犬になって現れる",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "le 30ème  jour, 
+il est venu souhaitant devenir chien."
 	},
 	{
 		"Index" : "138",
 		"Korean" : "개 되고픈
 냥이",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "The kitty who just wants 
+to become a puppy so bad",
+		"Japanese" : "犬になりたい
+ニャンコ",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Le chat qui voudrait plus que tout 
+simplement être  un chien.
+"
 	},
 	{
 		"Index" : "139",
 		"Korean" : "어린 시절 개와 함께 자란
  개냥이는 정체성을 고민한다.",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "The one who grew up with dogs 
+is now curious about his identity",
+		"Japanese" : "子供の頃、犬と一緒に育ったワンワンニャンは
+自分のアイデンティティーに悩む",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Ayant grandi entouré de canins,
+il questionne chaque jour son destin.
+"
 	},
 	{
 		"Index" : "140",
 		"Korean" : "???
 왜 내울음 소리는
 '냐옹'이 냐옹?",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "??? 
+Wait a minute!  
+why do you meow like a kitty then?",
+		"Japanese" : "???　
+なんで僕の鳴き声は「ニャ―オー」
+なんだにゃーお",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : " ???
+Miaou pourquoi donc 
+entend-on 'miaou' quand j'aboie?
+"
 	},
 	{
 		"Index" : "141",
 		"Korean" : "천사냥이",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Angel kitty",
+		"Japanese" : "天使ニャン",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : " le chat ange 
+"
 	},
 	{
 		"Index" : "142",
 		"Korean" : "누적 플레이 1004분!
 천사 강림!",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Total playtime:1004 minutes! 
+Descent of the Angel!",
+		"Japanese" : "累計プレイ時間1004分！
+天使降臨！",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Temps de jeu total : 1004 minutes!
+Apparition de l'ange!
+"
 	},
 	{
 		"Index" : "143",
 		"Korean" : "하늘에서 내려온
 천사 고양이",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Angel kitty descending 
+from heaven above to earth",
+		"Japanese" : "空から降りてきた
+天使のニャンコ",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Un chat ange 
+descendu du ciel.
+"
 	},
 	{
 		"Index" : "144",
 		"Korean" : "천사냥이는 세상에서 
 제일 착한 고양이",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "According to the myth story about
+this angel kitty, the kindest one  ",
+		"Japanese" : "天使ニャンは世界で
+一番優しいニャンコ",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : " le plus bienveillant
+ des chats de toute la terre.
+"
 	},
 	{
 		"Index" : "145",
 		"Korean" : "이 게임을 오래해준
 천사같은 사람 눈에만
 보인다고 한다.",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "The kitty is only visible to the one who has 
+the longest play time
+",
+		"Japanese" : "このゲームを続けてくれた
+優しい人だけに
+見えるらしい",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Seuls ceux qui jouent longtemps 
+ont la chance de le voir de leurs yeux.
+"
 	},
 	{
 		"Index" : "146",
 		"Korean" : "악마냥이",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Evil kitty",
+		"Japanese" : "悪魔ニャン",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "le chat démon"
 	},
 	{
 		"Index" : "147",
 		"Korean" : "누적 플레이 666분!
 악마의 시간!",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Total playtime: 666 minutes! 
+Time for Evil kitty  ",
+		"Japanese" : "累計プレイ時間666分！
+悪魔の時間！",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Temps de jeu total : 666 minutes!
+Apparition du chat démon!"
 	},
 	{
 		"Index" : "148",
 		"Korean" : "지하에서 올라온
 악마 고양이",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "The evil kitty 
+from the underworld",
+		"Japanese" : "地下から上がってきた
+悪魔ニャンコ
+",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Un chat démoniaque 
+ venu du plus profond des  ténèbres."
 	},
 	{
 		"Index" : "149",
 		"Korean" : "악마냥이는 세상에서
 제일 나쁜 고양이",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "He's the worst kitty 
+in the world",
+		"Japanese" : "悪魔ニャンは世界で
+一番悪いニャンコ",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : " le plus maléfique
+ des chats de  toute la terre 
+"
 	},
 	{
 		"Index" : "150",
 		"Korean" : "모바일 게임 중독을
 유혹하러 당신을
 찾아왔다.",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "He has come to seduce you 
+into mobile game addiction",
+		"Japanese" : "あなたをスマホゲーム依存症に
+させるため
+やってきた",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Il est venu pour t'attirer 
+vers les  tréfonds  
+de l'addiction au jeu vidéo.
+"
 	},
 	{
 		"Index" : "151",
 		"Korean" : "인어냥이",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Mermaid kitty",
+		"Japanese" : "人魚ニャン",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "le chat sirène "
 	},
 	{
 		"Index" : "152",
 		"Korean" : "장사 60일째
 기적처럼 나타남",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "On 60th day 
+she has come like a miracle",
+		"Japanese" : "営業60日目
+奇跡のように現れる",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Le  60ème  jour, 
+il est  apparu comme un miracle.
+"
 	},
 	{
 		"Index" : "153",
 		"Korean" : "육지로 나가기 위해
 마녀를 찾아 다닌다",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "She's looking for a witch 
+to walk on the ground",
+		"Japanese" : "陸に上がるため、
+魔女を探し回っている",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "À la recherche d'une  sorcière, 
+qui lui  permettrait de marcher sur la terre ferme, 
+"
 	},
 	{
 		"Index" : "154",
 		"Korean" : "인어냥이는 인어냥국 
 에서 몰래 빠져나와",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Mermaid kitty sneaked 
+out of the mermaid kingdom",
+		"Japanese" : "人魚ニャンは人魚ニャン国を
+こっそりと抜け出し",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : " Il a quitté en douce 
+le royaume des chats  sirènes.
+"
 	},
 	{
 		"Index" : "155",
 		"Korean" : "자신의 신비한 존재를 
 감추고 갈비를 먹을 기회만 
 호시탐탐 노리고 있다",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "She hides her mysterious appearance, keeping her eye on the ribs everyday",
+		"Japanese" : "自分の不思議な存在を隠して、
+お肉が食べれるチャンスだけを
+虎視眈々と狙っている",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : " Il se cache de tous, 
+et reste a l'affût d'une opportunité 
+de manger des côtes de boeufs.
+"
 	},
 	{
 		"Index" : "156",
 		"Korean" : "냥이들의 스토리가 궁금하냥?
 자주 만나야 친해진다냥~",
-		"English" : "Hello",
-		"Japanese" : "오하이오",
-		"Chinese" : "니하오"
+		"English" : "Wanna know more about the story of kitties? Just get to know us more :)",
+		"Japanese" : "ニャンコたちのストーリーが気になるにゃ？
+ニャンコたちの来店回数が増えると、仲良くなれるにゃ",
+		"ChineseGan" : "a",
+		"ChineseBun" : "a",
+		"French" : "Tu veux en savoir plus sur les chatons?
+Reviens nous voir souvent et apprends à mieux nous connaître"
+	},
+	{
+		"Index" : "157",
+		"Korean" : "색이 붉을 수록 성격이
+급한 냥이니 주의하라냥!"
 	}
 ]

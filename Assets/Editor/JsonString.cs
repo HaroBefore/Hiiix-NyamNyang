@@ -5,6 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 using UnityEditor;
+using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.Windows;
 
@@ -15,6 +16,10 @@ public class JsonString : Editor
         public int Index;
         public string Korean;
         public string Engilish;
+        public string Japanese;
+        public string ChineseGan;
+        public string ChineseBun;
+        public string French;
     }
 
     static List<StringTable> itemList = new List<StringTable>();
@@ -75,6 +80,26 @@ public class JsonString : Editor
                 stringTable.Engilish = jsonData[i]["English"].ToString();
             }
 
+            if (dic.Contains("Japanese"))
+            {
+                stringTable.Japanese = jsonData[i]["Japanese"].ToString();
+            }
+
+            if (dic.Contains("ChineseGan"))
+            {
+                stringTable.ChineseGan = jsonData[i]["ChineseGan"].ToString();
+            }
+
+            if (dic.Contains("ChineseBun"))
+            {
+                stringTable.ChineseBun = jsonData[i]["ChineseBun"].ToString();
+            }
+
+            if (dic.Contains("French"))
+            {
+                stringTable.French = jsonData[i]["French"].ToString();
+            }
+
             itemList.Add(stringTable);
         }
 
@@ -82,6 +107,10 @@ public class JsonString : Editor
         {
             dataObject.korean.Add(new StringDataObject.StringDataMap(itemList[i].Index, itemList[i].Korean));
             dataObject.english.Add(new StringDataObject.StringDataMap(itemList[i].Index, itemList[i].Engilish));
+            dataObject.japanese.Add(new StringDataObject.StringDataMap(itemList[i].Index, itemList[i].Japanese));
+            dataObject.chineseGan.Add(new StringDataObject.StringDataMap(itemList[i].Index, itemList[i].ChineseGan));
+            dataObject.chineseBun.Add(new StringDataObject.StringDataMap(itemList[i].Index, itemList[i].ChineseBun));
+            dataObject.french.Add(new StringDataObject.StringDataMap(itemList[i].Index, itemList[i].French));
         }
 
         EditorUtility.SetDirty(dataObject);

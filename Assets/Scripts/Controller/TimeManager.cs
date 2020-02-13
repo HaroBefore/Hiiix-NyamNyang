@@ -35,7 +35,20 @@ public class TimeManager : MonoBehaviour
     public event Action<float> EventLeftTimeChanged = (f) => { };
     public event Action EventTimeOver = () => { Debug.Log("EventTimeOver"); };
 
-    public static float DeltaTime => Time.deltaTime;
+    public static float DeltaTime
+    {
+        get
+        {
+            if (TimeManager.Instance.IsPause)
+            {
+                return 0f;
+            }
+            else
+            {
+                return Time.deltaTime;
+            }
+        }
+    }
     
     // 현재 날짜.
     private int day;
@@ -87,21 +100,60 @@ public class TimeManager : MonoBehaviour
     [Header("요리 제한 시간")]
     // 요리 제한 시간. (단위: 초)
     public int cookTime;
+    
     [Header("버프 대기시간")]
-    public float BuffCooltime;
-    private float _buffCooltime;
-    private float buffCooltime {
-        get { return _buffCooltime; }
-        set {
-            _buffCooltime = value;
-            PlayerPrefs.SetFloat("BuffCoolTime", value);
-            float remain = BuffCooltime - buffCooltime;
-            if (remain <= 0) UIManager.instance.ToggleBuffPopup();
-            int min = (int)(remain / 60);
-            int sec = (int)(remain - min * 60);
-            UIManager.instance.BuffCoolTimer.GetComponent<Text>().text = string.Format("{0:00}:{1:00}", min, sec);
+    [SerializeField]
+    private float buffCoolTime;
+
+    public float BuffCoolTime => buffCoolTime;
+
+    private float _leftBuffCoolTime;
+
+    private float LeftBuffCollTime
+    {
+        get => _leftBuffCoolTime;
+        set
+        {
+            if (value < 0f)
+            {
+                _leftBuffCoolTime = 0f;
+                IsBuffAvailable = true;
+            }
+            else
+            {
+                _leftBuffCoolTime = value;
+                IsBuffAvailable = false;
+            }
         }
     }
+    
+    public bool IsBuffAvailable { get; set; }
+
+    [Header("버프 시간")]
+    [SerializeField]
+    private float buffDuration;
+
+    public float BuffDuration => buffDuration;
+
+    
+    private float _leftBuffDuration;
+    public float LeftBuffDuration
+    {
+        get => _leftBuffDuration;
+        set
+        {
+            if (value < 0f)
+            {
+                _leftBuffDuration = 0f;
+                GameManager.Instance.BuffDeactivate();
+            }
+            else
+            {
+                _leftBuffDuration = value;
+            }
+        }
+    }
+
 
     // 콜백함수들.
     private Action<int> cbOnDayChanged;
@@ -132,6 +184,12 @@ public class TimeManager : MonoBehaviour
             return;
         }
         LeftTime -= Time.deltaTime;
+        if (GameManager.Instance.IsBuff)
+        {
+            LeftBuffDuration -= Time.deltaTime;
+            return;
+        }
+        LeftBuffCollTime -= Time.deltaTime;
     }
     
     public void Pause()
@@ -168,8 +226,13 @@ public class TimeManager : MonoBehaviour
     */
 
     #region BuffCooltime
-    public void ResetBuffCooltime() {
-        buffCooltime = 0;
+    public void ResetBuffCoolTime() {
+        LeftBuffCollTime = BuffCoolTime;
+    }
+
+    public void SetBuffDurationTime()
+    {
+        LeftBuffDuration = BuffDuration;
     }
     #endregion
     

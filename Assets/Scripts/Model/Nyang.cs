@@ -101,8 +101,11 @@ public class Nyang : MonoBehaviour {
         get { return state; }
         set {
             state = value;
-            spriteRenderer.sprite = sprite[(int)state];
-            nyangCollider.enabled = (state == NyangState.Wait) || (state == NyangState.Buff) ? true : false;
+            if (spriteRenderer != null)
+            {
+                spriteRenderer.sprite = sprite[(int)state];
+                nyangCollider.enabled = (state == NyangState.Wait) || (state == NyangState.Buff) ? true : false;
+            }
         }
     }
 

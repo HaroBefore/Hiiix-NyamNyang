@@ -256,11 +256,14 @@ public class UIManager : MonoBehaviour {
         if (BuffPopup.activeSelf) return;
 
         AudioManager.Instance?.Play(AudioManager.Instance.button01);
+        
+        NyangManager.Instance.EndSpawn();
         timeManager.Pause();
+        
         buffButton.SetActive(false);
         buffButton_Pushed.SetActive(true);
         TipManager.instance.CloseTip(TipType.Buff);
-        if (GameManager.Instance.IsBuffAvailable) {
+        if (timeManager.IsBuffAvailable) {
             OpenBuffAvailablePopup();
         }
         else {
@@ -288,7 +291,10 @@ public class UIManager : MonoBehaviour {
     }
     public void CloseBuffPopup() {
         AudioManager.Instance?.Play(AudioManager.Instance.button01);
+
+        NyangManager.Instance.BeginSpawn();
         timeManager.Resume();
+        
         if (BuffPopup.activeSelf) {
             BuffPopup.SetActive(false);
             buffButton_Pushed.SetActive(false);
@@ -642,6 +648,7 @@ public class UIManager : MonoBehaviour {
 
         // 게임 시간 멈추기.
         timeManager.Pause();
+        NyangManager.Instance.EndSpawn();
 
         // 팁 닫기.
         TipManager.instance.CloseTip(TipType.CatList);
@@ -657,7 +664,10 @@ public class UIManager : MonoBehaviour {
         Calender.SetActive(true);
         TipManager.instance.UnhideTip();
         NyangListPanel.SetActive(false);
+        
         timeManager.Resume();
+        NyangManager.Instance.BeginSpawn();
+        
         OpenBoxOnCloseUI();
     }
     // LoadAndSortNyangList: 냥이 리스트 재정렬.
@@ -803,7 +813,6 @@ public class UIManager : MonoBehaviour {
     public void OpenOption() {
         if (BuffPopup.activeSelf) return;
 
-        audioManager?.Play(audioManager.box_open, 1f);
         audioManager?.PauseCookMeat();
 
         Main_Objects.SetActive(false);
@@ -812,14 +821,13 @@ public class UIManager : MonoBehaviour {
         meatSelectPanel.SetActive(false);
         sauceSelectPanel.SetActive(false);
         Calender.SetActive(false);
-        OptionPanel.SetActive(true);
         TipManager.instance.HideTip();
         timeManager.Pause();
+        NyangManager.Instance.EndSpawn();
         TipManager.instance.CloseTip(TipType.Option);
-        OptionManager.instance.OptionReset();
+        OptionManager.instance.ShowOption();
     }
     public void CloseOption() {
-        audioManager?.Play(audioManager.box_close, 1f);
         inputManager.AsdadSwitch();
         audioManager?.ResumeCookMeat();
         
@@ -829,7 +837,8 @@ public class UIManager : MonoBehaviour {
         Main_Scene.SetActive(true);
         Main_UI.SetActive(true);
         Calender.SetActive(true);
-        OptionPanel.SetActive(false);
+        NyangManager.Instance.BeginSpawn();
+        OptionManager.instance.HideOption();
         OpenBoxOnCloseUI();
     }
     #endregion

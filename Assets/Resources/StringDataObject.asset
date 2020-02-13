@@ -90,11 +90,11 @@ MonoBehaviour:
     value: "\uC800\uAE30 \uBCF4\uC774\uB294 \uAC8C\uC774\uC9C0\uB294\n\uB0E5\uC774\uB4E4\uC758
       \uC778\uB0B4\uC2EC\uC774\uB2E4\uB0E5."
   - key: 24
-    value: "\uC778\uB0B4\uC2EC\uC774 \uBC14\uB2E5\uB098\uAE30 \uC804\uC5D0 \n\uB0E5\uC774\uB97C
-      \uB4DC\uB798\uADF8 \uD574\uBD10\uB0E5!"
+    value: "\uB0E5\uC774\uAC00 \uB5A0\uB098\uAE30 \uC804\uC5D0\n\uAC00\uAC8C\uB85C
+      \uB4DC\uB798\uADF8\uD574\uBD10\uB0E5!"
   - key: 25
-    value: "\uB0E5\uC774\uB4E4\uC774 \uB5A0\uB098\uAE30 \uC804\uC5D0\n\uBE68\uB9AC
-      \uAC08\uBE44\uB97C \uC918\uC57C\uD55C\uB2E4\uB0E5!"
+    value: "\uC798\uD588\uB2E4\uB0E5! \uC774\uC81C\n\uC190\uB2D8\uB0E5\uC774\uAC00
+      \uAE30\uB2E4\uB9B4 \uB3D9\uC548\n\uAC08\uBE44\uB97C \uAD6C\uC6CC\uBCF4\uC790\uB0E5!"
   - key: 26
     value: "\uC9C0\uBD95\uC5D0 \uB808\uC2DC\uD53C\uB97C \uBCF4\uACE0\n\uADF8\uB300\uB85C
       \uB9CC\uB4E4\uC5B4 \uBCF4\uC790\uB0E5!"
@@ -119,7 +119,8 @@ MonoBehaviour:
     value: "\uC544\uC8FC \uC798\uD588\uB2E4\uB0E5! \n\uB3C8\uC740 \uB0B4\uAC00 \uBC1B\uACE0
       \uC788\uC73C\uB2C8,\n\uAC71\uC815\uD558\uC9C0 \uB9D0\uB77C\uB0E5!"
   - key: 34
-    value: "\uAC08\uBE44\uB294 \uD0C0\uAE30\uC804\uC5D0\n\uC5BC\uB978 \uC918\uC57C\uD55C\uB2E4\uB0E5."
+    value: "\uC544\uCC28, \uAC08\uBE44\uB294 \uB108\uBB34 \uC624\uB798 \n\uAD6C\uC73C\uBA74
+      \uD0C0\uB2C8\uAE4C \uC870\uC2EC\uD574\uB77C\uB0E5!"
   - key: 35
     value: "\uD0C4 \uAC08\uBE44\uB97C \uC8FC\uAC70\uB098\n\uB808\uC2DC\uD53C\uC640
       \uB2E4\uB974\uAC8C \uC8FC\uBA74\n\uB0E5\uC774\uB4E4\uC774 \uD654\uB0BC\uAC70\uB2E4\uB0E5."
@@ -319,8 +320,8 @@ MonoBehaviour:
     value: "\uB098\uC758 \uBCF4\uBB3C?\r\n\uC6D0\uD55C\uB2E4\uBA74 \uC8FC\uB3C4\uB85D
       \uD558\uC9C0 "
   - key: 115
-    value: "\uC798 \uCC3E\uC544\uBD10. \r\n\uC774 \uC138\uC0C1\uC758 \uC804\uBD80\uB97C\r\n\uAC70\uAE30\uC5D0
-      \uB450\uACE0 \uC654\uC73C\uB2C8\uAE50!"
+    value: "\uC798 \uCC3E\uC544\uBD10. \r\n\uC774 \uC138\uC0C1\uC758 \uC804\uBD80\uB97C\r\n
+      \uAC70\uAE30\uC5D0 \uB450\uACE0 \uC654\uC73C\uB2C8\uAE50!"
   - key: 116
     value: "\uB9CC\uB0E5\uC774"
   - key: 117
@@ -380,8 +381,8 @@ MonoBehaviour:
   - key: 138
     value: "\uAC1C \uB418\uACE0\uD508\n\uB0E5\uC774"
   - key: 139
-    value: "\uC5B4\uB9B0 \uC2DC\uC808 \uAC1C\uC640 \uD568\uAED8 \uC790\uB780\r\n\uAC1C\uB0E5\uC774\uB294
-      \uC815\uCCB4\uC131\uC744 \uACE0\uBBFC\uD55C\uB2E4."
+    value: "\uC5B4\uB9B0 \uC2DC\uC808 \uAC1C\uC640 \uD568\uAED8 \uC790\uB780\r\n
+      \uAC1C\uB0E5\uC774\uB294 \uC815\uCCB4\uC131\uC744 \uACE0\uBBFC\uD55C\uB2E4."
   - key: 140
     value: "???\r\n\uC65C \uB0B4\uC6B8\uC74C \uC18C\uB9AC\uB294\r\n'\uB0D0\uC639'\uC774
       \uB0D0\uC639?"
@@ -426,322 +427,1772 @@ MonoBehaviour:
   - key: 156
     value: "\uB0E5\uC774\uB4E4\uC758 \uC2A4\uD1A0\uB9AC\uAC00 \uAD81\uAE08\uD558\uB0E5?\n\uC790\uC8FC
       \uB9CC\uB098\uC57C \uCE5C\uD574\uC9C4\uB2E4\uB0E5~"
+  - key: 157
+    value: "\uC0C9\uC774 \uBD89\uC744 \uC218\uB85D \uC131\uACA9\uC774\n\uAE09\uD55C
+      \uB0E5\uC774\uB2C8 \uC8FC\uC758\uD558\uB77C\uB0E5!"
   english:
   - key: 1
-    value: Hello
+    value: 'Kitties watching the event '
   - key: 2
-    value: Hello
+    value: 'Main kitty '
   - key: 3
-    value: Hello
+    value: Smart kitty
   - key: 4
-    value: Hello
+    value: "How many times he has gone All in?\n He's cut out for it ! You don't
+      say he's gonna go All-in again? "
   - key: 5
-    value: Hello
+    value: "All-in! The real man is never afraid of losing! \nten times or nothing!! "
   - key: 6
-    value: Hello
+    value: "Main kitty! I just bet all my money too, \nmake it ten times!!  We are
+      gonna be rich!"
   - key: 7
-    value: Hello
+    value: "No wonder It went well today.. \nWe blew it in the end..  "
   - key: 8
-    value: Hello
+    value: "I told you to stop!! all we had to do was hit and run!! \nwhat should
+      we do now? we all ended up in debt !!  "
   - key: 9
-    value: Hello
+    value: "What are you talking about? \nI wouldn't have gone all-in once again
+      \nIf you hadn't tempted me into it! "
   - key: 10
-    value: Hello
+    value: "By the way, what should we do now? \nall we got is this small food stall
+      man.."
   - key: 11
-    value: Hello
+    value: "Well.. we are just gonna restart here.. \nWe could really use an investment
+      man.. \none investment could make us rich..."
   - key: 12
-    value: Hello
+    value: "I know right.... We could really use an investment... \nI mean just a
+      little investment will do.."
   - key: 13
-    value: Hello
+    value: "We are flat broke now... \nCould you please invest your money into our
+      food stall?"
   - key: 14
-    value: Hello
+    value: "If you invest in our business, \nwe'll remove upcoming ads for you!"
   - key: 15
-    value: Hello
+    value: ' Are you gonna invest money into them or not? '
   - key: 16
-    value: Hello
+    value: I am!!
   - key: 17
-    value: Hello
+    value: No I am not!!
   - key: 18
-    value: Hello
+    value: "Naturally!! Thank you bro ! we are friends now! \nI'll never forget your
+      hospitality man! \nI'll keep my fingers crossed for you!"
   - key: 19
-    value: Hello
+    value: "Thanks to you, now we can run this business more easily! \nyou are not
+      going to see all ads popping everyday in return!!"
   - key: 20
-    value: Hello
+    value: 'Alright... is that so.... it''s okay but just let me know anything
+
+      if
+      you change your mind.  '
   - key: 21
-    value: Hello
+    value: "That's too bad man.. one investment could make us happy though.. \nIt's
+      what it is.. alright let's just start from scratch."
   - key: 22
-    value: 'Hello fefefej efe fwopwow
-
-      efoei wwfoie e
-
-      efeee'
+    value: "C'mon! hurry up! \nThe customers are waiting for our food."
   - key: 23
-    value: Hello
+    value: "You see the meter there? \nIt represents kitty's patience."
   - key: 24
-    value: Hello
+    value: 'Before they run out of patience
+
+      Drag the kitty!'
   - key: 25
-    value: Hello
+    value: "We have to serve ribs \nbefore they leave!"
   - key: 26
-    value: Hello
+    value: "See the recipe on the roof \n And make food as it says!"
   - key: 27
-    value: Hello
+    value: "First of all \ndrag the ribs."
   - key: 28
-    value: Hello
+    value: "When you swipe down\n you can grill the ribs!"
   - key: 29
-    value: Hello
+    value: "When the color changes \nand steam goes up, \nit shows that the ribs
+      are done! "
   - key: 30
-    value: Hello
+    value: 'Fron now on
+
+      it''s time to drag the powder '
   - key: 31
-    value: Hello
+    value: 'After that,
+
+      you drag the sauce. '
   - key: 32
-    value: Hello
+    value: "When the powder and sauce come out, \nthe ribs are ready! \nnow click
+      on the ribs."
   - key: 33
-    value: Hello
+    value: "Good job man! \nI'm taking care of money now, \nso don't worry about
+      it!!"
   - key: 34
-    value: Hello
+    value: "You should serve ribs \nbefore they get burnt."
   - key: 35
-    value: Hello
+    value: "If the kitties are given the burnt one \nor the one different from the
+      recipe \nthey would really get angry."
   - key: 36
-    value: Hello
+    value: So make the most of trash can icon.
   - key: 37
-    value: Hello
+    value: 'When you click on that icon
+
+      you can throw it away.'
   - key: 38
-    value: Hello
+    value: 'So let''s make it big together! '
   - key: 39
-    value: Hello
+    value: 'Thanks for your job man!
+
+      I''m gonna help you bask in the break
+      time! '
   - key: 40
-    value: Hello
+    value: "Much like ribs, so are basking! \nThe point is everything in moderation!  "
   - key: 41
-    value: Hello
+    value: 'See the thermometer carefully
+
+      when it goes up to the point'
   - key: 42
-    value: Hello
+    value: "Just click on the bottom button \non the right quickly!!"
   - key: 43
-    value: Hello
+    value: "Good job!! \nIt looks so good!"
   - key: 44
-    value: Hello
+    value: "we've succeeded in basking! \nI have a feeling we are gonna \nmake more
+      money in the evening!"
   - key: 45
-    value: Hello
+    value: "Just like grilling ribs, you don't wanna \neither bask too much or too
+      less."
   - key: 46
-    value: Hello
+    value: "It feels like The kitty who just blew basking \nwould be angry all day.. "
   - key: 47
-    value: Hello
+    value: "Just grill them the way you did today.. \nso, let's head to the food
+      stall!"
   - key: 48
-    value: Hello
+    value: Spaced-out kitty
   - key: 49
-    value: Hello
+    value: "He just spaces out all the time \nno reasons behind it "
   - key: 50
-    value: Hello
+    value: Spacing out..
   - key: 51
-    value: Hello
+    value: "well..\nI wonder \nwhat he's thinking.."
   - key: 52
-    value: Hello
+    value: 'Upbeat kitty '
   - key: 53
-    value: Hello
+    value: "Upbeat kitty loves to sing \nand dance too much"
   - key: 54
-    value: Hello
+    value: "Since he loves both \nsinging and dancing"
   - key: 55
-    value: Hello
+    value: "He went out chilling overnight \nand still chilling   "
   - key: 56
-    value: Hello
+    value: 'Fart kitty '
   - key: 57
-    value: Hello
+    value: 'He enjoys farting '
   - key: 58
-    value: Hello
+    value: 'He used to go up high by farting
+
+      and explore the universe '
   - key: 59
-    value: Hello
+    value: "one day, comet collision \nwith the kitty crash landed him \nto Busan
+      city on earth"
   - key: 60
-    value: Hello
+    value: 'Sleepy kitty '
   - key: 61
-    value: Hello
+    value: "He loves to sleep \n He always eats food before going to sleep"
   - key: 62
-    value: Hello
+    value: 'He sleeps all day
+
+      except having food.'
   - key: 63
-    value: Hello
+    value: "After eating, he has to sleep right away.\nEating and sleep all day is
+      the best\n "
   - key: 64
-    value: Hello
+    value: White kitty
   - key: 65
-    value: Hello
+    value: "White kitty is a bimbo kitty. \nshe is like 'What's good is good'"
   - key: 66
-    value: Hello
+    value: "Bimbo kitty is \nwhite as snow"
   - key: 67
-    value: Hello
+    value: 'Much like her white fur
+
+      there''s white empty room in her head '
   - key: 68
-    value: Hello
+    value: Smart kitty
   - key: 69
-    value: Hello
+    value: "He's smart enough to give you tips \nHe's always hangs on a bar"
   - key: 70
-    value: Hello
+    value: "Nobody knows why \nhe hangs on a bar though"
   - key: 71
-    value: Hello
+    value: "For some reason \nwhen he hangs on a bar like this \nit makes him happy"
   - key: 72
-    value: Hello
+    value: Honey kitty
   - key: 73
-    value: Hello
+    value: honey kitty is sweet
   - key: 74
-    value: Hello
+    value: "He fell into a honey pot \nin search of the delicious ribs"
   - key: 75
-    value: Hello
+    value: "Splash! \nHe ended up becoming honey kitty\nMy fur tastes so good!"
   - key: 76
-    value: Hello
+    value: Featureless Kitty
   - key: 77
-    value: Hello
+    value: 'On The 7th day
+
+      He has come for no reasons'
   - key: 78
-    value: Hello
+    value: "You know and all that.. \nit's something just like this..  "
   - key: 79
-    value: Hello
+    value: "the typical feeling when you \nsee someone wearing some wool scarf "
   - key: 80
-    value: Hello
+    value: " And a hat goes well with it for some reason \n That's how it feels "
   - key: 81
-    value: Hello
+    value: Joyful kitty
   - key: 82
-    value: Hello
+    value: "The joyful kitty has come along \nwith the drunken kitty joyfully "
   - key: 83
-    value: Hello
+    value: "He enjoys \npiercing his body"
   - key: 84
-    value: Hello
+    value: Although he looks so cute
   - key: 85
-    value: Hello
+    value: "He got the fearful gold necklace \nand the piercings on his body, \nlooking
+      like a real Busan gangster!!"
   - key: 86
-    value: Hello
+    value: Half dead kitty
   - key: 87
-    value: Hello
+    value: "On the 10th day \nHe has come to survive"
   - key: 88
-    value: Hello
+    value: "I feek sick everyday.. \nI'm almost dying!"
   - key: 89
-    value: Hello
+    value: "Since he's sick everyday, \nhe has been forced to eat porridge."
   - key: 90
-    value: Hello
+    value: "But you know \nI could really use ribs to survive!"
   - key: 91
-    value: Hello
+    value: Drunken kitty
   - key: 92
-    value: Hello
+    value: "On the 14th day\n He has come to drink"
   - key: 93
-    value: Hello
+    value: 'Day in Day out
+
+      He loves drinking all day'
   - key: 94
-    value: Hello
+    value: "He loses his insanity when he's sober \nand the other way when he's not"
   - key: 95
-    value: Hello
+    value: "When he's drunk\nHe always falls into the sea. \nThe police officers
+      suffer from him."
   - key: 96
-    value: Hello
+    value: Blue kitty
   - key: 97
-    value: Hello
+    value: "On the 4th day \nHe has come across the sea"
   - key: 98
-    value: Hello
+    value: 'Since he loves the sea
+
+      he paints everything blue '
   - key: 99
-    value: Hello
+    value: One day, when he was on the sea
   - key: 100
-    value: Hello
+    value: "He fell in love with mermaid kitty.\nTo find her, he decided to \nbecome
+      the sea"
   - key: 101
-    value: Hello
+    value: Dump kitty
   - key: 102
-    value: Hello
+    value: 'On 21th day,
+
+      He has come because of call of nature'
   - key: 103
-    value: Hello
+    value: "It feels so good \nto take a dump"
   - key: 104
-    value: Hello
+    value: 'Since he suffered a lot
+
+      from the constipation'
   - key: 105
-    value: Hello
+    value: "He has come to Busan city \nfor the special farting technique \nof Fart
+      kitty"
   - key: 106
-    value: Hello
+    value: Moon kitty
   - key: 107
-    value: Hello
+    value: "On the 15th day \nthe kitty has showed up to see the moon"
   - key: 108
-    value: Hello
+    value: "Goddess \nplease make my wish come true"
   - key: 109
-    value: Hello
+    value: 'Under this beautiful full moon
+
+      the moon kitty has come to make
+      a wish'
   - key: 110
-    value: Hello
+    value: "I just want delicious ribs \nas much as I can this year too. \nAmen "
   - key: 111
-    value: Hello
+    value: Pirate Kitty
   - key: 112
-    value: Hello
+    value: "On 50th day,\nhe has come with his unique treasure\n One-piece"
   - key: 113
-    value: Hello
+    value: 'The notorious king of the sea
+
+      Pirate kitty'
   - key: 114
-    value: Hello
+    value: "You want my treasure? \nYou can have it you'll just have to find it! "
   - key: 115
-    value: Hello
+    value: " I left everything I gathered together \nin one place!!"
   - key: 116
-    value: Hello
+    value: 'Rich kitty '
   - key: 117
-    value: Hello
+    value: "The millionaire, rich kitty has come to \nsmell the moneymaking business
+      here"
   - key: 118
-    value: Hello
+    value: 'The rich kitty
+
+      just like preppies'
   - key: 119
-    value: Hello
+    value: "Although he was born rich, he always acts \nlike he's gone from rags
+      to riches!"
   - key: 120
-    value: Hello
+    value: "Got a problem with it huh? \nthen be richer than my family! \nJust work
+      your butt off to be rich like me!"
   - key: 121
-    value: Hello
+    value: Insane kitty
   - key: 122
-    value: Hello
+    value: "He was so surprised to see \nyou play more than half an hour "
   - key: 123
-    value: Hello
+    value: "It seems like he's both \ninsane and sane at the same time"
   - key: 124
-    value: Hello
+    value: "We still don't know \nsince when he has lost his mind"
   - key: 125
-    value: Hello
+    value: "Actually nobody knows \nif he's really insane or not in the first place"
   - key: 126
-    value: Hello
+    value: Shaman kitty
   - key: 127
-    value: Hello
+    value: "Since the insane kitty looked so interesting, \nshaman kitty has come
+      along with him "
   - key: 128
-    value: Hello
+    value: "One day, \nthe god descended on earth"
   - key: 129
-    value: Hello
+    value: 'Out of nowhere
+
+      the god met him by chance'
   - key: 130
-    value: Hello
+    value: "granting him a crystal ball \nafter that he ended up being \na shaman
+      of the sea"
   - key: 131
-    value: Hello
+    value: 'Swaggy Kitty '
   - key: 132
-    value: Hello
+    value: 'On 30th day
+
+      he has come to perform'
   - key: 133
-    value: Hello
+    value: "Swag~ \nSwaggy Kitty is in the house!"
   - key: 134
-    value: Hello
+    value: "He used to very upright \nbut ever since he fell in love with rapping"
   - key: 135
-    value: Hello
+    value: "he put magic on his glass, laver \non his chin and marshmallow on his
+      head, \nbecoming a terrible rapper from Busan! "
   - key: 136
-    value: Hello
+    value: 'Doggy kitty '
   - key: 137
-    value: Hello
+    value: 'On 40th day
+
+      the would-be doggy kitty has come'
   - key: 138
-    value: Hello
+    value: "The kitty who just wants \nto become a puppy so bad"
   - key: 139
-    value: Hello
+    value: "The one who grew up with dogs \nis now curious about his identity"
   - key: 140
-    value: Hello
+    value: "??? \nWait a minute!  \nwhy do you meow like a kitty then?"
   - key: 141
-    value: Hello
+    value: Angel kitty
   - key: 142
-    value: Hello
+    value: "Total playtime:1004 minutes! \nDescent of the Angel!"
   - key: 143
-    value: Hello
+    value: "Angel kitty descending \nfrom heaven above to earth"
   - key: 144
-    value: Hello
+    value: 'According to the myth story about
+
+      this angel kitty, the kindest
+      one  '
   - key: 145
-    value: Hello
+    value: "The kitty is only visible to the one who has \nthe longest play time\n"
   - key: 146
-    value: Hello
+    value: Evil kitty
   - key: 147
-    value: Hello
+    value: "Total playtime: 666 minutes! \nTime for Evil kitty  "
   - key: 148
-    value: Hello
+    value: "The evil kitty \nfrom the underworld"
   - key: 149
-    value: Hello
+    value: "He's the worst kitty \nin the world"
   - key: 150
-    value: Hello
+    value: "He has come to seduce you \ninto mobile game addiction"
   - key: 151
-    value: Hello
+    value: Mermaid kitty
   - key: 152
-    value: Hello
+    value: "On 60th day \nshe has come like a miracle"
   - key: 153
-    value: Hello
+    value: "She's looking for a witch \nto walk on the ground"
   - key: 154
-    value: Hello
+    value: "Mermaid kitty sneaked \nout of the mermaid kingdom"
   - key: 155
-    value: Hello
+    value: She hides her mysterious appearance, keeping her eye on the ribs everyday
   - key: 156
-    value: Hello
-  japanese: []
-  chinese: []
+    value: Wanna know more about the story of kitties? Just get to know us more :)
+  - key: 157
+    value: 
+  japanese:
+  - key: 1
+    value: "\u4F55\u304B\u3092\u898B\u3066\u3044\u308B\u30CB\u30E3\u30F3\u30B3\u305F\u3061"
+  - key: 2
+    value: "\u5E97\u9577\u30CB\u30E3\u30F3"
+  - key: 3
+    value: "\u30B3\u30C4\u30CB\u30E3\u30F3"
+  - key: 4
+    value: "\u3042\u306E\u30CB\u30E3\u30F3\u30B3\u4F55\u56DE\u3082\u6301\u3063\u3066\u308B\u91D1\u5168\u90E8\u304B\u3051\u3066\u308B\u306B\u3083\u751F\u307E\u308C\u3064\u304D\u306E\u30AE\u30E3\u30F3\u30D6\u30E9\u30FC\u3060\u306B\u3083\uFF01\u307E\u3055\u304B\u4ECA\u56DE\u3082\u5168\u90E8\u8CED\u3051\u308B\u306E\u304B\u306B\u3083\uFF1F"
+  - key: 5
+    value: "\u5168\u90E8\uFF01\u7537\u306A\u3089\u5168\u3066\u8CED\u3051\u308B\u306E\u3060\u306B\u3083\uFF01\n\u4E00\u767A\u306710\u500D\u307E\u3067\u5132\u3051\u308B\u306B\u3083\u30FC\uFF01"
+  - key: 6
+    value: "\u5E97\u9577\u30CB\u30E3\u30F3\uFF01\u50D5\u306E\u304A\u91D1\u307E\u306710\u500D\u306B\u3057\u3066\u306B\u3083\u30FC\uFF01\n\u50D5\u305F\u3061\u306F\u3082\u3046\u304A\u91D1\u6301\u3061\u3060\u306B\u3083!!"
+  - key: 7
+    value: "\u4ECA\u65E5\u306F\u904B\u304C\u3044\u3044\u3068\u601D\u3063\u305F\u306B\u3083\u2026\u5B8C\u5168\u306B\u7834\u7523\u3057\u305F\u306B\u3083\n\u5132\u3051\u308B\u3068\u3053\u308D\u304B\u3001\u4E00\u767A\u3067\u3084\u3089\u308C\u305F\u306B\u3083\u2026\uFF01"
+  - key: 8
+    value: "\u3060\u304B\u3089\u50D5\u306E\u8A00\u3046\u901A\u308A\u3001\u307B\u3069\u307B\u3069\u306B\u3059\u308B\u3079\u304D\u3060\u3063\u305F\u306B\u3083\uFF01\n\u3053\u308C\u304B\u3089\u3069\u3046\u3059\u308B\u3064\u3082\u308A\u3060\u306B\u3083!?\u501F\u91D1\u307E\u307F\u308C\u3060\u306B\u3083!"
+  - key: 9
+    value: "\u81EA\u5206\u306E\u304A\u91D1\u307E\u306710\u500D\u306B\u3057\u3066\u3063\u3066\u8A00\u3063\u3066\u305F\u3084\u3064\u304C\u4F55\u8A00\u3063\u3066\u308B\u306B\u3083!?\n\u717D\u3089\u308C\u3066\u306A\u3051\u308C\u3070\u307B\u3069\u307B\u3069\u306B\u3057\u3066\u305F\u306B\u3083!"
+  - key: 10
+    value: "\u3067\u3001\u3053\u308C\u304B\u3089\u3069\u3046\u3059\u308B\u3064\u3082\u308A\u306B\u3083\uFF1F\n\u3053\u306E\u5C0F\u3055\u3044\u5C4B\u53F0\u3057\u304B\u6B8B\u3063\u3066\u306A\u3044\u306B\u3083\u2026"
+  - key: 11
+    value: "\u3069\u3046\u3082\u3053\u3046\u3082\u2026\u3053\u3053\u304B\u3089\u3084\u308A\u76F4\u3057\u3060\u306B\u3083\n\u8AB0\u304B\u5C11\u3057\u3060\u3051\u51FA\u8CC7\u3057\u3066\u304F\u308C\u308C\u3070\u3059\u3050\u304A\u91D1\u6301\u3061\u306B\u306A\u308C\u308B\u306E\u306B"
+  - key: 12
+    value: "\u305D\u3046\u3060\u306B\u3083\u2026\u5C11\u3057\u3060\u3051\u51FA\u8CC7\u3057\u3066\u304F\u308C\u305F\u3089\u3044\u3044\u306E\u306B\u306B\u3083\n\u307B\u3093\u3068\u3046\u5C11\u3057\u3060\u3051\u51FA\u8CC7\u3057\u3066\u304F\u308C\u305F\u3089\u3044\u3044\u306E\u306B\u306B\u3083\u2026"
+  - key: 13
+    value: "\u50D5\u305F\u3061\u306F\u53EF\u54C0\u60F3\u306A\u8CA7\u4E4F\u30CB\u30E3\u30F3\u30B3\u3060\u306B\u3083\u3002\n\u50D5\u305F\u3061\u306E\u304A\u5E97\u306B\u5C11\u3057\u3060\u3051\u51FA\u8CC7\u3057\u3066\u304F\u308C\u306A\u3044\u306B\u3083\uFF1F"
+  - key: 14
+    value: "\u50D5\u305F\u3061\u306E\u304A\u5E97\u306B\u51FA\u8CC7\u3057\u3066\u304F\u308C\u308B\u306A\u3089\u3001\n\u3053\u308C\u304B\u3089\u51FA\u3066\u304F\u308B\u5E83\u544A\u3092\u6D88\u3057\u3066\u3042\u3052\u308B\u306B\u3083\uFF01"
+  - key: 15
+    value: "\u30CB\u30E3\u30F3\u30B3\u305F\u3061\u304C\u7D4C\u55B6\u3059\u308B\u6D77\u306E\u5C4B\u53F0\u306B\u51FA\u8CC7\u3057\u307E\u3059\u304B"
+  - key: 16
+    value: "\u51FA\u8CC7\u3059\u308B\uFF01"
+  - key: 17
+    value: "\u51FA\u8CC7\u3057\u306A\u3044\uFF01"
+  - key: 18
+    value: "\u3042\u308A\u304C\u3068\u3046\u306B\u3083!\u3084\u3063\u3071\u541B\u306F\u3044\u3044\u4EBA\u3060\u306B\u3083\uFF01\u50D5\u305F\u3061\u306F\u3082\u3046\u53CB\u9054\u3060\u306B\u3083\uFF01\n\u3053\u306E\u6069\u306F\u4E00\u751F\u5FD8\u308C\u306A\u3044\u306B\u3083\u3002\u5E78\u305B\u306B\u306A\u308C\u306B\u3083"
+  - key: 19
+    value: "\u304A\u304B\u3052\u3067\u52A9\u304B\u3063\u305F\u306B\u3083\n\u304A\u793C\u306B\u6BCE\u65E5\u51FA\u3066\u304F\u308B\u5E83\u544A\u3092\u6D88\u3057\u3066\u3042\u3052\u308B\u306B\u3083\uFF01"
+  - key: 20
+    value: "\u306B\u3083\u2026\u305D\u3046\u306A\u3093\u3060\u306B\u3083\u2026\u51FA\u8CC7\u3057\u3066\u304F\u308C\u306A\u3044\u3093\u3060\u306B\u3083\u2026\n\u5927\u4E08\u592B\u306B\u3083\u3002\u5FC3\u304C\u5909\u308F\u3063\u305F\u3089\u3044\u3064\u3067\u3082\u8A00\u3063\u3066\u306B\u3083"
+  - key: 21
+    value: "\u6B8B\u5FF5\u3060\u306B\u3083\u3001\u51FA\u8CC7\u3057\u3066\u304F\u308C\u305F\u3089\u307F\u3093\u306A\u304C\u5E78\u305B\u306B\u306A\u308C\u308B\u306E\u306B\u306B\u3083\n\u4ED5\u65B9\u306A\u3044\u306B\u3083\u3001\u3058\u3083\u3042\u3001\u59CB\u3081\u308B\u306B\u3083"
+  - key: 22
+    value: "\u6025\u3044\u3067\u306B\u3083\uFF01\u9045\u3044\u306B\u3083\uFF01\u304A\u5BA2\u3055\u3093\u304C\u5F85\u3063\u3066\u3044\u308B\u306B\u3083"
+  - key: 23
+    value: "\u3042\u305D\u3053\u306B\u898B\u3048\u308B\u30B2\u30FC\u30B8\u306F\n\u306B\u3083\u3093\u3053\u305F\u3061\u306E\u6211\u6162\u5EA6\u3060\u306B\u3083"
+  - key: 24
+    value: "\u30B2\u30FC\u30B8\u304C\u305F\u307E\u308B\u524D\u306B\n\u30CB\u30E3\u30F3\u30B3\u3092\u30C9\u30E9\u30C3\u30B0\u3057\u3066\u307F\u3088\u3046\u306B\u3083"
+  - key: 25
+    value: "\u30CB\u30E3\u30F3\u30B3\u305F\u3061\u304C\u3069\u3053\u304B\u884C\u3063\u3061\u3083\u3046\u524D\u306B\n\u65E9\u304F\u304A\u8089\u3092\u3042\u3052\u306A\u304D\u3083\u3060\u306B\u3083"
+  - key: 26
+    value: "\u5C4B\u6839\u306B\u66F8\u3044\u3066\u3042\u308B\u30EC\u30B7\u30D4\u3092\u898B\u3066\n\u305D\u306E\u307E\u307E\u4F5C\u3063\u3066\u307F\u3088\u3046\u306B\u3083"
+  - key: 27
+    value: "\u307E\u305A\u3001\u6307\u3067\u304A\u8089\u3092\n\u30C9\u30E9\u30C3\u30B0\u3057\u3066\u307F\u3088\u3046\u306B\u3083"
+  - key: 28
+    value: "\u4E0B\u306B\u30B9\u30EF\u30A4\u30D7\u3059\u308C\u3071\n\u304A\u8089\u3092\u713C\u304F\u3053\u3068\u304C\u3067\u304D\u308B\u306B\u3083\uFF01"
+  - key: 29
+    value: "\u8272\u304C\u5909\u308F\u3063\u3066\n\u7159\u304C\u51FA\u305F\u3089\n\u713C\u304D\u4E0A\u304C\u308A\u3060\u306B\u3083"
+  - key: 30
+    value: "\u3067\u306F\u3001\u7C89\u672B\u3092\n\u30C9\u30E9\u30C3\u30B0\u3057\u3066\u307F\u3088\u3046\u306B\u3083"
+  - key: 31
+    value: "\u6B21\u306F\u3001\u30BD\u30FC\u30B9\u3092\n\u30C9\u30E9\u30C3\u30B0\u3057\u3066\u307F\u3088\u3046\u306B\u3083"
+  - key: 32
+    value: "\u7C89\u672B\u3068\u30BD\u30FC\u30B9\u306E\u8272\u304C\u51FA\u305F\u3089\n\u51FA\u6765\u4E0A\u304C\u308A\u3060\u306B\u3083\uFF01\n\u51FA\u6765\u4E0A\u304C\u3063\u305F\u306E\u3092\u30BF\u30C3\u30C1\u3057\u3066\u306B\u3083"
+  - key: 33
+    value: "\u3088\u304F\u3067\u304D\u305F\u306B\u3083\uFF01\n\u304A\u91D1\u306F\u50D5\u304C\u3061\u3083\u3093\u3068\u3082\u3089\u3063\u3066\u3044\u308B\u304B\u3089\u3001\n\u5FC3\u914D\u3044\u3089\u306A\u3044\u306B\u3083\uFF01"
+  - key: 34
+    value: "\u304A\u8089\u306F\u7126\u3052\u308B\u524D\u306B\u713C\u304D\u4E0A\u3052\u306A\u304D\u3083\n\u3044\u3051\u306A\u3044\u306B\u3083"
+  - key: 35
+    value: "\u7126\u3052\u305F\u304A\u8089\u3092\u51FA\u3057\u305F\u308A\u3001\n\u30EC\u30B7\u30D4\u3068\u306F\u9055\u3046\u304A\u8089\u3092\u51FA\u3057\u305F\u3089\n\u30CB\u30E3\u30F3\u30B3\u305F\u3061\u304C\u6012\u308B\u306B\u3083"
+  - key: 36
+    value: "\u3060\u304B\u3089\u3001\u3054\u307F\u7BB1\u3092\u4E0A\u624B\u304F\n\u4F7F\u3046\u3068\u3044\u3044\u306B\u3083"
+  - key: 37
+    value: "\u3054\u307F\u7BB1\u3092\u30BF\u30C3\u30C1\u3059\u308B\u3068\n\u304A\u8089\u3092\u6368\u3066\u308B\u3053\u3068\u304C\u3067\u304D\u308B\u306B\u3083"
+  - key: 38
+    value: "\u3058\u3083\u3042\u3001\u4E00\u7DD2\u306B\n\u304A\u91D1\u6301\u3061\u306B\u306A\u3063\u3066\u307F\u3088\u3046\u306B\u3083\uFF01"
+  - key: 39
+    value: "\u304A\u75B2\u308C\u69D8\u306B\u3083\uFF01\u30EA\u30D5\u30EC\u30C3\u30B7\u30E5\u3068\u3057\u3066\u3001\n\u65E5\u713C\u3051\u3059\u308B\u306E\u3092\u624B\u4F1D\u3063\u3066\u3042\u3052\u308B\u306B\u3083\uFF01"
+  - key: 40
+    value: "\u65E5\u713C\u3051\u3092\u3059\u308B\u6642\u3082\u3001\u304A\u8089\u3068\u540C\u3058\u304F\n\u4E01\u5EA6\u3044\u3044\u3068\u3053\u308D\u3067\u6B62\u3081\u308B\u306E\u304C\u5927\u4E8B\uFF01"
+  - key: 41
+    value: "\u6E29\u5EA6\u8A08\u3092\u898B\u3066\u3001\n\u77E2\u5370\u306E\u3068\u3053\u308D\u307E\u3067\u6E29\u5EA6\u304C\u4E0A\u304C\u3063\u305F\u3089"
+  - key: 42
+    value: "\u53F3\u4E0B\u306E\u30DC\u30BF\u30F3\u3092\n\u7D20\u65E9\u304F\u62BC\u3057\u3066\u306B\u3083\uFF01"
+  - key: 43
+    value: "\u3088\u304F\u3067\u304D\u305F\u306B\u3083\uFF01\n\u7F8E\u5473\u3057\u305D\u3046\u306B\u713C\u304D\u4E0A\u304C\u3063\u305F\u306B\u3083"
+  - key: 44
+    value: "\u65E5\u713C\u3051\u306B\u6210\u529F\u3057\u305F\u304B\u3089\n\u304D\u3063\u3068\u5348\u5F8C\u306E\u58F2\u308A\u4E0A\u3052\u304C\u4E0A\u304C\u308B\u306B\u3083"
+  - key: 45
+    value: "\u65E5\u713C\u3051\u3082\u304A\u8089\u3068\u540C\u3058\u304F\u706B\u304C\u901A\u3063\u3066\u306A\u304B\u3063\u305F\u308A\n\u713C\u304D\u3059\u304E\u305F\u308A\u3057\u3061\u3083\u30C0\u30E1\u3060\u306B\u3083"
+  - key: 46
+    value: "\u65E5\u713C\u3051\u306B\u5931\u6557\u3057\u305F\u5E97\u9577\u30CB\u30E3\u30F3\u304C\n\u4E00\u65E5\u4E2D\u3001\u6012\u3063\u3066\u308B\u306B\u3083\u2026"
+  - key: 47
+    value: "\u3067\u3082\u3001\u4ECA\u65E5\u307F\u305F\u3044\u306B\u3059\u308C\u3070\u3044\u3044\u306B\u3083\n\u3058\u3083\u3042\u3001\u304A\u5E97\u306B\u623B\u308B\u306B\u3083\uFF01"
+  - key: 48
+    value: "\u30DC\u30FC\u30CB\u30E3\u30F3"
+  - key: 49
+    value: "\u307C\u30FC\u3063\u3068\u3057\u3066\u3044\u308B\u3000\n\u305F\u3060\u307C\u30FC\u3063\u3068\u3057\u3066\u3044\u308B\u3060\u3051"
+  - key: 50
+    value: "\u307C\u30FC\u2026"
+  - key: 51
+    value: "\u2026\u3042\u3063\uFF01\n\u30DC\u30FC\u30CB\u30E3\u30F3\u306F\n\u4F55\u3092\u8003\u3048\u3066\u3044\u308B\u306E\u304B\u306A\uFF1F"
+  - key: 52
+    value: "\u30D1\u30EA\u30D4\u30CB\u30E3\u30F3"
+  - key: 53
+    value: "\u97F3\u697D\u3068\u30C0\u30F3\u30B9\u304C\n\u597D\u304D\u3059\u304E\u308B\u30CB\u30E3\u30F3\u30B3"
+  - key: 54
+    value: "\u30D1\u30EA\u30D4\u30CB\u30E3\u30F3\u306F\n\u97F3\u697D\u3068\u30C0\u30F3\u30B9\u304C\u5927\u597D\u304D\u3067"
+  - key: 55
+    value: "\u5BB6\u3092\u51FA\u3066\u3001\n\u591C\u304C\u660E\u3051\u308B\u307E\u3067\u904A\u3093\u3067\u3044\u308B\u3002\n\u4ECA\u307E\u3067\u3082\u904A\u3093\u3067\u3044\u308B\u3002"
+  - key: 56
+    value: "\u30D6\u30C3\u30CB\u30E3\u30F3"
+  - key: 57
+    value: "\u30AA\u30CA\u30E9\u3059\u308B\u306E\u304C\n\u597D\u304D"
+  - key: 58
+    value: "\u30D7\u30C3\u30CB\u30E3\u30F3\u306F\u30AA\u30CA\u30E9\u3067\u98DB\u3073\u51FA\u3057\u3001\n\u5B87\u5B99\u3092\u6CF3\u304E\u56DE\u3063\u3066\u3044\u305F\u304C"
+  - key: 59
+    value: "\u3042\u308B\u65E5\u3001\u6D41\u661F\u885D\u7A81\u3067\n\u5730\u7403\u306B\u3042\u308B\u91DC\u5C71\u306B\n\u4E0D\u6642\u7740\u3059\u308B\u3053\u3068\u306B\u306A\u3063\u305F"
+  - key: 60
+    value: "\u30CD\u30E0\u30CB\u30E3\u30F3"
+  - key: 61
+    value: "\u5BDD\u308B\u306E\u304C\u597D\u304D\n\u5BDD\u308B\u524D\u306B\u306F\u5FC5\u305A\u4F55\u304B\u3092\u98DF\u3079\u308B"
+  - key: 62
+    value: "\u30CD\u30E0\u30CB\u30E3\u30F3\u306F\u98DF\u3079\u308B\u6642\u4EE5\u5916\u306F\n\u305A\u3063\u3068\u5BDD\u3066\u3044\u308B"
+  - key: 63
+    value: "\u98DF\u3079\u305F\u3089\u3059\u3050\u5BDD\u306A\u3051\u308C\u3070\u306A\u3089\u306A\u3044\n\u98DF\u3079\u3066\u5BDD\u3066\u3001\u98DF\u3079\u3066\u5BDD\u3066\u2026\n\u98DF\u3079\u3066\u5BDD\u308B\u306E\u304C\u4E00\u756A"
+  - key: 64
+    value: "\u767D\u30CB\u30E3\u30F3"
+  - key: 65
+    value: "\u5929\u7136\n\u3061\u3087\u3063\u3068\u304A\u30D0\u30AB\u3055\u3093"
+  - key: 66
+    value: "\u767D\u30CB\u30E3\u30F3\u306F\u96EA\u306E\u3088\u3046\u306B\n\u771F\u3063\u767D\u3044\u30CB\u30E3\u30F3\u30B3\u3060"
+  - key: 67
+    value: "\u771F\u3063\u767D\u3044\u6BDB\u306E\u3088\u3046\u306B\n\u982D\u306E\u4E2D\u3082\u771F\u3063\u767D\u306E\u3088\u3046\u3060"
+  - key: 68
+    value: "\u30B3\u30C4\u30CB\u30E3\u30F3"
+  - key: 69
+    value: "\u30B2\u30FC\u30E0\u306E\u30B3\u30C4\u3092\u6559\u3048\u3066\u304F\u308C\u308B\n\u67F1\u306B\u304F\u3063\u3064\u3044\u3066\u3044\u308B"
+  - key: 70
+    value: "\u306A\u305C\u30B3\u30C4\u30CB\u30E3\u30F3\u304C\n\u67F1\u306B\u304F\u3063\u3064\u3044\u3066\u3044\u308B\u304B\u306F\u8AB0\u3082\u77E5\u3089\u306A\u3044"
+  - key: 71
+    value: "\u3067\u3082\u3053\u3046\u3057\u3066\n\u67F1\u306B\u304F\u3063\u3064\u3044\u3066\u3044\u308B\u3068\n\u6C17\u5206\u304C\u3044\u3044\u3089\u3057\u3044"
+  - key: 72
+    value: "\u871C\u30CB\u30E3\u30F3"
+  - key: 73
+    value: "\u7518\u3044\u8702\u871C\u306E\n\u5473\u304C\u3059\u308B\u30CB\u30E3\u30F3\u30B3"
+  - key: 74
+    value: "\u871C\u30CB\u30E3\u30F3\u306F\u304A\u8089\u3092\u63A2\u3057\u3066\u3044\u308B\u9014\u4E2D\u3001\n\u30CF\u30C1\u30DF\u30C4\u306E\u3064\u307C\u306B\u843D\u3061\u3066\u3057\u307E\u3044\u3001"
+  - key: 75
+    value: "\u30CF\u30C1\u30DF\u30C4\u5473\u306E\u30CB\u30E3\u30F3\u30B3\u306B\n\u306A\u3063\u3066\u3057\u307E\u3063\u305F\u3002\n\u6BDB\u304B\u3089\u8702\u871C\u306E\u5473\u304C\u3059\u308B\u306B\u3083\uFF01"
+  - key: 76
+    value: "\u306A\u3093\u3068\u306A\u304F\u30CB\u30E3\u30F3"
+  - key: 77
+    value: "\u55B6\u696D\uFF17\u65E5\u76EE\n\u306A\u3093\u3068\u306A\u304F\u6765\u5E97\u3059\u308B"
+  - key: 78
+    value: "\u306A\u3093\u3068\u306A\u304F\u2026\n\u307E\u3042\u2026\u305D\u3093\u306A\u611F\u3058"
+  - key: 79
+    value: "\u306A\u3093\u3068\u306A\u304F\n\u5DFB\u3044\u305F\u30DE\u30D5\u30E9\u30FC\u3068"
+  - key: 80
+    value: "\u306A\u3093\u3068\u306A\u304F\u88AB\u3063\u305F\u5E3D\u5B50\u304C\n\u306A\u3093\u304B\u30A4\u30E4\u3058\u3083\u306A\u3044\n\u305D\u3093\u306A\u611F\u3058\uFF1F"
+  - key: 81
+    value: "\u30A6\u30AD\u30CB\u30E3\u30F3"
+  - key: 82
+    value: "\u9152\u30CB\u30E3\u30F3\u3092\u898B\u3066\n\u30A6\u30AD\u30A6\u30AD\u3057\u3066\u3064\u3044\u3066\u304D\u305F"
+  - key: 83
+    value: "\u30D4\u30A2\u30B9\u3068\n\u904A\u3073\u597D\u304D"
+  - key: 84
+    value: "\u30A6\u30AD\u30CB\u30E3\u30F3\u306F\u53EF\u611B\u3044\n\u898B\u305F\u76EE\u3068\u306F\u9055\u3063\u3066"
+  - key: 85
+    value: "\u6016\u305D\u3046\u306A\u91D1\u306E\u30CD\u30C3\u30AF\u30EC\u30B9\u3068\n\u30D4\u30A2\u30B9\u3092\u3057\u3066\u3044\u308B\n\u30CB\u30E3\u30F3\u30AD\u30FC\uFF1F"
+  - key: 86
+    value: "\u6B7B\u306B\u304B\u3051\u30CB\u30E3\u30F3"
+  - key: 87
+    value: "\u55B6\u696D10\u65E5\u76EE\n\u3053\u306E\u307E\u307E\u3058\u3083\u6B7B\u306B\u305D\u3046\u3067\u304D\u305F\u307F\u305F\u3044"
+  - key: 88
+    value: "\u6BCE\u65E5\u3001\u4F53\u306E\u8ABF\u5B50\u304C\u60AA\u3044\n\u3046\u3045\u2026"
+  - key: 89
+    value: "\u30CB\u30E3\u30F3\u306F\u6BCE\u65E5\u4F53\u306E\u8ABF\u5B50\u304C\u60AA\u304F\u3066\n\u304A\u7CA5\u3070\u3063\u304B\u98DF\u3079\u3066\u3044\u305F"
+  - key: 90
+    value: "\u3067\u3082\n\u304A\u8089\u3092\u98DF\u3079\u305F\u3089\n\u5143\u6C17\u306B\u306A\u308C\u305D\u3046\uFF01"
+  - key: 91
+    value: "\u9152\u30CB\u30E3\u30F3"
+  - key: 92
+    value: "\u55B6\u696D14\u65E5\u76EE\n\u4E00\u676F\u98F2\u307F\u306B\u6765\u305F"
+  - key: 93
+    value: "\u6BCE\u65E5\n\u98F2\u3080\u306E\u304C\u5927\u597D\u304D"
+  - key: 94
+    value: "\u30B7\u30E9\u30D5\u306F\u304A\u304B\u3057\u3044\uFF01\n\u9154\u3063\u3071\u3089\u3063\u3066\u308B\u306E\u304C\u666E\u901A\u306E\u9152\u30CB\u30E3\u30F3\u306F"
+  - key: 95
+    value: "\u9154\u3063\u6255\u3063\u305F\u3089\n\u91DC\u5C71\u306E\u6D77\u306B\u5165\u308D\u3046\u3068\u3057\u3066\n\u8B66\u5BDF\u6C99\u6C70\u306B\u2026"
+  - key: 96
+    value: "\u9752\u30CB\u30E3\u30F3"
+  - key: 97
+    value: "\u55B6\u696D4\u65E5\u76EE\n\u6D77\u3092\u6E21\u3063\u3066\u304D\u305F"
+  - key: 98
+    value: "\u6D77\u304C\u597D\u304D\u3059\u304E\u3066\n\u4F53\u306B\u9752\u3092\u5857\u3063\u305F"
+  - key: 99
+    value: "\u3042\u308B\u65E5\u3001\u9752\u30CB\u30E3\u30F3\u306F\u6D77\u3067\n\u9752\u3044\u76EE\u3092\u3057\u305F\u4EBA\u9B5A\u30CB\u30E3\u30F3\u306B"
+  - key: 100
+    value: "\u4E00\u76EE\u307C\u308C\u3059\u308B\n\u4EBA\u5F62\u30CB\u30E3\u30F3\u3092\u63A2\u3059\u305F\u3081\n\u6D77\u306B\u306A\u308B\u3053\u3068\u3092\u6C7A\u5FC3\u3059\u308B"
+  - key: 101
+    value: "\u30A6\u30F3\u30C1\u30CB\u30E3\u30F3"
+  - key: 102
+    value: "\u55B6\u696D21\u65E5\u76EE\n\u30C8\u30A4\u30EC\u3092\u501F\u308A\u306B\u304D\u305F"
+  - key: 103
+    value: "\u30A6\u30F3\u30C1\u3059\u308B\u306E\n\u5927\u5927\u5927\u597D\u304D"
+  - key: 104
+    value: "\u3044\u3064\u3082\u4FBF\u79D8\u3067\u82E6\u3057\u3093\u3067\u3044\u305F\n\u30A6\u30F3\u30C1\u30CB\u30E3\u30F3\u306F\u30D6\u30C3\u30CB\u30E3\u30F3\u306B"
+  - key: 105
+    value: "\u5FEB\u4FBF\u3067\u304D\u308B\u30AA\u30CA\u30E9\u306E\u79D8\u5BC6\u3092\n\u6559\u3048\u3066\u3082\u3089\u3046\u305F\u3081\u91DC\u5C71\u306B"
+  - key: 106
+    value: "\u6708\u30CB\u30E3\u30F3"
+  - key: 107
+    value: "\u55B6\u696D15\u65E5\u76EE\u3001\n\u6708\u3092\u898B\u306B\u73FE\u308C\u308B"
+  - key: 108
+    value: "\u304A\u6708\u3055\u307E\u3001\u9858\u3044\u3092\n\u53F6\u3048\u3066\u304F\u3060\u3055\u3044"
+  - key: 109
+    value: "\u7DBA\u9E97\u306A\u6E80\u6708\u306E\u65E5\n\u304A\u6708\u3055\u307E\u306B\u9858\u3044\u306B\u304D\u305F"
+  - key: 110
+    value: "\u4ECA\u5E74\u3082\u7F8E\u5473\u3057\u3044\u304A\u8089\u304C\n\u305F\u304F\u3055\u3093\u98DF\u3079\u308C\u307E\u3059\u3088\u3046\u306B\n"
+  - key: 111
+    value: "\u6D77\u8CCA\u30CB\u30E3\u30F3"
+  - key: 112
+    value: "\u55B6\u696D50\u65E5\u76EE\n\u3072\u3068\u3064\u306A\u304E\u306E\u79D8\u5B9D\u3092\u63A2\u3057\u3066\u6765\u305F"
+  - key: 113
+    value: "\u6D77\u306E\u652F\u914D\u8005\n\u6D77\u8CCA\u30CB\u30E3\u30F3"
+  - key: 114
+    value: ",\u4FFA\u306E\u8CA1\u5B9D\u304B\uFF1F\n\u307B\u3057\u3051\u308A\u3083\u304F\u308C\u3066\u3084\u308B\u305C"
+  - key: 115
+    value: "\u63A2\u305B\uFF01\n\u3053\u306E\u4E16\u306E\u3059\u3079\u3066\u3092\n\u305D\u3053\u306B\u7F6E\u3044\u3066\u304D\u305F\uFF01"
+  - key: 116
+    value: "\u8AED\u5409\u30CB\u30E3\u30F3"
+  - key: 117
+    value: "\u8AED\u5409\u306E\u5302\u3044\u306B\n\u3064\u3089\u308C\u3066\u304D\u305F"
+  - key: 118
+    value: "\u751F\u307E\u308C\u305F\u6642\u304B\u3089\n\u304A\u91D1\u6301\u3061\u306E\u30CB\u30E3\u30F3\u30B3"
+  - key: 119
+    value: "\u30DC\u30F3\u30DC\u30F3\u306B\u751F\u307E\u308C\u305F\u304C\u3001\n\u81EA\u5206\u3067\u7A3C\u3044\u3060\u3075\u308A\uFF01"
+  - key: 120
+    value: "\u50D5\u3088\u308A\u30A4\u30B1\u3066\u308B\u304B\n\u50D5\u306E\u5BB6\u3088\u308A\u91D1\u6301\u3061\u304B\n\u50D5\u307F\u305F\u3044\u306B\u306A\u308A\u305F\u3044\uFF1F\u7A3C\u3052\u3088\uFF01"
+  - key: 121
+    value: "\u30E4\u30D0\u30CB\u30E3\u30F3"
+  - key: 122
+    value: "\u3053\u306E\u30B2\u30FC\u30E0\u309230\u5206\u3082\u3084\u308B\u306A\u3093\u3066\n\u9A5A\u3044\u3066\u898B\u306B\u6765\u305F"
+  - key: 123
+    value: "\u30E4\u30D0\u3044\u3088\u3046\u3067\n\u30E4\u30D0\u304F\u306A\u3044\u3088\u3046\u3067"
+  - key: 124
+    value: "\u30E4\u30D0\u30CB\u30E3\u30F3\u304C\u3044\u3064\u304B\u3089\n\u30E4\u30D0\u304F\u306A\u3063\u305F\u306E\u304B\u306F\u308F\u304B\u3089\u306A\u3044"
+  - key: 125
+    value: "\u672C\u5F53\u306B\u30E4\u30D0\u3044\u306E\u304B\u30E4\u30D0\u304F\u306A\u3044\u306E\u304B\u3059\u3089\n\u8AB0\u3082\u77E5\u3089\u306A\u3044"
+  - key: 126
+    value: "\u5360\u3044\u30CB\u30E3\u30F3"
+  - key: 127
+    value: "\u30E4\u30D0\u30CB\u30E3\u30F3\u306B\n\u3064\u3044\u3066\u304D\u305F"
+  - key: 128
+    value: "\u3042\u308B\u65E5\u3001\u795E\u69D8\u306B\n\u80FD\u529B\u3092\u4E0E\u3048\u3089\u308C\u305F"
+  - key: 129
+    value: "\u3042\u308B\u65E5\u3001\u7A81\u7136\n\u8A2A\u308C\u305F\u30CB\u30E3\u30F3\u795E(?)\u306F"
+  - key: 130
+    value: "\u5360\u3044\u30CB\u30E3\u30F3\u306B\u6C34\u6676\u7389\u3092\u4E0E\u3048\u305F\u3002\n\u305D\u3057\u3066\u3001\u9854\u306B\u307B\u304F\u308D\u3092\u63CF\u304D\u6D77\u306E\n\u5360\u3044\u5E2B\u306B\u306A\u3063\u305F"
+  - key: 131
+    value: "\u30E9\u30C3\u30D1\u30FC\u30CB\u30E3\u30F3"
+  - key: 132
+    value: "\u55B6\u696D30\u65E5\u76EE\n\u30E9\u30C3\u30D7\u3057\u306B\u6765\u305F"
+  - key: 133
+    value: "Oh~\u30AA\u30EC\u30DE\u30B8\n\u30E4\u30D0\u3044"
+  - key: 134
+    value: "\u30E9\u30C3\u30D1\u30FC\u30CB\u30E3\u30F3\u306F\u771F\u9762\u76EE\u306A\u30CB\u30E3\u30F3\u30B3\u3060\u3063\u305F\u304C\u3001\n\u3042\u308B\u65E5\u3001\u30D2\u30C3\u30D7\u30DB\u30C3\u30D7\u3068\u604B\u306B\u843D\u3061\u2026"
+  - key: 135
+    value: "\u30E1\u30AC\u30CD\u306B\u30DE\u30B8\u30C3\u30AF\u3001\u3042\u3054\u306B\u306E\u308A\u3092\n\u9AEA\u306B\u30DE\u30B7\u30E5\u30DE\u30ED\u3092\n\u91DC\u5C71\u306E\u30E9\u30C3\u30D7\u97F3\u75F4\uFF01"
+  - key: 136
+    value: "\u30EF\u30F3\u30CB\u30E3\u30F3"
+  - key: 137
+    value: "\u55B6\u696D\uFF14\uFF10\u65E5\u76EE\u3001\n\u72AC\u306B\u306A\u3063\u3066\u73FE\u308C\u308B"
+  - key: 138
+    value: "\u72AC\u306B\u306A\u308A\u305F\u3044\n\u30CB\u30E3\u30F3\u30B3"
+  - key: 139
+    value: "\u5B50\u4F9B\u306E\u9803\u3001\u72AC\u3068\u4E00\u7DD2\u306B\u80B2\u3063\u305F\u30EF\u30F3\u30EF\u30F3\u30CB\u30E3\u30F3\u306F\n\u81EA\u5206\u306E\u30A2\u30A4\u30C7\u30F3\u30C6\u30A3\u30C6\u30A3\u30FC\u306B\u60A9\u3080"
+  - key: 140
+    value: "???\u3000\n\u306A\u3093\u3067\u50D5\u306E\u9CF4\u304D\u58F0\u306F\u300C\u30CB\u30E3\u2015\u30AA\u30FC\u300D\n\u306A\u3093\u3060\u306B\u3083\u30FC\u304A"
+  - key: 141
+    value: "\u5929\u4F7F\u30CB\u30E3\u30F3"
+  - key: 142
+    value: "\u7D2F\u8A08\u30D7\u30EC\u30A4\u6642\u95931004\u5206\uFF01\n\u5929\u4F7F\u964D\u81E8\uFF01"
+  - key: 143
+    value: "\u7A7A\u304B\u3089\u964D\u308A\u3066\u304D\u305F\n\u5929\u4F7F\u306E\u30CB\u30E3\u30F3\u30B3"
+  - key: 144
+    value: "\u5929\u4F7F\u30CB\u30E3\u30F3\u306F\u4E16\u754C\u3067\n\u4E00\u756A\u512A\u3057\u3044\u30CB\u30E3\u30F3\u30B3"
+  - key: 145
+    value: "\u3053\u306E\u30B2\u30FC\u30E0\u3092\u7D9A\u3051\u3066\u304F\u308C\u305F\n\u512A\u3057\u3044\u4EBA\u3060\u3051\u306B\n\u898B\u3048\u308B\u3089\u3057\u3044"
+  - key: 146
+    value: "\u60AA\u9B54\u30CB\u30E3\u30F3"
+  - key: 147
+    value: "\u7D2F\u8A08\u30D7\u30EC\u30A4\u6642\u9593666\u5206\uFF01\n\u60AA\u9B54\u306E\u6642\u9593\uFF01"
+  - key: 148
+    value: "\u5730\u4E0B\u304B\u3089\u4E0A\u304C\u3063\u3066\u304D\u305F\n\u60AA\u9B54\u30CB\u30E3\u30F3\u30B3\n"
+  - key: 149
+    value: "\u60AA\u9B54\u30CB\u30E3\u30F3\u306F\u4E16\u754C\u3067\n\u4E00\u756A\u60AA\u3044\u30CB\u30E3\u30F3\u30B3"
+  - key: 150
+    value: "\u3042\u306A\u305F\u3092\u30B9\u30DE\u30DB\u30B2\u30FC\u30E0\u4F9D\u5B58\u75C7\u306B\n\u3055\u305B\u308B\u305F\u3081\n\u3084\u3063\u3066\u304D\u305F"
+  - key: 151
+    value: "\u4EBA\u9B5A\u30CB\u30E3\u30F3"
+  - key: 152
+    value: "\u55B6\u696D60\u65E5\u76EE\n\u5947\u8DE1\u306E\u3088\u3046\u306B\u73FE\u308C\u308B"
+  - key: 153
+    value: "\u9678\u306B\u4E0A\u304C\u308B\u305F\u3081\u3001\n\u9B54\u5973\u3092\u63A2\u3057\u56DE\u3063\u3066\u3044\u308B"
+  - key: 154
+    value: "\u4EBA\u9B5A\u30CB\u30E3\u30F3\u306F\u4EBA\u9B5A\u30CB\u30E3\u30F3\u56FD\u3092\n\u3053\u3063\u305D\u308A\u3068\u629C\u3051\u51FA\u3057"
+  - key: 155
+    value: "\u81EA\u5206\u306E\u4E0D\u601D\u8B70\u306A\u5B58\u5728\u3092\u96A0\u3057\u3066\u3001\n\u304A\u8089\u304C\u98DF\u3079\u308C\u308B\u30C1\u30E3\u30F3\u30B9\u3060\u3051\u3092\n\u864E\u8996\u7708\u3005\u3068\u72D9\u3063\u3066\u3044\u308B"
+  - key: 156
+    value: "\u30CB\u30E3\u30F3\u30B3\u305F\u3061\u306E\u30B9\u30C8\u30FC\u30EA\u30FC\u304C\u6C17\u306B\u306A\u308B\u306B\u3083\uFF1F\n\u30CB\u30E3\u30F3\u30B3\u305F\u3061\u306E\u6765\u5E97\u56DE\u6570\u304C\u5897\u3048\u308B\u3068\u3001\u4EF2\u826F\u304F\u306A\u308C\u308B\u306B\u3083"
+  - key: 157
+    value: 
+  chineseGan:
+  - key: 1
+    value: "\u5728\u6E4A\u71B1\u9B27\u7684\u5C0F\u8C93\u5011\uFF0C "
+  - key: 2
+    value: "\u4E3B\u4EBA\u8C93\u554A "
+  - key: 3
+    value: "\u968A\u8C93\u5011 "
+  - key: 4
+    value: "\u90A3\u96BB\u8C93\u73FE\u5728\u662F\u9023\u7E8C\u5E7E\u6B21\u5168\u62BC\uFF08all-in)\u4E86\uFF1F 
+      \n\u6211\u6839\u672C\u662F\u9AD8\u624B\u554A \n\u55B5\uFF01\u8A72\u4E0D\u6703\u9019\u6B21\u4E5F\u662F\u5168\u62BC\uFF1F "
+  - key: 5
+    value: "\u5168\u62BC\uFF01\u7121\u689D\u4EF6\u8981\u5168\u62BC \u55B5\uFF01 \n\u4E00\u6B21\u5230\u4E86\u5341\u500D\uFF0C\u8D70\u5427\uFF01 "
+  - key: 6
+    value: "\u4E3B\u4EBA\u8C93\uFF01\u52A0\u4E0A\u6211\u7684\u9322\uFF0C\u7528\u4E0A\u5341\u500D
+      \n\u62DC\u8A17\u4F60\u5011\u4E86\uFF01 \u6211\u5011\u73FE\u5728\u662F\u571F\u8C6A\u4E86\uFF01\uFF01 "
+  - key: 7
+    value: "\u4ECA\u5929\u8D70\u904B\u4E86...\u6211\u5011\u5B8C\u5168\u5B8C\u86CB\u4E86...
+      \n \u4E00\u6B21\u5C31\u5FB9\u5E95\u82B1\u5149...\uFF01 "
+  - key: 8
+    value: "\u5C31\u662F\u7167\u6211\u7684\u8A71\u4F86\u8AAA\uFF0C\u9069\u7576\u5730\u653B\u64CA\u7136\u5F8C\u5FC5\u9808\u64A4\u9000\uFF01
+      \n\u73FE\u5728\u8981\u600E\u9EBC\u8FA6\u554A\uFF01\uFF1F \u6B20\u4E86\u4E00\u5C41\u80A1\u50B5\uFF01 "
+  - key: 9
+    value: "\u81EA\u5DF1\u7528\u5341\u500D\u7684\u9322\u53EB\u4F86\u7684\u50A2\u4F19\u5728\u8AAA\u4EC0\u9EBC\u9B3C\u8A71\uFF1F\uFF01
+      \n \u662F\u4F60\u6311\u91C1\u7684\u6C92\u932F\uFF0C\u5C31\u7B97\u4F60\u6C92\u9019\u6A23\u4E5F\u6703\u9069\u53EF\u800C\u6B62\u7684\uFF01 "
+  - key: 10
+    value: "\u8A71\u8AAA\u56DE\u4F86\u73FE\u5728\u8A72\u600E\u9EBC\u8FA6\uFF1F \n\u53EA\u5269\u4E0B\u9019\u4E00\u500B\u5C0F\u6524\u8CA9\u4E86... "
+  - key: 11
+    value: "\u80FD\u600E\u9EBC\u8FA6...\u5728\u6B64\u91CD\u65B0\u958B\u59CB\u4E86...\uFF01
+      \n\u53EA\u8981\u8AB0\u6295\u8CC7\u4E00\u9EDE\u9EDE\u7684\u8A71\uFF0C\u99AC\u4E0A\u80FD\u8B8A\u571F\u8C6A\u6B38 "
+  - key: 12
+    value: "\u5C31\u662F\u8AAA\u554A...\u53EA\u8981\u8AB0\u6295\u8CC7\u4E00\u4E0B\u7684\u8A71\u8A72\u6709\u591A\u597D\uFF1F
+      \n \u771F\u7684\u53EA\u8981\u6295\u8CC7\u4E00\u9EDE\u9EDE\u7D66\u6211\u5011... "
+  - key: 13
+    value: "\u6211\u5011\u662F\u53EF\u6190\u7684\u4E5E\u4E10\u8C93\u554A...  \n\u771F\u7684\u4E0D\u9858\u610F\u6295\u8CC7\u7D66\u6211\u5011\u5E97\u55CE\uFF1F "
+  - key: 14
+    value: "\u5982\u679C\u5728\u6211\u5011\u5E97\u6295\u8CC7\u7684\u8A71\u4EE5\u5F8C\u5C31\u53EF\u4EE5\u522A\u9664\u5F88\u591A\u5EE3\u544A\u4E86\uFF01 "
+  - key: 15
+    value: "\u5C0F\u8C93\u5011 \n\u8981\u4E00\u8D77\u6295\u8CC7\u5C0F\u6524\u8CA9\u55CE\uFF1F "
+  - key: 16
+    value: "\u8981\u6295\u8CC7\uFF01 "
+  - key: 17
+    value: "\u4E0D\u8981\u6295\u8CC7\uFF5E "
+  - key: 18
+    value: "\u8B1D\u8B1D\u554A\uFF01\u679C\u7136\u4F60\u662F\u597D\u4EBA\u554A\uFF01\u662F\u6211\u5011\u7684\u670B\u53CB\uFF01
+      \n \u9019\u4EFD\u6069\u60E0\u4E0D\u6703\u5FD8\u7684\uFF01\u795D\u4F60\u5E78\u798F\uFF01 "
+  - key: 19
+    value: "\u591A\u8667\u4E86\u4F60\u5011\uFF0C\u5E97\u88E1\u80FD\u66F4\u9806\u5229\u7684\u7D93\u71DF\u4E86\u3002
+      \n \u5C07\u4EE5\u5F80\u5F8C\u518D\u4E5F\u4E0D\u8DF3\u51FA\u5EE3\u544A\u4F5C\u70BA\u5831\u7B54\uFF01"
+  - key: 20
+    value: "\u90A3\u597D\u5427...\u6C92\u932F...\u4E0D\u6295\u8CC7\u7684\u8A71...
+      \n \u6C92\u95DC\u4FC2\uFF0C\u6539\u8B8A\u4E3B\u610F\u7684\u8A71\u96A8\u6642\u90FD\u53EF\u4EE5\u8AAA\u3002"
+  - key: 21
+    value: "\u597D\u53EF\u60DC\uFF0C\u6295\u8CC7\u7684\u8A71\u4E00\u5207\u90FD\u6703\u8B8A\u5F97\u66F4\u597D\u7684 "
+  - key: 22
+    value: "\u5FEB\u9EDE\u4F86\uFF01\u9072\u5230\u4E86 \n \u5BA2\u4EBA\u5728\u7B49\u6211\u5011\u4E86 "
+  - key: 23
+    value: "\u90A3\u908A\u770B\u5F97\u5230\u7684\u5100\u8868\u662F\u4F60\u5011\u7684\u8010\u5FC3 "
+  - key: 24
+    value: "\u5728\u8010\u5FC3\u90FD\u8017\u76E1\u4E4B\u524D\uFF0C\n\u8C93\u54AA\u5011\u62C9\u770B\u770B\u5427 "
+  - key: 25
+    value: "\u8D81\u8C93\u54AA\u5011\u90FD\u96E2\u958B\u4E4B\u524D\uFF0C\n\u8D95\u5FEB\u4E1F\u6392\u9AA8\u5427\uFF01 "
+  - key: 26
+    value: "\u770B\u4E86\u5C4B\u9802\u4E0A\u7684\u98DF\u8B5C\uFF0C\n\u53EA\u662F\u8DDF\u8457\u505A\u5427\uFF01 "
+  - key: 27
+    value: "\u5148\u7528\u624B\u62C9\u770B\u770B\u8089\u6392\u5427 "
+  - key: 28
+    value: "\u5F80\u4E0B\u6ED1\u52D5\uFF08swipe\uFF09\u7684\u8A71\uFF0C\n\u53EF\u4EE5\u70E4\u8089\u4E86 "
+  - key: 29
+    value: "\uFF08\u8089\uFF09\u8B8A\u8272\u7684\u8A71\uFF0C\n\u53C8\u6709\u7159\u5192\u51FA\u4F86\u7684\u8A71\u5C31\u662F\u70E4\u597D\u4E86 "
+  - key: 30
+    value: "\u73FE\u5728\u62C9\u9EB5\u7C89\u770B\u770B "
+  - key: 31
+    value: "\u63A5\u4E0B\u4F86\u62C9\u91AC\u6C41\u770B\u770B "
+  - key: 32
+    value: "\u9EB5\u7C89\u8207\u91AC\u6C41\u7684\u984F\u8272\u51FA\u73FE\u7684\u8A71\uFF0C\u6392\u9AA8\u8089\u5C31\u5927\u529F\u544A\u6210\u4E86
+      \n \u53EF\u4EE5\u6478\u5230\u5B8C\u6210\u7684\u6392\u9AA8\u8089 "
+  - key: 33
+    value: "\u505A\u5F97\u597D\u554A\uFF01 \n \u6211\u5148\u6536\u4E0B\u9322\u4E86\uFF0C\u4E0D\u7528\u64D4\u5FC3\uFF01 "
+  - key: 34
+    value: "\u5728\u6392\u9AA8\u70E4\u7126\u4E4B\u524D\uFF0C\u8D95\u5FEB\u7D66\u5427 "
+  - key: 35
+    value: "\u7D66\u70E4\u7126\u7684\u6392\u9AA8\u8089\u6216\u662F\u7D66\u4E86\u8207\u98DF\u8B5C\u4E0D\u540C\u7684\u6771\u897F\uFF0C\n\u8C93\u54AA\u5011\u53EF\u662F\u6703\u751F\u6C23\u7684 "
+  - key: 36
+    value: "\u6240\u4EE5\u8AAA\u597D\u597D\u5229\u7528\u5783\u573E\u6876\u5427 "
+  - key: 37
+    value: "\u89E6\u78B0\u5783\u573E\u6876\u7684\u8BDD\uFF0C\u6392\u9AA8\u8089\u5373\u53EF\u4E22\u5F03\_"
+  - key: 38
+    value: "\u90A3\u9EBC\u8B93\u6211\u5011\u4E00\u8D77\u8B8A\u6210\u571F\u8C6A\u5427\uFF01\_"
+  - key: 39
+    value: "\u56E0\u7232\u70E4\u4E86\u8089\uFF0C\u8F9B\u82E6\u4E86\uFF01 \n \u7528\u4F11\u606F\u5E6B\u52A9\u66EC\u9ED1\uFF01 "
+  - key: 40
+    value: "\u66EC\u9ED1\u4E5F\u8207\u6392\u9AA8\u8089\u5DEE\u4E0D\u591A \n \u95DC\u9375\u662F\u8981\u9069\u7576\u5730\u70E4\uFF01 "
+  - key: 41
+    value: "\u597D\u597D\u5730\u770B\u6EAB\u5EA6\u8A08\uFF0C\u6EAB\u5EA6\u7DB2\u7BAD\u982D\u7B26\u865F\u4E0A\u5347\u7684\u8A71 "
+  - key: 42
+    value: "\u53F3\u4E0B\u7684\u6309\u9215\u8D95\u5FEB\u6309\u4E0B\u53BB "
+  - key: 43
+    value: "\u505A\u5F97\u5F88\u597D\uFF01 \n \u5F88\u9177\u5F97\u70E4\u597D\u4E86 "
+  - key: 44
+    value: "\u65E2\u7136\u6210\u529F\u5730\u66EC\u9ED1\u4E86\uFF0C \n\u5348\u5F8C\u7684\u751F\u610F\u66F4\u597D\u4E86 "
+  - key: 45
+    value: "\u66EC\u9ED1\u4E5F\u50CF\u70E4\u8089\u4E00\u6A23\uFF0C\n\u518D\u70E4\u4E0B\u53BB\u6216\u662F\u70E4\u904E\u982D\u4E0D\u884C\u7684 "
+  - key: 46
+    value: "\u66EC\u58DE\u7684\u4E3B\u4EBA\u8C93 \n\u4E00\u5929\u7576\u4E2D\u90FD\u6703\u751F\u6C23\u7684 "
+  - key: 47
+    value: "\u4F46\u662F\u5982\u679C\u50CF\u4ECA\u5929 \u6D77\u62C9\u8C93 \u90A3\u9EBC\u73FE\u5728\u5F80\u5E97\u88E1\u53BB\u5427\uFF01 "
+  - key: 48
+    value: "\u50BB\u8C93 "
+  - key: 49
+    value: "\u50BB\u5C31\u662F\u50BB "
+  - key: 50
+    value: "\u767C\u5446...... \n \n"
+  - key: 51
+    value: " \u554A\uFF01 \n\u50BB\u8C93\u5728\u60F3\u4EC0\u9EBC\u5462\uFF1F"
+  - key: 52
+    value: a
+  - key: 53
+    value: a
+  - key: 54
+    value: a
+  - key: 55
+    value: a
+  - key: 56
+    value: a
+  - key: 57
+    value: a
+  - key: 58
+    value: a
+  - key: 59
+    value: a
+  - key: 60
+    value: a
+  - key: 61
+    value: a
+  - key: 62
+    value: a
+  - key: 63
+    value: a
+  - key: 64
+    value: a
+  - key: 65
+    value: a
+  - key: 66
+    value: a
+  - key: 67
+    value: a
+  - key: 68
+    value: a
+  - key: 69
+    value: a
+  - key: 70
+    value: a
+  - key: 71
+    value: a
+  - key: 72
+    value: a
+  - key: 73
+    value: a
+  - key: 74
+    value: a
+  - key: 75
+    value: a
+  - key: 76
+    value: a
+  - key: 77
+    value: a
+  - key: 78
+    value: a
+  - key: 79
+    value: a
+  - key: 80
+    value: a
+  - key: 81
+    value: a
+  - key: 82
+    value: a
+  - key: 83
+    value: a
+  - key: 84
+    value: a
+  - key: 85
+    value: a
+  - key: 86
+    value: a
+  - key: 87
+    value: a
+  - key: 88
+    value: a
+  - key: 89
+    value: a
+  - key: 90
+    value: a
+  - key: 91
+    value: a
+  - key: 92
+    value: a
+  - key: 93
+    value: a
+  - key: 94
+    value: a
+  - key: 95
+    value: a
+  - key: 96
+    value: a
+  - key: 97
+    value: a
+  - key: 98
+    value: a
+  - key: 99
+    value: a
+  - key: 100
+    value: a
+  - key: 101
+    value: a
+  - key: 102
+    value: a
+  - key: 103
+    value: a
+  - key: 104
+    value: a
+  - key: 105
+    value: a
+  - key: 106
+    value: a
+  - key: 107
+    value: a
+  - key: 108
+    value: a
+  - key: 109
+    value: a
+  - key: 110
+    value: a
+  - key: 111
+    value: a
+  - key: 112
+    value: a
+  - key: 113
+    value: a
+  - key: 114
+    value: a
+  - key: 115
+    value: a
+  - key: 116
+    value: a
+  - key: 117
+    value: a
+  - key: 118
+    value: a
+  - key: 119
+    value: a
+  - key: 120
+    value: a
+  - key: 121
+    value: a
+  - key: 122
+    value: a
+  - key: 123
+    value: a
+  - key: 124
+    value: a
+  - key: 125
+    value: a
+  - key: 126
+    value: a
+  - key: 127
+    value: a
+  - key: 128
+    value: a
+  - key: 129
+    value: a
+  - key: 130
+    value: a
+  - key: 131
+    value: a
+  - key: 132
+    value: a
+  - key: 133
+    value: a
+  - key: 134
+    value: a
+  - key: 135
+    value: a
+  - key: 136
+    value: a
+  - key: 137
+    value: a
+  - key: 138
+    value: a
+  - key: 139
+    value: a
+  - key: 140
+    value: a
+  - key: 141
+    value: a
+  - key: 142
+    value: a
+  - key: 143
+    value: a
+  - key: 144
+    value: a
+  - key: 145
+    value: a
+  - key: 146
+    value: a
+  - key: 147
+    value: a
+  - key: 148
+    value: a
+  - key: 149
+    value: a
+  - key: 150
+    value: a
+  - key: 151
+    value: a
+  - key: 152
+    value: a
+  - key: 153
+    value: a
+  - key: 154
+    value: a
+  - key: 155
+    value: a
+  - key: 156
+    value: a
+  - key: 157
+    value: 
+  chineseBun:
+  - key: 1
+    value: "\u5728\u51D1\u70ED\u95F9\u7684\u5C0F\u732B\u4EEC\uFF0C "
+  - key: 2
+    value: "\u4E3B\u4EBA\u732B\u554A "
+  - key: 3
+    value: "\u961F\u732B\u4EEC "
+  - key: 4
+    value: "\u90A3\u53EA\u732B\u73B0\u5728\u662F\u8FDE\u7EED\u51E0\u6B21\u5168\u62BC\uFF08all-in)\u4E86\uFF1F
+      \n\u6211\u6839\u672C\u662F\u9AD8\u624B\u554A \n\u55B5\uFF01 \u8BE5\u4E0D\u4F1A\u8FD9\u6B21\u4E5F\u662F\u5168\u62BC\uFF1F "
+  - key: 5
+    value: "\u5168\u62BC\uFF01 \u65E0\u6761\u4EF6\u8981\u5168\u62BC \u55B5\uFF01
+      \n\u4E00\u6B21\u5230\u4E86\u5341\u500D\uFF0C\u8D70\u5427\uFF01 "
+  - key: 6
+    value: "\u4E3B\u4EBA\u732B\uFF01 \u52A0\u4E0A\u6211\u7684\u94B1\uFF0C\u7528\u4E0A\u5341\u500D
+      \n\u62DC\u6258\u4F60\u4EEC\u4E86\uFF01 \u6211\u4EEC\u73B0\u5728\u662F\u571F\u8C6A\u4E86\uFF01\uFF01 "
+  - key: 7
+    value: "\u4ECA\u5929\u8D70\u8FD0\u4E86... \u6211\u4EEC\u5B8C\u5168\u5B8C\u86CB\u4E86...
+      \n \u4E00\u6B21\u5C31\u5F7B\u5E95\u82B1\u5149...\uFF01 "
+  - key: 8
+    value: "\u5C31\u662F\u7167\u6211\u7684\u8BDD\u6765\u8BF4\uFF0C\u9002\u5F53\u5730\u653B\u51FB\u7136\u540E\u5FC5\u987B\u64A4\u9000\uFF01
+      \n \u73B0\u5728\u8981\u600E\u4E48\u529E\u554A\uFF01\uFF1F \u6B20\u4E86\u4E00\u5C41\u80A1\u503A\uFF01 "
+  - key: 9
+    value: "\u81EA\u5DF1\u7528\u5341\u500D\u7684\u94B1\u53EB\u6765\u7684\u5BB6\u4F19\u5728\u8BF4\u4EC0\u4E48\u9B3C\u8BDD\uFF1F\uFF01
+      \n \u662F\u4F60\u6311\u8845\u7684\u6CA1\u9519\uFF0C\u5C31\u7B97\u4F60\u6CA1\u8FD9\u6837\u4E5F\u4F1A\u9002\u53EF\u800C\u6B62\u7684\uFF01 "
+  - key: 10
+    value: "\u8BDD\u8BF4\u56DE\u6765\u73B0\u5728\u8BE5\u600E\u4E48\u529E\uFF1F \n\u53EA\u5269\u4E0B\u8FD9\u4E00\u4E2A\u5C0F\u644A\u8D29\u4E86... "
+  - key: 11
+    value: "\u80FD\u600E\u4E48\u529E... \u5728\u6B64\u91CD\u65B0\u5F00\u59CB\u4E86...\uFF01
+      \n\u53EA\u8981\u8C01\u6295\u8D44\u4E00\u70B9\u70B9\u7684\u8BDD\uFF0C\u9A6C\u4E0A\u80FD\u53D8\u571F\u8C6A\u6B38 "
+  - key: 12
+    value: "\u5C31\u662F\u8BF4\u554A... \u53EA\u8981\u8C01\u6295\u8D44\u4E00\u4E0B\u7684\u8BDD\u8BE5\u6709\u591A\u597D\uFF1F
+      \n \u771F\u7684\u53EA\u8981\u6295\u8D44\u4E00\u70B9\u70B9\u7ED9\u6211\u4EEC.. "
+  - key: 13
+    value: "\u6211\u4EEC\u662F\u53EF\u601C\u7684\u4E5E\u4E10\u732B\u554A... \n\u771F\u7684\u4E0D\u613F\u610F\u6295\u8D44\u7ED9\u6211\u4EEC\u5E97\u5417\uFF1F "
+  - key: 14
+    value: "\u5982\u679C\u5728\u6211\u4EEC\u5E97\u6295\u8D44\u7684\u8BDD\u4EE5\u540E\u5C31\u53EF\u4EE5\u5220\u9664\u5F88\u591A\u5E7F\u544A\u4E86\uFF01 "
+  - key: 15
+    value: "\u5C0F\u732B\u4EEC \n\u8981\u4E00\u8D77\u6295\u8D44\u5C0F\u644A\u8D29\u5417\uFF1F "
+  - key: 16
+    value: "\u8981\u6295\u8D44\uFF01 "
+  - key: 17
+    value: "\u4E0D\u8981\u6295\u8D44\uFF5E "
+  - key: 18
+    value: "\u8C22\u8C22\u554A\uFF01 \u679C\u7136\u4F60\u662F\u597D\u4EBA\u554A\uFF01
+      \u662F\u6211\u4EEC\u7684\u670B\u53CB\uFF01 \n \u8FD9\u4EFD\u6069\u60E0\u4E0D\u4F1A\u5FD8\u7684\uFF01
+      \u795D\u4F60\u5E78\u798F\uFF01"
+  - key: 19
+    value: "\u591A\u4E8F\u4E86\u4F60\u4EEC\uFF0C\u5E97\u91CC\u80FD\u66F4\u987A\u5229\u7684\u7ECF\u8425\u4E86\u3002
+      \n \u5C06\u4EE5\u5F80\u540E\u518D\u4E5F\u4E0D\u8DF3\u51FA\u5E7F\u544A\u4F5C\u4E3A\u62A5\u7B54\uFF01 "
+  - key: 20
+    value: "\u90A3\u597D\u5427... \u6CA1\u9519... \u4E0D\u6295\u8D44\u7684\u8BDD...
+      \n\u6CA1\u5173\u7CFB\uFF0C\u6539\u53D8\u4E3B\u610F\u7684\u8BDD\u968F\u65F6\u90FD\u53EF\u4EE5\u8BF4\u3002 "
+  - key: 21
+    value: "\u597D\u53EF\u60DC\uFF0C\u6295\u8D44\u7684\u8BDD\u4E00\u5207\u90FD\u4F1A\u53D8\u5F97\u66F4\u597D\u7684 "
+  - key: 22
+    value: "\u5FEB\u70B9\u6765\uFF01 \u8FDF\u5230\u4E86 \n \u5BA2\u4EBA\u5728\u7B49\u6211\u4EEC\u4E86 "
+  - key: 23
+    value: "\u90A3\u8FB9\u770B\u5F97\u5230\u7684\u4EEA\u8868\u662F\u4F60\u4EEC\u7684\u8010\u5FC3 "
+  - key: 24
+    value: "\u5728\u8010\u5FC3\u90FD\u8017\u5C3D\u4E4B\u524D\uFF0C\n\u732B\u54AA\u4EEC\u62C9\u770B\u770B\u5427 "
+  - key: 25
+    value: "\u8D81\u732B\u54AA\u4EEC\u90FD\u79BB\u5F00\u4E4B\u524D\uFF0C\n\u8D76\u5FEB\u4E22\u6392\u9AA8\u5427\uFF01 "
+  - key: 26
+    value: "\u770B\u4E86\u5C4B\u9876\u4E0A\u7684\u98DF\u8C31\uFF0C\n\u53EA\u662F\u8DDF\u7740\u505A\u5427\uFF01 "
+  - key: 27
+    value: "\u5148\u7528\u624B\u62C9\u770B\u770B\u8089\u6392\u5427 "
+  - key: 28
+    value: "\u5F80\u4E0B\u6ED1\u52A8\uFF08swipe\uFF09\u7684\u8BDD\uFF0C\n\u53EF\u4EE5\u70E4\u8089\u4E86 "
+  - key: 29
+    value: "\uFF08\u8089\uFF09\u53D8\u8272\u7684\u8BDD\uFF0C\n\u53C8\u6709\u70DF\u5192\u51FA\u6765\u7684\u8BDD\u5C31\u662F\u70E4\u597D\u4E86 "
+  - key: 30
+    value: "\u73B0\u5728\u62C9\u9762\u7C89\u770B\u770B "
+  - key: 31
+    value: "\u63A5\u4E0B\u6765\u62C9\u9171\u6C41\u770B\u770B\_"
+  - key: 32
+    value: "\u9762\u7C89\u4E0E\u9171\u6C41\u7684\u989C\u8272\u51FA\u73B0\u7684\u8BDD\uFF0C\u6392\u9AA8\u8089\u5C31\u5927\u529F\u544A\u6210\u4E86 
+      \n\u53EF\u4EE5\u6478\u5230\u5B8C\u6210\u7684\u6392\u9AA8\u8089 "
+  - key: 33
+    value: "\u505A\u5F97\u597D\u554A\uFF01 \n \u6211\u5148\u6536\u4E0B\u94B1\u4E86\uFF0C\u4E0D\u7528\u62C5\u5FC3\uFF01 "
+  - key: 34
+    value: "\u5728\u6392\u9AA8\u70E4\u7126\u4E4B\u524D\uFF0C\u8D76\u5FEB\u7ED9\u5427 "
+  - key: 35
+    value: "\u7ED9\u70E4\u7126\u7684\u6392\u9AA8\u8089\u6216\u662F\u7ED9\u4E86\u4E0E\u98DF\u8C31\u4E0D\u540C\u7684\u4E1C\u897F\uFF0C\n\u732B\u54AA\u4EEC\u53EF\u662F\u4F1A\u751F\u6C14\u7684 "
+  - key: 36
+    value: "\u6240\u4EE5\u8BF4\u597D\u597D\u5229\u7528\u5783\u573E\u6876\u5427 "
+  - key: 37
+    value: "\u89E6\u78B0\u5783\u573E\u6876\u7684\u8BDD\uFF0C\u6392\u9AA8\u8089\u5373\u53EF\u4E22\u5F03 "
+  - key: 38
+    value: "\u90A3\u4E48\u8BA9\u6211\u4EEC\u4E00\u8D77\u53D8\u6210\u571F\u8C6A\u5427\uFF01 "
+  - key: 39
+    value: "\u56E0\u4E3A\u70E4\u4E86\u8089\uFF0C\u8F9B\u82E6\u4E86\uFF01 \n \u7528\u4F11\u606F\u5E2E\u52A9\u6652\u9ED1\uFF01 "
+  - key: 40
+    value: "\u6652\u9ED1\u4E5F\u4E0E\u6392\u9AA8\u8089\u5DEE\u4E0D\u591A \n \u5173\u952E\u662F\u8981\u9002\u5F53\u5730\u70E4\uFF01 "
+  - key: 41
+    value: "\u597D\u597D\u5730\u770B\u6E29\u5EA6\u8BA1\uFF0C\u6E29\u5EA6\u7F51\u7BAD\u5934\u7B26\u53F7\u4E0A\u5347\u7684\u8BDD "
+  - key: 42
+    value: "\u53F3\u4E0B\u7684\u6309\u94AE\u8D76\u5FEB\u6309\u4E0B\u53BB "
+  - key: 43
+    value: "\u505A\u5F97\u5F88\u597D\uFF01 \n \u5F88\u9177\u5F97\u70E4\u597D\u4E86 "
+  - key: 44
+    value: "\u65E2\u7136\u6210\u529F\u5730\u6652\u9ED1\u4E86\uFF0C \n\u5348\u540E\u7684\u751F\u610F\u66F4\u597D\u4E86 "
+  - key: 45
+    value: "\u6652\u9ED1\u4E5F\u50CF\u70E4\u8089\u4E00\u6837\uFF0C\n\u518D\u70E4\u4E0B\u53BB\u6216\u662F\u70E4\u8FC7\u5934\u4E0D\u884C\u7684 "
+  - key: 46
+    value: "\u6652\u574F\u7684\u4E3B\u4EBA\u732B \n\u4E00\u5929\u5F53\u4E2D\u90FD\u4F1A\u751F\u6C14\u7684 "
+  - key: 47
+    value: "\u4F46\u662F\u5982\u679C\u50CF\u4ECA\u5929 \u6D77\u62C9\u732B \u90A3\u4E48\u73B0\u5728\u5F80\u5E97\u91CC\u53BB\u5427\uFF01 "
+  - key: 48
+    value: "\u50BB\u732B "
+  - key: 49
+    value: "\u50BB\u5C31\u662F\u50BB "
+  - key: 50
+    value: "\u53D1\u5446...... \n \n\u554A\uFF01 \n\u50BB\u732B\u5728\u60F3\u4EC0\u4E48\u5462\uFF1F "
+  - key: 51
+    value: a
+  - key: 52
+    value: a
+  - key: 53
+    value: a
+  - key: 54
+    value: a
+  - key: 55
+    value: a
+  - key: 56
+    value: a
+  - key: 57
+    value: a
+  - key: 58
+    value: a
+  - key: 59
+    value: a
+  - key: 60
+    value: a
+  - key: 61
+    value: a
+  - key: 62
+    value: a
+  - key: 63
+    value: a
+  - key: 64
+    value: a
+  - key: 65
+    value: a
+  - key: 66
+    value: a
+  - key: 67
+    value: a
+  - key: 68
+    value: a
+  - key: 69
+    value: a
+  - key: 70
+    value: a
+  - key: 71
+    value: a
+  - key: 72
+    value: a
+  - key: 73
+    value: a
+  - key: 74
+    value: a
+  - key: 75
+    value: a
+  - key: 76
+    value: a
+  - key: 77
+    value: a
+  - key: 78
+    value: a
+  - key: 79
+    value: a
+  - key: 80
+    value: a
+  - key: 81
+    value: a
+  - key: 82
+    value: a
+  - key: 83
+    value: a
+  - key: 84
+    value: a
+  - key: 85
+    value: a
+  - key: 86
+    value: a
+  - key: 87
+    value: a
+  - key: 88
+    value: a
+  - key: 89
+    value: a
+  - key: 90
+    value: a
+  - key: 91
+    value: a
+  - key: 92
+    value: a
+  - key: 93
+    value: a
+  - key: 94
+    value: a
+  - key: 95
+    value: a
+  - key: 96
+    value: a
+  - key: 97
+    value: a
+  - key: 98
+    value: a
+  - key: 99
+    value: a
+  - key: 100
+    value: a
+  - key: 101
+    value: a
+  - key: 102
+    value: a
+  - key: 103
+    value: a
+  - key: 104
+    value: a
+  - key: 105
+    value: a
+  - key: 106
+    value: a
+  - key: 107
+    value: a
+  - key: 108
+    value: a
+  - key: 109
+    value: a
+  - key: 110
+    value: a
+  - key: 111
+    value: a
+  - key: 112
+    value: a
+  - key: 113
+    value: a
+  - key: 114
+    value: a
+  - key: 115
+    value: a
+  - key: 116
+    value: a
+  - key: 117
+    value: a
+  - key: 118
+    value: a
+  - key: 119
+    value: a
+  - key: 120
+    value: a
+  - key: 121
+    value: a
+  - key: 122
+    value: a
+  - key: 123
+    value: a
+  - key: 124
+    value: a
+  - key: 125
+    value: a
+  - key: 126
+    value: a
+  - key: 127
+    value: a
+  - key: 128
+    value: a
+  - key: 129
+    value: a
+  - key: 130
+    value: a
+  - key: 131
+    value: a
+  - key: 132
+    value: a
+  - key: 133
+    value: a
+  - key: 134
+    value: a
+  - key: 135
+    value: a
+  - key: 136
+    value: a
+  - key: 137
+    value: a
+  - key: 138
+    value: a
+  - key: 139
+    value: a
+  - key: 140
+    value: a
+  - key: 141
+    value: a
+  - key: 142
+    value: a
+  - key: 143
+    value: a
+  - key: 144
+    value: a
+  - key: 145
+    value: a
+  - key: 146
+    value: a
+  - key: 147
+    value: a
+  - key: 148
+    value: a
+  - key: 149
+    value: a
+  - key: 150
+    value: a
+  - key: 151
+    value: a
+  - key: 152
+    value: a
+  - key: 153
+    value: a
+  - key: 154
+    value: a
+  - key: 155
+    value: a
+  - key: 156
+    value: a
+  - key: 157
+    value: 
+  french:
+  - key: 1
+    value: 'les chats spectateurs '
+  - key: 2
+    value: "le  chaton h\xE9ros"
+  - key: 3
+    value: le  chat conseiller
+  - key: 4
+    value: "Il prend des risques  \xE0 miser comme  \xE7a!\r\nMais il joue bien!
+      Attends... Il va  \xE0 nouveau parier tout ce qu'il a?"
+  - key: 5
+    value: "Un homme, un vrai, \xE7a  mise tout.\nJe mise tout! \xC0 dix contre un!"
+  - key: 6
+    value: "Chaton h\xE9ros! Moi aussi, je remets tout ce que j'ai en jeu!\r\nRemportons
+      gros tous les deux!\r\n"
+  - key: 7
+    value: "On \xE9tait si bien partis!\r\nEt on a tout perdu d'un coup..."
+  - key: 8
+    value: "Je t'avais dit qu'il fallait jouer raisonnablement et savoir s'arr\xEAter.\r\nQu'est-ce
+      qu'on va faire maintenant?! On s'est endett\xE9s!"
+  - key: 9
+    value: " C'est toi qui as voulu miser \xE0 dix contre un!\r\nSi tu ne m'avais
+      pas influenc\xE9, j'aurais \xE9t\xE9 raisonnable!\r\n"
+  - key: 10
+    value: 'Qu''est-ce qu''on va faire maintenant?
+
+      Tout ce qui nous reste
+      c''est ce petit stand...
+
+'
+  - key: 11
+    value: "On n'a pas d'autre choix... Il va falloir repartir de z\xE9ro  avec 
+      \xE7a.\r\nSi seulement on avait un investisseur pour nous aider  \xE0 d\xE9marrer..."
+  - key: 12
+    value: ' C''est vrai... un petit investissement nous aiderait tellement.
+
+'
+  - key: 13
+    value: " Nous ne sommes que de pauvres chats...\r\nVoudriez-vous venir en aide 
+      \xE0 notre petit commerce?\r\n"
+  - key: 14
+    value: "Si vous acceptez, nous ferons en sorte \r\nque vous ne voyiez plus aucune
+      publicit\xE9 \xE0 l'avenir.\r\n"
+  - key: 15
+    value: 'Voulez-vous contribuer au commerce des chatons?
+
+'
+  - key: 16
+    value: ' Oui, je veux contribuer!
+
+'
+  - key: 17
+    value: ' Non, je  ne  veux pas contribuer!
+
+'
+  - key: 18
+    value: " Merci! Je savais que tu \xE9tais quelqu'un de bien!\r\nJe n'oublierai
+      pas ta  g\xE9n\xE9rosit\xE9!\r\n"
+  - key: 19
+    value: "Gr\xE2ce \xE0 toi, on pourra travailler plus sereinement.\r\nPour te
+      remercier, tu ne verras plus aucune publicit\xE9.\r\n"
+  - key: 20
+    value: ' D''accord... ce n''est pas grave.
+
+      Dis-moi si jamais tu changes
+      d''avis.
+
+'
+  - key: 21
+    value: "Dommage. Une contribution nous aurait bien  aid\xE9s.\r\nMais tant pis.
+      Mettons-nous au travail.\r\n"
+  - key: 22
+    value: "Viens vite! D\xE9p\xEAche-toi!\r\nLes clients attendent d\xE9j\xE0.\r\n"
+  - key: 23
+    value: "Cette barre repr\xE9sente \r\nla patience des chatons.\r\n"
+  - key: 24
+    value: "Clique sur le chat et  fais-le  glisser, \r\navant qu'il ne perde patience.\r\n"
+  - key: 25
+    value: " Donne vite des  c\xF4tes  de boeuf aux chats, \r\navant qu'ils ne partent.\r\n"
+  - key: 26
+    value: " La recette est indiqu\xE9e au plafond.\r\nTu n'as plus qu'\xE0 la suivre!\r\n"
+  - key: 27
+    value: " D'abord, clique sur les c\xF4tes  de boeuf \r\net  fais-les  glisser.
+      \r\n"
+  - key: 28
+    value: " Swipe vers le bas \r\npour faire cuire la viande.\r\n"
+  - key: 29
+    value: "Quand la couleur change \r\net que de la fum\xE9e monte, \r\nla viande
+      est  \xE0  point."
+  - key: 30
+    value: "Maintenant, fais glisser les \xE9pices."
+  - key: 31
+    value: Ensuite, fais glisser la sauce.
+  - key: 32
+    value: "Quand tout est m\xE9lang\xE9, \r\nles  c\xF4tes de boeufs sont pr\xEAtes!\r\nTu
+      n'as plus qu'\xE0 cliquer dessus."
+  - key: 33
+    value: "Bon travail! \r\nNe t'en fais pas pour l'argent.\r\nJe m'occupe de l'encaisser.\r\n"
+  - key: 34
+    value: "Sers vite les c\xF4tes  de boeuf \r\navant qu'elles ne soient trop cuites.\r\n"
+  - key: 35
+    value: "Si tu leur donnes de la viande trop cuite, \r\nou que tu ne suis pas
+      la recette, \r\nles chatons seront f\xE2ch\xE9s.\r\n"
+  - key: 36
+    value: "Tu peux utiliser la poubelle, \r\nsi besoin.\r\n"
+  - key: 37
+    value: " Clique sur la poubelle \r\npour y jeter la viande."
+  - key: 38
+    value: " Tu es pr\xEAt!\r\nMaintenant, il est temps de se mettre au travail.\r\n"
+  - key: 39
+    value: "Tu as bien travaill\xE9! \r\nAllons nous dorer au soleil pour nous d\xE9tendre."
+  - key: 40
+    value: "C'est un peu comme cuire des c\xF4tes  de boeuf.\r\nCe qui compte c'est
+      la mesure!"
+  - key: 41
+    value: "Surveille le thermom\xE8tre.\r\nIl ne doit pas d\xE9passer la limite."
+  - key: 42
+    value: " Clique vite  sur le bouton \r\nen bas \xE0  droite!\r\n"
+  - key: 43
+    value: " C'est parfait! \r\nJe te f\xE9licite!\r\n"
+  - key: 44
+    value: "Ta ma\xEEtrise du bronzage nous aidera  \r\n\xE0 travailler encore plus
+      efficacement.\r\n"
+  - key: 45
+    value: " Comme pour les  c\xF4tes  de boeuf, \r\nc'est une question de dosage.\r\n"
+  - key: 46
+    value: " Un chat qui raterait son bronzage, \r\nserait de mauvaise humeur toute
+      la journ\xE9e...\r\n"
+  - key: 47
+    value: " Mais tout ira bien, si tu continues comme  \xE7a.\r\nAllez, retournons 
+      \xE0 notre stand.\r\n"
+  - key: 48
+    value: 'le chat dans la Lune '
+  - key: 49
+    value: "Il est dans la lune, \r\nla t\xEAte dans les  \xE9toiles."
+  - key: 50
+    value: Ailleurs...
+  - key: 51
+    value: "On se demande...\r\n\xC0 quoi il peut bien penser...\r\n"
+  - key: 52
+    value: "le chat enjou\xE9"
+  - key: 53
+    value: Il adore la musique et la danse.
+  - key: 54
+    value: "Le chat enjou\xE9 \naime tant la musique et la danse \n"
+  - key: 55
+    value: "qu'il est sorti s'amuser.\r\nIl s'est amus\xE9 toute la nuit.\r\nIl 
+      para\xEEt  m\xEAme  qu'il s'amuse encore.\r\n"
+  - key: 56
+    value: " le chat qui p\xE8te\r\n"
+  - key: 57
+    value: "Il a une pr\xE9disposition pour les pets\r\n"
+  - key: 58
+    value: "Ce chat p\xE8te tellement bien \r\nqu'il peut s'envoler et explorer l'espace."
+  - key: 59
+    value: "Un jour, une \xE9toile  filante le percuta \r\net le fit  atterrir  sur
+      Terre, \r\ndans la ville de Busan.\r\n"
+  - key: 60
+    value: " le chat dormeur \r\n"
+  - key: 61
+    value: "Il aime dormir \r\net mange toujours avant de dormir."
+  - key: 62
+    value: " Il dort tout le temps \r\net ne se r\xE9veille que pour manger.\r\n"
+  - key: 63
+    value: " Apr\xE8s avoir mang\xE9, il s'endort.\r\nManger, dormir, manger, dormir.\r\nRien
+      de mieux que manger et dormir.\r\n"
+  - key: 64
+    value: ' le chat blanc '
+  - key: 65
+    value: ' C''est un chat un peu simplet.
+
+      Il ne se pose pas beaucoup de
+      questions.
+
+'
+  - key: 66
+    value: "Ce chat est tout blanc, \r\nblanc comme la neige.\r\n"
+  - key: 67
+    value: "\xC0 l'image de  son poil, \r\nsa t\xEAte est  immacul\xE9e, \r\nvide
+      de toute pens\xE9e."
+  - key: 68
+    value: 'le chat conseiller '
+  - key: 69
+    value: "Il donne des conseils \net se balance du haut d'une barre.\n\n"
+  - key: 70
+    value: 'Pourquoi se balance-t-il ainsi?
+
+      Personne ne saurait l''expliquer.'
+  - key: 71
+    value: "Il dit que quand il se balance, \r\n\xE7a  le rend heureux.\r\n"
+  - key: 72
+    value: ' le chat au miel
+
+'
+  - key: 73
+    value: "Un chat tout doux, \r\ncomme du miel.\r\n"
+  - key: 74
+    value: "Un jour, en cherchant des c\xF4tes  de boeuf, \r\nil est tomb\xE9 dans
+      un pot de miel.\r\n"
+  - key: 75
+    value: "Plouf!\r\nEt c'est devenu un chat au miel.\r\nAu pelage sucr\xE9!\r\n"
+  - key: 76
+    value: "le chat comme ci, comme \xE7a \r\n"
+  - key: 77
+    value: "Le  7\xE8me  jour, \r\nil est arriv\xE9 sans raison pr\xE9cise.\r\n"
+  - key: 78
+    value: "Juste... comme  \xE7a.\r\nComme ci, comme  \xE7a.\r\n"
+  - key: 79
+    value: " Comme une certaine \xE9charpe qui, \r\nsans qu'on sache pourquoi, \r\n"
+  - key: 80
+    value: " va bien avec un certain chapeau.\r\nJuste comme  \xE7a.\r\n"
+  - key: 81
+    value: "le chat curieux \r\n"
+  - key: 82
+    value: "Il a suivi le chat saoul, \r\npar curiosit\xE9.\r\n"
+  - key: 83
+    value: " Il a des piercings, \r\nfaits pour la  m\xEAme  raison.\r\n"
+  - key: 84
+    value: "En effet, en contradiction \r\navec son adorable minois, \r\n"
+  - key: 85
+    value: "ce minou arbore fi\xE8rement \r\nchaine en or et piercings divers, \r\ncomme
+      un vrai chat gangster.\r\n"
+  - key: 86
+    value: le chat  mourant
+  - key: 87
+    value: "Le  10\xE8me  jour, \r\nil est  arriv\xE9, \xE0 moiti\xE9 mort.\r\n"
+  - key: 88
+    value: 'Je suis souffrant.
+
+      Je suis mourant.'
+  - key: 89
+    value: 'Malade tous les jours;
+
+      Il ne mange que du porridge.'
+  - key: 90
+    value: " Mais qui sait?\r\nS'il mange des c\xF4tes de boeuf;\r\nPeut-\xEAtre 
+      se  r\xE9tablira-t-il?\r\n"
+  - key: 91
+    value: ' le chat saoul'
+  - key: 92
+    value: "Le  14\xE8me  jour,\r\nIl est venu prendre un verre.\r\n"
+  - key: 93
+    value: "Jour  apr\xE8s  jour,\r\nIl prend verre  apr\xE8s  verre.\r\n"
+  - key: 94
+    value: "Etrange dans ses moments de sobri\xE9t\xE9,\r\nIl n'est lui-m\xEAme que
+      lorsqu'il boit.\r\n"
+  - key: 95
+    value: "Chaque fois qu'il a bu,\r\nil se jette dans la mer,\r\net l'on a bien
+      du mal  \xE0 l'en ressortir.\r\n"
+  - key: 96
+    value: ' le chat bleu'
+  - key: 97
+    value: " Le  4\xE8me  jour,"
+  - key: 98
+    value: "est  venu, traversant la mer.\r\n98. Il a une fascination pour l'oc\xE9an 
+      \r\net peint tout en bleu.\r\n"
+  - key: 99
+    value: "Un jour qu'il  \xE9tait  en mer, \r\nle chat bleu croisa le chat sir\xE8ne
+      .\r\n"
+  - key: 100
+    value: "Il tomba amoureux de son regard\r\nEt, dans l'espoir de le revoir, \r\nd\xE9cida 
+      de devenir la mer.\r\n"
+  - key: 101
+    value: "le chat constip\xE9 "
+  - key: 102
+    value: "Le  21\xE8me  jour,\r\nune envie pressante le mena jusqu'ici."
+  - key: 103
+    value: "Toujours incommod\xE9, \r\nToujours ennuy\xE9.\r\n"
+  - key: 104
+    value: "Souffrant de constipation  r\xE9guli\xE8re,\r\nIl est venu jusqu'\xE0
+      Busan\r\n"
+  - key: 105
+    value: "pour que le chat qui  p\xE8te  \r\nlui enseigne une technique \r\nqui
+      le soulagerait de son mal.\r\n"
+  - key: 106
+    value: "le chat lunaire \r\n"
+  - key: 107
+    value: " Le  15\xE8me  jour, \r\nil est venu voir la lune.\r\n"
+  - key: 108
+    value: "Pourvu que la lune veuille bien \r\nexaucer mon voeu.\r\n"
+  - key: 109
+    value: " Un jour o\xF9 la pleine lune veillait sur nous tous,\r\nIl est venu
+      pour faire  un voeu.\r\n"
+  - key: 110
+    value: "Permettez-moi cette  ann\xE9e  \r\nde manger jusqu'\xE0 sati\xE9t\xE9 
+      \r\nde succulentes c\xF4tes de boeuf."
+  - key: 111
+    value: 'le chat pirate '
+  - key: 112
+    value: "Le  50\xE8me  jour,\r\nIl est arriv\xE9 avec un  tr\xE9sor inestimable."
+  - key: 113
+    value: 'Le roi des mers,
+
+      le chat pirate.'
+  - key: 114
+    value: " Mon  tr\xE9sor?\r\nSi tu le veux, il est  \xE0  toi.\r\n"
+  - key: 115
+    value: " \xC0 condition que tu saches le trouver.\r\nJ'ai  enterr\xE9 toutes
+      les richesses du monde,\r\ndans un lieu secret.\r\n"
+  - key: 116
+    value: "le chat millionnaire \r\n"
+  - key: 117
+    value: "Il est  venu, \r\nreniflant de l'argent.\r\n"
+  - key: 118
+    value: "Ce chat riche depuis toujours,\r\ndepuis sa plus tendre enfance, \r\n"
+  - key: 119
+    value: " n\xE9 avec une  cuill\xE8re  d'argent dans la bouche \r\nmais qui  pr\xE9tend 
+      \xEAtre parti de rien.\r\n"
+  - key: 120
+    value: " Tu crois pouvoir faire mieux que moi?\r\nTu penses avoir ce qu'il faut
+      pour devenir riche?\r\nTu veux  \xEAtre  comme moi? Alors travaille dur comme
+      moi!\r\n"
+  - key: 121
+    value: 'le chat fou '
+  - key: 122
+    value: "Il est  agr\xE9ablement  surpris de voir \r\nque tu joues depuis plus
+      d'une  demi-heure."
+  - key: 123
+    value: " Un peu fou, \r\nmais pas trop.\r\n"
+  - key: 124
+    value: "Impossible de savoir \r\nquand il a perdu la tete.\r\n"
+  - key: 125
+    value: "Les avis divergent...\r\nEst-il vraiment fou ou non?\r\nEst-il  m\xEAme 
+      vraiment un chat?"
+  - key: 126
+    value: 'le chat shaman '
+  - key: 127
+    value: "Il a suivi le chat fou \r\nqui avait \xE9veill\xE9 son inter\xEAt.\r\n"
+  - key: 128
+    value: "Un jour, un Dieu \r\ndescendit sur Terre.\r\n"
+  - key: 129
+    value: " Et sans  pr\xE9venir, le Dieu Chat \r\nrendit visite au chat shaman.\r\n"
+  - key: 130
+    value: " Il lui donna une boule de  cristal \r\net fit d'un chat jusqu'alors
+      ordinaire \r\nun chat shaman de la mer.\r\n"
+  - key: 131
+    value: 'le  chat swag '
+  - key: 132
+    value: "Le  30\xE8me  jour, \r\nil est venu donner un concert.\r\n"
+  - key: 133
+    value: ' Swag!
+
+      Trop swag!
+
+'
+  - key: 134
+    value: " Longtemps un chat exemplaire, \r\nun amour inattendu pour le hip-hop 
+      \r\n"
+  - key: 135
+    value: "lui fit du jour au lendemain \r\nrev\xEAtir une panoplie qu'il pense
+      digne d'une vedette \r\net il devint ainsi un mauvais rappeur made in  Busan.\r\n"
+  - key: 136
+    value: le chat chien
+  - key: 137
+    value: "le 30\xE8me  jour, \nil est venu souhaitant devenir chien."
+  - key: 138
+    value: "Le chat qui voudrait plus que tout \r\nsimplement \xEAtre  un chien.\r\n"
+  - key: 139
+    value: "Ayant grandi entour\xE9 de canins,\r\nil questionne chaque jour son destin.\r\n"
+  - key: 140
+    value: " ???\r\nMiaou pourquoi donc \r\nentend-on 'miaou' quand j'aboie?\r\n"
+  - key: 141
+    value: " le chat ange \r\n"
+  - key: 142
+    value: 'Temps de jeu total : 1004 minutes!
+
+      Apparition de l''ange!
+
+'
+  - key: 143
+    value: "Un chat ange \r\ndescendu du ciel.\r\n"
+  - key: 144
+    value: " le plus bienveillant\r\n des chats de toute la terre.\r\n"
+  - key: 145
+    value: "Seuls ceux qui jouent longtemps \r\nont la chance de le voir de leurs
+      yeux.\r\n"
+  - key: 146
+    value: "le chat d\xE9mon"
+  - key: 147
+    value: "Temps de jeu total : 666 minutes!\r\nApparition du chat d\xE9mon!"
+  - key: 148
+    value: "Un chat d\xE9moniaque \r\n venu du plus profond des  t\xE9n\xE8bres."
+  - key: 149
+    value: " le plus mal\xE9fique\r\n des chats de  toute la terre \r\n"
+  - key: 150
+    value: "Il est venu pour t'attirer \r\nvers les  tr\xE9fonds  \r\nde l'addiction
+      au jeu vid\xE9o.\r\n"
+  - key: 151
+    value: "le chat sir\xE8ne "
+  - key: 152
+    value: "Le  60\xE8me  jour, \r\nil est  apparu comme un miracle.\r\n"
+  - key: 153
+    value: "\xC0 la recherche d'une  sorci\xE8re, \r\nqui lui  permettrait de marcher
+      sur la terre ferme, \r\n"
+  - key: 154
+    value: " Il a quitt\xE9 en douce \r\nle royaume des chats  sir\xE8nes.\r\n"
+  - key: 155
+    value: " Il se cache de tous, \r\net reste a l'aff\xFBt d'une opportunit\xE9
+      \r\nde manger des c\xF4tes de boeufs.\r\n"
+  - key: 156
+    value: "Tu veux en savoir plus sur les chatons?\r\nReviens nous voir souvent
+      et apprends \xE0 mieux nous conna\xEEtre"
+  - key: 157
+    value: 

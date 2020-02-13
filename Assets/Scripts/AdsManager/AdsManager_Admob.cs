@@ -159,7 +159,7 @@ public class AdsManager_Admob : MonoBehaviour {
         }
         else ad_reward.Show();
 #endif
-        timeManager.ResetBuffCooltime();
+        timeManager.ResetBuffCoolTime();
         uiManager.CloseBuffPopup();
         uiManager.buffButton_Pushed.SetActive(true);
         uiManager.buffButton.SetActive(false);

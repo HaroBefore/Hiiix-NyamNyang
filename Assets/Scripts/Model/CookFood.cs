@@ -17,7 +17,7 @@ public class CookFood : MonoBehaviour {
     // 요리 가격.
     public int price;
     // 요리 단계.
-    public CookStep step { get; protected set; }
+    public CookStep step { get; set; }
     // 요리가 탔는지 여부.
     private bool isOvercooked;
     // 요리 조리 시간.
@@ -116,6 +116,7 @@ public class CookFood : MonoBehaviour {
         // Target이 Food인지 확인.
         if (!target) return;
         if (!(target.tag == "Food")) return;
+
         // 조리가 끝난 Food인지 확인.
         if (!(target.GetComponent<CookFood>().step == CookStep.Complete)) return;
         AudioManager.Instance?.StopCookMeat();

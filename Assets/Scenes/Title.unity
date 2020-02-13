@@ -7008,8 +7008,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 176380878}
-        m_MethodName: StartGame
+      - m_Target: {fileID: 1934452407}
+        m_MethodName: ShowOption
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7981,8 +7981,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: CloseOption
+      - m_Target: {fileID: 1934452407}
+        m_MethodName: HideOption
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12849,6 +12849,7 @@ MonoBehaviour:
   - "\uBC15\uBCF5\uC790\uC528\n\uD504\uB85C\uADF8\uB0E5"
   - "\uAE40\uD578\uB2C8\uAC31\n\uAC9C\uAE30\uD68D\uB0E5"
   - "\uBC15\uBD80\uB760\uB044\n\uAC9C\uC544\uD2B8\uB0E5"
+  optionPanel: {fileID: 225332136}
 --- !u!1 &1935385777
 GameObject:
   m_ObjectHideFlags: 0

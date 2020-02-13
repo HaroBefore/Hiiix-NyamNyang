@@ -89,8 +89,7 @@ public class NyangManager : MonoBehaviour
         foreach (int key in nyangPrefabDic.Keys)
             if (nyangPrefabDic[key].GetComponent<Nyang>().rank == NyangRank.Normal)
                 nyangPrefabDic[key].GetComponent<Nyang>().IsCollected = true;
-        nyangPrefabDic[701].GetComponent<Nyang>().IsCollected = true;
-
+        
         foreach (int i in nyangPrefabDic.Keys) nyangPrefabDic[i].GetComponent<Nyang>().SetData();
 
     }
@@ -262,6 +261,10 @@ public class NyangManager : MonoBehaviour
 
     // OutNyang: 냥이 퇴장.
     public void OutNyang() {
+        if (orderNyang == null)
+        {
+            return;
+        }
         NyangPosition pos = orderNyang.position;
         prepreviousNyangInPositionDic[pos] = previousNyangInPositionDic[pos];
         previousNyangInPositionDic[pos] = nyangInPositionDic[pos];
@@ -338,8 +341,11 @@ public class NyangManager : MonoBehaviour
             if (BorderManager.instance.IsInBorder(BorderManager.instance.customerSeatBorder) && !orderNyang) {
                 // 냥이를 앉힌다.
                 SitNyang();
-                // 분노 게이지 On.
-                AngryGuageOn();
+                if (GameManager.Instance.IsBuff == false)
+                {
+                    // 분노 게이지 On.
+                    AngryGuageOn();
+                }
             }
             // 냥이를 손님석에 앉히지 못했을 때:
             else {
