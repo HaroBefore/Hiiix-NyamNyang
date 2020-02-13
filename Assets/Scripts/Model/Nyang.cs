@@ -183,6 +183,128 @@ public class Nyang : MonoBehaviour
         canvasObject.SetActive(true);
     }
 
+    private void Start()
+    {
+        TimeManager.Instance.RegisterCallback_OnDayChanged(OnDayChanged);
+    }
+
+    private void OnDestroy()
+    {
+        TimeManager.Instance.UnregisterCallback_OnDayChanged(OnDayChanged);
+    }
+
+    public void OnDayChanged(int day)
+    {
+        CollectNyang(day);
+    }
+
+    public void CollectNyang(int day)
+    {
+        switch (index)
+        {
+            // 그냥이 - 7
+            case 201:
+                if (day == 7)
+                {
+                    IsCollected = true;
+                }
+                break;
+            // 싱냥이 - 술냥이 입수 후
+            case 202:
+                if (PlayerPrefs.GetInt("Nyang_" + 204 + "_isCollected") == 1)
+                {
+                    IsCollected = true;
+                }
+                break;
+            // 죽냥이
+            case 203:
+                if (day == 10)
+                {
+                    IsCollected = true;
+                }
+                break;
+            // 술냥이
+            case 204:
+                if (day == 14)
+                {
+                    IsCollected = true;
+                }
+                break;
+            // 파냥이
+            case 205:
+                if (day == 4)
+                {
+                    IsCollected = true;
+                }
+                break;
+            // 똥냥이
+            case 206:
+                if (day == 21)
+                {
+                    IsCollected = true;
+                }
+                break;
+            // 달냥이
+            case 207:
+                if (day == 15)
+                {
+                    IsCollected = true;
+                }
+                break;
+            // 해냥이
+            case 301:
+                if (day == 50)
+                {
+                    IsCollected = true;
+                }
+                break;
+            // 만냥
+            case 302:
+                //1만점 이상
+                break;
+            // 미냥이
+            case 303:
+                //누적플탐30분이상
+                break;
+            // 점냥이 - 미냥이 등장 후
+            case 304:
+                if (PlayerPrefs.GetInt("Nyang_" + 303 + "_isCollected") == 1)
+                {
+                    IsCollected = true;
+                }
+                break;
+            // 힙냥이
+            case 305:
+                if (day == 30)
+                {
+                    IsCollected = true;
+                }
+                break;
+            // 개냥이
+            case 306:
+                if (day == 40)
+                {
+                    IsCollected = true;
+                }
+                break;
+            // 천사냥이
+            case 307:
+                //누적플탐1004분이상
+                break;
+            // 악마냥이
+            case 308:
+                //누적플탐666분이상
+                break;
+            // 인어냥이
+            case 309:
+                if (day == 60)
+                {
+                    IsCollected = true;
+                }
+                break;
+        }
+    }
+
     private void Update()
     {
         if (_isWaitOrder)
