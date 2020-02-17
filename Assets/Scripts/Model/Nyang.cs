@@ -143,6 +143,10 @@ public class Nyang : MonoBehaviour
         set
         {
             _isWaitOrder = value;
+            if (GameManager.Instance.IsBuff)
+            {
+                return;
+            }
             canvasObject.SetActive(value);
         }
     }
@@ -185,143 +189,50 @@ public class Nyang : MonoBehaviour
 
     private void Start()
     {
-        TimeManager.Instance.RegisterCallback_OnDayChanged(OnDayChanged);
+        GameManager.Instance.EventBuffActivate += OnBuffActivate;
+        GameManager.Instance.EventBuffDeactivate += OnBuffDeactivate;
+        if (GameManager.Instance.IsBuff)
+        {
+            canvasObject.SetActive(false);
+        }
     }
 
     private void OnDestroy()
     {
-        TimeManager.Instance.UnregisterCallback_OnDayChanged(OnDayChanged);
+        GameManager.Instance.EventBuffActivate -= OnBuffActivate;
+        GameManager.Instance.EventBuffDeactivate -= OnBuffDeactivate;
     }
 
-    public void OnDayChanged(int day)
+    private void OnBuffActivate()
     {
-        CollectNyang(day);
+        canvasObject.SetActive(false);
     }
 
-    public void CollectNyang(int day)
+    private void OnBuffDeactivate()
     {
-        switch (index)
-        {
-            // 그냥이 - 7
-            case 201:
-                if (day == 7)
-                {
-                    IsCollected = true;
-                }
-                break;
-            // 싱냥이 - 술냥이 입수 후
-            case 202:
-                if (PlayerPrefs.GetInt("Nyang_" + 204 + "_isCollected") == 1)
-                {
-                    IsCollected = true;
-                }
-                break;
-            // 죽냥이
-            case 203:
-                if (day == 10)
-                {
-                    IsCollected = true;
-                }
-                break;
-            // 술냥이
-            case 204:
-                if (day == 14)
-                {
-                    IsCollected = true;
-                }
-                break;
-            // 파냥이
-            case 205:
-                if (day == 4)
-                {
-                    IsCollected = true;
-                }
-                break;
-            // 똥냥이
-            case 206:
-                if (day == 21)
-                {
-                    IsCollected = true;
-                }
-                break;
-            // 달냥이
-            case 207:
-                if (day == 15)
-                {
-                    IsCollected = true;
-                }
-                break;
-            // 해냥이
-            case 301:
-                if (day == 50)
-                {
-                    IsCollected = true;
-                }
-                break;
-            // 만냥
-            case 302:
-                //1만점 이상
-                break;
-            // 미냥이
-            case 303:
-                //누적플탐30분이상
-                break;
-            // 점냥이 - 미냥이 등장 후
-            case 304:
-                if (PlayerPrefs.GetInt("Nyang_" + 303 + "_isCollected") == 1)
-                {
-                    IsCollected = true;
-                }
-                break;
-            // 힙냥이
-            case 305:
-                if (day == 30)
-                {
-                    IsCollected = true;
-                }
-                break;
-            // 개냥이
-            case 306:
-                if (day == 40)
-                {
-                    IsCollected = true;
-                }
-                break;
-            // 천사냥이
-            case 307:
-                //누적플탐1004분이상
-                break;
-            // 악마냥이
-            case 308:
-                //누적플탐666분이상
-                break;
-            // 인어냥이
-            case 309:
-                if (day == 60)
-                {
-                    IsCollected = true;
-                }
-                break;
-        }
+        canvasObject.SetActive(true);
     }
 
     private void Update()
     {
         if (_isWaitOrder)
         {
-            if (_leftWaitOrderTime > 0f)
+            if (canvasObject.activeSelf)
             {
-                _leftWaitOrderTime -= TimeManager.DeltaTime;
-            }
-            else
-            {
-                _leftWaitOrderTime = 0f;
-                _isWaitOrder = false;
-                canvasObject.SetActive(false);
-                NyangManager.Instance.OutWaitOrderNyang(this);
-            }
+                if (_leftWaitOrderTime > 0f)
+                {
+                    _leftWaitOrderTime -= TimeManager.DeltaTime;
+                }
+                else
+                {
+                    _leftWaitOrderTime = 0f;
+                    _isWaitOrder = false;
+                    canvasObject.SetActive(false);
+                    NyangManager.Instance.OutWaitOrderNyang(this);
+                }
 
-            sliderWait.value = _leftWaitOrderTime;
+                sliderWait.value = _leftWaitOrderTime;
+            }
         }
 
         OverWaitNyang();
@@ -340,10 +251,13 @@ public class Nyang : MonoBehaviour
         {
             UIManager.instance.StopIngredientSelectAnimation();
             // 냥이가 요리를 받는다.
-            nyangFood = food.gameObject;
-            food.transform.parent = this.transform;
-            food.transform.localScale = Vector2.one / 400;
-            food.transform.localPosition = new Vector2(1, 1);
+            if (food != null)
+            {
+                nyangFood = food.gameObject;
+                food.transform.parent = this.transform;
+                food.transform.localScale = Vector2.one / 400;
+                food.transform.localPosition = new Vector2(1, 1);
+            }
             // 결과에 따라 냥이의 상태를 바꿈. (Happy / Angry)
             State = result ? NyangState.Happy : NyangState.Angry;
             if (GoldManager.instance.IsBuff)
@@ -355,7 +269,10 @@ public class Nyang : MonoBehaviour
                 if (State == NyangState.Happy)
                 {
                     //버프가 아니고 성공 주문 시 2초 추가
-                    TimeManager.Instance.LeftTime += 2f;
+                    if (TimeManager.Instance.LeftTime > 0.1f)
+                    {
+                        TimeManager.Instance.LeftTime += 2f;
+                    }
                 }
             }
 
@@ -368,10 +285,17 @@ public class Nyang : MonoBehaviour
                 AudioManager.Instance?.PlayNyang_Angry();
             }
 
-            // 냥이가 돈을 냄.
-            NyangPay(food);
+            if (food != null)
+            {
+                // 냥이가 돈을 냄.
+                NyangPay(food);
+            }
             // 1.5초 뒤 냥이 퇴장. (보스냥이라면 퇴장하지 않고 카운트만 올라감.)
-            if (!(GameManager.Instance.IsTutorial)) Invoke("OutNyang", 1.5f);
+            if (!(GameManager.Instance.IsTutorial))
+            {
+                float delay = GameManager.Instance.IsBuff ? 0.5f : 1.5f;
+                Invoke("OutNyang", delay);
+            }
         }
     }
 

@@ -155,6 +155,8 @@ MonoBehaviour:
     \uB418\uC5C8\uB2E4\r\n\uB0B4\uD138\uC774 \uAFC0\uB9DB\uC774\uB2E4\uB0E5!"
   story1Index: 74
   story2Index: 75
+  sprStory1: {fileID: 0}
+  sprStory2: {fileID: 0}
   canvasObject: {fileID: 0}
   sliderWait: {fileID: 0}
 --- !u!61 &441053851624275884
@@ -393,8 +395,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f930f8eebed190d4c81103b1ee27d108, type: 3}
-  m_Type: 3
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0

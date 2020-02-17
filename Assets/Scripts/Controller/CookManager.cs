@@ -99,6 +99,7 @@ public class CookManager : MonoBehaviour {
         cookFood.SetPowder(orderedRecipe[2]);
         cookFood.Cook_FinishAll();
         cookFood.step = CookStep.Complete;
+        cookFood.Invoke("SellFood", 0.5f);
     }
     
     public void OpenMeatBox() {

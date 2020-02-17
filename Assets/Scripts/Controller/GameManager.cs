@@ -49,6 +49,7 @@ public class GameManager : MonoBehaviour
     private CookManager _cookManager;
     private TutorialManager _tutorialManager;
     private ScenarioManager _scenarioManager;
+    private OptionManager _optionManager;
 
     [SerializeField] private SpriteRenderer sprCharacterBack;
 
@@ -112,7 +113,8 @@ public class GameManager : MonoBehaviour
         _cookManager = FindObjectOfType<CookManager>();
         _tutorialManager = FindObjectOfType<TutorialManager>();
         _scenarioManager = FindObjectOfType<ScenarioManager>();
-
+        _optionManager = FindObjectOfType<OptionManager>();
+        
         SetUpEvent();
         StartCoroutine(CoStart());
     }
@@ -211,6 +213,11 @@ public class GameManager : MonoBehaviour
     [Button]
     public void EndMainGame(TimeType timeType)
     {
+        if (IsBuff)
+        {
+            BuffDeactivate();
+        }
+
         _nyangManager.EndSpawn();
         _nyangManager.ClearAllNyang();
         _cookManager.ThrowOut();
@@ -327,6 +334,9 @@ public class GameManager : MonoBehaviour
         _scenarioManager.EventCloseScenario += OnCloseScenario;
 
         _tutorialManager.EventEndTutorial += OnEndTutorial;
+
+        _optionManager.EventShowOption += _uiManager.OnShowOption;
+        _optionManager.EventHideOption += _uiManager.OnHideOption;
     }
 
     public void CleanUpEvent()
@@ -345,7 +355,10 @@ public class GameManager : MonoBehaviour
 
         _scenarioManager.EventCloseScenario -= OnCloseScenario;
 
-        _tutorialManager.EventEndTutorial += OnEndTutorial;
+        _tutorialManager.EventEndTutorial -= OnEndTutorial;
+        
+        _optionManager.EventShowOption -= _uiManager.OnShowOption;
+        _optionManager.EventHideOption -= _uiManager.OnHideOption;
     }
 
     public bool IsBuff { get; private set; } = false;
@@ -355,6 +368,17 @@ public class GameManager : MonoBehaviour
 
     private void OnTimeOver()
     {
+        StartCoroutine(CoCheckLeftNyang());
+    }
+
+    private IEnumerator CoCheckLeftNyang()
+    {
+        _nyangManager.EndSpawn();
+        while ((_nyangManager.nyangList.Count != 0) || (_nyangManager.orderNyang != null))
+        {
+            yield return new WaitForSeconds(0.1f);
+        }
+        
         EndMainGame(TimeType);
     }
 

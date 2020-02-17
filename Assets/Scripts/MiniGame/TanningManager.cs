@@ -128,7 +128,7 @@ public class TanningManager : MonoBehaviour
         yield return new WaitUntil(() => switch01);
         SetReadyBox(true);
         while (!isStopped) {
-            tanningTime += TimeManager.DeltaTime;
+            tanningTime += Time.deltaTime;
             SetTemperatureGuage(tanningTime);
             if (tanningTime >= TanningTime / 2) {
                 break;

@@ -113,7 +113,7 @@ public class TipManager : MonoBehaviour {
     public void TipButton() {
         if (CurrentTipType == TipType.Buff) UIManager.instance.OpenBuffPopup();
         else if(CurrentTipType==TipType.Option) {
-            UIManager.instance.OpenOption();
+            UIManager.instance.OnShowOption();
             OptionManager.instance.ApplicationRemoveAds();
         }
     }

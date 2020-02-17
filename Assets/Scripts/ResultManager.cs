@@ -53,6 +53,11 @@ public class ResultManager : MonoBehaviour
     public void SetIncomeTotal(int totalGold) {
         incomeTotal = totalGold;
         incomeTotal_Text.text = incomeTotal.ToString();
+        int highScore = PlayerPrefs.GetInt("HighScore", 0);
+        if (totalGold >= highScore)
+        {
+            PlayerPrefs.SetInt("HighScore", totalGold);
+        }
     }
     #endregion
 }

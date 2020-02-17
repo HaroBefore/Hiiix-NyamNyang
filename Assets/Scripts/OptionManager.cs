@@ -1,11 +1,15 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class OptionManager : MonoBehaviour {
-
+public class OptionManager : MonoBehaviour
+{
+    public event Action EventShowOption = () => { };
+    public event Action EventHideOption = () => { };
+    
     public static OptionManager instance;
 
     [Header("Button")]
@@ -15,7 +19,8 @@ public class OptionManager : MonoBehaviour {
     public GameObject b_push_off;
     public GameObject b_removeAds_purchase;
     public GameObject b_removeAds_actived;
-    [Header("Tutorial")]
+    [Header("Tutorial")] 
+    public GameObject tutorialPanel;
     public GameObject tutorial;
     public GameObject tutorialStartMask;
     [Header("TutorialScrenshots")]
@@ -51,8 +56,6 @@ public class OptionManager : MonoBehaviour {
     void Awake() {
         if (!instance) instance = this;
 
-
-
         // 초기값 세팅.
         if (PlayerPrefs.GetInt("NyamNyangOption") != 1049) {
 
@@ -87,6 +90,7 @@ public class OptionManager : MonoBehaviour {
         
         optionPanel.SetActive(true);
         OptionReset();
+        EventShowOption();
     }
 
     public void HideOption()
@@ -94,6 +98,8 @@ public class OptionManager : MonoBehaviour {
         AudioManager audioManager = AudioManager.Instance;
         audioManager?.Play(audioManager.box_close, 1f);
         optionPanel.SetActive(false);
+        EventHideOption();
+
     }
 
     public void OptionReset() {
@@ -144,20 +150,23 @@ public class OptionManager : MonoBehaviour {
 
     #region Tutorial
     public void Tutorial_Main() {
-        UIManager.instance.CloseOption();
+        HideOption();
         PlayTutorial(true);
     }
     public void Tutorial_Tanning() {
-        UIManager.instance.CloseOption();
+        HideOption();
         PlayTutorial(false);
     }
     private void PlayTutorial(bool isMain) {
-        TimeManager.Instance.Pause();
+        if (TimeManager.Instance != null)
+        {
+            TimeManager.Instance.Pause();
+        }
         tutorialScene = -1;
         isTutorial = true;
         isMainTutorial = isMain;
         tutorial.GetComponent<Image>().sprite = (isMain) ? mainTutorials[0] : tanningTutorials[0];
-        tutorial.SetActive(true);
+        tutorialPanel.SetActive(true);
         tutorialStartMask.SetActive(true);
     }
     private void NextTutorial() {
@@ -181,9 +190,12 @@ public class OptionManager : MonoBehaviour {
         }
     }
     private void EndTutorial() {
-        tutorial.SetActive(false);
+        tutorialPanel.SetActive(false);
         isTutorial = false;
-        TimeManager.Instance.Resume();
+        if (TimeManager.Instance != null)
+        {
+            TimeManager.Instance.Resume();
+        }
     }
     #endregion
 

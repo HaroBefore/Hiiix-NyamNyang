@@ -2170,5 +2170,43 @@ Reviens nous voir souvent et apprends à mieux nous connaître"
 		"Index" : "157",
 		"Korean" : "색이 붉을 수록 성격이
 급한 냥이니 주의하라냥!"
+	},
+	{
+		"Index" : "1000",
+		"Korean" : "한국어",
+		"English" : "English",
+		"Japanese" : "Japanese",
+		"ChineseGan" : "ChineseGan",
+		"ChineseBun" : "ChineseBun",
+		"French" : "French"
+	},
+	{
+		"Index" : "1001",
+		"Korean" : "초기화"
+	},
+	{
+		"Index" : "1002",
+		"Korean" : "구매복구"
+	},
+	{
+		"Index" : "1003",
+		"Korean" : "광고제거"
+	},
+	{
+		"Index" : "1004",
+		"Korean" : "종료하기"
+	},
+	{
+		"Index" : "1005",
+		"Korean" : "회사소개"
+	},
+	{
+		"Index" : "2000",
+		"Korean" : "냥",
+		"English" : "N",
+		"Japanese" : "N",
+		"ChineseGan" : "N",
+		"ChineseBun" : "N",
+		"French" : "N"
 	}
 ]

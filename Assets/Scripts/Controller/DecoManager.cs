@@ -34,10 +34,11 @@ public class DecoManager : MonoBehaviour {
 
     void Awake() {
         if (!instance) instance = this;
-        LoadDecoPrefab();
+        //LoadDecoPrefab();
     }
 
     void Start() {
+        /*
         dictionarys = new Dictionary<int, Deco>[5] { roofDic, stoveDic, bulbDic, signDic, accessoryDic };
         appliedDeco = new Deco[5];
         objects = new GameObject[5] { roof, stove, bulb, sign, accessory };
@@ -134,6 +135,7 @@ public class DecoManager : MonoBehaviour {
                 }
             }
         }
+        */
     }
 
     private void LoadDecoPrefab() {

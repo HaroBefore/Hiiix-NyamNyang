@@ -73,7 +73,10 @@ public class TutorialManager : MonoBehaviour
 
     public void PlayTutorial() {
         BackgroundManager.instance.SetAM();
-        TimeManager.Instance.Pause();
+        if (TimeManager.Instance != null)
+        {
+            TimeManager.Instance.Pause();
+        }
         tutorialMainScene.SetActive(true);
         MainScene.SetActive(false);
         MainUI.SetActive(false);
@@ -82,7 +85,10 @@ public class TutorialManager : MonoBehaviour
         StartCoroutine(Tutorial());
     }
     public void PlayTanningTutorial() {
-        TimeManager.Instance.Pause();
+        if (TimeManager.Instance != null)
+        {
+            TimeManager.Instance.Pause();            
+        }
         StartCoroutine(TanningTutorial());
     }
 
@@ -128,7 +134,7 @@ public class TutorialManager : MonoBehaviour
         {
             // 새 튜토리얼 설정.
             SetTutorial(2);
-
+            AngryGuageOn();
             // Scripting, Twinkling.
             StartCoroutine(Coroutine_Scripting);
             yield return new WaitUntil(() => !isScripting);
@@ -139,7 +145,7 @@ public class TutorialManager : MonoBehaviour
         {
             // 새 튜토리얼 설정.
             SetTutorial(3);
-
+            RecipeOpen(401, 502, 602);
             // Scripting, Twinkling.
             StartCoroutine(Coroutine_Scripting);
             yield return new WaitUntil(() => !isScripting);

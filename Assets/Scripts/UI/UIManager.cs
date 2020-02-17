@@ -822,9 +822,8 @@ public class UIManager : MonoBehaviour {
 
     #region Option
 
-    public void OpenOption() {
+    public void OnShowOption() {
         if (BuffPopup.activeSelf) return;
-
         audioManager?.PauseCookMeat();
 
         Main_Objects.SetActive(false);
@@ -837,9 +836,9 @@ public class UIManager : MonoBehaviour {
         timeManager.Pause();
         NyangManager.Instance.EndSpawn();
         TipManager.instance.CloseTip(TipType.Option);
-        OptionManager.instance.ShowOption();
     }
-    public void CloseOption() {
+    
+    public void OnHideOption() {
         inputManager.AsdadSwitch();
         audioManager?.ResumeCookMeat();
         
@@ -850,7 +849,6 @@ public class UIManager : MonoBehaviour {
         Main_UI.SetActive(true);
         Calender.SetActive(true);
         NyangManager.Instance.BeginSpawn();
-        OptionManager.instance.HideOption();
         OpenBoxOnCloseUI();
     }
     #endregion
@@ -886,7 +884,7 @@ public class UIManager : MonoBehaviour {
     public void CloseAllUI() {
         if (meatSelectPanel.activeSelf) CloseMeatSelectPanel();
         if (sauceSelectPanel.activeSelf) CloseSauceSelectPanel();
-        if (OptionPanel.activeSelf) CloseOption();
+        if (OptionPanel.activeSelf) OnHideOption();
     }
 
     public void SetActiveAllMainUi(bool isActive)

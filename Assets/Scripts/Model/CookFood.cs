@@ -111,6 +111,12 @@ public class CookFood : MonoBehaviour {
             step++;
         }
     }
+
+    public void SellFood()
+    {
+        SellFood(this.gameObject);
+    }
+    
     // SellFood: InputManager의 TouchTarget이 바뀔 때, Target이 조리완료된 요리면 요리 판매.
     public void SellFood(GameObject target) {
         // Target이 Food인지 확인.

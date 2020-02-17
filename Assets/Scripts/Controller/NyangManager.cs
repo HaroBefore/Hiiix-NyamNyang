@@ -41,6 +41,8 @@ public class NyangManager : MonoBehaviour
 
     [Header("Angry Guage")]
     public GameObject AngryGuage;
+
+    [Header("Buff")] public GameObject Buff;
     [Header("냥이 생성 주기")]
     public float nyangSpawnCycle;
     private float nyangCurrentCycle;
@@ -49,7 +51,8 @@ public class NyangManager : MonoBehaviour
     public List<Nyang> nyangList { get; protected set; }
 
     public Dictionary<int, GameObject> nyangPrefabDic { get; protected set; }
-
+    public Dictionary<int, Nyang> nyangDic { get; protected set; }
+    
     // 위치 번호 (A-F)에 해당하는 좌표값.
     public Dictionary<NyangPosition, Vector2> nyangPositionDic { get; protected set; }
     // 위치 번호 (A-F)에 생성된 냥이.
@@ -66,6 +69,7 @@ public class NyangManager : MonoBehaviour
 
     void Start() {
         LoadNyangPrefab();
+        CheckCollect();
 
         nyangList = new List<Nyang>();
 
@@ -94,9 +98,107 @@ public class NyangManager : MonoBehaviour
 
     }
 
+    public void CheckCollect()
+    {
+        int day = PlayerPrefs.GetInt("DayCount");
+        // 파냥이
+        if (day >= 4)
+        {
+            nyangDic[205].IsCollected = true;
+        }
+        // 그냥이
+        if (day >= 7)
+        {
+            nyangDic[201].IsCollected = true;
+        }
+
+        // 죽냥이
+        if (day >= 10)
+        {
+            nyangDic[203].IsCollected = true;
+        }
+
+        // 술냥이
+        if (day >= 14)
+        {
+            nyangDic[204].IsCollected = true;
+        }
+        
+        // 싱냥이 202 - 술냥이 등장 후
+        if (nyangDic[204].IsCollected)
+        {
+            nyangDic[202].IsCollected = true;
+        }
+
+        // 달냥이
+        if (day >= 15)
+        {
+            nyangDic[207].IsCollected = true;
+        }
+
+        // 똥냥이
+        if (day >= 21)
+        {
+            nyangDic[206].IsCollected = true;
+        }
+
+        // 힙냥이
+        if (day >= 30)
+        {
+            nyangDic[305].IsCollected = true;
+        }
+        
+        // 개냥이
+        if (day >= 40)
+        {
+            nyangDic[306].IsCollected = true;
+        }
+
+        // 해냥이
+        if (day >= 50)
+        {
+            nyangDic[301].IsCollected = true;
+        }
+
+        // 인어냥이
+        if (day >= 60)
+        {
+            nyangDic[309].IsCollected = true;
+        }
+        
+        // 만냥이 302 - 1만점 이상
+        if (PlayerPrefs.GetInt("HighScore", 0) >= 10000)
+        {
+            nyangDic[302].IsCollected = true;
+        }
+
+        // 미냥이 303 - 플탐 30분
+        if (PlayerPrefs.GetInt("TotalPlayTime", 0) >= (60 * 30))
+        {
+            nyangDic[303].IsCollected = true;
+        }
+        
+        // 점냥이 304 - 미냥이 등장 후
+        if (nyangDic[303].IsCollected)
+        {
+            nyangDic[304].IsCollected = true;
+        }
+
+        // 천사냥이 307 - 플탐 1004분
+        if (PlayerPrefs.GetInt("TotalPlayTime", 0) >= (60 * 1004))
+        {
+            nyangDic[307].IsCollected = true;
+        }
+
+        // 악마냥이 308 - 플탐 666분
+        if (PlayerPrefs.GetInt("TotalPlayTime", 0) >= (60 * 666))
+        {
+            nyangDic[308].IsCollected = true;
+        }
+    }
+
     public void BeginSpawn()
     {
-        Debug.Log("BeginSpawn");
         _spawnRoutine = StartCoroutine(CoSpawn());
     }
 
@@ -117,9 +219,16 @@ public class NyangManager : MonoBehaviour
 
     private void LoadNyangPrefab() {
         nyangPrefabDic = new Dictionary<int, GameObject>();
+        nyangDic = new Dictionary<int, Nyang>();
         Nyang[] objs = Resources.LoadAll<Nyang>("Prefabs/Nyang/") as Nyang[];
+        foreach (Nyang nyang in objs)
+        {
+            nyang.IsCollected = false;
+        }
+
         for (int i = 0; i < objs.Length; i++) {
             nyangPrefabDic.Add(objs[i].index, objs[i].gameObject);
+            nyangDic.Add(objs[i].index, objs[i]);
         }
     }
 
@@ -129,7 +238,7 @@ public class NyangManager : MonoBehaviour
     private void SpawnNyang() {
         // 냥이 생성 주기 처리. (대기냥이가 없으면 주기와 관계없이 0.5초 후 스폰한다.)
         if (nyangCurrentCycle < nyangSpawnCycle) {
-            if (nyangList.Count != 0) nyangCurrentCycle += TimeManager.DeltaTime;
+            if (nyangList.Count != 0 || GameManager.Instance.IsBuff == false) nyangCurrentCycle += TimeManager.DeltaTime;
             else nyangCurrentCycle += (TimeManager.DeltaTime * 2 * nyangSpawnCycle);
             return;
         }
@@ -270,7 +379,11 @@ public class NyangManager : MonoBehaviour
         previousNyangInPositionDic[pos] = nyangInPositionDic[pos];
         nyangInPositionDic[pos] = null;
         orderNyang = null;
-        if (!GameManager.Instance.IsTutorial) AngryGuageOff();
+        if (!GameManager.Instance.IsTutorial)
+        {
+            AngryGuageOff();
+            BuffOff();
+        }
         else TutorialManager.instance.AngryGuageOff();
         Debug.Log("OutNyang");
     }
@@ -287,6 +400,7 @@ public class NyangManager : MonoBehaviour
         target.State = NyangState.Angry;
         yield return new WaitForSeconds(0.5f);
         nyangInPositionDic[pos] = null;
+        nyangList.Remove(target);
         Destroy(target.gameObject);
     }
 
@@ -341,10 +455,17 @@ public class NyangManager : MonoBehaviour
             if (BorderManager.instance.IsInBorder(BorderManager.instance.customerSeatBorder) && !orderNyang) {
                 // 냥이를 앉힌다.
                 SitNyang();
-                if (GameManager.Instance.IsBuff == false)
+                if (GameManager.Instance.IsTutorial == false)
                 {
-                    // 분노 게이지 On.
-                    AngryGuageOn();
+                    if (GameManager.Instance.IsBuff == false)
+                    {
+                        // 분노 게이지 On.
+                        AngryGuageOn();
+                    }
+                    else
+                    {
+                        BuffOn();
+                    }
                 }
             }
             // 냥이를 손님석에 앉히지 못했을 때:
@@ -373,4 +494,19 @@ public class NyangManager : MonoBehaviour
     }
 
     #endregion
+
+    #region Buff
+
+    public void BuffOn()
+    {
+        Buff.SetActive(true);
+    }
+
+    public void BuffOff()
+    {
+        Buff.SetActive(false);
+    }
+
+    #endregion
+    
 }

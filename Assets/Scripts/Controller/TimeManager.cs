@@ -162,6 +162,19 @@ public class TimeManager : MonoBehaviour
     private void Start()
     {
         SetTime();
+        StartCoroutine(CoRecordPlayTime());
+    }
+
+    private IEnumerator CoRecordPlayTime()
+    {
+        int totalPlayTime;
+        while (true)
+        {
+            totalPlayTime = PlayerPrefs.GetInt("TotalPlayTime", 0);
+            totalPlayTime++;
+            yield return new WaitForSeconds(1f);
+            PlayerPrefs.SetInt("TotalPlayTime", totalPlayTime);
+        }
     }
 
     void Update() {
