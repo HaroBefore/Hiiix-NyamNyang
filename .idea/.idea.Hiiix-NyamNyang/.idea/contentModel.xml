@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\haro7\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\haro7\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_Hiiix-NyamNyang.-2025036777.00" t="ExcludeRecursive" />
-    <e p="E:\Projects\Haro\Hiiix-NyamNyang" t="IncludeRecursive">
+    <e p="$USER_HOME$/Library/Caches/Rider2019.3/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.3/resharper-host/local/Transient/ReSharperHost/v193/SolutionCaches/_Hiiix-NyamNyang.676230227.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
@@ -419,7 +419,7 @@
       <e p="Packages" t="ExcludeRecursive" />
       <e p="Sirenix.OdinInspector.CompatibilityLayer.csproj" t="IncludeRecursive" />
       <e p="Sirenix.OdinInspector.CompatibilityLayer.Editor.csproj" t="IncludeRecursive" />
-      <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="Temp/bin" t="ExcludeRecursive" />
     </e>
   </component>
 </project>

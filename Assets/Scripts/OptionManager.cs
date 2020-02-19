@@ -203,7 +203,11 @@ public class OptionManager : MonoBehaviour
     public void Language_Next()
     {
         StringDataObject.NextLanguage();
-        FindObjectOfType<TextLocalizer>().ReloadText();
+        var arrTextlocalizer = FindObjectsOfType<TextLocalizer>();
+        foreach (var textLocalizer in arrTextlocalizer)
+        {
+            textLocalizer.ReloadText();
+        }
     }
     #endregion
 
