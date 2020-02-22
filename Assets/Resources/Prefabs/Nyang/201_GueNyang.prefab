@@ -118,8 +118,8 @@ MonoBehaviour:
     \uADF8\uB0E5 \uACE0\uC591\uC774\r\n\uADF8\uB0E5\uC774"
   story1Index: 79
   story2Index: 80
-  sprStory1: {fileID: 0}
-  sprStory2: {fileID: 0}
+  sprStory1: {fileID: 21300000, guid: 895c2fd325c2a40f0bc4fe91334a8ef8, type: 3}
+  sprStory2: {fileID: 21300000, guid: d65d026d4b6ae4f9abbdab544cd4673d, type: 3}
   canvasObject: {fileID: 0}
   sliderWait: {fileID: 0}
 --- !u!61 &441053851624275884

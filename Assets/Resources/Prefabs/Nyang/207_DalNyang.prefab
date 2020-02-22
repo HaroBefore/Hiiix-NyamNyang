@@ -117,8 +117,8 @@ MonoBehaviour:
   story: 
   story1Index: 109
   story2Index: 110
-  sprStory1: {fileID: 0}
-  sprStory2: {fileID: 0}
+  sprStory1: {fileID: 21300000, guid: 4976d9b20ae624798b64dc7313d9a394, type: 3}
+  sprStory2: {fileID: 21300000, guid: 2fa6d22a8e90649639f8e68d9cc3df49, type: 3}
   canvasObject: {fileID: 0}
   sliderWait: {fileID: 0}
 --- !u!61 &441053851624275884

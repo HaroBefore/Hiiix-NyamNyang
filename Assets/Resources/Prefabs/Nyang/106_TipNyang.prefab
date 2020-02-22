@@ -119,8 +119,8 @@ MonoBehaviour:
     \uBAA8\uB978\uB2E4. \r\n\uB208\uBD80\uC2E0 \uADC0\uC694\uBBF8."
   story1Index: 70
   story2Index: 71
-  sprStory1: {fileID: 0}
-  sprStory2: {fileID: 0}
+  sprStory1: {fileID: 21300000, guid: c2997977e6de14d4c8453686c2f3ce47, type: 3}
+  sprStory2: {fileID: 21300000, guid: 8d8ae3bbecce143869480167b6d098af, type: 3}
   canvasObject: {fileID: 0}
   sliderWait: {fileID: 0}
 --- !u!61 &441053851624275884
