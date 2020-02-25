@@ -109,7 +109,7 @@ public class TimeManager : MonoBehaviour
 
     private float _leftBuffCoolTime = 40f;
 
-    private float LeftBuffCollTime
+    public float LeftBuffCollTime
     {
         get => _leftBuffCoolTime;
         set

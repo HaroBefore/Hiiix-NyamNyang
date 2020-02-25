@@ -213,7 +213,7 @@ public class NyangListManager : MonoBehaviour
                 nyangImage.sprite = nyangList_hideSprite;
 
             // 획득하지 못한 Hidden인 경우에만 이름을 숨긴다.
-            if (nyang.rank == NyangRank.Hidden && !(nyang.IsCollected))
+            if ((nyang.rank == NyangRank.Hidden) || (nyang.rank == NyangRank.Rare)  && !(nyang.IsCollected))
             {
                 listObj.transform.GetChild(2).GetComponent<Text>().text = "???";
             }

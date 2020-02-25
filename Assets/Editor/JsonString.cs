@@ -63,6 +63,10 @@ public class JsonString : Editor
         StringDataObject dataObject = StringDataObject.Instance;
         dataObject.korean.Clear();
         dataObject.english.Clear();
+        dataObject.japanese.Clear();
+        dataObject.chineseGan.Clear();
+        dataObject.chineseBun.Clear();
+        dataObject.french.Clear();
 
         for (int i = 0; i < jsonData.Count; i++)
         {
