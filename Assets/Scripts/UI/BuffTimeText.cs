@@ -15,6 +15,6 @@ public class BuffTimeText : MonoBehaviour
 
     private void Update()
     {
-        textTime.text = $"{(int) TimeManager.Instance.LeftBuffCollTime} Sec";
+        textTime.text = $"{(int) TimeManager.Instance.LeftBuffCollTime}sec";
     }
 }

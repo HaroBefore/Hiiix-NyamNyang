@@ -431,6 +431,7 @@ public class GameManager : MonoBehaviour
         _uiManager.CloseBuffPopup();
         _uiManager.buffButton_Pushed.SetActive(true);
         _uiManager.buffButton.SetActive(false);
+        
 
         if (_nyangManager.orderNyang != null)
         {

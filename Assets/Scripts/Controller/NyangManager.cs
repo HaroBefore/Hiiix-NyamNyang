@@ -490,7 +490,7 @@ public class NyangManager : MonoBehaviour
         AngryGuage.SetActive(false);
     }
     public void SetAngryGuage(float f) {
-        AngryGuage.transform.GetChild(1).GetComponent<RectTransform>().sizeDelta = new Vector2(28, 34 + 56 * (f / TimeManager.Instance.waitingTime));
+        AngryGuage.transform.GetChild(1).GetComponent<RectTransform>().sizeDelta = new Vector2(28, 34 + 67 * (f / TimeManager.Instance.waitingTime));
     }
 
     #endregion
