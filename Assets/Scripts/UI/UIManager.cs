@@ -168,6 +168,10 @@ public class UIManager : MonoBehaviour {
     [Header("Option")]
     public GameObject OptionPanel;
 
+    [Header("Buff")] public SpriteRenderer boneRenderer;
+    public Sprite sprBoneNormal;
+    public Sprite sprBoneBuff;
+    
     [Header("BuffAds")]
     public GameObject buffButton;
     public GameObject buffButton_Pushed;
@@ -242,11 +246,13 @@ public class UIManager : MonoBehaviour {
     public void BuffOn() {
         BackgroundManager.instance.SetBuff();
         BuffNyang.SetActive(true);
+        boneRenderer.sprite = sprBoneBuff;
     }
     public void BuffOff() {
         buffButton_Pushed.SetActive(false);
         buffButton.SetActive(true);
         BuffNyang.SetActive(false);
+        boneRenderer.sprite = sprBoneNormal;
     }
 
     #endregion

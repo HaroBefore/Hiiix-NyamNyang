@@ -3013,6 +3013,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 800
       objectReference: {fileID: 0}
+    - target: {fileID: 2125998939360471623, guid: b9592a1c8cf472942b0eb7c54c3d5ea3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3948324718558345194, guid: b9592a1c8cf472942b0eb7c54c3d5ea3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3073,7 +3078,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: OptionManager
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8726850668974159615, guid: b9592a1c8cf472942b0eb7c54c3d5ea3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 242417652, guid: b9592a1c8cf472942b0eb7c54c3d5ea3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b9592a1c8cf472942b0eb7c54c3d5ea3, type: 3}
 --- !u!4 &2115125672 stripped
 Transform:

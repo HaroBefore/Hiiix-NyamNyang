@@ -2832,7 +2832,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21d592efbe9c640e9b505f0b66625591, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stringIndex: 1002
+  stringIndex: 160
   strText: "\uAD6C\uB9E4\uBCF5\uAD6C"
 --- !u!1 &2125998937983719491
 GameObject:
@@ -3560,7 +3560,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21d592efbe9c640e9b505f0b66625591, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stringIndex: 1003
+  stringIndex: 161
   strText: "\uAD11\uACE0\uC81C\uAC70"
 --- !u!1 &2125998938280220823
 GameObject:
@@ -4429,7 +4429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21d592efbe9c640e9b505f0b66625591, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stringIndex: 1004
+  stringIndex: 162
   strText: "\uC885\uB8CC\uD558\uAE30"
 --- !u!1 &2125998938539833682
 GameObject:
@@ -4972,7 +4972,6 @@ GameObject:
   - component: {fileID: 2125998938723043180}
   - component: {fileID: 2125998938723043181}
   - component: {fileID: 4693872167484236336}
-  - component: {fileID: 242417652}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -5051,22 +5050,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21d592efbe9c640e9b505f0b66625591, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stringIndex: 1000
-  strText: "\uD55C\uAD6D\uC5B4"
---- !u!114 &242417652
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2125998938723043171}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21d592efbe9c640e9b505f0b66625591, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stringIndex: 0
-  strText: NULL
+  stringIndex: 158
+  strText: "\u4E2D\u6587\uFF08\u7B80\u4F53\uFF09\n"
 --- !u!1 &2125998938724317860
 GameObject:
   m_ObjectHideFlags: 0
@@ -7470,7 +7455,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21d592efbe9c640e9b505f0b66625591, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stringIndex: 1001
+  stringIndex: 159
   strText: "\uCD08\uAE30\uD654"
 --- !u!1 &2125998939360471623
 GameObject:
