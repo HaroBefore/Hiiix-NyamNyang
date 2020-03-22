@@ -29,6 +29,7 @@ public class IngredientManager : MonoBehaviour {
             meatDic[401].IsAvailable = true;
             meatDic[402].IsAvailable = true;
             meatDic[403].IsAvailable = true;
+            meatDic[404].IsAvailable = true;
             powderDic[501].IsAvailable = true;
             powderDic[502].IsAvailable = true;
             powderDic[503].IsAvailable = true;

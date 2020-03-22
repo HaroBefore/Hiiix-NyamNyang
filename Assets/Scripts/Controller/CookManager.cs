@@ -94,7 +94,10 @@ public class CookManager : MonoBehaviour {
     public void SetFinishFood()
     {
         SelectMeat(orderedRecipe[0]);
-        cookFood.Cook_FinishGrill();
+        for (int i = 0; i < 6; i++)
+        {
+            cookFood.Cook();
+        }
         cookFood.SetSauce(orderedRecipe[1]);
         cookFood.SetPowder(orderedRecipe[2]);
         cookFood.Cook_FinishAll();

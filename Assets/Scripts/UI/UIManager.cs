@@ -43,6 +43,7 @@ public class UIManager : MonoBehaviour {
     public GameObject meatSelect_Menu01;
     public GameObject meatSelect_Menu02;
     public GameObject meatSelect_Menu03;
+    public GameObject meatSelect_Menu04;
     public Text meatSelect_Menu01_Count;
     public Text meatSelect_Menu02_Count;
     public Text meatSelect_Menu03_Count;
@@ -52,6 +53,7 @@ public class UIManager : MonoBehaviour {
     private Ingredient meatSelect_menu01;
     private Ingredient meatSelect_menu02;
     private Ingredient meatSelect_menu03;
+    private Ingredient meatSelect_menu04;
     [Header("SauceSelectPanel")]
     public GameObject sauceSelectPanel;
     public GameObject sauceSelect_nextButton;
@@ -390,6 +392,7 @@ public class UIManager : MonoBehaviour {
         meatSelect_menu01 = meatSelect_meatList[3 * page];
         meatSelect_menu02 = meatSelect_meatList[3 * page + 1];
         meatSelect_menu03 = meatSelect_meatList[3 * page + 2];
+        meatSelect_menu04 = meatSelect_meatList[3 * page + 3];
     }
     // ShowMeatSelectList: 해당 페이지를 보여줌.
     public void ShowMeatSelectList(int page) {
@@ -404,6 +407,10 @@ public class UIManager : MonoBehaviour {
         image.color = new Color(1, 1, 1, 1);
         image = meatSelect_Menu03.transform.GetChild(0).GetComponent<Image>();
         image.sprite = meatSelect_menu03.sprite_Icon;
+        image.SetNativeSize();
+        image.color = new Color(1, 1, 1, 1);
+        image = meatSelect_Menu04.transform.GetChild(0).GetComponent<Image>();
+        image.sprite = meatSelect_menu04.sprite_Icon;
         image.SetNativeSize();
         image.color = new Color(1, 1, 1, 1);
     }
@@ -433,7 +440,8 @@ public class UIManager : MonoBehaviour {
         Ingredient meat = null;
         if (index == 1) meat = meatSelect_menu01;
         else if (index == 2) meat = meatSelect_menu02;
-        else meat = meatSelect_menu03;
+        else if (index == 3) meat = meatSelect_menu03;
+        else if (index == 4) meat = meatSelect_menu04;
         selectedIngredient = meat;
         // TODO 수량 없이 변경
         // meat.Count--;

@@ -227,11 +227,7 @@ public class InputManager : MonoBehaviour {
         graphicRaycaster_not2.Raycast(pointerEventData, results_no2);
         graphicRaycaster_not3.Raycast(pointerEventData, results_no3);
         if (results_no1.Count != 0 || results_no2.Count != 0 || results_no3.Count != 0 || SwipeTarget || TouchTarget) return;
-
-
-
-
-
+        
         RaycastHit2D hit = Physics2D.Raycast(currentTouchPos, transform.forward, 0, TouchSoundLayerMask);
         if (hit) {
             if (hit.transform.name == "backgroundWave")

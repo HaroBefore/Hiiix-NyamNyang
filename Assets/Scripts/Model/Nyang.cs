@@ -199,6 +199,10 @@ public class Nyang : MonoBehaviour
 
     private void OnDestroy()
     {
+        if (GameManager.Instance == null)
+        {
+            return;
+        }
         GameManager.Instance.EventBuffActivate -= OnBuffActivate;
         GameManager.Instance.EventBuffDeactivate -= OnBuffDeactivate;
     }
