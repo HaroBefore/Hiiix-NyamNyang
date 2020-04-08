@@ -5661,10 +5661,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88d1f6d4d0ce57941a71ffc8e8c509e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playTime: 90
+  playTime: 10
   waitingTime: 16
   cookTime: 8
-  buffCoolTime: 40
+  buffCoolTime: 5
   buffDuration: 15
 --- !u!1 &208374455
 GameObject:

@@ -305,6 +305,7 @@ public class Nyang : MonoBehaviour
 
     public void NyangPay(CookFood food)
     {
+        Debug.Log(food.price);
         int price = food.price;
 
         switch (GameManager.Instance.TimeType)

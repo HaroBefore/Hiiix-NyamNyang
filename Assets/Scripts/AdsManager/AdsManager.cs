@@ -50,7 +50,7 @@ public class AdsManager : MonoBehaviour {
         return true;
     }
 
-    private void ShowAds() {
+    public void ShowAds() {
         Debug.Log("SHOWADS START");
         TimeManager.Instance.Pause();
         AdsManager_Admob.instance.ShowAd();

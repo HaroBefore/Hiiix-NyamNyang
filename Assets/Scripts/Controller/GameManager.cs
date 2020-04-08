@@ -243,7 +243,8 @@ public class GameManager : MonoBehaviour
                 panelWorkIsComplete.SetActive(true);
                 mainSceneCanvasGroup.interactable = false;
                 mainUiCanvasGroup.interactable = false;
-                AdsManager.instance.IncreaseCycle();
+                AdsManager.instance.ShowAds();
+                //AdsManager.instance.IncreaseCycle();
                 break;
         }
     }

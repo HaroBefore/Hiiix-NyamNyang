@@ -98,8 +98,9 @@ public class CookManager : MonoBehaviour {
         {
             cookFood.Cook();
         }
-        cookFood.SetSauce(orderedRecipe[1]);
-        cookFood.SetPowder(orderedRecipe[2]);
+
+        cookFood.SetPowder(orderedRecipe[1]);
+        cookFood.SetSauce(orderedRecipe[2]);
         cookFood.Cook_FinishAll();
         cookFood.step = CookStep.Complete;
         cookFood.Invoke("SellFood", 0.5f);
