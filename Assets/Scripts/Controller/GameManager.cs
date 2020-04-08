@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
 using System.Runtime.CompilerServices;
+using DG.Tweening;
 using Sirenix.OdinInspector;
 using UnityEditor;
 using UnityEngine;
@@ -51,6 +52,8 @@ public class GameManager : MonoBehaviour
     private ScenarioManager _scenarioManager;
     private OptionManager _optionManager;
 
+    [SerializeField] private GameObject blackBoard;
+
     [SerializeField] private SpriteRenderer sprCharacterBack;
 
     [SerializeField] private GameObject panelWorkIsComplete;
@@ -94,6 +97,11 @@ public class GameManager : MonoBehaviour
     {
         get => _timeType;
         private set => _timeType = value;
+    }
+
+    private void Awake()
+    {
+        blackBoard.SetActive(true);
     }
 
     // Start is called before the first frame update
@@ -238,23 +246,16 @@ public class GameManager : MonoBehaviour
                 AdsManager.instance.IncreaseCycle();
                 break;
         }
-
-#if UNITY_ANDROID
-        if (!Application.isEditor)
-        {
-            if (timeType == TimeType.PM)
-            {
-                SetScore(_goldManager.TotalGold);
-            }
-        }
-#endif
     }
 
     public void OnBtnWorkIsCompleteClicked()
     {
-        
-        
-        _resultManager.OpenResult();
+        TipScreenManager.Show();
+        DOVirtual.DelayedCall(3f, () =>
+        {
+            TipScreenManager.Hide();
+            _resultManager.OpenResult();
+        });
     }
 
     public void ShowLeaderBoard()
@@ -313,7 +314,14 @@ public class GameManager : MonoBehaviour
         //게임체크
         if (_timeManager.Day != 0)
         {
-            StartMainGame(TimeType.AM);
+            TipScreenManager.Show();
+            DOVirtual.DelayedCall(1f, () => blackBoard.SetActive(false));
+            
+            DOVirtual.DelayedCall(3f, () =>
+            {
+                StartMainGame(TimeType.AM);
+                TipScreenManager.Hide();
+            });
         }
     }
 
@@ -378,7 +386,7 @@ public class GameManager : MonoBehaviour
         {
             yield return new WaitForSeconds(0.1f);
         }
-        
+
         EndMainGame(TimeType);
     }
 

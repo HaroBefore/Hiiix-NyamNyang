@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -85,12 +86,27 @@ public class OptionManager : MonoBehaviour
 
     public void ShowOption()
     {
-        AudioManager audioManager = AudioManager.Instance;
-        audioManager?.Play(audioManager.box_open, 1f);
-        
-        optionPanel.SetActive(true);
-        OptionReset();
-        EventShowOption();
+        float delay = 0f;
+        Scene scene = SceneManager.GetActiveScene();
+        if (scene.name == "Title")
+        {
+            TipScreenManager.Show();
+            delay = 3f;
+            DOVirtual.DelayedCall(3f, () =>
+            {
+                TipScreenManager.Hide();
+            });
+        }
+
+        DOVirtual.DelayedCall(delay, () =>
+        {
+            AudioManager audioManager = AudioManager.Instance;
+            audioManager?.Play(audioManager.box_open, 1f);
+
+            optionPanel.SetActive(true);
+            OptionReset();
+            EventShowOption();
+        });
     }
 
     public void HideOption()

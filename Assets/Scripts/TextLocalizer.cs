@@ -25,7 +25,7 @@ public class TextLocalizer : MonoBehaviour
     [HideLabel] [Multiline] [ReadOnly] [SerializeField]
     private string strText;
 #endif
-
+    
     private void Awake()
     {
         _text = GetComponent<Text>();
@@ -45,6 +45,11 @@ public class TextLocalizer : MonoBehaviour
         }
     }
 
+    public void SetStringIndex(int index)
+    {
+        stringIndex = index;
+    }
+    
 #if UNITY_EDITOR
     public void ReloadStrText()
     {

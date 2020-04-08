@@ -66,10 +66,6 @@ public class BackgroundManager : MonoBehaviour {
         }
     }
 
-    void Update() {
-
-    }
-
     public void SetAM() {
         mainCamera.backgroundColor = color_AM_background;
         seaImage.color = color_AM_Sea;
@@ -85,15 +81,15 @@ public class BackgroundManager : MonoBehaviour {
         SetSize_Default();
     }
     public void SetSize_Default() {
-        seaRT.sizeDelta = new Vector2(2048, 420);
-        seaRT.localPosition = new Vector2(0, 760);
+        //seaRT.sizeDelta = new Vector2(2048, 420);
+        //seaRT.localPosition = new Vector2(0, 760);
 
         parasol01.SetActive(true);
         parasol02.SetActive(true);
         sharks.SetActive(false);
 
-        parasol01RT.localPosition = new Vector2(-395.5f, 577.5f);
-        parasol02RT.localPosition = new Vector2(400, 535);
+        //parasol01RT.localPosition = new Vector2(-395.5f, 577.5f);
+        //parasol02RT.localPosition = new Vector2(400, 535);
         //parasol03RT.localPosition = new Vector2();
         //parasol04RT.localPosition = new Vector2();
     }
@@ -102,8 +98,8 @@ public class BackgroundManager : MonoBehaviour {
         seaImage.color = color_Boss_Sea;
         SetLetterBoss();
 
-        seaRT.sizeDelta = new Vector2(2048, 670);
-        seaRT.localPosition = new Vector2(0, 630);
+        //seaRT.sizeDelta = new Vector2(2048, 670);
+        //seaRT.localPosition = new Vector2(0, 630);
 
         parasol01.SetActive(false);
         parasol02.SetActive(false);
@@ -118,8 +114,8 @@ public class BackgroundManager : MonoBehaviour {
     public void SetDeco() {
         seaRT.sizeDelta = new Vector2(2048, 770);
         seaRT.localPosition = new Vector2(0, 580);
-        parasol01RT.localPosition = new Vector2(-395.5f, 245f);
-        parasol02RT.localPosition = new Vector2(400, 211);
+        //parasol01RT.localPosition = new Vector2(-395.5f, 245f);
+        //parasol02RT.localPosition = new Vector2(400, 211);
         //parasol03RT.localPosition = new Vector2(-395.5f, 245f);
         //parasol04RT.localPosition = new Vector2(400, 211);
         sharks.SetActive(false);

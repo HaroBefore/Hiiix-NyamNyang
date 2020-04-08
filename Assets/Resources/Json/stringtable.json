@@ -15,7 +15,7 @@
 		"Japanese" : "店長にゃん",
 		"ChineseBun" : "主人貓啊 ",
 		"ChineseGan" : "主人猫啊 ",
-		"French" : "le  chaton héros"
+		"French" : "le chaton héros"
 	},
 	{
 		"Index" : "3",
@@ -24,7 +24,7 @@
 		"Japanese" : "ヒントにゃん",
 		"ChineseBun" : "隊貓們 ",
 		"ChineseGan" : "队猫们 ",
-		"French" : "le  chat conseiller"
+		"French" : "le chaton conseiller"
 	},
 	{
 		"Index" : "4",
@@ -39,8 +39,8 @@
 		"ChineseGan" : "那只猫现在是连续几次全押（all-in)了？ 
 根本是天生的高手啊 
 该不会这次也是全押？ ",
-		"French" : "Il prend des risques  à miser comme  ça!
-Mais il joue bien! Attends... Il va  à nouveau parier tout ce qu'il a?"
+		"French" : "ça fait combien de fois qu'il parie tout?
+Puis il va à nouveau parier tout ce qu'il a?"
 	},
 	{
 		"Index" : "5",
@@ -54,8 +54,8 @@ Ten times or nothing!! ",
 一次來贏個十倍，衝啊！ ",
 		"ChineseGan" : "全押！ 一定要全押的喵！ 
 一次来赢个十倍，冲啊！",
-		"French" : "Un homme, un vrai, ça  mise tout.
-Je mise tout! À dix contre un!"
+		"French" : "Tout! un vrai homme mis tout!
+Allez mettre tout! À dix contre un!"
 	},
 	{
 		"Index" : "6",
@@ -69,7 +69,7 @@ Ten times or nothing !! We are gonna be rich!",
 我們現在是土豪了！！ ",
 		"ChineseGan" : "主人猫！一次赢十倍拜託也算我一份! 
 我们现在是土豪了！！ ",
-		"French" : "Chaton héros! Moi aussi, je remets tout ce que j'ai en jeu!
+		"French" : "Chat Héros! Je remets aussi tout en jeu!
 Remportons gros tous les deux!
 "
 	},
@@ -86,7 +86,7 @@ We blew it in the end..  ",
 		"ChineseGan" : "还以为今天出运了...我们完蛋了... 
  一次就彻底输惨...！",
 		"French" : "On était si bien partis!
-Et on a tout perdu d'un coup..."
+Mais on a tout perdu dans un coup..."
 	},
 	{
 		"Index" : "8",
@@ -100,8 +100,8 @@ what should we do now? we all ended up in debt !!  ",
 現在要怎麼辦啊！？ 欠了一屁股債！ ",
 		"ChineseGan" : "应该照我说的做，赢的差不多就要收手！ 
 现在要怎麽办啊！？ 欠了一屁股债！",
-		"French" : "Je t'avais dit qu'il fallait jouer raisonnablement et savoir s'arrêter.
-Qu'est-ce qu'on va faire maintenant?! On s'est endettés!"
+		"French" : "Je t'ai dit de ne pas trop jouer et t'arrêter!
+Qu'est-ce que tu veux?! Volià des dettes!"
 	},
 	{
 		"Index" : "9",
@@ -115,9 +115,8 @@ If you hadn't tempted me into it! ",
  要不是你搧風點火，我早就收手了! ",
 		"ChineseGan" : "这傢伙在说什麽鬼话？！是你叫我算你一份的 
  要不是你搧风点火，我早就收手了! ",
-		"French" : " C'est toi qui as voulu miser à dix contre un!
-Si tu ne m'avais pas influencé, j'aurais été raisonnable!
-"
+		"French" : " C'est toi qui as dit de miser à dix!
+Si tu m'avais pas incité, j'aurais bien fini!"
 	},
 	{
 		"Index" : "10",
@@ -131,8 +130,8 @@ All we got is this small food stall...",
 我們只剩下這一個小吃攤了... ",
 		"ChineseGan" : "话说回来现在该怎么办？ 
 我们只剩下这一个小吃摊了... ",
-		"French" : "Qu'est-ce qu'on va faire maintenant?
-Tout ce qui nous reste c'est ce petit stand...
+		"French" : "Alors, que va-t-on faire?
+Tout ce qui nous reste est ce petit stand...
 "
 	},
 	{
@@ -148,8 +147,8 @@ We could really use an investment tho..
 只要有人投資一點點給我們的話，馬上就能變土豪了 ",
 		"ChineseGan" : "还能怎麽办...只能重新开始了...！ 
 只要有人投资一点点给我们的话，马上就能变土豪了 ",
-		"French" : "On n'a pas d'autre choix... Il va falloir repartir de zéro  avec  ça.
-Si seulement on avait un investisseur pour nous aider  à démarrer..."
+		"French" : "On n'a pas le choix... Recommençons à zéro ici!
+Si seulement on trouve un investisseur..."
 	},
 	{
 		"Index" : "12",
@@ -163,8 +162,8 @@ I mean just a little investment will do..",
  真的只要投資一點點給我們... ",
 		"ChineseGan" : "就是说啊... 如果有谁投资一下的话该有多好？ 
  真的只要投资一点点给我们.. ",
-		"French" : " C'est vrai... un petit investissement nous aiderait tellement.
-"
+		"French" : " C'est vrai... un petit investissement nous aiderait.
+Vraiment tout petit.."
 	},
 	{
 		"Index" : "13",
@@ -178,9 +177,8 @@ Could you invest your money into our shop?",
 真的不願意投資給我們店嗎？ ",
 		"ChineseGan" : "我们是可怜的乞丐猫啊... 
 真的不愿意投资给我们店吗？ ",
-		"French" : " Nous ne sommes que de pauvres chats...
-Voudriez-vous venir en aide  à notre petit commerce?
-"
+		"French" : " Nous sommes pauvres chats...
+Veux-tu aider pour notre petit stand?"
 	},
 	{
 		"Index" : "14",
@@ -191,9 +189,8 @@ Voudriez-vous venir en aide  à notre petit commerce?
 これから出てくる広告を消してあげるにゃ！",
 		"ChineseBun" : "如果投資我們的小吃攤的話以後就可以不需要看很多廣告了喵！ ",
 		"ChineseGan" : "如果投资我们的小吃摊的话以后就可以不需要看很多广告了喵!",
-		"French" : "Si vous acceptez, nous ferons en sorte 
-que vous ne voyiez plus aucune publicité à l'avenir.
-"
+		"French" : "Si tu acceptes, nous pourrons effacer 
+toutes les publicités dès maintenant!."
 	},
 	{
 		"Index" : "15",
@@ -202,7 +199,7 @@ que vous ne voyiez plus aucune publicité à l'avenir.
 		"Japanese" : "にゃんこたちが経営する海の屋台に出資しますか",
 		"ChineseBun" : "想要投資小貓們的小吃攤嗎？ ",
 		"ChineseGan" : "想要投资小猫们的小吃摊吗",
-		"French" : "Voulez-vous contribuer au commerce des chatons?
+		"French" : "Voulez-vous investir au stand des chatons?
 "
 	},
 	{
@@ -212,7 +209,7 @@ que vous ne voyiez plus aucune publicité à l'avenir.
 		"Japanese" : "出資する！",
 		"ChineseBun" : "要投資！ ",
 		"ChineseGan" : "要投资！ ",
-		"French" : " Oui, je veux contribuer!
+		"French" : " Oui, je veux!
 "
 	},
 	{
@@ -222,7 +219,7 @@ que vous ne voyiez plus aucune publicité à l'avenir.
 		"Japanese" : "出資しない！",
 		"ChineseBun" : "不要投資～ ",
 		"ChineseGan" : "不要投资～ ",
-		"French" : " Non, je  ne  veux pas contribuer!
+		"French" : " Non, je ne veux pas!
 "
 	},
 	{
@@ -237,7 +234,7 @@ que vous ne voyiez plus aucune publicité à l'avenir.
 		"ChineseGan" : "谢谢啊！ 果然你是好人啊！ 是我们的朋友！ 
  这份恩惠不会忘的！ 祝你幸福！",
 		"French" : " Merci! Je savais que tu étais quelqu'un de bien!
-Je n'oublierai pas ta  générosité!
+Je n'oublierai pas ton aide!
 "
 	},
 	{
@@ -252,9 +249,8 @@ you are not not gonna see ads popping everyday!",
  為了報答你，以後再也不跳出廣告！",
 		"ChineseGan" : "多亏了你，店裡能更顺利的经营了。 
  为了报答你，以后再也不跳出广告！ ",
-		"French" : "Grâce à toi, on pourra travailler plus sereinement.
-Pour te remercier, tu ne verras plus aucune publicité.
-"
+		"French" : "Grâce à toi, ce sera plus facile à travailler!
+Pour te remercier, on va effacer les pubs!"
 	},
 	{
 		"Index" : "20",
@@ -284,9 +280,8 @@ But it's ok.. Let's start over again.",
 沒辦法囉，那就直接開始吧!",
 		"ChineseGan" : "好可惜，投资的话大家都会更幸福的
 没办法囉，那就直接开始吧!",
-		"French" : "Dommage. Une contribution nous aurait bien  aidés.
-Mais tant pis. Mettons-nous au travail.
-"
+		"French" : "Dommage. Ton aide nous rendrait heureux.
+Tant pis. Allons au boulot, alors!"
 	},
 	{
 		"Index" : "22",
@@ -331,7 +326,7 @@ Drag him to the food stall!",
 拉貓咪們到小吃攤看看吧 ",
 		"ChineseGan" : "在猫咪们耐心耗尽离开之前，
 拉猫咪们到小吃摊看看吧",
-		"French" : "Clique sur le chat et  fais-le  glisser, 
+		"French" : "Clique sur le chat et fais-le glisser, 
 avant qu'il ne perde patience.
 "
 	},
@@ -350,8 +345,8 @@ time to grill the ribs!",
 趕快來烤排骨吧！ ",
 		"ChineseGan" : "做得好! 趁客人喵们等待的时候，
 赶快来烤排骨吧！ ",
-		"French" : " Donne vite des  côtes  de boeuf aux chats, 
-avant qu'ils ne partent.
+		"French" : " Donne vite des côtes de boeuf au chat, 
+avant qu'il part.
 "
 	},
 	{
@@ -367,7 +362,7 @@ avant qu'ils ne partent.
 		"ChineseGan" : "看看天花板的食谱，
 跟着做做看吧！ ",
 		"French" : " La recette est indiquée au plafond.
-Tu n'as plus qu'à la suivre!
+Tu n'as qu'à la suivre!
 "
 	},
 	{
@@ -380,8 +375,8 @@ Tu n'as plus qu'à la suivre!
 ドラッグしてみようにゃ。",
 		"ChineseBun" : "先用手拉看看肉排吧",
 		"ChineseGan" : "先用手拉看看肉排吧 ",
-		"French" : " D'abord, clique sur les côtes  de boeuf 
-et  fais-les  glisser. 
+		"French" : " D'abord, clique sur les côtes de boeuf 
+et fais-les glisser. 
 "
 	},
 	{
@@ -415,7 +410,7 @@ it shows that the ribs are done! ",
 又有烟冒出来的话就是烤好了",
 		"French" : "Quand la couleur change 
 et que de la fumée monte, 
-la viande est  à  point."
+la viande est à point."
 	},
 	{
 		"Index" : "30",
@@ -457,8 +452,8 @@ now click on the ribs.",
 		"ChineseGan" : "粉末与酱汁熬出颜色的话，排骨肉就大功告成了 
  点击完成的排骨肉",
 		"French" : "Quand tout est mélangé, 
-les  côtes de boeufs sont prêtes!
-Tu n'as plus qu'à cliquer dessus."
+les plats sont prêts!
+Tu n'as qu'à cliquer dessus."
 	},
 	{
 		"Index" : "33",
@@ -490,8 +485,8 @@ grill too long!",
 焦げるから気を付けてにゃ！",
 		"ChineseBun" : "對了，排骨烤太久的話會烤焦，要小心啊!",
 		"ChineseGan" : "对了，排骨烤太久的话会烤焦，要小心啊!",
-		"French" : "Sers vite les côtes  de boeuf 
-avant qu'elles ne soient trop cuites.
+		"French" : "Sers vite les côtes de boeuf 
+avant qu'elles soient trop cuites.
 "
 	},
 	{
@@ -509,8 +504,8 @@ they would really get angry.",
 貓咪們可是會生氣的",
 		"ChineseGan" : "给猫咪们吃烤焦的排骨或是跟食谱不一样的话
 猫咪们可是会生气的",
-		"French" : "Si tu leur donnes de la viande trop cuite, 
-ou que tu ne suis pas la recette, 
+		"French" : "Si la viande est trop cuite, 
+ou mal suivie de la recette, 
 les chatons seront fâchés.
 "
 	},
@@ -538,7 +533,7 @@ you can throw the ribs to it. ",
 		"ChineseBun" : "點擊垃圾桶就可以丟棄排骨肉了喵 ",
 		"ChineseGan" : "点击垃圾桶就可以丢弃排骨肉了喵",
 		"French" : " Clique sur la poubelle 
-pour y jeter la viande."
+pour jeter la viande."
 	},
 	{
 		"Index" : "38",
@@ -549,9 +544,7 @@ pour y jeter la viande."
 お金持ちになってみようにゃ！",
 		"ChineseBun" : "那麼讓我們一起變成土豪吧！ ",
 		"ChineseGan" : "那么让我们一起变成土豪吧！ ",
-		"French" : " Tu es prêt!
-Maintenant, il est temps de se mettre au travail.
-"
+		"French" : " Maintenant, il est temps de devenir rich!"
 	},
 	{
 		"Index" : "39",
@@ -565,8 +558,9 @@ I'm gonna help you bask in the break time! ",
  讓你享受助曬來放鬆一下！ ",
 		"ChineseGan" : "忙着烤肉辛苦了！ 
  让你享受助晒来放鬆一下！ ",
-		"French" : "Tu as bien travaillé! 
-Allons nous dorer au soleil pour nous détendre."
+		"French" : "Bon travail! 
+Allons nous dorer au soleil
+pour nous détendre."
 	},
 	{
 		"Index" : "40",
@@ -580,7 +574,7 @@ The point is everything in moderation!  ",
  關鍵是要適當地烤！ ",
 		"ChineseGan" : "晒黑也与烤排骨肉差不多 
  关键是要适当地烤！ ",
-		"French" : "C'est un peu comme cuire des côtes  de boeuf.
+		"French" : "C'est un peu comme cuire le plat.
 Ce qui compte c'est la mesure!"
 	},
 	{
@@ -594,7 +588,7 @@ when it goes up to the point",
 		"ChineseBun" : "注意溫度計，溫度上升到箭頭符號的話 ",
 		"ChineseGan" : "注意温度计，温度上升到箭头符号的话 ",
 		"French" : "Surveille le thermomètre.
-Il ne doit pas dépasser la limite."
+Une fois augmentée juqu'à la flèche,"
 	},
 	{
 		"Index" : "42",
@@ -606,8 +600,8 @@ on the right quickly!!",
 素早く押してにゃ！",
 		"ChineseBun" : "要趕快按下右下角的按鈕啊喵 ",
 		"ChineseGan" : "要赶快按下右下角的按钮啊喵 ",
-		"French" : " Clique vite  sur le bouton 
-en bas à  droite!
+		"French" : " Clique vite sur le bouton 
+en bas à droite!
 "
 	},
 	{
@@ -622,9 +616,8 @@ It looks so good!",
  烤得剛剛好，看起來很好吃",
 		"ChineseGan" : "做得很好！ 
  烤得刚刚好，看起来很好吃",
-		"French" : " C'est parfait! 
-Je te félicite!
-"
+		"French" : " C'est parfait, 
+ça a l'air très bon!"
 	},
 	{
 		"Index" : "44",
@@ -638,9 +631,8 @@ bring us more money in the evening!",
 下午的生意一定會更好的喵 ",
 		"ChineseGan" : "既然成功晒黑了， 
 下午的生意一定会更好的喵 ",
-		"French" : "Ta maîtrise du bronzage nous aidera  
-à travailler encore plus efficacement.
-"
+		"French" : "Grâce au bronzage, ce sera mieux
+de travailler cet aprèm !  "
 	},
 	{
 		"Index" : "45",
@@ -654,9 +646,8 @@ either bask too much or too less.",
 再烤下去或是烤過頭不行的 ",
 		"ChineseGan" : "晒黑也像烤肉一样，
 再烤下去或是烤过头不行的 ",
-		"French" : " Comme pour les  côtes  de boeuf, 
-c'est une question de dosage.
-"
+		"French" : " Comme pour les côtes de boeuf, 
+c'est une question de dosage."
 	},
 	{
 		"Index" : "46",
@@ -671,8 +662,7 @@ would be angry all day.. ",
 		"ChineseGan" : "晒黑失败的主人猫 
 一整天都会生气的喵",
 		"French" : " Un chat qui raterait son bronzage, 
-serait de mauvaise humeur toute la journée...
-"
+serait fâché toute la journée..."
 	},
 	{
 		"Index" : "47",
@@ -686,9 +676,8 @@ so, let's head to the food stall!",
 那麼，現在讓我們出發去店裡吧! ",
 		"ChineseGan" : "只要按照今天的做就可以了喵
 那麽，现在让我们出发去店裡吧!",
-		"French" : " Mais tout ira bien, si tu continues comme  ça.
-Allez, retournons  à notre stand.
-"
+		"French" : " Mais ça va, fais comme aujourd'hui.
+Allez, retournons à notre stand."
 	},
 	{
 		"Index" : "48",
@@ -697,7 +686,7 @@ Allez, retournons  à notre stand.
 		"Japanese" : "ボーにゃん",
 		"ChineseBun" : "懵貓",
 		"ChineseGan" : "懵猫",
-		"French" : "le chat dans la Lune "
+		"French" : "Chat rêveur"
 	},
 	{
 		"Index" : "49",
@@ -712,7 +701,7 @@ as always",
 		"ChineseGan" : "懵
 就是懵",
 		"French" : "Il est dans la lune, 
-la tête dans les  étoiles."
+la tête ailleurs."
 	},
 	{
 		"Index" : "50",
@@ -744,8 +733,7 @@ thinking?",
 		"ChineseGan" : "啊！ 
 懵猫正在想什么呢？",
 		"French" : "On se demande...
-À quoi il peut bien penser...
-"
+À quoi il peut bien penser..."
 	},
 	{
 		"Index" : "52",
@@ -754,7 +742,7 @@ thinking?",
 		"Japanese" : "パリピにゃん",
 		"ChineseBun" : "嗨貓 ",
 		"ChineseGan" : "嗨猫 ",
-		"French" : "le chat enjoué"
+		"French" : "Chat enjoué"
 	},
 	{
 		"Index" : "53",
@@ -769,7 +757,8 @@ and singing
 音樂和舞蹈",
 		"ChineseGan" : "非常喜欢
 音乐和舞蹈",
-		"French" : "Il adore la musique et la danse."
+		"French" : "Il adore la musique et la danse.
+Il en est fou"
 	},
 	{
 		"Index" : "54",
@@ -783,7 +772,7 @@ singing and dancing",
 音樂和舞蹈",
 		"ChineseGan" : "因为嗨猫太喜欢
 音乐和舞蹈",
-		"French" : "Le chat enjoué 
+		"French" : "Chat enjoué 
 aime tant la musique et la danse 
 "
 	},
@@ -802,10 +791,9 @@ partying overnight
 到現在還在玩 ",
 		"ChineseGan" : "出门通宵玩乐 
 到现在还在玩",
-		"French" : "qu'il est sorti s'amuser.
-Il s'est amusé toute la nuit.
-Il  paraît  même  qu'il s'amuse encore.
-"
+		"French" : "Etant sorti de chez lui,
+Il s'est amusé la nuit blanche.
+Mais encore"
 	},
 	{
 		"Index" : "56",
@@ -814,8 +802,7 @@ Il  paraît  même  qu'il s'amuse encore.
 		"Japanese" : "ブッにゃん",
 		"ChineseBun" : "噗貓",
 		"ChineseGan" : "噗猫",
-		"French" : " le chat qui pète
-"
+		"French" : "Chat péteur"
 	},
 	{
 		"Index" : "57",
@@ -827,8 +814,7 @@ farting ",
 好き",
 		"ChineseBun" : "喜歡放屁",
 		"ChineseGan" : "喜欢放屁",
-		"French" : "Il a une prédisposition pour les pets
-"
+		"French" : "Il s'amuse à péter"
 	},
 	{
 		"Index" : "58",
@@ -842,8 +828,8 @@ and explore the universe ",
 穿梭往返於宇宙之間 ",
 		"ChineseGan" : "噗猫利用放屁飞天 
 穿梭往返于宇宙之间 ",
-		"French" : "Ce chat pète tellement bien 
-qu'il peut s'envoler et explorer l'espace."
+		"French" : "Chat pète si bien 
+qu'il s'envolait et explorait l'espace."
 	},
 	{
 		"Index" : "59",
@@ -860,10 +846,9 @@ to Busan city on earth",
 迫降到了地球的釜山 ",
 		"ChineseGan" : "某天因为撞到流星，
 迫降到了地球的釜山 ",
-		"French" : "Un jour, une étoile  filante le percuta 
-et le fit  atterrir  sur Terre, 
-dans la ville de Busan.
-"
+		"French" : "Un jour, il s'est heurté à
+une étoile filante, est tombé
+dans la ville de Busan."
 	},
 	{
 		"Index" : "60",
@@ -872,7 +857,7 @@ dans la ville de Busan.
 		"Japanese" : "ネムにゃん",
 		"ChineseBun" : "發睏貓 ",
 		"ChineseGan" : "发睏猫",
-		"French" : " le chat dormeur 
+		"French" : "Chat dormeur 
 "
 	},
 	{
@@ -888,7 +873,7 @@ and eats before bed",
 		"ChineseGan" : "喜欢睡觉 
 睡觉前吃东西 ",
 		"French" : "Il aime dormir 
-et mange toujours avant de dormir."
+et mange toujours avant de se coucher."
 	},
 	{
 		"Index" : "62",
@@ -903,7 +888,7 @@ except when he eats.",
 		"ChineseGan" : "发睏猫除了吃东西之外
 的时间都在睡觉",
 		"French" : " Il dort tout le temps 
-et ne se réveille que pour manger.
+sauf pour manger.
 "
 	},
 	{
@@ -924,10 +909,9 @@ all day is the best
 		"ChineseGan" : "吃饱后马上睡觉 
 吃饱睡，睡饱吃 
 吃跟睡最棒了 ",
-		"French" : " Après avoir mangé, il s'endort.
+		"French" : "Après avoir mangé, il s'endort.
 Manger, dormir, manger, dormir.
-Rien de mieux que manger et dormir.
-"
+Rien de mieux que ça."
 	},
 	{
 		"Index" : "64",
@@ -936,7 +920,7 @@ Rien de mieux que manger et dormir.
 		"Japanese" : "白にゃん",
 		"ChineseBun" : "白貓 ",
 		"ChineseGan" : "白猫 ",
-		"French" : " le chat blanc "
+		"French" : "Chat blanc "
 	},
 	{
 		"Index" : "65",
@@ -950,9 +934,8 @@ What's good is good",
 喜歡的就喜歡 ",
 		"ChineseGan" : "白痴美 
 喜欢的就喜欢 ",
-		"French" : " C'est un chat un peu simplet.
-Il ne se pose pas beaucoup de questions.
-"
+		"French" : " Chat un peu simplet.
+Il n'est rien contre."
 	},
 	{
 		"Index" : "66",
@@ -976,8 +959,8 @@ blanc comme la neige.
 새하얀 머릿속을 가졌다.
 아무것도 모른다.",
 		"English" : "Much like her white fur
-there's a white empty room 
-in her head ",
+There's an white empty room
+in her head.",
 		"Japanese" : "真っ白い毛のように
 頭の中も真っ白のようだ。
 何も知らない。",
@@ -987,8 +970,8 @@ in her head ",
 		"ChineseGan" : "像是雪白的毛 
 拥有空白的脑袋 
 什麽都不懂",
-		"French" : "À l'image de  son poil, 
-sa tête est  immaculée, 
+		"French" : "Comme son poil tout blanc, 
+sa tête est immaculée, 
 vide de toute pensée."
 	},
 	{
@@ -998,7 +981,7 @@ vide de toute pensée."
 		"Japanese" : "ヒントにゃん",
 		"ChineseBun" : "秘訣貓 ",
 		"ChineseGan" : "秘诀猫",
-		"French" : "le chat conseiller "
+		"French" : "Chat conseiller "
 	},
 	{
 		"Index" : "69",
@@ -1013,9 +996,7 @@ hanging on a bar",
 		"ChineseGan" : "告诉你诀窍 
 喜欢抱在栏杆上",
 		"French" : "Il donne des conseils 
-et se balance du haut d'une barre.
-
-"
+et se balance du haut d'une barre."
 	},
 	{
 		"Index" : "70",
@@ -1030,7 +1011,7 @@ he hangs on a bar though",
 		"ChineseGan" : "没有人知道
 秘诀猫是如何挂在竿子上的",
 		"French" : "Pourquoi se balance-t-il ainsi?
-Personne ne saurait l'expliquer."
+Personne ne sait pourqoui."
 	},
 	{
 		"Index" : "71",
@@ -1050,7 +1031,7 @@ makes him happy",
 挂在竿子上的
 话心情就好 ",
 		"French" : "Il dit que quand il se balance, 
-ça  le rend heureux.
+ça le rend heureux.
 "
 	},
 	{
@@ -1060,7 +1041,7 @@ makes him happy",
 		"Japanese" : "蜜にゃん",
 		"ChineseBun" : "蜜貓 ",
 		"ChineseGan" : "蜜猫",
-		"French" : " le chat au miel
+		"French" : " Chat au miel
 "
 	},
 	{
@@ -1076,9 +1057,8 @@ is sweet ",
 蜂蜜味的貓 ",
 		"ChineseGan" : "甜甜的
 蜂蜜味的猫 ",
-		"French" : "Un chat tout doux, 
-comme du miel.
-"
+		"French" : "Chat tout doux, 
+comme du miel."
 	},
 	{
 		"Index" : "74",
@@ -1092,7 +1072,7 @@ in search of the delicious ribs",
 跌進了蜂蜜罐裡 ",
 		"ChineseGan" : "蜜猫在找排骨肉的时候
 跌进了蜂蜜罐里",
-		"French" : "Un jour, en cherchant des côtes  de boeuf, 
+		"French" : "Un jour, en cherchant des côtes de boeuf, 
 il est tombé dans un pot de miel.
 "
 	},
@@ -1114,7 +1094,7 @@ My fur tastes so good!",
 变成蜂蜜味的猫  
 '我的毛是蜂蜜味的'",
 		"French" : "Plouf!
-Et c'est devenu un chat au miel.
+Et devenu un chat au miel.
 Au pelage sucré!
 "
 	},
@@ -1125,7 +1105,7 @@ Au pelage sucré!
 		"Japanese" : "なんとなくにゃん",
 		"ChineseBun" : "就那隻貓",
 		"ChineseGan" : "就那隻猫",
-		"French" : "le chat comme ci, comme ça 
+		"French" : "Comme ci, comme chat
 "
 	},
 	{
@@ -1140,8 +1120,8 @@ He just came here",
 就這樣找上門 ",
 		"ChineseGan" : "营业第七天 
 就这样找上门",
-		"French" : "Le  7ème  jour, 
-il est arrivé sans raison précise.
+		"French" : "Le 7ème jour, 
+il est arrivé sans raison comme ça.
 "
 	},
 	{
@@ -1156,9 +1136,8 @@ Looking so common  ",
 這種感覺 ",
 		"ChineseGan" : "就是...嗯
 这种感觉",
-		"French" : "Juste... comme  ça.
-Comme ci, comme  ça.
-"
+		"French" : "Juste... comme ça.
+Comme ci, comme ça."
 	},
 	{
 		"Index" : "79",
@@ -1173,8 +1152,7 @@ wool scarf like this ",
 		"ChineseGan" : "以只是这样随性的感觉 
 披上身的围巾和",
 		"French" : " Comme une certaine écharpe qui, 
-sans qu'on sache pourquoi, 
-"
+sans qu'on sache pourquoi, "
 	},
 	{
 		"Index" : "80",
@@ -1193,8 +1171,7 @@ Can I make it anymore obvious?",
 戴上的的帽子为何感觉
 不是那麽讨厌呢？",
 		"French" : " va bien avec un certain chapeau.
-Juste comme  ça.
-"
+Juste comme ça."
 	},
 	{
 		"Index" : "81",
@@ -1203,8 +1180,7 @@ Juste comme  ça.
 		"Japanese" : "ウキにゃん",
 		"ChineseBun" : " 爽貓 ",
 		"ChineseGan" : "爽猫 ",
-		"French" : "le chat curieux 
-"
+		"French" : "Chat curieux "
 	},
 	{
 		"Index" : "82",
@@ -1235,8 +1211,7 @@ piercing ",
 		"ChineseGan" : "穿耳洞 
 穿洞的家伙 ",
 		"French" : " Il a des piercings, 
-faits pour la  même  raison.
-"
+faits pour la même raison."
 	},
 	{
 		"Index" : "84",
@@ -1271,10 +1246,9 @@ the real Busan gangster!!",
 		"ChineseGan" : "是戴着夸张金项鍊和 
 穿耳洞的
 釜山当地地痞",
-		"French" : "ce minou arbore fièrement 
-chaine en or et piercings divers, 
-comme un vrai chat gangster.
-"
+		"French" : "un vrai gangster, qui
+arbore chaine en or
+et piercings affrayants."
 	},
 	{
 		"Index" : "86",
@@ -1283,7 +1257,7 @@ comme un vrai chat gangster.
 		"Japanese" : "痛いにゃん",
 		"ChineseBun" : "死貓 ",
 		"ChineseGan" : "死猫 ",
-		"French" : "le chat  mourant"
+		"French" : "Chat mourant"
 	},
 	{
 		"Index" : "87",
@@ -1297,8 +1271,8 @@ He came to survive",
 面如死灰的出現 ",
 		"ChineseGan" : "营业第十天 
 面如死灰的出现",
-		"French" : "Le  10ème  jour, 
-il est  arrivé, à moitié mort.
+		"French" : "Le 10ème jour, 
+il est arrivé, à moitié mort.
 "
 	},
 	{
@@ -1348,9 +1322,8 @@ I could really use ribs to survive!",
 吃了排骨肉之后
 好像可以继续活下去了",
 		"French" : " Mais qui sait?
-S'il mange des côtes de boeuf;
-Peut-être  se  rétablira-t-il?
-"
+Des côtes de boeuf,
+Pourraient-elles le sauve?"
 	},
 	{
 		"Index" : "91",
@@ -1359,7 +1332,7 @@ Peut-être  se  rétablira-t-il?
 		"Japanese" : "酒にゃん",
 		"ChineseBun" : "醉貓 ",
 		"ChineseGan" : "醉猫",
-		"French" : " le chat saoul"
+		"French" : "Chat saoul"
 	},
 	{
 		"Index" : "92",
@@ -1373,7 +1346,7 @@ Peut-être  se  rétablira-t-il?
 為了喝一杯而上門",
 		"ChineseGan" : "营业第14天
 为了喝一杯而上门",
-		"French" : "Le  14ème  jour,
+		"French" : "Le 14ème jour,
 Il est venu prendre un verre.
 "
 	},
@@ -1389,8 +1362,8 @@ He loves to drink",
 喜歡喝酒 ",
 		"ChineseGan" : "每天每天
 喜欢喝酒 ",
-		"French" : "Jour  après  jour,
-Il prend verre  après  verre.
+		"French" : "Jour après jour,
+Il prend verre après verre.
 "
 	},
 	{
@@ -1405,9 +1378,8 @@ and the other way when he's not",
 酒醉了才正常的醉貓",
 		"ChineseGan" : "酒醒后不正常 
 酒醉了才正常的醉猫",
-		"French" : "Etrange dans ses moments de sobriété,
-Il n'est lui-même que lorsqu'il boit.
-"
+		"French" : "C'est anormal s'il n'est pas bourré,
+Il est normal d'être saoul"
 	},
 	{
 		"Index" : "95",
@@ -1428,8 +1400,7 @@ and the police officers suffer ",
 还出动了警察",
 		"French" : "Chaque fois qu'il a bu,
 il se jette dans la mer,
-et l'on a bien du mal  à l'en ressortir.
-"
+les polices doivent arriver"
 	},
 	{
 		"Index" : "96",
@@ -1438,7 +1409,7 @@ et l'on a bien du mal  à l'en ressortir.
 		"Japanese" : "青にゃん",
 		"ChineseBun" : "藍貓 ",
 		"ChineseGan" : "藍猫 ",
-		"French" : " le chat bleu"
+		"French" : "Chat bleu"
 	},
 	{
 		"Index" : "97",
@@ -1452,7 +1423,8 @@ Across the sea",
 跨海而來的 ",
 		"ChineseGan" : "营业第4天 
 跨海而来的",
-		"French" : " Le  4ème  jour,"
+		"French" : " Le 4ème jour,
+Il est arrivé, traversant la mer"
 	},
 	{
 		"Index" : "98",
@@ -1466,10 +1438,8 @@ he paints everything blue ",
 漆上深藍色 ",
 		"ChineseGan" : "喜欢大海 
 漆上深蓝色 ",
-		"French" : "est  venu, traversant la mer.
-98. Il a une fascination pour l'océan  
-et peint tout en bleu.
-"
+		"French" : "Il a une fascination pour l'océan  
+et peint tout en bleu."
 	},
 	{
 		"Index" : "99",
@@ -1483,7 +1453,7 @@ Looking at the blue eyed mermaid kitty",
 有著藍眼睛的人魚貓 ",
 		"ChineseGan" : "某天海猫在大海对
 有着蓝眼睛的人鱼猫 ",
-		"French" : "Un jour qu'il  était  en mer, 
+		"French" : "Un jour qu'il était en mer, 
 le chat bleu croisa le chat sirène .
 "
 	},
@@ -1504,9 +1474,9 @@ become the sea",
 		"ChineseGan" : "一见钟情了  
 为了寻找人鱼猫
 决定成为一片海 ",
-		"French" : "Il tomba amoureux de son regard
-Et, dans l'espoir de le revoir, 
-décida  de devenir la mer.
+		"French" : "Il tomba amoureux,
+dans l'espoir de le revoir, 
+décida de devenir la mer.
 "
 	},
 	{
@@ -1516,7 +1486,7 @@ décida  de devenir la mer.
 		"Japanese" : "ウンチにゃん",
 		"ChineseBun" : "屎貓 ",
 		"ChineseGan" : "屎猫 ",
-		"French" : "le chat constipé "
+		"French" : "Chat chieur"
 	},
 	{
 		"Index" : "102",
@@ -1530,7 +1500,7 @@ décida  de devenir la mer.
 急著想拉屎而找上門",
 		"ChineseGan" : "营业第21天 
 急着想拉屎而找上门",
-		"French" : "Le  21ème  jour,
+		"French" : "Le 21ème jour,
 une envie pressante le mena jusqu'ici."
 	},
 	{
@@ -1545,9 +1515,8 @@ to take a dump",
 喜歡拉屎 ",
 		"ChineseGan" : "非常非常
 喜欢拉屎 ",
-		"French" : "Toujours incommodé, 
-Toujours ennuyé.
-"
+		"French" : "C'est trop trop bien
+de faire le caca!"
 	},
 	{
 		"Index" : "104",
@@ -1561,9 +1530,8 @@ from the constipation",
 告訴噗貓",
 		"ChineseGan" : "常常便秘的屎猫
 告诉噗猫",
-		"French" : "Souffrant de constipation  régulière,
-Il est venu jusqu'à Busan
-"
+		"French" : "Souffrant de constipation régulière,
+Il est venu jusqu'à Busan"
 	},
 	{
 		"Index" : "105",
@@ -1582,10 +1550,8 @@ of Fart kitty",
 		"ChineseGan" : "是为了讨教
 顺利排便的秘方
 而到釜山来",
-		"French" : "pour que le chat qui  pète  
-lui enseigne une technique 
-qui le soulagerait de son mal.
-"
+		"French" : "pour apprendre la manière
+de péter du chat péteur"
 	},
 	{
 		"Index" : "106",
@@ -1594,7 +1560,7 @@ qui le soulagerait de son mal.
 		"Japanese" : "月にゃん",
 		"ChineseBun" : "月貓 ",
 		"ChineseGan" : "月猫 ",
-		"French" : "le chat lunaire 
+		"French" : "Chat lunaire 
 "
 	},
 	{
@@ -1609,7 +1575,7 @@ qui le soulagerait de son mal.
 為了賞月而出現 ",
 		"ChineseGan" : "营业第15日 
 为了赏月而出现 ",
-		"French" : " Le  15ème  jour, 
+		"French" : " Le 15ème  jour, 
 il est venu voir la lune.
 "
 	},
@@ -1626,8 +1592,7 @@ make my wish come true",
 		"ChineseGan" : "月娘请聆听
 我的愿望 ",
 		"French" : "Pourvu que la lune veuille bien 
-exaucer mon voeu.
-"
+exaucer mon voeu."
 	},
 	{
 		"Index" : "109",
@@ -1641,8 +1606,8 @@ the moon kitty has come to make a wish",
 在滿月高掛的夜晚出現",
 		"ChineseGan" : "为了许愿
 在满月高挂的夜晚出现",
-		"French" : " Un jour où la pleine lune veillait sur nous tous,
-Il est venu pour faire  un voeu.
+		"French" : " La nuit où la pleine lune veillait sur nous tous,
+Il est venu pour faire un voeu.
 "
 	},
 	{
@@ -1662,9 +1627,8 @@ Amen~ ",
 		"ChineseGan" : "请让我今年也能吃到很多
 好吃的排骨肉。'
 喵～",
-		"French" : "Permettez-moi cette  année  
-de manger jusqu'à satiété  
-de succulentes côtes de boeuf."
+		"French" : "Permettez-moi cette année  
+de manger plein de côtes de boeuf."
 	},
 	{
 		"Index" : "111",
@@ -1673,7 +1637,7 @@ de succulentes côtes de boeuf."
 		"Japanese" : "海賊にゃん",
 		"ChineseBun" : "海貓 ",
 		"ChineseGan" : "海猫 ",
-		"French" : "le chat pirate "
+		"French" : "Chat pirate "
 	},
 	{
 		"Index" : "112",
@@ -1687,8 +1651,8 @@ He came with One-piece",
 為了尋找寶藏而來",
 		"ChineseGan" : "营业第50日 
 为了寻找宝藏而来",
-		"French" : "Le  50ème  jour,
-Il est arrivé avec un  trésor inestimable."
+		"French" : "Le 50ème jour,
+Il est arrivé avec un trésor inestimable."
 	},
 	{
 		"Index" : "113",
@@ -1717,9 +1681,8 @@ You can have it if you want",
 你想要的話當然可以給你",
 		"ChineseGan" : "我的宝物？ 
 你想要的话当然可以给你",
-		"French" : " Mon  trésor?
-Si tu le veux, il est  à  toi.
-"
+		"French" : " Mon trésor?
+Je vous le laisse si vous le voulez"
 	},
 	{
 		"Index" : "115",
@@ -1737,10 +1700,9 @@ in one place!!",
 		"ChineseGan" : "好好找找吧 
 这世界的全部
 都放在那了！ ",
-		"French" : " À condition que tu saches le trouver.
-J'ai  enterré toutes les richesses du monde,
-dans un lieu secret.
-"
+		"French" : "Trouvez-le
+J'ai laissé quelque part
+tout de ce monde!"
 	},
 	{
 		"Index" : "116",
@@ -1749,8 +1711,7 @@ dans un lieu secret.
 		"Japanese" : "諭吉にゃん",
 		"ChineseBun" : "萬貓 ",
 		"ChineseGan" : "万猫 ",
-		"French" : "le chat millionnaire 
-"
+		"French" : "Chat millionnaire "
 	},
 	{
 		"Index" : "117",
@@ -1764,9 +1725,8 @@ moneymaking business",
 找了過來 ",
 		"ChineseGan" : "一万猫 闻到钱味 
 找了过来 ",
-		"French" : "Il est  venu, 
-reniflant de l'argent.
-"
+		"French" : "Il est venu, 
+reniflant de l'argent."
 	},
 	{
 		"Index" : "118",
@@ -1781,8 +1741,7 @@ just like preppies",
 		"ChineseGan" : "出生時
 富貴貓 ",
 		"French" : "Ce chat riche depuis toujours,
-depuis sa plus tendre enfance, 
-"
+depuis sa naissance."
 	},
 	{
 		"Index" : "119",
@@ -1796,8 +1755,9 @@ he's gone from rags to riches!",
 是假裝是白手起家 ",
 		"ChineseGan" : "含着金汤匙出生但
 是假装是白手起家 ",
-		"French" : " né avec une  cuillère  d'argent dans la bouche 
-mais qui  prétend  être parti de rien.
+		"French" : " né avec une cuillère d'argent
+dans la bouche mais qui prétend 
+être parti de rien.
 "
 	},
 	{
@@ -1817,10 +1777,9 @@ work hard, just like me! ",
 		"ChineseGan" : "是比我更成功还是比我家更有钱 
 像变成我这样？
 去赚钱吧",
-		"French" : " Tu crois pouvoir faire mieux que moi?
-Tu penses avoir ce qu'il faut pour devenir riche?
-Tu veux  être  comme moi? Alors travaille dur comme moi!
-"
+		"French" : "Soit mieux que moi,
+soit plus riche que ma famille.
+Tu es jaloux? Travaille dur alors!"
 	},
 	{
 		"Index" : "121",
@@ -1843,8 +1802,8 @@ play more than half an hour ",
 嚇到後找上門 ",
 		"ChineseGan" : "这个竟然连续做了30分 
 吓到后找上门",
-		"French" : "Il est  agréablement  surpris de voir 
-que tu joues depuis plus d'une  demi-heure."
+		"French" : "Il est surpris de voir que 
+tu joues depuis une demi-heure."
 	},
 	{
 		"Index" : "123",
@@ -1897,7 +1856,7 @@ Maybe he's not even a kitty",
 搞不好其实不是连猫都不是",
 		"French" : "Les avis divergent...
 Est-il vraiment fou ou non?
-Est-il  même  vraiment un chat?"
+Est-il même vraiment un chat?"
 	},
 	{
 		"Index" : "126",
@@ -1906,7 +1865,7 @@ Est-il  même  vraiment un chat?"
 		"Japanese" : "占いにゃん",
 		"ChineseBun" : "占卜貓 ",
 		"ChineseGan" : "占卜猫 ",
-		"French" : "le chat shaman "
+		"French" : "Chat shaman "
 	},
 	{
 		"Index" : "127",
@@ -1951,7 +1910,7 @@ the god walked into him",
 訪れたニャン神(?)は",
 		"ChineseBun" : "某天突然 貓神（？）降臨 ",
 		"ChineseGan" : "某天突然 猫神（？ ）降临",
-		"French" : " Et sans  prévenir, le Dieu Chat 
+		"French" : " Et sans prévenir, le Dieu Chat 
 rendit visite au chat shaman.
 "
 	},
@@ -1972,19 +1931,17 @@ a shaman of the sea",
 		"ChineseGan" : "给了占卜猫水晶球 
 从此以后变成了替人算命，
 成为海神的灵媒",
-		"French" : " Il lui donna une boule de  cristal 
-et fit d'un chat jusqu'alors ordinaire 
-un chat shaman de la mer.
-"
+		"French" : " Il lui donna une boule de cristal 
+et fit un chat shaman de la mer."
 	},
 	{
-		"Index" : "131",
+		"Index" : " ",
 		"Korean" : "힙냥이",
 		"English" : "Swaggy Kitty ",
 		"Japanese" : "ラッパーにゃん",
 		"ChineseBun" : "搖滾貓 ",
 		"ChineseGan" : "摇滚猫 ",
-		"French" : "le  chat swag "
+		"French" : "Chat swag "
 	},
 	{
 		"Index" : "132",
@@ -1998,9 +1955,8 @@ he came to perform",
 為了公演而光臨",
 		"ChineseGan" : "营业第30天 
 为了公演而光临",
-		"French" : "Le  30ème  jour, 
-il est venu donner un concert.
-"
+		"French" : "Le 30ème jour, 
+il est venu donner un concert."
 	},
 	{
 		"Index" : "133",
@@ -2051,10 +2007,9 @@ becoming a terrible rapper from Busan! ",
 		"ChineseGan" : "用麦克笔涂眼镜，在下巴贴海苔 
 在头上黏棉花糖
 釜山海边的rap音痴!",
-		"French" : "lui fit du jour au lendemain 
-revêtir une panoplie qu'il pense digne d'une vedette 
-et il devint ainsi un mauvais rappeur made in  Busan.
-"
+		"French" : "Le marqueur sur lunettes, l'algue sur le menton 
+et le marshmallow sur la tête.
+un mauvais rappeur made in Busan!"
 	},
 	{
 		"Index" : "136",
@@ -2063,7 +2018,7 @@ et il devint ainsi un mauvais rappeur made in  Busan.
 		"Japanese" : "ワンにゃん",
 		"ChineseBun" : "狗貓",
 		"ChineseGan" : "狗猫 ",
-		"French" : "le chat chien"
+		"French" : "Chat chien"
 	},
 	{
 		"Index" : "137",
@@ -2077,7 +2032,7 @@ He wants to be a puppy ",
 變成狗之後光臨",
 		"ChineseGan" : "营业第40天 
 变成狗之后光临",
-		"French" : "le 30ème  jour, 
+		"French" : "le 30ème jour, 
 il est venu souhaitant devenir chien."
 	},
 	{
@@ -2092,8 +2047,8 @@ puppy",
 狗的貓 ",
 		"ChineseGan" : "想变成
 狗的猫",
-		"French" : "Le chat qui voudrait plus que tout 
-simplement être  un chien.
+		"French" : "Le chat 
+qui veux devenir un chien
 "
 	},
 	{
@@ -2108,8 +2063,8 @@ is now curious about his identity",
 狗貓對自我有身份認同問題",
 		"ChineseGan" : "年幼时和狗一起长大 
 狗猫对自我有身份认同问题",
-		"French" : "Ayant grandi entouré de canins,
-il questionne chaque jour son destin.
+		"French" : "Ayant grandi avec les chiens,
+il se demande son identité.
 "
 	},
 	{
@@ -2141,8 +2096,7 @@ entend-on 'miaou' quand j'aboie?
 		"Japanese" : "天使にゃん",
 		"ChineseBun" : "天使貓 ",
 		"ChineseGan" : "天使猫 ",
-		"French" : " le chat ange 
-"
+		"French" : "Chat ange "
 	},
 	{
 		"Index" : "142",
@@ -2219,7 +2173,7 @@ ont la chance de le voir de leurs yeux.
 		"Japanese" : "悪魔にゃん",
 		"ChineseBun" : "惡魔貓",
 		"ChineseGan" : "恶魔猫 ",
-		"French" : "le chat démon"
+		"French" : "Chat démon"
 	},
 	{
 		"Index" : "147",
@@ -2250,7 +2204,7 @@ from the underworld",
 		"ChineseGan" : "从地底下
 上来的恶魔猫 ",
 		"French" : "Un chat démoniaque 
- venu du plus profond des  ténèbres."
+ venu du plus profond des ténèbres."
 	},
 	{
 		"Index" : "149",
@@ -2265,7 +2219,7 @@ in the world",
 		"ChineseGan" : "恶魔猫是世间上
 最邪恶的猫  ",
 		"French" : " le plus maléfique
- des chats de  toute la terre 
+ des chats de toute la terre 
 "
 	},
 	{
@@ -2285,9 +2239,7 @@ into mobile game addiction",
 沉溺于模拟游戏
 而找上门",
 		"French" : "Il est venu pour t'attirer 
-vers les  tréfonds  
-de l'addiction au jeu vidéo.
-"
+de l'addiction au jeu vidéo."
 	},
 	{
 		"Index" : "151",
@@ -2296,7 +2248,7 @@ de l'addiction au jeu vidéo.
 		"Japanese" : "人魚にゃん",
 		"ChineseBun" : "人魚貓 ",
 		"ChineseGan" : "人鱼猫 ",
-		"French" : "le chat sirène "
+		"French" : "Chat sirène "
 	},
 	{
 		"Index" : "152",
@@ -2310,8 +2262,8 @@ she came like a miracle",
 如同奇蹟般地出現 ",
 		"ChineseGan" : "营业第60天
 如同奇迹般地出现 ",
-		"French" : "Le  60ème  jour, 
-il est  apparu comme un miracle.
+		"French" : "Le 60ème jour, 
+il est apparu comme un miracle.
 "
 	},
 	{
@@ -2326,8 +2278,8 @@ to walk on the ground",
 到處尋找著魔女 ",
 		"ChineseGan" : "为了生活在陆地 
 到处寻找着魔女",
-		"French" : "À la recherche d'une  sorcière, 
-qui lui  permettrait de marcher sur la terre ferme, 
+		"French" : "À la recherche d'une sorcière, 
+qui lui permettrait de marcher sur la terre. 
 "
 	},
 	{
@@ -2343,7 +2295,7 @@ out of the mermaid kingdom",
 		"ChineseGan" : "人鱼猫是从人鱼猫国裡
 偷偷地熘出来的",
 		"French" : " Il a quitté en douce 
-le royaume des chats  sirènes.
+le royaume des chats sirènes.
 "
 	},
 	{
@@ -2363,8 +2315,8 @@ keeping her eye on the ribs everyday",
 觊觎又虎视眈眈地巴望
 着吃的排骨肉的机会 ",
 		"French" : " Il se cache de tous, 
-et reste a l'affût d'une opportunité 
-de manger des côtes de boeufs.
+et reste vigilant 
+pour manger des viandes.
 "
 	},
 	{
@@ -2380,7 +2332,7 @@ Just get to know us more :)",
 		"ChineseGan" : "好奇猫咪们的故事吗?
 常常见面才能变亲近喔~",
 		"French" : "Tu veux en savoir plus sur les chatons?
-Reviens nous voir souvent et apprends à mieux nous connaître"
+Reviens nous voir souvent!"
 	},
 	{
 		"Index" : "157",
@@ -2393,17 +2345,17 @@ he's impatient ! be careful !",
 		"ChineseBun" : "請注意
 顏色越紅的貓咪的個性越急!",
 		"ChineseGan" : "请注意
-颜色越红的猫咪的个性越急!"
+颜色越红的猫咪的个性越急!",
+		"French" : "Plus le chat est rouge,
+il est plus impatient! Fais gaffe !"
 	},
 	{
 		"Index" : "158",
 		"Korean" : "한국어",
 		"English" : "Eingrlish",
 		"Japanese" : "日本語",
-		"ChineseBun" : "中文（繁體）
-",
-		"ChineseGan" : "中文（简体）
-",
+		"ChineseBun" : "中文（繁體）",
+		"ChineseGan" : "中文（简体）",
 		"French" : "Le français"
 	},
 	{
@@ -2412,7 +2364,8 @@ he's impatient ! be careful !",
 		"English" : "Reset",
 		"Japanese" : "リセット",
 		"ChineseBun" : "初始化",
-		"ChineseGan" : "初始化"
+		"ChineseGan" : "初始化",
+		"French" : "Réinitialisation"
 	},
 	{
 		"Index" : "160",
@@ -2420,7 +2373,8 @@ he's impatient ! be careful !",
 		"English" : "Purchase restore",
 		"Japanese" : "購買の復元",
 		"ChineseBun" : "回復購買",
-		"ChineseGan" : "回復购买"
+		"ChineseGan" : "回復购买",
+		"French" : "Réstauration d'achats"
 	},
 	{
 		"Index" : "161",
@@ -2428,7 +2382,8 @@ he's impatient ! be careful !",
 		"English" : "Ads removal",
 		"Japanese" : "広告を消す",
 		"ChineseBun" : "去除廣告",
-		"ChineseGan" : "去除广告"
+		"ChineseGan" : "去除广告",
+		"French" : "Effacer les pubs"
 	},
 	{
 		"Index" : "162",
@@ -2436,7 +2391,8 @@ he's impatient ! be careful !",
 		"English" : "Exit the game",
 		"Japanese" : "終了する",
 		"ChineseBun" : "結束遊戲",
-		"ChineseGan" : "结束游戏"
+		"ChineseGan" : "结束游戏",
+		"French" : "Quitter le jeu"
 	},
 	{
 		"Index" : "163",
@@ -2449,7 +2405,9 @@ or they will get mad!",
 		"ChineseBun" : "記得按照客人的要求烤肉
 不然他們容易生氣的",
 		"ChineseGan" : "记得按照客人的要求烤肉
-不然他们容易生气的"
+不然他们容易生气的",
+		"French" : "Repecte bien la commande!
+Sinon les chats se mettent en colère!"
 	},
 	{
 		"Index" : "164",
@@ -2462,7 +2420,9 @@ click on the trash can ~ don't hesitate~",
 		"ChineseBun" : "如果發現烤得不好就丟垃圾桶喵!
 就按下去~勇敢地丟掉吧喵~",
 		"ChineseGan" : "如果发现烤得不好就丢垃圾桶喵!
-就按下去~勇敢地丢掉吧喵~"
+就按下去~勇敢地丢掉吧喵~",
+		"French" : "Si la viande est mal cuite,
+n'hésite pas à cliquer la poubelle"
 	},
 	{
 		"Index" : "165",
@@ -2475,7 +2435,9 @@ Surprise~ here's your ribs~",
 		"ChineseBun" : "按下粉紅色的箱子喵
 裡面有排骨肉喔~喵~",
 		"ChineseGan" : "按下粉红色的箱子喵
-裡面有排骨肉喔~喵~"
+裡面有排骨肉喔~喵~",
+		"French" : "Dans la boîte rosée,
+voilà des cotés de boeuf!"
 	},
 	{
 		"Index" : "166",
@@ -2488,7 +2450,9 @@ Never mind we don't use it at all~",
 		"ChineseBun" : "黃色的盒子裡有調味料...啊對了!
 我忘了我們不使用調味料的喵~",
 		"ChineseGan" : "黄色的盒子裡有调味料...啊对了!
-我忘了我们不使用调味料的喵~"
+我忘了我们不使用调味料的喵~",
+		"French" : "Dans la boîte jaune,
+ya des épices..mince on n'en utilise pas."
 	},
 	{
 		"Index" : "167",
@@ -2501,7 +2465,9 @@ giving you tips from time to time",
 		"ChineseBun" : "秘訣喵抱在欄杆上
 偶爾會告訴你秘訣",
 		"ChineseGan" : "秘诀喵抱在栏杆上
-偶尔会告诉你秘诀"
+偶尔会告诉你秘诀",
+		"French" : "Le chat conseiller donne des pistes
+tout en se balançant"
 	},
 	{
 		"Index" : "168",
@@ -2514,7 +2480,9 @@ are on sale. Wanna buy them? ",
 		"ChineseBun" : "其實我們的角色都周邊商品喔喵
 想要買嗎喵?",
 		"ChineseGan" : "其实我们的角色都周边商品喔喵
-想要买吗喵?"
+想要买吗喵?",
+		"French" : "En fait, on a les biens des chats
+Veux-tu les acheter?"
 	},
 	{
 		"Index" : "169",
@@ -2527,31 +2495,38 @@ Just do whatever you want with the ribs",
 		"ChineseBun" : "如果覺得貓咪們生氣的樣子很可愛的話
 排骨就隨便烤吧喵",
 		"ChineseGan" : "如果觉得猫咪们生气的样子很可爱的话
-排骨就随便烤吧喵"
+排骨就随便烤吧喵",
+		"French" : "Tu trouves mignon 
+quand les chats sont fâchés?
+Fais n'importe quoi pour la viande"
 	},
 	{
 		"Index" : "170",
-		"Korean" : "게임 시작 전 옵션에서 언어 설정을 바꿔라냥"
+		"Korean" : "게임 시작 전 옵션에서 언어 설정을 바꿔라냥",
+		"English" : "Change the language setting before the start",
+		"Japanese" : "スタート前にオプションで言語設定を変えてにゃ",
+		"ChineseBun" : "遊戲開始前先從設定中選擇語言吧喵",
+		"ChineseGan" : "游戏开始前先从设定中选择语言吧喵",
+		"French" : "Avant de commencer, 
+change le language au paramètre"
 	},
 	{
 		"Index" : "171",
 		"Korean" : "닭꼬치 하나 가격으로
 매일 등장하는 광고를
 완전히 지울 수 있다냥!",
-		"English" : "광고제거는 1200원입니다.
-나라별 1200원이 상징하는 아이템이 있다면
-초월번역 부탁드립니다.",
-		"Japanese" : "광고제거는 1200원입니다.
-나라별 1201원이 상징하는 아이템이 있다면
-초월번역 부탁드립니다.",
-		"ChineseBun" : "광고제거는 1200원입니다.
-나라별 1202원이 상징하는 아이템이 있다면
-초월번역 부탁드립니다.",
-		"ChineseGan" : "광고제거는 1200원입니다.
-나라별 1203원이 상징하는 아이템이 있다면
-초월번역 부탁드립니다.",
-		"French" : "광고제거는 1200원입니다.
-나라별 1204원이 상징하는 아이템이 있다면
-초월번역 부탁드립니다."
+		"English" : "Remove daily ads for 1$,
+a cup of coffee at  McDonald",
+		"Japanese" : "おにぎり1個の値段で
+毎日出てくる広告を
+完全に消せるにゃ！",
+		"ChineseBun" : "用一杯手搖飲的錢
+就可以完全消除
+每天都會出現的廣告喔喵",
+		"ChineseGan" : "用一杯手摇饮的钱
+就可以完全消除
+每天都会出现的广告喔喵",
+		"French" : "Effacer les pubs de jours
+tout en payant le prix d'un tacos !"
 	}
 ]

@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class NyangListManager : MonoBehaviour
@@ -54,6 +56,18 @@ public class NyangListManager : MonoBehaviour
     
     public void OpenNyangListPanel()
     {
+        float delay = 0f;
+        Scene scene = SceneManager.GetActiveScene();
+        if (scene.name == "Title")
+        {
+            TipScreenManager.Show();
+            delay = 3f;
+            DOVirtual.DelayedCall(3f, () =>
+            {
+                TipScreenManager.Hide();
+            });
+        }
+
         UIManager uiManager = UIManager.instance;
         if (uiManager != null)
         {
@@ -63,28 +77,31 @@ public class NyangListManager : MonoBehaviour
         audioManager.Play(audioManager.box_open, 1f);
         audioManager.PauseCookMeat();
 
-        if (uiManager != null)
+        DOVirtual.DelayedCall(delay, () =>
         {
-            uiManager.Main_Objects.SetActive(false);
-            uiManager.Main_Scene.SetActive(false);
-            uiManager.Main_UI.SetActive(false);
-            uiManager.Calender.SetActive(false);
-            TipManager.instance.HideTip();
+            if (uiManager != null)
+            {
+                uiManager.Main_Objects.SetActive(false);
+                uiManager.Main_Scene.SetActive(false);
+                uiManager.Main_UI.SetActive(false);
+                uiManager.Calender.SetActive(false);
+                TipManager.instance.HideTip();
             
-            // 게임 시간 멈추기.
-            TimeManager.Instance.Pause();
-            NyangManager.Instance.EndSpawn();
+                // 게임 시간 멈추기.
+                TimeManager.Instance.Pause();
+                NyangManager.Instance.EndSpawn();
 
-            // 팁 닫기.
-            TipManager.instance.CloseTip(TipType.CatList);
-        }
+                // 팁 닫기.
+                TipManager.instance.CloseTip(TipType.CatList);
+            }
 
-        LoadAndSortNyangList();
-        nyangList_currentPage = 0;
-        nyangList_maxPage = GetNyangListMaxPage(nyangList);
-        ShowNyangList(nyangList_currentPage);
+            LoadAndSortNyangList();
+            nyangList_currentPage = 0;
+            nyangList_maxPage = GetNyangListMaxPage(nyangList);
+            ShowNyangList(nyangList_currentPage);
 
-        NyangListPanel.SetActive(true);
+            NyangListPanel.SetActive(true);
+        });
     }
 
     public void CloseNyangListPanel()

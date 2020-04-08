@@ -320,8 +320,8 @@ MonoBehaviour:
     value: "\uB098\uC758 \uBCF4\uBB3C?\r\n\uC6D0\uD55C\uB2E4\uBA74 \uC8FC\uB3C4\uB85D
       \uD558\uC9C0 "
   - key: 115
-    value: "\uC798 \uCC3E\uC544\uBD10. \r\n\uC774 \uC138\uC0C1\uC758 \uC804\uBD80\uB97C\r\n
-      \uAC70\uAE30\uC5D0 \uB450\uACE0 \uC654\uC73C\uB2C8\uAE50!"
+    value: "\uC798 \uCC3E\uC544\uBD10. \r\n\uC774 \uC138\uC0C1\uC758 \uC804\uBD80\uB97C\r\n\uAC70\uAE30\uC5D0
+      \uB450\uACE0 \uC654\uC73C\uB2C8\uAE50!"
   - key: 116
     value: "\uB9CC\uB0E5\uC774"
   - key: 117
@@ -361,7 +361,7 @@ MonoBehaviour:
     value: "\uC810\uB0E5\uC774\uC5D0\uAC8C \uC218\uC815\uAD6C\uB97C \uC8FC\uC5C8\uB2E4.\n\uADF8
       \uD6C4 \uC810\uC744 \uCC0D\uACE0 \uBC14\uB2E4\uC758\n\uC2E0\uB4E4\uB9B0 \uB0E5\uC774\uAC00
       \uB418\uC5C8\uB2E4."
-  - key: 131
+  - key: 0
     value: "\uD799\uB0E5\uC774"
   - key: 132
     value: "\uC7A5\uC0AC 30\uC77C\uC9F8\n\uACF5\uC5F0\uD558\uB7EC \uCC3E\uC544 \uC634"
@@ -381,8 +381,8 @@ MonoBehaviour:
   - key: 138
     value: "\uAC1C \uB418\uACE0\uD508\n\uB0E5\uC774"
   - key: 139
-    value: "\uC5B4\uB9B0 \uC2DC\uC808 \uAC1C\uC640 \uD568\uAED8 \uC790\uB780\r\n
-      \uAC1C\uB0E5\uC774\uB294 \uC815\uCCB4\uC131\uC744 \uACE0\uBBFC\uD55C\uB2E4."
+    value: "\uC5B4\uB9B0 \uC2DC\uC808 \uAC1C\uC640 \uD568\uAED8 \uC790\uB780\r\n\uAC1C\uB0E5\uC774\uB294
+      \uC815\uCCB4\uC131\uC744 \uACE0\uBBFC\uD55C\uB2E4."
   - key: 140
     value: "???\r\n\uC65C \uB0B4\uC6B8\uC74C \uC18C\uB9AC\uB294\r\n'\uB0D0\uC639'\uC774
       \uB0D0\uC639?"
@@ -640,7 +640,12 @@ MonoBehaviour:
   - key: 66
     value: "She is white \njust as snow"
   - key: 67
-    value: "Much like her white fur\nthere's a white empty room \nin her head "
+    value: 'Much like her white fur
+
+      There''s an white empty room
+
+      in
+      her head.'
   - key: 68
     value: Smart kitty
   - key: 69
@@ -807,7 +812,7 @@ MonoBehaviour:
   - key: 130
     value: "granting him a crystal ball \nafter that he ended up being \na shaman
       of the sea"
-  - key: 131
+  - key: 0
     value: 'Swaggy Kitty '
   - key: 132
     value: 'On 30th day
@@ -908,11 +913,11 @@ MonoBehaviour:
       Just do whatever
       you want with the ribs'
   - key: 170
-    value: 
+    value: Change the language setting before the start
   - key: 171
-    value: "\uAD11\uACE0\uC81C\uAC70\uB294 1200\uC6D0\uC785\uB2C8\uB2E4.\n\uB098\uB77C\uBCC4
-      1200\uC6D0\uC774 \uC0C1\uC9D5\uD558\uB294 \uC544\uC774\uD15C\uC774 \uC788\uB2E4\uBA74\n\uCD08\uC6D4\uBC88\uC5ED
-      \uBD80\uD0C1\uB4DC\uB9BD\uB2C8\uB2E4."
+    value: 'Remove daily ads for 1$,
+
+      a cup of coffee at  McDonald'
   japanese:
   - key: 1
     value: "\u4F55\u304B\u3092\u898B\u3066\u3044\u308B\u306B\u3083\u3093\u3053\u305F\u3061"
@@ -1174,7 +1179,7 @@ MonoBehaviour:
     value: "\u3042\u308B\u65E5\u3001\u7A81\u7136\n\u8A2A\u308C\u305F\u30CB\u30E3\u30F3\u795E(?)\u306F"
   - key: 130
     value: "\u5360\u3044\u306B\u3083\u3093\u306B\u6C34\u6676\u7389\u3092\u4E0E\u3048\u305F\u3002\n\u305D\u3057\u3066\u3001\u9854\u306B\u307B\u304F\u308D\u3092\u63CF\u304D\u6D77\u306E\n\u5360\u3044\u5E2B\u306B\u306A\u3063\u305F\u3002"
-  - key: 131
+  - key: 0
     value: "\u30E9\u30C3\u30D1\u30FC\u306B\u3083\u3093"
   - key: 132
     value: "\u55B6\u696D30\u65E5\u76EE\n\u30E9\u30C3\u30D7\u3057\u306B\u6765\u305F"
@@ -1253,11 +1258,9 @@ MonoBehaviour:
   - key: 169
     value: "\u306B\u3083\u3093\u3053\u305F\u3061\u306E\u6012\u3063\u3066\u308B\u59FF\u304C\u53EF\u611B\u304B\u3063\u305F\u3089\n\u304A\u8089\u3092\u9069\u5F53\u306B\u713C\u3044\u3066\u3042\u3052\u3066\u306B\u3083\u3002"
   - key: 170
-    value: 
+    value: "\u30B9\u30BF\u30FC\u30C8\u524D\u306B\u30AA\u30D7\u30B7\u30E7\u30F3\u3067\u8A00\u8A9E\u8A2D\u5B9A\u3092\u5909\u3048\u3066\u306B\u3083"
   - key: 171
-    value: "\uAD11\uACE0\uC81C\uAC70\uB294 1200\uC6D0\uC785\uB2C8\uB2E4.\n\uB098\uB77C\uBCC4
-      1201\uC6D0\uC774 \uC0C1\uC9D5\uD558\uB294 \uC544\uC774\uD15C\uC774 \uC788\uB2E4\uBA74\n\uCD08\uC6D4\uBC88\uC5ED
-      \uBD80\uD0C1\uB4DC\uB9BD\uB2C8\uB2E4."
+    value: "\u304A\u306B\u304E\u308A1\u500B\u306E\u5024\u6BB5\u3067\n\u6BCE\u65E5\u51FA\u3066\u304F\u308B\u5E83\u544A\u3092\n\u5B8C\u5168\u306B\u6D88\u305B\u308B\u306B\u3083\uFF01"
   chineseGan:
   - key: 1
     value: "\u5728\u51D1\u70ED\u95F9\u7684\u5C0F\u732B\u4EEC\uFF0C "
@@ -1350,8 +1353,7 @@ MonoBehaviour:
   - key: 39
     value: "\u5FD9\u7740\u70E4\u8089\u8F9B\u82E6\u4E86\uFF01 \n \u8BA9\u4F60\u4EAB\u53D7\u52A9\u6652\u6765\u653E\u9B06\u4E00\u4E0B\uFF01 "
   - key: 40
-    value: "\u6652\u9ED1\u4E5F\u4E0E\u70E4\u6392\u9AA8\u8089\u5DEE\u4E0D\u591A \n
-      \u5173\u952E\u662F\u8981\u9002\u5F53\u5730\u70E4\uFF01 "
+    value: "\u6652\u9ED1\u4E5F\u4E0E\u70E4\u6392\u9AA8\u8089\u5DEE\u4E0D\u591A \n\u5173\u952E\u662F\u8981\u9002\u5F53\u5730\u70E4\uFF01 "
   - key: 41
     value: "\u6CE8\u610F\u6E29\u5EA6\u8BA1\uFF0C\u6E29\u5EA6\u4E0A\u5347\u5230\u7BAD\u5934\u7B26\u53F7\u7684\u8BDD "
   - key: 42
@@ -1538,7 +1540,7 @@ MonoBehaviour:
     value: "\u67D0\u5929\u7A81\u7136 \u732B\u795E\uFF08\uFF1F \uFF09\u964D\u4E34"
   - key: 130
     value: "\u7ED9\u4E86\u5360\u535C\u732B\u6C34\u6676\u7403 \n\u4ECE\u6B64\u4EE5\u540E\u53D8\u6210\u4E86\u66FF\u4EBA\u7B97\u547D\uFF0C\n\u6210\u4E3A\u6D77\u795E\u7684\u7075\u5A92"
-  - key: 131
+  - key: 0
     value: "\u6447\u6EDA\u732B "
   - key: 132
     value: "\u8425\u4E1A\u7B2C30\u5929 \n\u4E3A\u4E86\u516C\u6F14\u800C\u5149\u4E34"
@@ -1594,7 +1596,7 @@ MonoBehaviour:
   - key: 157
     value: "\u8BF7\u6CE8\u610F\n\u989C\u8272\u8D8A\u7EA2\u7684\u732B\u54AA\u7684\u4E2A\u6027\u8D8A\u6025!"
   - key: 158
-    value: "\u4E2D\u6587\uFF08\u7B80\u4F53\uFF09\n"
+    value: "\u4E2D\u6587\uFF08\u7B80\u4F53\uFF09"
   - key: 159
     value: "\u521D\u59CB\u5316"
   - key: 160
@@ -1618,11 +1620,9 @@ MonoBehaviour:
   - key: 169
     value: "\u5982\u679C\u89C9\u5F97\u732B\u54AA\u4EEC\u751F\u6C14\u7684\u6837\u5B50\u5F88\u53EF\u7231\u7684\u8BDD\n\u6392\u9AA8\u5C31\u968F\u4FBF\u70E4\u5427\u55B5"
   - key: 170
-    value: 
+    value: "\u6E38\u620F\u5F00\u59CB\u524D\u5148\u4ECE\u8BBE\u5B9A\u4E2D\u9009\u62E9\u8BED\u8A00\u5427\u55B5"
   - key: 171
-    value: "\uAD11\uACE0\uC81C\uAC70\uB294 1200\uC6D0\uC785\uB2C8\uB2E4.\n\uB098\uB77C\uBCC4
-      1203\uC6D0\uC774 \uC0C1\uC9D5\uD558\uB294 \uC544\uC774\uD15C\uC774 \uC788\uB2E4\uBA74\n\uCD08\uC6D4\uBC88\uC5ED
-      \uBD80\uD0C1\uB4DC\uB9BD\uB2C8\uB2E4."
+    value: "\u7528\u4E00\u676F\u624B\u6447\u996E\u7684\u94B1\n\u5C31\u53EF\u4EE5\u5B8C\u5168\u6D88\u9664\n\u6BCF\u5929\u90FD\u4F1A\u51FA\u73B0\u7684\u5E7F\u544A\u5594\u55B5"
   chineseBun:
   - key: 1
     value: "\u5728\u6E4A\u71B1\u9B27\u7684\u5C0F\u8C93\u5011\uFF0C "
@@ -1653,8 +1653,7 @@ MonoBehaviour:
     value: "\u9084\u80FD\u600E\u9EBC\u8FA6...\u53EA\u80FD\u91CD\u65B0\u958B\u59CB\u4E86...\uFF01
       \n\u53EA\u8981\u6709\u4EBA\u6295\u8CC7\u4E00\u9EDE\u9EDE\u7D66\u6211\u5011\u7684\u8A71\uFF0C\u99AC\u4E0A\u5C31\u80FD\u8B8A\u571F\u8C6A\u4E86 "
   - key: 12
-    value: "\u5C31\u662F\u8AAA\u554A...\u5982\u679C\u6709\u8AB0\u6295\u8CC7\u4E00\u4E0B\u7684\u8A71\u8A72\u6709\u591A\u597D~?\n
-      \u771F\u7684\u53EA\u8981\u6295\u8CC7\u4E00\u9EDE\u9EDE\u7D66\u6211\u5011... "
+    value: "\u5C31\u662F\u8AAA\u554A...\u5982\u679C\u6709\u8AB0\u6295\u8CC7\u4E00\u4E0B\u7684\u8A71\u8A72\u6709\u591A\u597D~?\n\u771F\u7684\u53EA\u8981\u6295\u8CC7\u4E00\u9EDE\u9EDE\u7D66\u6211\u5011... "
   - key: 13
     value: "\u6211\u5011\u662F\u53EF\u6190\u7684\u4E5E\u4E10\u8C93\u554A...  \n\u771F\u7684\u4E0D\u9858\u610F\u6295\u8CC7\u7D66\u6211\u5011\u5E97\u55CE\uFF1F "
   - key: 14
@@ -1714,8 +1713,7 @@ MonoBehaviour:
   - key: 39
     value: "\u5FD9\u8457\u70E4\u8089\u8F9B\u82E6\u4E86\uFF01 \n \u8B93\u4F60\u4EAB\u53D7\u52A9\u66EC\u4F86\u653E\u9B06\u4E00\u4E0B\uFF01 "
   - key: 40
-    value: "\u66EC\u9ED1\u4E5F\u8DDF\u70E4\u6392\u9AA8\u8089\u5DEE\u4E0D\u591A \n
-      \u95DC\u9375\u662F\u8981\u9069\u7576\u5730\u70E4\uFF01 "
+    value: "\u66EC\u9ED1\u4E5F\u8DDF\u70E4\u6392\u9AA8\u8089\u5DEE\u4E0D\u591A \n\u95DC\u9375\u662F\u8981\u9069\u7576\u5730\u70E4\uFF01 "
   - key: 41
     value: "\u6CE8\u610F\u6EAB\u5EA6\u8A08\uFF0C\u6EAB\u5EA6\u4E0A\u5347\u5230\u7BAD\u982D\u7B26\u865F\u7684\u8A71 "
   - key: 42
@@ -1902,7 +1900,7 @@ MonoBehaviour:
     value: "\u67D0\u5929\u7A81\u7136 \u8C93\u795E\uFF08\uFF1F\uFF09\u964D\u81E8 "
   - key: 130
     value: "\u7D66\u4E86\u5360\u535C\u8C93\u6C34\u6676\u7403 \n\u5F9E\u6B64\u4EE5\u5F8C\u8B8A\u6210\u4E86\u66FF\u4EBA\u7B97\u547D\uFF0C\n\u6210\u70BA\u6D77\u795E\u7684\u9748\u5A92"
-  - key: 131
+  - key: 0
     value: "\u6416\u6EFE\u8C93 "
   - key: 132
     value: "\u71DF\u696D\u7B2C30\u5929 \n\u70BA\u4E86\u516C\u6F14\u800C\u5149\u81E8"
@@ -1958,7 +1956,7 @@ MonoBehaviour:
   - key: 157
     value: "\u8ACB\u6CE8\u610F\n\u984F\u8272\u8D8A\u7D05\u7684\u8C93\u54AA\u7684\u500B\u6027\u8D8A\u6025!"
   - key: 158
-    value: "\u4E2D\u6587\uFF08\u7E41\u9AD4\uFF09\n"
+    value: "\u4E2D\u6587\uFF08\u7E41\u9AD4\uFF09"
   - key: 159
     value: "\u521D\u59CB\u5316"
   - key: 160
@@ -1982,72 +1980,72 @@ MonoBehaviour:
   - key: 169
     value: "\u5982\u679C\u89BA\u5F97\u8C93\u54AA\u5011\u751F\u6C23\u7684\u6A23\u5B50\u5F88\u53EF\u611B\u7684\u8A71\n\u6392\u9AA8\u5C31\u96A8\u4FBF\u70E4\u5427\u55B5"
   - key: 170
-    value: 
+    value: "\u904A\u6232\u958B\u59CB\u524D\u5148\u5F9E\u8A2D\u5B9A\u4E2D\u9078\u64C7\u8A9E\u8A00\u5427\u55B5"
   - key: 171
-    value: "\uAD11\uACE0\uC81C\uAC70\uB294 1200\uC6D0\uC785\uB2C8\uB2E4.\n\uB098\uB77C\uBCC4
-      1202\uC6D0\uC774 \uC0C1\uC9D5\uD558\uB294 \uC544\uC774\uD15C\uC774 \uC788\uB2E4\uBA74\n\uCD08\uC6D4\uBC88\uC5ED
-      \uBD80\uD0C1\uB4DC\uB9BD\uB2C8\uB2E4."
+    value: "\u7528\u4E00\u676F\u624B\u6416\u98F2\u7684\u9322\n\u5C31\u53EF\u4EE5\u5B8C\u5168\u6D88\u9664\n\u6BCF\u5929\u90FD\u6703\u51FA\u73FE\u7684\u5EE3\u544A\u5594\u55B5"
   french:
   - key: 1
     value: 'les chats spectateurs '
   - key: 2
-    value: "le  chaton h\xE9ros"
+    value: "le chaton h\xE9ros"
   - key: 3
-    value: le  chat conseiller
+    value: le chaton conseiller
   - key: 4
-    value: "Il prend des risques  \xE0 miser comme  \xE7a!\r\nMais il joue bien!
-      Attends... Il va  \xE0 nouveau parier tout ce qu'il a?"
+    value: "\xE7a fait combien de fois qu'il parie tout?\nPuis il va \xE0 nouveau
+      parier tout ce qu'il a?"
   - key: 5
-    value: "Un homme, un vrai, \xE7a  mise tout.\nJe mise tout! \xC0 dix contre un!"
+    value: "Tout! un vrai homme mis tout!\nAllez mettre tout! \xC0 dix contre un!"
   - key: 6
-    value: "Chaton h\xE9ros! Moi aussi, je remets tout ce que j'ai en jeu!\r\nRemportons
-      gros tous les deux!\r\n"
+    value: "Chat H\xE9ros! Je remets aussi tout en jeu!\nRemportons gros tous les
+      deux!\n"
   - key: 7
-    value: "On \xE9tait si bien partis!\r\nEt on a tout perdu d'un coup..."
+    value: "On \xE9tait si bien partis!\nMais on a tout perdu dans un coup..."
   - key: 8
-    value: "Je t'avais dit qu'il fallait jouer raisonnablement et savoir s'arr\xEAter.\r\nQu'est-ce
-      qu'on va faire maintenant?! On s'est endett\xE9s!"
+    value: "Je t'ai dit de ne pas trop jouer et t'arr\xEAter!\nQu'est-ce que tu veux?!
+      Voli\xE0 des dettes!"
   - key: 9
-    value: " C'est toi qui as voulu miser \xE0 dix contre un!\r\nSi tu ne m'avais
-      pas influenc\xE9, j'aurais \xE9t\xE9 raisonnable!\r\n"
+    value: " C'est toi qui as dit de miser \xE0 dix!\nSi tu m'avais pas incit\xE9,
+      j'aurais bien fini!"
   - key: 10
-    value: 'Qu''est-ce qu''on va faire maintenant?
+    value: 'Alors, que va-t-on faire?
 
-      Tout ce qui nous reste
-      c''est ce petit stand...
+      Tout ce qui nous reste est ce petit
+      stand...
 
 '
   - key: 11
-    value: "On n'a pas d'autre choix... Il va falloir repartir de z\xE9ro  avec 
-      \xE7a.\r\nSi seulement on avait un investisseur pour nous aider  \xE0 d\xE9marrer..."
+    value: "On n'a pas le choix... Recommen\xE7ons \xE0 z\xE9ro ici!\nSi seulement
+      on trouve un investisseur..."
   - key: 12
-    value: ' C''est vrai... un petit investissement nous aiderait tellement.
+    value: ' C''est vrai... un petit investissement nous aiderait.
 
-'
+      Vraiment
+      tout petit..'
   - key: 13
-    value: " Nous ne sommes que de pauvres chats...\r\nVoudriez-vous venir en aide 
-      \xE0 notre petit commerce?\r\n"
+    value: ' Nous sommes pauvres chats...
+
+      Veux-tu aider pour notre petit stand?'
   - key: 14
-    value: "Si vous acceptez, nous ferons en sorte \r\nque vous ne voyiez plus aucune
-      publicit\xE9 \xE0 l'avenir.\r\n"
+    value: "Si tu acceptes, nous pourrons effacer \ntoutes les publicit\xE9s d\xE8s
+      maintenant!."
   - key: 15
-    value: 'Voulez-vous contribuer au commerce des chatons?
+    value: 'Voulez-vous investir au stand des chatons?
 
 '
   - key: 16
-    value: ' Oui, je veux contribuer!
+    value: ' Oui, je veux!
 
 '
   - key: 17
-    value: ' Non, je  ne  veux pas contribuer!
+    value: ' Non, je ne veux pas!
 
 '
   - key: 18
-    value: " Merci! Je savais que tu \xE9tais quelqu'un de bien!\r\nJe n'oublierai
-      pas ta  g\xE9n\xE9rosit\xE9!\r\n"
+    value: " Merci! Je savais que tu \xE9tais quelqu'un de bien!\nJe n'oublierai
+      pas ton aide!\n"
   - key: 19
-    value: "Gr\xE2ce \xE0 toi, on pourra travailler plus sereinement.\r\nPour te
-      remercier, tu ne verras plus aucune publicit\xE9.\r\n"
+    value: "Gr\xE2ce \xE0 toi, ce sera plus facile \xE0 travailler!\nPour te remercier,
+      on va effacer les pubs!"
   - key: 20
     value: ' D''accord... ce n''est pas grave.
 
@@ -2056,163 +2054,167 @@ MonoBehaviour:
 
 '
   - key: 21
-    value: "Dommage. Une contribution nous aurait bien  aid\xE9s.\r\nMais tant pis.
-      Mettons-nous au travail.\r\n"
+    value: 'Dommage. Ton aide nous rendrait heureux.
+
+      Tant pis. Allons au boulot,
+      alors!'
   - key: 22
     value: "Viens vite! D\xE9p\xEAche-toi!\r\nLes clients attendent d\xE9j\xE0.\r\n"
   - key: 23
     value: "Cette barre repr\xE9sente \r\nla patience des chatons.\r\n"
   - key: 24
-    value: "Clique sur le chat et  fais-le  glisser, \r\navant qu'il ne perde patience.\r\n"
+    value: "Clique sur le chat et fais-le glisser, \navant qu'il ne perde patience.\n"
   - key: 25
-    value: " Donne vite des  c\xF4tes  de boeuf aux chats, \r\navant qu'ils ne partent.\r\n"
+    value: " Donne vite des c\xF4tes de boeuf au chat, \navant qu'il part.\n"
   - key: 26
-    value: " La recette est indiqu\xE9e au plafond.\r\nTu n'as plus qu'\xE0 la suivre!\r\n"
+    value: " La recette est indiqu\xE9e au plafond.\nTu n'as qu'\xE0 la suivre!\n"
   - key: 27
-    value: " D'abord, clique sur les c\xF4tes  de boeuf \r\net  fais-les  glisser.
-      \r\n"
+    value: " D'abord, clique sur les c\xF4tes de boeuf \net fais-les glisser. \n"
   - key: 28
     value: " Swipe vers le bas \r\npour faire cuire la viande.\r\n"
   - key: 29
-    value: "Quand la couleur change \r\net que de la fum\xE9e monte, \r\nla viande
-      est  \xE0  point."
+    value: "Quand la couleur change \net que de la fum\xE9e monte, \nla viande est
+      \xE0 point."
   - key: 30
     value: "Maintenant, fais glisser les \xE9pices."
   - key: 31
     value: Ensuite, fais glisser la sauce.
   - key: 32
-    value: "Quand tout est m\xE9lang\xE9, \r\nles  c\xF4tes de boeufs sont pr\xEAtes!\r\nTu
-      n'as plus qu'\xE0 cliquer dessus."
+    value: "Quand tout est m\xE9lang\xE9, \nles plats sont pr\xEAts!\nTu n'as qu'\xE0
+      cliquer dessus."
   - key: 33
     value: "Bon travail! \r\nNe t'en fais pas pour l'argent.\r\nJe m'occupe de l'encaisser.\r\n"
   - key: 34
-    value: "Sers vite les c\xF4tes  de boeuf \r\navant qu'elles ne soient trop cuites.\r\n"
+    value: "Sers vite les c\xF4tes de boeuf \navant qu'elles soient trop cuites.\n"
   - key: 35
-    value: "Si tu leur donnes de la viande trop cuite, \r\nou que tu ne suis pas
-      la recette, \r\nles chatons seront f\xE2ch\xE9s.\r\n"
+    value: "Si la viande est trop cuite, \nou mal suivie de la recette, \nles chatons
+      seront f\xE2ch\xE9s.\n"
   - key: 36
-    value: "Tu peux utiliser la poubelle, \r\nsi besoin.\r\n"
+    value: "Tu peux utiliser la poubelle, \nsi besoin.\n"
   - key: 37
-    value: " Clique sur la poubelle \r\npour y jeter la viande."
+    value: " Clique sur la poubelle \npour jeter la viande."
   - key: 38
-    value: " Tu es pr\xEAt!\r\nMaintenant, il est temps de se mettre au travail.\r\n"
+    value: ' Maintenant, il est temps de devenir rich!'
   - key: 39
-    value: "Tu as bien travaill\xE9! \r\nAllons nous dorer au soleil pour nous d\xE9tendre."
+    value: "Bon travail! \nAllons nous dorer au soleil\npour nous d\xE9tendre."
   - key: 40
-    value: "C'est un peu comme cuire des c\xF4tes  de boeuf.\r\nCe qui compte c'est
-      la mesure!"
+    value: 'C''est un peu comme cuire le plat.
+
+      Ce qui compte c''est la mesure!'
   - key: 41
-    value: "Surveille le thermom\xE8tre.\r\nIl ne doit pas d\xE9passer la limite."
+    value: "Surveille le thermom\xE8tre.\nUne fois augment\xE9e juqu'\xE0 la fl\xE8che,"
   - key: 42
-    value: " Clique vite  sur le bouton \r\nen bas \xE0  droite!\r\n"
+    value: " Clique vite sur le bouton \nen bas \xE0 droite!\n"
   - key: 43
-    value: " C'est parfait! \r\nJe te f\xE9licite!\r\n"
+    value: " C'est parfait, \n\xE7a a l'air tr\xE8s bon!"
   - key: 44
-    value: "Ta ma\xEEtrise du bronzage nous aidera  \n\xE0 travailler encore plus
-      efficacement.\n"
+    value: "Gr\xE2ce au bronzage, ce sera mieux\nde travailler cet apr\xE8m !  "
   - key: 45
-    value: " Comme pour les  c\xF4tes  de boeuf, \r\nc'est une question de dosage.\r\n"
+    value: " Comme pour les c\xF4tes de boeuf, \nc'est une question de dosage."
   - key: 46
-    value: " Un chat qui raterait son bronzage, \r\nserait de mauvaise humeur toute
-      la journ\xE9e...\r\n"
+    value: " Un chat qui raterait son bronzage, \nserait f\xE2ch\xE9 toute la journ\xE9e..."
   - key: 47
-    value: " Mais tout ira bien, si tu continues comme  \xE7a.\r\nAllez, retournons 
-      \xE0 notre stand.\r\n"
+    value: " Mais \xE7a va, fais comme aujourd'hui.\nAllez, retournons \xE0 notre
+      stand."
   - key: 48
-    value: 'le chat dans la Lune '
+    value: "Chat r\xEAveur"
   - key: 49
-    value: "Il est dans la lune, \r\nla t\xEAte dans les  \xE9toiles."
+    value: "Il est dans la lune, \nla t\xEAte ailleurs."
   - key: 50
     value: Ailleurs...
   - key: 51
-    value: "On se demande...\r\n\xC0 quoi il peut bien penser...\r\n"
+    value: "On se demande...\n\xC0 quoi il peut bien penser..."
   - key: 52
-    value: "le chat enjou\xE9"
+    value: "Chat enjou\xE9"
   - key: 53
-    value: Il adore la musique et la danse.
+    value: 'Il adore la musique et la danse.
+
+      Il en est fou'
   - key: 54
-    value: "Le chat enjou\xE9 \naime tant la musique et la danse \n"
+    value: "Chat enjou\xE9 \naime tant la musique et la danse \n"
   - key: 55
-    value: "qu'il est sorti s'amuser.\r\nIl s'est amus\xE9 toute la nuit.\r\nIl 
-      para\xEEt  m\xEAme  qu'il s'amuse encore.\r\n"
+    value: "Etant sorti de chez lui,\nIl s'est amus\xE9 la nuit blanche.\nMais encore"
   - key: 56
-    value: " le chat qui p\xE8te\r\n"
+    value: "Chat p\xE9teur"
   - key: 57
-    value: "Il a une pr\xE9disposition pour les pets\r\n"
+    value: "Il s'amuse \xE0 p\xE9ter"
   - key: 58
-    value: "Ce chat p\xE8te tellement bien \r\nqu'il peut s'envoler et explorer l'espace."
+    value: "Chat p\xE8te si bien \nqu'il s'envolait et explorait l'espace."
   - key: 59
-    value: "Un jour, une \xE9toile  filante le percuta \r\net le fit  atterrir  sur
-      Terre, \r\ndans la ville de Busan.\r\n"
+    value: "Un jour, il s'est heurt\xE9 \xE0\nune \xE9toile filante, est tomb\xE9\ndans
+      la ville de Busan."
   - key: 60
-    value: " le chat dormeur \r\n"
+    value: "Chat dormeur \n"
   - key: 61
-    value: "Il aime dormir \r\net mange toujours avant de dormir."
+    value: "Il aime dormir \net mange toujours avant de se coucher."
   - key: 62
-    value: " Il dort tout le temps \r\net ne se r\xE9veille que pour manger.\r\n"
+    value: " Il dort tout le temps \nsauf pour manger.\n"
   - key: 63
-    value: " Apr\xE8s avoir mang\xE9, il s'endort.\r\nManger, dormir, manger, dormir.\r\nRien
-      de mieux que manger et dormir.\r\n"
+    value: "Apr\xE8s avoir mang\xE9, il s'endort.\nManger, dormir, manger, dormir.\nRien
+      de mieux que \xE7a."
   - key: 64
-    value: ' le chat blanc '
+    value: 'Chat blanc '
   - key: 65
-    value: ' C''est un chat un peu simplet.
+    value: ' Chat un peu simplet.
 
-      Il ne se pose pas beaucoup de
-      questions.
-
-'
+      Il n''est rien contre.'
   - key: 66
     value: "Ce chat est tout blanc, \r\nblanc comme la neige.\r\n"
   - key: 67
-    value: "\xC0 l'image de  son poil, \r\nsa t\xEAte est  immacul\xE9e, \r\nvide
-      de toute pens\xE9e."
+    value: "Comme son poil tout blanc, \nsa t\xEAte est immacul\xE9e, \nvide de toute
+      pens\xE9e."
   - key: 68
-    value: 'le chat conseiller '
+    value: 'Chat conseiller '
   - key: 69
-    value: "Il donne des conseils \net se balance du haut d'une barre.\n\n"
+    value: "Il donne des conseils \net se balance du haut d'une barre."
   - key: 70
     value: 'Pourquoi se balance-t-il ainsi?
 
-      Personne ne saurait l''expliquer.'
+      Personne ne sait pourqoui.'
   - key: 71
-    value: "Il dit que quand il se balance, \r\n\xE7a  le rend heureux.\r\n"
+    value: "Il dit que quand il se balance, \n\xE7a le rend heureux.\n"
   - key: 72
-    value: ' le chat au miel
+    value: ' Chat au miel
 
 '
   - key: 73
-    value: "Un chat tout doux, \r\ncomme du miel.\r\n"
+    value: "Chat tout doux, \ncomme du miel."
   - key: 74
-    value: "Un jour, en cherchant des c\xF4tes  de boeuf, \r\nil est tomb\xE9 dans
-      un pot de miel.\r\n"
+    value: "Un jour, en cherchant des c\xF4tes de boeuf, \nil est tomb\xE9 dans un
+      pot de miel.\n"
   - key: 75
-    value: "Plouf!\r\nEt c'est devenu un chat au miel.\r\nAu pelage sucr\xE9!\r\n"
+    value: "Plouf!\nEt devenu un chat au miel.\nAu pelage sucr\xE9!\n"
   - key: 76
-    value: "le chat comme ci, comme \xE7a \r\n"
+    value: 'Comme ci, comme chat
+
+'
   - key: 77
-    value: "Le  7\xE8me  jour, \r\nil est arriv\xE9 sans raison pr\xE9cise.\r\n"
+    value: "Le 7\xE8me jour, \nil est arriv\xE9 sans raison comme \xE7a.\n"
   - key: 78
-    value: "Juste... comme  \xE7a.\nComme ci, comme  \xE7a.\n"
+    value: "Juste... comme \xE7a.\nComme ci, comme \xE7a."
   - key: 79
-    value: " Comme une certaine \xE9charpe qui, \nsans qu'on sache pourquoi, \n"
+    value: " Comme une certaine \xE9charpe qui, \nsans qu'on sache pourquoi, "
   - key: 80
-    value: " va bien avec un certain chapeau.\nJuste comme  \xE7a.\n"
+    value: " va bien avec un certain chapeau.\nJuste comme \xE7a."
   - key: 81
-    value: "le chat curieux \r\n"
+    value: 'Chat curieux '
   - key: 82
     value: "Il a suivi le chat saoul, \npar curiosit\xE9.\n"
   - key: 83
-    value: " Il a des piercings, \r\nfaits pour la  m\xEAme  raison.\r\n"
+    value: " Il a des piercings, \nfaits pour la m\xEAme raison."
   - key: 84
-    value: "En effet, en contradiction \r\navec son adorable minois, \r\n"
+    value: "En effet, en contradiction \navec son adorable minois, \n"
   - key: 85
-    value: "ce minou arbore fi\xE8rement \r\nchaine en or et piercings divers, \r\ncomme
-      un vrai chat gangster.\r\n"
+    value: 'un vrai gangster, qui
+
+      arbore chaine en or
+
+      et piercings
+      affrayants.'
   - key: 86
-    value: le chat  mourant
+    value: Chat mourant
   - key: 87
-    value: "Le  10\xE8me  jour, \r\nil est  arriv\xE9, \xE0 moiti\xE9 mort.\r\n"
+    value: "Le 10\xE8me jour, \nil est arriv\xE9, \xE0 moiti\xE9 mort.\n"
   - key: 88
     value: 'Je suis souffrant.
 
@@ -2222,110 +2224,112 @@ MonoBehaviour:
 
       Il ne mange que du porridge.'
   - key: 90
-    value: " Mais qui sait?\r\nS'il mange des c\xF4tes de boeuf;\r\nPeut-\xEAtre 
-      se  r\xE9tablira-t-il?\r\n"
+    value: " Mais qui sait?\nDes c\xF4tes de boeuf,\nPourraient-elles le sauve?"
   - key: 91
-    value: ' le chat saoul'
+    value: Chat saoul
   - key: 92
-    value: "Le  14\xE8me  jour,\r\nIl est venu prendre un verre.\r\n"
+    value: "Le 14\xE8me jour,\nIl est venu prendre un verre.\n"
   - key: 93
-    value: "Jour  apr\xE8s  jour,\r\nIl prend verre  apr\xE8s  verre.\r\n"
+    value: "Jour apr\xE8s jour,\nIl prend verre apr\xE8s verre.\n"
   - key: 94
-    value: "Etrange dans ses moments de sobri\xE9t\xE9,\r\nIl n'est lui-m\xEAme que
-      lorsqu'il boit.\r\n"
+    value: "C'est anormal s'il n'est pas bourr\xE9,\nIl est normal d'\xEAtre saoul"
   - key: 95
-    value: "Chaque fois qu'il a bu,\nil se jette dans la mer,\net l'on a bien du
-      mal  \xE0 l'en ressortir.\n"
+    value: 'Chaque fois qu''il a bu,
+
+      il se jette dans la mer,
+
+      les polices
+      doivent arriver'
   - key: 96
-    value: ' le chat bleu'
+    value: Chat bleu
   - key: 97
-    value: " Le  4\xE8me  jour,"
+    value: " Le 4\xE8me jour,\nIl est arriv\xE9, traversant la mer"
   - key: 98
-    value: "est  venu, traversant la mer.\r\n98. Il a une fascination pour l'oc\xE9an 
-      \r\net peint tout en bleu.\r\n"
+    value: "Il a une fascination pour l'oc\xE9an  \net peint tout en bleu."
   - key: 99
-    value: "Un jour qu'il  \xE9tait  en mer, \r\nle chat bleu croisa le chat sir\xE8ne
-      .\r\n"
+    value: "Un jour qu'il \xE9tait en mer, \nle chat bleu croisa le chat sir\xE8ne
+      .\n"
   - key: 100
-    value: "Il tomba amoureux de son regard\r\nEt, dans l'espoir de le revoir, \r\nd\xE9cida 
-      de devenir la mer.\r\n"
+    value: "Il tomba amoureux,\ndans l'espoir de le revoir, \nd\xE9cida de devenir
+      la mer.\n"
   - key: 101
-    value: "le chat constip\xE9 "
+    value: Chat chieur
   - key: 102
-    value: "Le  21\xE8me  jour,\r\nune envie pressante le mena jusqu'ici."
+    value: "Le 21\xE8me jour,\nune envie pressante le mena jusqu'ici."
   - key: 103
-    value: "Toujours incommod\xE9, \r\nToujours ennuy\xE9.\r\n"
+    value: 'C''est trop trop bien
+
+      de faire le caca!'
   - key: 104
-    value: "Souffrant de constipation  r\xE9guli\xE8re,\r\nIl est venu jusqu'\xE0
-      Busan\r\n"
+    value: "Souffrant de constipation r\xE9guli\xE8re,\nIl est venu jusqu'\xE0 Busan"
   - key: 105
-    value: "pour que le chat qui  p\xE8te  \r\nlui enseigne une technique \r\nqui
-      le soulagerait de son mal.\r\n"
+    value: "pour apprendre la mani\xE8re\nde p\xE9ter du chat p\xE9teur"
   - key: 106
-    value: "le chat lunaire \r\n"
+    value: "Chat lunaire \n"
   - key: 107
-    value: " Le  15\xE8me  jour, \r\nil est venu voir la lune.\r\n"
+    value: " Le 15\xE8me  jour, \nil est venu voir la lune.\n"
   - key: 108
-    value: "Pourvu que la lune veuille bien \r\nexaucer mon voeu.\r\n"
+    value: "Pourvu que la lune veuille bien \nexaucer mon voeu."
   - key: 109
-    value: " Un jour o\xF9 la pleine lune veillait sur nous tous,\r\nIl est venu
-      pour faire  un voeu.\r\n"
+    value: " La nuit o\xF9 la pleine lune veillait sur nous tous,\nIl est venu pour
+      faire un voeu.\n"
   - key: 110
-    value: "Permettez-moi cette  ann\xE9e  \r\nde manger jusqu'\xE0 sati\xE9t\xE9 
-      \r\nde succulentes c\xF4tes de boeuf."
+    value: "Permettez-moi cette ann\xE9e  \nde manger plein de c\xF4tes de boeuf."
   - key: 111
-    value: 'le chat pirate '
+    value: 'Chat pirate '
   - key: 112
-    value: "Le  50\xE8me  jour,\nIl est arriv\xE9 avec un  tr\xE9sor inestimable."
+    value: "Le 50\xE8me jour,\nIl est arriv\xE9 avec un tr\xE9sor inestimable."
   - key: 113
     value: 'Le roi des mers,
 
       le chat pirate.'
   - key: 114
-    value: " Mon  tr\xE9sor?\r\nSi tu le veux, il est  \xE0  toi.\r\n"
+    value: " Mon tr\xE9sor?\nJe vous le laisse si vous le voulez"
   - key: 115
-    value: " \xC0 condition que tu saches le trouver.\r\nJ'ai  enterr\xE9 toutes
-      les richesses du monde,\r\ndans un lieu secret.\r\n"
+    value: "Trouvez-le\nJ'ai laiss\xE9 quelque part\ntout de ce monde!"
   - key: 116
-    value: "le chat millionnaire \r\n"
+    value: 'Chat millionnaire '
   - key: 117
-    value: "Il est  venu, \r\nreniflant de l'argent.\r\n"
+    value: "Il est venu, \nreniflant de l'argent."
   - key: 118
-    value: "Ce chat riche depuis toujours,\r\ndepuis sa plus tendre enfance, \r\n"
+    value: 'Ce chat riche depuis toujours,
+
+      depuis sa naissance.'
   - key: 119
-    value: " n\xE9 avec une  cuill\xE8re  d'argent dans la bouche \r\nmais qui  pr\xE9tend 
-      \xEAtre parti de rien.\r\n"
+    value: " n\xE9 avec une cuill\xE8re d'argent\ndans la bouche mais qui pr\xE9tend
+      \n\xEAtre parti de rien.\n"
   - key: 120
-    value: " Tu crois pouvoir faire mieux que moi?\r\nTu penses avoir ce qu'il faut
-      pour devenir riche?\r\nTu veux  \xEAtre  comme moi? Alors travaille dur comme
-      moi!\r\n"
+    value: 'Soit mieux que moi,
+
+      soit plus riche que ma famille.
+
+      Tu
+      es jaloux? Travaille dur alors!'
   - key: 121
     value: 'le chat fou '
   - key: 122
-    value: "Il est  agr\xE9ablement  surpris de voir \r\nque tu joues depuis plus
-      d'une  demi-heure."
+    value: "Il est surpris de voir que \ntu joues depuis une demi-heure."
   - key: 123
     value: " Un peu fou, \r\nmais pas trop.\r\n"
   - key: 124
     value: "Impossible de savoir \r\nquand il a perdu la tete.\r\n"
   - key: 125
-    value: "Les avis divergent...\r\nEst-il vraiment fou ou non?\r\nEst-il  m\xEAme 
-      vraiment un chat?"
+    value: "Les avis divergent...\nEst-il vraiment fou ou non?\nEst-il m\xEAme vraiment
+      un chat?"
   - key: 126
-    value: 'le chat shaman '
+    value: 'Chat shaman '
   - key: 127
     value: "Il a suivi le chat fou \r\nqui avait \xE9veill\xE9 son inter\xEAt.\r\n"
   - key: 128
     value: "Un jour, un Dieu \ndescendit sur Terre.\n"
   - key: 129
-    value: " Et sans  pr\xE9venir, le Dieu Chat \r\nrendit visite au chat shaman.\r\n"
+    value: " Et sans pr\xE9venir, le Dieu Chat \nrendit visite au chat shaman.\n"
   - key: 130
-    value: " Il lui donna une boule de  cristal \r\net fit d'un chat jusqu'alors
-      ordinaire \r\nun chat shaman de la mer.\r\n"
-  - key: 131
-    value: 'le  chat swag '
+    value: " Il lui donna une boule de cristal \net fit un chat shaman de la mer."
+  - key: 0
+    value: 'Chat swag '
   - key: 132
-    value: "Le  30\xE8me  jour, \r\nil est venu donner un concert.\r\n"
+    value: "Le 30\xE8me jour, \nil est venu donner un concert."
   - key: 133
     value: ' Swag!
 
@@ -2336,20 +2340,20 @@ MonoBehaviour:
     value: " Longtemps un chat exemplaire, \r\nun amour inattendu pour le hip-hop 
       \r\n"
   - key: 135
-    value: "lui fit du jour au lendemain \r\nrev\xEAtir une panoplie qu'il pense
-      digne d'une vedette \r\net il devint ainsi un mauvais rappeur made in  Busan.\r\n"
+    value: "Le marqueur sur lunettes, l'algue sur le menton \net le marshmallow sur
+      la t\xEAte.\nun mauvais rappeur made in Busan!"
   - key: 136
-    value: le chat chien
+    value: Chat chien
   - key: 137
-    value: "le 30\xE8me  jour, \nil est venu souhaitant devenir chien."
+    value: "le 30\xE8me jour, \nil est venu souhaitant devenir chien."
   - key: 138
-    value: "Le chat qui voudrait plus que tout \r\nsimplement \xEAtre  un chien.\r\n"
+    value: "Le chat \nqui veux devenir un chien\n"
   - key: 139
-    value: "Ayant grandi entour\xE9 de canins,\r\nil questionne chaque jour son destin.\r\n"
+    value: "Ayant grandi avec les chiens,\nil se demande son identit\xE9.\n"
   - key: 140
     value: " ???\r\nMiaou pourquoi donc \r\nentend-on 'miaou' quand j'aboie?\r\n"
   - key: 141
-    value: " le chat ange \r\n"
+    value: 'Chat ange '
   - key: 142
     value: 'Temps de jeu total : 1004 minutes!
 
@@ -2364,60 +2368,64 @@ MonoBehaviour:
     value: "Seuls ceux qui jouent longtemps \r\nont la chance de le voir de leurs
       yeux.\r\n"
   - key: 146
-    value: "le chat d\xE9mon"
+    value: "Chat d\xE9mon"
   - key: 147
     value: "Temps de jeu total : 666 minutes!\r\nApparition du chat d\xE9mon!"
   - key: 148
-    value: "Un chat d\xE9moniaque \r\n venu du plus profond des  t\xE9n\xE8bres."
+    value: "Un chat d\xE9moniaque \n venu du plus profond des t\xE9n\xE8bres."
   - key: 149
-    value: " le plus mal\xE9fique\r\n des chats de  toute la terre \r\n"
+    value: " le plus mal\xE9fique\n des chats de toute la terre \n"
   - key: 150
-    value: "Il est venu pour t'attirer \r\nvers les  tr\xE9fonds  \r\nde l'addiction
-      au jeu vid\xE9o.\r\n"
+    value: "Il est venu pour t'attirer \nde l'addiction au jeu vid\xE9o."
   - key: 151
-    value: "le chat sir\xE8ne "
+    value: "Chat sir\xE8ne "
   - key: 152
-    value: "Le  60\xE8me  jour, \nil est  apparu comme un miracle.\n"
+    value: "Le 60\xE8me jour, \nil est apparu comme un miracle.\n"
   - key: 153
-    value: "\xC0 la recherche d'une  sorci\xE8re, \r\nqui lui  permettrait de marcher
-      sur la terre ferme, \r\n"
+    value: "\xC0 la recherche d'une sorci\xE8re, \nqui lui permettrait de marcher
+      sur la terre. \n"
   - key: 154
-    value: " Il a quitt\xE9 en douce \r\nle royaume des chats  sir\xE8nes.\r\n"
+    value: " Il a quitt\xE9 en douce \nle royaume des chats sir\xE8nes.\n"
   - key: 155
-    value: " Il se cache de tous, \r\net reste a l'aff\xFBt d'une opportunit\xE9
-      \r\nde manger des c\xF4tes de boeufs.\r\n"
+    value: " Il se cache de tous, \net reste vigilant \npour manger des viandes.\n"
   - key: 156
-    value: "Tu veux en savoir plus sur les chatons?\r\nReviens nous voir souvent
-      et apprends \xE0 mieux nous conna\xEEtre"
+    value: 'Tu veux en savoir plus sur les chatons?
+
+      Reviens nous voir souvent!'
   - key: 157
-    value: 
+    value: 'Plus le chat est rouge,
+
+      il est plus impatient! Fais gaffe !'
   - key: 158
     value: "Le fran\xE7ais"
   - key: 159
-    value: 
+    value: "R\xE9initialisation"
   - key: 160
-    value: 
+    value: "R\xE9stauration d'achats"
   - key: 161
-    value: 
+    value: Effacer les pubs
   - key: 162
-    value: 
+    value: Quitter le jeu
   - key: 163
-    value: 
+    value: "Repecte bien la commande!\nSinon les chats se mettent en col\xE8re!"
   - key: 164
-    value: 
+    value: "Si la viande est mal cuite,\nn'h\xE9site pas \xE0 cliquer la poubelle"
   - key: 165
-    value: 
+    value: "Dans la bo\xEEte ros\xE9e,\nvoil\xE0 des cot\xE9s de boeuf!"
   - key: 166
-    value: 
+    value: "Dans la bo\xEEte jaune,\nya des \xE9pices..mince on n'en utilise pas."
   - key: 167
-    value: 
+    value: "Le chat conseiller donne des pistes\ntout en se balan\xE7ant"
   - key: 168
-    value: 
+    value: 'En fait, on a les biens des chats
+
+      Veux-tu les acheter?'
   - key: 169
-    value: 
+    value: "Tu trouves mignon \nquand les chats sont f\xE2ch\xE9s?\nFais n'importe
+      quoi pour la viande"
   - key: 170
-    value: 
+    value: "Avant de commencer, \nchange le language au param\xE8tre"
   - key: 171
-    value: "\uAD11\uACE0\uC81C\uAC70\uB294 1200\uC6D0\uC785\uB2C8\uB2E4.\n\uB098\uB77C\uBCC4
-      1204\uC6D0\uC774 \uC0C1\uC9D5\uD558\uB294 \uC544\uC774\uD15C\uC774 \uC788\uB2E4\uBA74\n\uCD08\uC6D4\uBC88\uC5ED
-      \uBD80\uD0C1\uB4DC\uB9BD\uB2C8\uB2E4."
+    value: 'Effacer les pubs de jours
+
+      tout en payant le prix d''un tacos !'
