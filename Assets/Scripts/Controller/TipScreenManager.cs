@@ -36,7 +36,7 @@ public class TipScreenManager : MonoBehaviour
     public static void Show()
     {
         Instance.textLocalizer.SetStringIndex(Instance.arrStringIndex[Random.Range(0, Instance.arrStringIndex.Length)]);
-        Instance.textLocalizer.ReloadStrText();
+        Instance.textLocalizer.ReloadText();
         Instance.canvasGroup.gameObject.SetActive(true);
         Instance.canvasGroup.DOFade(1f, 0.5f);
     }
