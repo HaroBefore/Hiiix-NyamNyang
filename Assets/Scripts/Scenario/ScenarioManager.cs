@@ -149,21 +149,22 @@ public class ScenarioManager : MonoBehaviour
     public bool IsEmpty() {
         return scenarioQueue.IsEmpty();
     }
-    public void PlayScenario() {
+    public bool PlayScenario() {
         AudioManager.Instance?.PlayBGM(AudioManager.Instance?.background_minigame);
         SetScenario();
         if (currentScenario == null)
         {
-            return;
+            return false;
         }
         lastScenarioType = currentScenario.type;
         PlayerPrefs.SetInt("LastScenario", (int)lastScenarioType);
         if (currentScenario.sceneCount == 0) {
             CloseScenario();
-            return;
+            return true;
         }
         if (currentScenario.type == ScenarioType.Nyang) StartCoroutine(IFadeOn_First());
         else StartCoroutine(IFadeOn());
+        return false;
     }
     private void CloseScenario() {
         currentScenario.OnCloseScenario();

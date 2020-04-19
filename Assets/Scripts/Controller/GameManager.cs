@@ -310,7 +310,7 @@ public class GameManager : MonoBehaviour
         _timeManager.Day = PlayerPrefs.GetInt("DayCount", 0);
         //기본
         _scenarioManager.PlayScenario();
-        //튜토체크
+            //튜토체크
         //_tutorialManager.PlayTutorial();
         //게임체크
         if (_timeManager.Day != 0)
@@ -321,6 +321,15 @@ public class GameManager : MonoBehaviour
             DOVirtual.DelayedCall(3f, () =>
             {
                 StartMainGame(TimeType.AM);
+                TipScreenManager.Hide();
+            });
+        }
+        else
+        {
+            TipScreenManager.Show();
+            DOVirtual.DelayedCall(1f, () => blackBoard.SetActive(false));
+            DOVirtual.DelayedCall(3f, () =>
+            {
                 TipScreenManager.Hide();
             });
         }

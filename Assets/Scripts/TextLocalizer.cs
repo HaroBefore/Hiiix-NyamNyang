@@ -8,6 +8,18 @@ using UnityEngine.UI;
 public class TextLocalizer : MonoBehaviour
 {
     private Text _text;
+    public Text Text
+    {
+        get
+        {
+            if (_text == null)
+            {
+                _text = GetComponent<Text>();
+            }
+
+            return _text;
+        }
+    }
 #if UNITY_EDITOR
     [OnValueChanged(nameof(OnStringIndexChanged))]
 #endif
@@ -41,7 +53,7 @@ public class TextLocalizer : MonoBehaviour
         string str = StringDataObject.GetStringData(stringIndex);
         if (!string.IsNullOrEmpty(str) && str != "NULL")
         {
-            _text.text = str;
+            Text.text = str;
         }
     }
 
